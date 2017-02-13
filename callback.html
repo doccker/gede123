@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>歌德书签 - only do bookmark - www.gede123.com</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, target-densitydpi=medium-dpi, initial-scale=1, user-scalable=no"/>
+
+    <meta content="书签,在线书签,网址,网址收藏,在线网址收藏,gede123,www.gede123.com,only do bookmark" name="keywords">
+    <meta content="www.gede123.com,only do bookmark" name="Description">
+
+    <link rel="shortcut icon" href="res/imgs/favicon.ico" />
+
+    <!-- fontaware 字体库 -->
+    <link href="lib/awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- 本地CSS文件 -->
+    <link href="res/css/gede123-common.min.css?t=2015082290338" rel="stylesheet">
+
+    <script type="text/javascript" src="https://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js"
+            data-appid="101234075"
+            charset="utf-8"></script>
+
+    <script type="text/javascript" src="https://qzonestyle.gtimg.cn/qzone/openapi/qc-1.0.1.js"></script>
+
+    <style>
+        .callback-box{
+            margin-top: 30px;
+            text-align: center;
+            color: #237308;
+        }
+
+        .callback-icon{
+            font-size: 100px;
+        }
+
+        .callback-desc{
+            font-size: 28px;
+            margin-top: 10px;
+        }
+        
+        .callback-sec{
+            color: #ccc;
+        }
+
+        .callback-fail{
+            color: #8C1515;
+        }
+    </style>
+</head>
+<body>
+    <div class="callback-box">
+        <div class="callback-icon">
+            <i class="fa fa-check-circle"></i>
+        </div>
+        <p class="callback-desc">授权登录成功</p>
+        <p class="callback-sec">3秒后返回主页</p>
+    </div>
+
+    <!-- base js -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery.cookie.js"></script>
+
+    <!-- local js -->
+    <script src="res/js/gede123-main.min.js"></script>
+
+    <!-- 调用回调接口 -->
+    <script type="text/javascript">
+        ///获取参数(?后面的参数)
+        var getParam = function(param){
+            var reg = new RegExp("(^|&)" + param + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return decodeURIComponent(r[2]); return null;
+        };
+
+        ///获取参数(新浪微博#后面的参数)
+        var getCallbackParam = function(param){
+            var reg = new RegExp("(^|&)" + param + "=([^&]*)(&|$)", "i");
+            var r = window.location.href.split("#")[1].match(reg);
+            if (r != null) return decodeURIComponent(r[2]); return null;
+        };
+
+        /////ajax跨域操作
+        var ajax = function(url,data,callback){
+            $.ajax({
+                async : true,
+                url : url,
+                data : data,
+                dataType : "jsonp",
+                success : callback,
+                error:function(d){
+
+                }
+            });
+        };
+
+        //失败信息
+        var textFail = function (msg) {
+            $(".callback-box").addClass("callback-fail");
+            $(".callback-desc").text("授权登录失败");
+            $(".callback-sec").text(msg);
+        };
+
+        //获取QQ用户的OPENID
+        var getOpenIdOfQQ = function () {
+            var accessToken = getCallbackParam("access_token");
+            var url = "https://graph.qq.com/oauth2.0/me";
+
+            //保存授权信息
+            ajax(url,{
+                access_token : accessToken
+            },function(data){
+
+            });
+        };
+
+        //基本信息
+        var openId = ""
+        var nickName = "";
+        var headImage = "";
+
+        //获取openId后的回调函数
+        var callback = function(data){
+            openId = data.openid;
+            redirectLogin('qq');
+        };
+
+        //直接登录
+        var redirectLogin = function (type) {
+            //依据用户ID查询数据库，检查当前openId是否已经绑定过
+            var url = "controller/do.php?type=bind&action="+type;
+            $.get(url,{
+                openId : openId
+            }, function (result) {
+                if(result){
+                    gdkey.set("gd_bind",nickName+","+headImage);
+                    gdkey.set("gd_user",result);
+                    gdStyle.change(result.split(',')[4]);
+                    gdkey.remove("gd_env");//删除
+
+                    setTimeout(function () {
+                        location.href = "/";
+                    },2000);
+                }
+            });
+        };
+
+        //获取QQ回调接口
+        var getCallbackOfQQ = function (callback) {
+            QC.api("get_user_info", {}).success(function(data){
+                nickName = data.data.nickname;
+                headImage = data.data.figureurl_qq_1;
+
+                //保存采集数据
+                var url = "controller/do.php?type=gather&action=qq";
+                $.post(url,{
+                    data : data.data
+                }).done(callback);
+            }).error(function(f){
+                textFail(f.data.msg);
+            });
+        };
+
+        //获取新浪微博回调接口
+        var getCallbackOfWeibo = function(callback){
+            var accessToken = getCallbackParam("access_token");
+            var uid = getCallbackParam("uid");
+            var url = "https://api.weibo.com/2/users/show.json";
+
+            //保存授权信息
+            ajax(url,{
+                access_token : accessToken,
+                uid : uid
+            },function(data){
+                openId = uid;
+                nickName = data.data.screen_name;
+                headImage = data.data.profile_image_url;
+
+                //保存采集数据
+                var url = "controller/do.php?type=gather&action=weibo";
+                $.post(url,{
+                    data : data.data
+                }).done(callback);
+            });
+        };
+
+        //进入页面
+        var t = getParam("t");
+        if(t != null){
+            if(t == 'qq'){
+                getCallbackOfQQ(function () {
+                    getOpenIdOfQQ();
+                });
+            }else if(t == 'weibo'){
+                getCallbackOfWeibo(function () {
+                    redirectLogin('weibo');
+                });
+            }
+        };
+
+    </script>
+</body>
+</html>

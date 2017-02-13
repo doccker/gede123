@@ -1,0 +1,2526 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>Useit 知识库-从基础到前沿</title>
+
+<meta name="keywords" content="首页" />
+<meta name="description" content="首页 " />
+<meta name="generator" content="Useit X3.2" />
+<meta name="author" content="Useit Team" />
+<meta name="copyright" content="2001-2013 Useit Inc." />
+<meta name="MSSmartTagsPreventParsing" content="True" />
+<meta http-equiv="MSThemeCompatible" content="Yes" />
+<base href="http://www.useit.com.cn/" /><link rel="stylesheet" type="text/css" href="data/cache/style_14_common.css?wd1" /><link rel="stylesheet" type="text/css" href="data/cache/style_14_portal_index.css?wd1" /><script type="text/javascript">var STYLEID = '14', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'wd1', charset = 'gbk', discuz_uid = '0', cookiepre = 'K08w_b09c_', cookiedomain = '.useit.com.cn', cookiepath = '/', showusercard = '0', attackevasive = '0', disallowfloat = 'newthread|nav', creditnotice = '2|积分|', defaultstyle = '', REPORTURL = 'aHR0cDovL3d3dy51c2VpdC5jb20uY24v', SITEURL = 'http://www.useit.com.cn/', JSPATH = 'static/js/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
+<script src="static/js/common.js?wd1" type="text/javascript"></script>
+<meta name="application-name" content="Useit 知识库" />
+<meta name="msapplication-tooltip" content="Useit 知识库" />
+<meta name="msapplication-task" content="name=首页;action-uri=http://www.useit.com.cn/portal.php;icon-uri=http://www.useit.com.cn/static/image/common/portal.ico" /><meta name="msapplication-task" content="name=知识库;action-uri=http://www.useit.com.cn/forum.php;icon-uri=http://www.useit.com.cn/static/image/common/bbs.ico" />
+<meta name="msapplication-task" content="name=动态;action-uri=http://www.useit.com.cn/home.php;icon-uri=http://www.useit.com.cn/static/image/common/home.ico" /><script src="static/js/portal.js?wd1" type="text/javascript"></script>
+    <script src="http://img.useit.com.cn/temcdn/various_artists/img/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+        var jq=jQuery.noConflict();
+    </script>
+    <script src="http://img.useit.com.cn/temcdn/various_artists/img/index.js" type="text/javascript" type="text/javascript"></script>
+    <script src="http://img.useit.com.cn/temcdn/various_artists/img/slides.js" type="text/javascript" type="text/javascript"></script>
+    
+    <!--[if lte IE 6]>
+        <script src="http://img.useit.com.cn/temcdn/various_artists/img/png.js" type="text/javascript" type="text/javascript"></script>
+        <script type="text/javascript">
+            DD_belatedPNG.fix('body,.logo,img,#scbar_btn,#deanpost,.deanunlogin li.deanqqlogin a,#focus .preNext,.deansubnav ul li.deansina a,.deansubnav ul li.deantx a,.deansubnav ul li.deanrss a,.deansubnav ul li.deankefu a,.deanhot .deantitle,.deanpic .deantitle,.deantitle a,.deantitle,.nvhm,#pt .z em,.chart,.bdl,.deantitle a.deanaddnew,.deantitle a.deanrssartice,.deanhove,.deanexit a');
+        </script>
+    <![endif]--> 
+    <script language="javascript" type="text/javascript">
+function killErrors() {
+return true;
+}
+window.onerror = killErrors;
+</script>
+</head>
+
+<body id="nv_portal" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<div id="qmenu_menu" class="p_pop blk" style="display: none;">
+<div class="ptm pbw hm">
+请 <a href="javascript:;" class="xi2" onclick="lsSubmit()"><strong>登录</strong></a> 后使用快捷导航<br />没有帐号？<a href="member.php?mod=register" class="xi2 xw1">注册</a>
+</div>
+<div id="fjump_menu" class="btda"></div></div><div id="hd">
+<div class="wp">
+<div class="hdc cl"><h2><a href="http://www.useit.com.cn/" title="Useit 知识库" ><img src="http://img.useit.com.cn/logo.png" height="65px" border="0" title="Useit 知识库"></a></h2><div id="scbar" class="cl">
+<form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="search.php?searchsubmit=yes" target="_blank">
+<input type="hidden" name="mod" id="scbar_mod" value="search" />
+<input type="hidden" name="formhash" value="4e352ddf" />
+<input type="hidden" name="srchtype" value="title" />
+<input type="hidden" name="srhfid" value="0" />
+<input type="hidden" name="srhlocality" value="portal::index" />
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" autocomplete="off" x-webkit-speech speech /></td>
+<td><a href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true">搜索</a></td>
+<td><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"></button></td>
+</tr>
+</table>
+</form>
+</div>
+<ul id="scbar_type_menu" class="p_pop" style="display: none;"><li><a href="javascript:;" rel="search_site" class="curtype">全站</a></li><li><a href="javascript:;" rel="forum">知识</a></li><li><a href="javascript:;" rel="search_wenku">文档</a></li><li><a href="javascript:;" rel="search_video">视频</a></li><li><a href="javascript:;" rel="search_dy">订阅</a></li><li><a href="javascript:;" rel="user">用户</a></li></ul>
+<script type="text/javascript">
+initSearchmenu('scbar', '');
+</script>
+                    <div class="clear"></div>
+</div>
+
+
+<div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div><div id="mu" class="cl">
+</div></div>
+</div>
+<div class="clear"></div>
+        <div class="deanheader" id="deanheader">
+        	<div class="w1000"> 
+            	<div class="deannav">
+                    <ul>
+                                                    <li class="deancur" id="mn_portal" ><a href="http://www.useit.com.cn/portal.php" hidefocus="true" title="网站首页"  >首页<span>网站首页</span></a></li>                                                    <li id="mn_F286" ><a href="http://www.useit.com.cn/forum-286-1.html" hidefocus="true" title="知识库"  >知识库<span>知识库</span></a></li>                                                    <li id="mn_N047d" ><a href="http://wenku.useit.com.cn" hidefocus="true" title="文档文库"  >文档<span>文档文库</span></a></li>                                                    <li id="mn_Nf26a" ><a href="http://ke.useit.com.cn" hidefocus="true" title="在线课堂" target="_blank"  >视频<span>在线课堂</span></a></li>                                                    <li id="mn_N3b33" ><a href="http://dy.useit.com.cn" hidefocus="true" title="知识订阅" target="_blank"  >订阅中心<span>知识订阅</span></a></li>                                                    <li id="mn_Nf08d" ><a href="http://search.useit.com.cn/cse/search?s=7114562753949710140" hidefocus="true" title="搜索查询" target="_blank"  >搜索<span>搜索查询</span></a></li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                </div>
+                <div class="deantopr">
+                	<div class="deanlogin"><ul class="deanunlogin">
+        <li class="deanqqlogin"><a href="http://www.useit.com.cn/connect.php?mod=login&amp;op=init&amp;referer=index.php&amp;statfrom=login_simple"></a></li>
+        <li class="deanblue"><a href="http://www.useit.com.cn/member.php?mod=logging&amp;action=login" onClick="showWindow('login', this.href)" >登录</a></li>
+        <li class="deanblue"><a href="http://www.useit.com.cn/member.php?mod=register" >注册</a></li>
+        <div class="clear"></div>
+    </ul>
+<script type="text/javascript">
+jq(".deanhove").hover(
+function(){
+jq(this).addClass("deanhoved");
+jq(this).siblings(".deanmessage").show();
+},
+function(){
+jq(this).removeClass("deanhoved");
+jq(this).siblings(".deanmessage").hide();
+})
+jq(".deanmessage").hover(
+function(){
+jq(this).siblings(".deanhove").addClass("deanhoved");
+jq(this).show();
+},
+function(){
+jq(this).siblings(".deanhove").removeClass("deanhoved");
+jq(this).hide();
+})
+</script></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+       <script src="http://img.useit.com.cn/temcdn/various_artists/img/nv.js" type="text/javascript"></script>
+            <link rel="stylesheet" href="source/plugin/oculus/js/oculus.css?t=">
+            <link rel="stylesheet" href="//g.alicdn.com/sd/ncpc/nc.css?t=">
+            <script src="//g.alicdn.com/sd/ncpc/nc.js?t="></script>
+            <script src="source/plugin/oculus/js/oculus_nc.js?t="></script>
+            <div id="nc-float" style="display:none;">
+                <div class="nc-f-head">
+                    <img class="nc-f-icon" src="//img.alicdn.com/tps/TB1_3FrKVXXXXbdXXXXXXXXXXXX-129-128.png" alt="" height="20" width="20">
+                    <span class="nc-f-title">安全验证</span>
+                    <a class="close" href="#"><i class="nc_iconfont">&#xe60c;</i></a>
+                </div>
+                <div class="nc-f-body" id="oculus-nc-f-body">
+                <div class="nc-f-des">请完成以下验证码</div>
+                    <div id="nocaptcha"></div>
+                </div>
+            </div>
+<div id="wp" class="wp" style="background:#fff;">
+<style id="diy_style" type="text/css">#tabHQqaIq {  margin-top:10px !important;}#frameU34CPT {  margin-top:15px !important;margin-right:20px !important;margin-bottom:5px !important;margin-left:5px !important;}</style>
+<div class="wp h30" style="padding-bottom:15px;">
+<div class="deanpartl">
+    	<div class="deanhot h30">
+       <div class="clear"></div>
+            <div class="deanartice"><ul><!--[diy=diydeanarticelist]--><div id="diydeanarticelist" class="area"><div id="tabHQqaIq" class=" frame-tab move-span cl"><div id="tabHQqaIq_title" class="tab-title title column cl" switchtype="click"><div id="portal_block_1950" class="block move-span"><div class="blocktitle title"><span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">最新推荐</span></div><div id="portal_block_1950_content" class="dxb_bc"><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13421-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/e5/e5a700278885b6db017efdc8f79dcd8c.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><a href="http://www.useit.com.cn/thread-13421-1-1.html" target="_blank">新浪微博数据中心：2016年直播行业洞察报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">本报告以微博直播及一直播数据为基础，捕捉直播用户使用过程中的行为，通过数据进行层层清晰和筛选，进而对用户行为数据进行分析，以期全面直播用户的属性特征和行为习惯。......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum"></div> 
+                <div class="deanarticerauthor">板块：<a href="http://www.useit.com.cn/forum-272-1.html" target="_blank">微博</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=272&filter=typeid&typeid=370" target="_blank">数据报告</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13418-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/bd/bd3c51ae4a382639b19d31b3305542a3.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><a href="http://www.useit.com.cn/thread-13418-1-1.html" target="_blank">腾讯研究院：2016互联网创新创业白皮书</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">互联网创业浪潮已有二十多年。从创业公司上市的情况来看，自2000年来，已经产生了五次高峰，几乎三年一次。每次上市高峰后，创投资本就会大量退出股市，进入新的创业项目中。随着时间推移，创投资本的规模也越来越大......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum"></div> 
+                <div class="deanarticerauthor">板块：<a href="http://www.useit.com.cn/forum-58-1.html" target="_blank">互联网创业</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=58&filter=typeid&typeid=386" target="_blank">数据报告</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13408-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/39/3973bef187acdb408c874db408c9b3c1.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><a href="http://www.useit.com.cn/thread-13408-1-1.html" target="_blank">京东“五环”战略生态图</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">京东的生态圈主要包含五大战略板块，分别是：电商、物流、O2O、金融与技术。在过去的2015年里，京东发展迅速，各个战略板块持续发力，从电商主业的快速增长，到发力消费金融，再到面向本地生活和打造智能生态服务体系......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum"></div> 
+                <div class="deanarticerauthor">板块：<a href="http://www.useit.com.cn/forum-125-1.html" target="_blank">京东</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=125&filter=typeid&typeid=225" target="_blank">观点洞察</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13404-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/c0/c05bf6940ee21678e71be5a9fcc334db.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><a href="http://www.useit.com.cn/thread-13404-1-1.html" target="_blank">凯络：2016年全球广告支出预测报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">2016年9月20日，全球领先的媒介代理网绪凯绪媒体发布对全球广告支出的最新预测。该预测显示出2016年全球广告市场的乐观前景，而2017年这一势头还将继续，持续增长的数字广告是其最主要的推动力。......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum"></div> 
+                <div class="deanarticerauthor">板块：<a href="http://www.useit.com.cn/forum-303-1.html" target="_blank">营销分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=303&filter=typeid&typeid=436" target="_blank">数据报告</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13403-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/9a/9ac9550f33a70dfc514ba8f2659b8eb6.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><a href="http://www.useit.com.cn/thread-13403-1-1.html" target="_blank">App Annie：日本移动游戏如何借力传统媒体</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">日本市场商机诱人的同时，竞争也是公认的激烈，对于国外发行商而言更是如此：日本市场 2015 年的移动游戏收入，90% 由本土公司包揽。发行商要在这个回报丰厚却又充满挑战的市场占据一席之地，关键在于打造知名度和推动用户获取。......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum"></div> 
+                <div class="deanarticerauthor">板块：<a href="http://www.useit.com.cn/forum-278-1.html" target="_blank">游戏/手游/动漫</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=278&filter=typeid&typeid=402" target="_blank">观点洞察</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13394-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/b3/b34b9e48ba6591aa4dea4ed319400f7e.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><a href="http://www.useit.com.cn/thread-13394-1-1.html" target="_blank">Accenture：客户的期望与体验， 优势、弊端、机遇</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">适应不断变化的环境。品牌体验必须能够跟上（在理想情况下超越）其不断发展演变的客户需求。为了实现这一最终目标，必须将速度和敏捷性纳入战略规划、项目审批、开发以及交付的能力当中。......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum"></div> 
+                <div class="deanarticerauthor">板块：<a href="http://www.useit.com.cn/forum-298-1.html" target="_blank">客户管理</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=298&filter=typeid&typeid=441" target="_blank">观点洞察</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13390-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/f6/f6b97bdb8646e7bdff2070ae57454c62.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><a href="http://www.useit.com.cn/thread-13390-1-1.html" target="_blank">oTMS&amp;复旦大学：互联网＋时代的运输管理关注什么？</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">MS公司与复旦大学管理学院合作，对物流行业运输管理的现状进行了调查，调查内容主要包括三大部分：各公司的物流运输的现状、企业对运输管理平台的需求情况和不同公司对运输管理平台需求的差异。......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum"></div> 
+                <div class="deanarticerauthor">板块：<a href="http://www.useit.com.cn/forum-286-1.html" target="_blank">互联网思维</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=286&filter=typeid&typeid=509" target="_blank">观点洞察</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13389-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/27/27a5884621bf837ac7522925f2605058.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><a href="http://www.useit.com.cn/thread-13389-1-1.html" target="_blank">中国信通院：2016年中国信息经济发展白皮书</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">首次基于统计方法测算中国整体及各省信息经济发展情况。测算表明，2015 年中国信息经济总量达到18.6 万亿元，占GDP 比重达到27.5%。信息经济基础部分增势稳定，结构优化；融合部分成为增长主要引擎。......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum"></div> 
+                <div class="deanarticerauthor">板块：<a href="http://www.useit.com.cn/forum-299-1.html" target="_blank">趋势分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=299&filter=typeid&typeid=484" target="_blank">数据报告</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13387-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/53/53ad8e38d1584a9fdb5c1e1ce730faf0.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><a href="http://www.useit.com.cn/thread-13387-1-1.html" target="_blank">毕马威：2016年中国领先金融科技50榜单及报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">在50家企业中，大数据类公司占比较高，综合金融服务其次。在金融科技领域，数据技术是金融行业未来发展的核心方向之一，因此大数据类公司在领先数据技术的应用和研发方面较为突出。......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum"></div> 
+                <div class="deanarticerauthor">板块：<a href="http://www.useit.com.cn/forum-274-1.html" target="_blank">互联网金融</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=274&filter=typeid&typeid=396" target="_blank">数据报告</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13384-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/de/dedf97e17490aca302cbb8ed25cf6265.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><a href="http://www.useit.com.cn/thread-13384-1-1.html" target="_blank">凯度TNS：中国是如何重写电子商务规则的</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">在中国，电子商务是巨大的颠覆力量，它已经改变了很多品类的竞争格局 —— 而它的影响力仍然在持续发酵，它所诱发的动荡远未结束。随着电子商务的世界不断扩张，新平台每天都在涌现，新的购物趋势和新的品牌机会也随之产生。......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum"></div> 
+                <div class="deanarticerauthor">板块：<a href="http://www.useit.com.cn/forum-273-1.html" target="_blank">跨境电商</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=273&filter=typeid&typeid=355" target="_blank">数据报告</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13381-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/8f/8fbe05c6eb278059c85cf154738077ac.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><a href="http://www.useit.com.cn/thread-13381-1-1.html" target="_blank">易观&amp;YYlive：2016中国娱乐直播行业白皮书</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">从娱乐直播产业链条来看，上游是以主播和机构为代表的直播内容提供者以及负责主播运营与经纪的公会/网红孵化机构；直播平台是直播产业生态的核心枢纽；提供平台支撑服务的技术厂商，广告主、电商平台......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum"></div> 
+                <div class="deanarticerauthor">板块：<a href="http://www.useit.com.cn/forum-131-1.html" target="_blank">新媒体</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=131&filter=typeid&typeid=85" target="_blank">数据报告</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13379-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/ae/ae325b7f4ef8a35acb7ab8d7a84d0d3f.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><a href="http://www.useit.com.cn/thread-13379-1-1.html" target="_blank">莱坊：2017年全球城市报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">2017年《全球城市报告》（Global Cities 2017）指出， 综合2016年第二季前6个月的摩天大楼租金表现，中国香港蝉联全球优质写字楼租金最贵城市，平均每年每平方英尺为278.50美元，远超排名第二位的纽约每年每平方英尺158美元的租金。......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum"></div> 
+                <div class="deanarticerauthor">板块：<a href="http://www.useit.com.cn/forum-338-1.html" target="_blank">地产/房产</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=338&filter=typeid&typeid=480" target="_blank">数据报告</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13376-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/a8/a88eb6077f11bf4b2f21c443fb952cf2.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><a href="http://www.useit.com.cn/thread-13376-1-1.html" target="_blank">普华永道：技术制胜、场景为王，拥抱移动支付新浪潮</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">随着移动支付技术的多样化，远程支付与近场支付正呈现逐渐融合的趋势。如扫码支付本质上属于远程支付，但是以近场支付的方式展现；HCE云闪付釆用近距离通信的方式，所以属于近场支付，但仍然需要在云端存储虚拟卡片信息......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum"></div> 
+                <div class="deanarticerauthor">板块：<a href="http://www.useit.com.cn/forum-274-1.html" target="_blank">互联网金融</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=274&filter=typeid&typeid=396" target="_blank">数据报告</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13375-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/bb/bb953597239f061e8a3c2472818a34a9.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><a href="http://www.useit.com.cn/thread-13375-1-1.html" target="_blank">App Annie：针对社交和媒体应用发行商的特别报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">应用发行商不再直接竞争收入份额，他们开始竞争用户的时间。各大发行商都在尽可能地了解当前和未来用户，并且密切关注直接竞争对手的一举一动以及整体竞争环境。要想在这一经济态势下取得成功，您也必须这样做。......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum"></div> 
+                <div class="deanarticerauthor">板块：<a href="http://www.useit.com.cn/forum-89-1.html" target="_blank">移动互联网</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=89&filter=typeid&typeid=93" target="_blank">数据报告</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13374-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/ce/cee6377f33eb1eb04a0b9ecb1852f9f2.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><a href="http://www.useit.com.cn/thread-13374-1-1.html" target="_blank">DCCI：2016年90后人群移动购物研究报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">随着网络的普及和移动互联网时代的到来与网络支付的发展，移动购物的便捷性迅速被市场认可、接受，市场规模迅速扩大,各类移动购物平台涌现。尽管80后人群仍被视为消费主力人群，但越来越多的新生90后人群开始具备独立购买能力......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum"></div> 
+                <div class="deanarticerauthor">板块：<a href="http://www.useit.com.cn/forum-301-1.html" target="_blank">人群分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=301&filter=typeid&typeid=488" target="_blank">数据报告</a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li></div></div><div id="portal_block_1951" class="block move-span"><div class="blocktitle title"><span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">互联网概念</span></div><div id="portal_block_1951_content" class="dxb_bc"><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13170-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/64/64aafc70b8a02f43fcdd91979843c571.jpg" width="200" height="200" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP1</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13170-1-1.html" target="_blank">今日头条：2016（上半年）移动资讯行业细分报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年8月，今日头条算数中心基于5.3亿的用户数据，发布了《2016上半年移动资讯行业细分报告》，独家解密移动资讯行业新变局，报告指出：
+
+[*]移动资讯产业高速增长。以今日头条为例，仅2016上半年，平台总资讯量增长超过100%，总阅读
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-131-1.html" target="_blank">新媒体</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=131&filter=typeid&typeid=85" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：827</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13211-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/84/84a5a498acd81f1cfa4b722229a5c44c.jpg" width="200" height="200" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP2</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13211-1-1.html" target="_blank">德勤新视界：“互联网+”新征途</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+《德勤新视界》 基于对中国市场长期的观察与研究，立足行业和专业服务经验，力求以创新和前瞻的视角重新思考企业在不断变化的环境中遇到的问题，帮助企业发现潜在的增长点并拓宽发展边界。本刊物目前计划一年出版两期，提供纸质出版物和
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-286-1.html" target="_blank">互联网思维</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=286&filter=typeid&typeid=509" target="_blank">观点洞察</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：456</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13213-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/f0/f0cc7a51fa0db9a56dff6ac87021dd30.jpg" width="200" height="200" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP3</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13213-1-1.html" target="_blank">Trustdata：2016年（上半年）移动互联网行业发展分析报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年上半年，中国移动互联网行业发展分析报告
+
+
+
+截至2016年6月，华为+荣耀、OPPO及三星的移动智能终端保有量，排名安卓市场前三位
+
+
+安卓头部品牌竞争俞发激烈，TOP5终端保有量差距从2015年初的9.8%缩小至2016年6月的4.2%
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-89-1.html" target="_blank">移动互联网</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=89&filter=typeid&typeid=93" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：453</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13293-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/ba/ba8a9bc83d26773b5901eb9d2d70869b.jpg" width="200" height="200" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP4</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13293-1-1.html" target="_blank">工业互联网产业联盟：工业互联网体系架构（版本1.0）</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+工业互联网体系架构报告（1.0版）在分析业务需求基础上，提出了工业互联网体系架构，指出网络、数据和安全是体系架构的三大核心，其中“网络”是工业系统互联和数据传输交换的支撑基础，“数据”是工业智能化的核心驱动，“安全”是网络
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-286-1.html" target="_blank">互联网思维</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=286&filter=typeid&typeid=508" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：391</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13250-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/98/981c6a32eb988b6f97a19f336b2edf25.jpg" width="200" height="200" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP5</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13250-1-1.html" target="_blank">中国信息通信研究院：2016年云计算白皮书</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年9月1号上午，中国信息通信研究院在2016可信云大会上正式发布《云计算白皮书（2016）》。这也是中国信通院自2012年开始，第三次发布《云计算白皮书》。
+
+2015 年云计算产业格局风起云涌，公有云服务竞争更加激烈，私有云服务市场
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-319-1.html" target="_blank">云计算</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=319&filter=typeid&typeid=504" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：374</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13175-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/4f/4fedd86cf28a06b8a0af857e6e62eceb.jpg" width="200" height="200" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP6</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13175-1-1.html" target="_blank">TalkingData：2016智能硬件行业洞察报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016 智能硬件行业洞察报告 行业报告
+
+
+主要结论
+行业概况：
+[*]用户规模达1.9亿台
+[*]月平均活跃次数达16.1次
+[*]4个细分行业：智能家居、可穿戴设备、健康管理和安防
+[*]智能硬件TOP10以可穿戴设备为主，小米路由器位列第九
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-277-1.html" target="_blank">人工智能</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=277&filter=typeid&typeid=407" target="_blank">观点洞察</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：329</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13248-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/5b/5bd04ed13f20a9d4e7a2eaf83813e265.jpg" width="200" height="200" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP7</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13248-1-1.html" target="_blank">斯坦福大学：人工智能与2030年的生活</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+斯坦福大学最近发起了一个名叫人工智能100年的研究项目，9月1日，该项目的第一个成果《人工智能与2030年的生活》（ARTIFICIAL INTELLIGENCE AND LIFE IN 2030）发布，这是一份关于AI在接下来10几年间的影响的报告。
+译者：新智元 胡祥杰
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-277-1.html" target="_blank">人工智能</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=277&filter=typeid&typeid=406" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：300</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13171-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/7c/7cb915d2d9f06893975786cc793fe478.jpg" width="200" height="200" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP8</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13171-1-1.html" target="_blank">王府井百货 刘春吉：传统零售业的互联网+</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+传统零售的互联网+ TRANSFORMATION
+
+
+互联网时代个人消费行为碎片化
+1.消费者的变化&#8226;80/90后成为主要消费力量，他们每天平均上网时间3-5个小时。
+&#8226;80/90后更愿意分享，从分享体验到分享实物，甚至是房子和汽车，分享
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-286-1.html" target="_blank">互联网思维</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=286&filter=typeid&typeid=510" target="_blank">案例方案</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：290</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13177-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/b3/b3c707bdf70bfe7e8b1840652667d77f.jpg" width="200" height="200" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP9</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13177-1-1.html" target="_blank">清科 符星华：为你解析——创投的世界</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+为你解析——创投的世界 符星华
+
+
+中国股权投资行此发展概述
+
+
+
+创业按资、股权按资基金概念
+创业投资：创业投资是指对新兴的、迅速发展的、有巨大竞争潜力的未上市创业企业进行的股权投资，并为创业企业提供特有的资本经营等
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-58-1.html" target="_blank">互联网创业</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=58&filter=typeid&typeid=387" target="_blank">观点洞察</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：288</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13161-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/b3/b3722ae8a808bfe609f0579d52ef0f0f.jpg" width="200" height="200" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP10</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13161-1-1.html" target="_blank">艾瑞：2016年公众Wi-Fi案例报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+WiFi案例报告 2016年
+
+
+WiFi行业背景
+
+
+2012-2018年中国移动网民规模
+移动网民数量持续增加：2015年年底，我国移动网民达到6.2亿人，同比增长10.2%。移动通信业务持续向数据流量业务倾斜：2015年我国移动互联网接入的流量超过40
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-319-1.html" target="_blank">云计算</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=319&filter=typeid&typeid=504" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：279</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13145-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/cf/cf3299c3b757db7358e5601abed9b160.jpg" width="200" height="200" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP11</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13145-1-1.html" target="_blank">2016年中国企业海外投资VR/AR详情</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+时间跨入2016年第三季度尾声，虽然资本市场不断叫嚣寒冬。但在一些重要的领域，中国资本依然在全球高歌猛进。日前，腾讯又和富士康投资了一家印度独角兽Hike Messenger，这个自称印度唯一消息平台的公司表示，其新一轮融资将应用于人工智
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-277-1.html" target="_blank">人工智能</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=277&filter=typeid&typeid=406" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：258</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13194-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/27/27b61889db183d8762aeb86620123009.jpg" width="200" height="200" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP12</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13194-1-1.html" target="_blank">2016CES白皮书，技术打造超级互联的消费旅程</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+在2016 CES展会期间，实力传播与Viacom Velocity共同举办了一场主题为“人性化的数据——从人工智能到人类智能”的研讨会，讨论数据主导市场的发展,,并发布《2016CES白皮书》(The super-connected consumer journey)。阳狮集团首席战略师
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-277-1.html" target="_blank">人工智能</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=277&filter=typeid&typeid=406" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：239</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13257-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/82/82a802fa30872b3272bce124f84dc4d0.jpg" width="200" height="200" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP13</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13257-1-1.html" target="_blank">安筱鹏：软件视角的未来工业</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年9月2日，在中国电子信息产业发展研究院主办的首届“工业软件与制造业融合发展高峰论坛”上，工信部信息化和软件服务业司副司长安筱鹏围绕《深化制造业与互联网融合发展的指导意见》中提出的“强化软件支撑和定义制造业的基础性作用
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-286-1.html" target="_blank">互联网思维</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=286&filter=typeid&typeid=508" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：224</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13239-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/2f/2f8ef1eded6ce613f95ff9981b66408b.jpg" width="200" height="200" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP14</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13239-1-1.html" target="_blank">kpmg&amp;CB Insights：2016Q2全球Fintech风投报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年8月，毕马威（kpmg）和CB Insights联合发布了《2016Q2全球Fintech风险投资数据报告》（Global Analysis of Fintech Venture Funding）。根据报告显示，二季度全球Fintech企业获得的风险投资总额为25亿美金，共计195笔，相比16年第
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-274-1.html" target="_blank">互联网金融</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=274&filter=typeid&typeid=396" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：213</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13353-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/16/1617e2d4d4948f06b415c757d60bc205.jpg" width="200" height="200" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP15</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13353-1-1.html" target="_blank">We Are Social：10大社会化媒体演变趋势</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年9月7日，著名社会化媒体营销机构 We Are Social，发布最新报告《10大社会化媒体趋势》(FUTURE SOCIAL 10 TRENDS SHAPING THE EVOLUTION OF SOCIAL MEDIA MARKETING)，社会化媒体格局正在变化如此之快，大多数营销努力跟上。为了方
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-131-1.html" target="_blank">新媒体</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=131&filter=typeid&typeid=85" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：213</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li></div></div><div id="portal_block_1943" class="block move-span"><div class="blocktitle title"><span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">互联网研究</span></div><div id="portal_block_1943_content" class="dxb_bc"><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13176-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/70/70f00535851daf73e1a34d55487d9510.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP1</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13176-1-1.html" target="_blank">迈向卓越的全球城市，上海市城市总体规划（2016-2040）</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+上海是个有魅力的城市，东西方文化交融渗透到它的每一个角落，海纳百川的城市品格为市民提供了多样化的自由发展的选择。面向2040年的未来，在上海开埠200年、浦东开发开放50年、上海世博会30年之际，我们对这座城市究竟期待些什么?我们理
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-302-1.html" target="_blank">地域分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=302&filter=typeid&typeid=492" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：561</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13337-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/7c/7c680713f5d4d73cd03957b450605123.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP2</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13337-1-1.html" target="_blank">新周刊&amp;Nice：90后生活方式报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+16-25岁，这是在任何年龄选项表格里占据最重要位置的年龄段。16-25岁，这是生命长度中最为肆意灿烂的年纪。而我们口中的90后正是这个年龄段的拥有者。“谁是90后中真正的偶像和影响因素”是很多合作伙伴在得知我们的报告时问到的最多的问
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-301-1.html" target="_blank">人群分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=301&filter=typeid&typeid=488" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：437</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13274-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/27/27d5e5013167c033da6e389f2970d0ac.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP3</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13274-1-1.html" target="_blank">易观：2016中国互联网发展趋势报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+10年间，中国社会发生了巨大变化：
+[*]移动互联网成为基础设施，变现能力成为移动互联网企业核心竞争力；
+[*]互联网巨头OS化生态渐成，全球化是下一步挑战；
+[*]网络营销的空间还有很大，显著增长背后预示着结构性机遇；
+[*]内容在颠
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-299-1.html" target="_blank">趋势分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=299&filter=typeid&typeid=484" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：368</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13266-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/8a/8a5c0ad2bddca6000baa9f6fb825dcda.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP4</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13266-1-1.html" target="_blank">众引传播：2016年90后妈妈白皮书</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+本次白皮书在全国范围内进行了21-26岁年轻妈妈的问卷收集和访谈调硏，总样本数超过6000份，全面了解了90后妈妈的“三观"一儿观'社交观和消费观。
+
+在此次调査中，如后妈妈表现出极强的代际特征，突破我们之前对90后“不靠谱”“情绪化
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-301-1.html" target="_blank">人群分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=301&filter=typeid&typeid=488" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：353</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13228-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/e0/e0a638f81e3ddc577ca5a593e95b4b24.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP5</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13228-1-1.html" target="_blank">普华永道：应对科技突破大趋势，始于八项核心科技</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+近年来，科技发展突飞猛进，企业领导者若由此感到茫然，甚至有些沮丧，也情有可原。我们在做全球CEO年度调研时，61%的CEO表示，他们对自己所在行业的科技革新速度感到担忧。诚然，越来越多的决策层精通科技，可以用更有效的方式帮助企业
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-299-1.html" target="_blank">趋势分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=299&filter=typeid&typeid=485" target="_blank">观点洞察</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：352</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13163-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/a3/a34dcf1ae1d2af93f80169044b1313fc.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP6</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13163-1-1.html" target="_blank">奥美：“锐速12国”将重塑全球增长形态</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年8月23日，奥美在中国正式发布了一份关于未来市场变化趋势的前瞻性报告——“锐速12国（The Velocity 12 Markets）”。新报告中指出，“锐速12国”将是未来十年中产消费者增长的关键市场。随着“金砖四国”指数逐渐失去衡量市场的效
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-299-1.html" target="_blank">趋势分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=299&filter=typeid&typeid=484" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：313</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13230-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/a2/a2b72886138833420d86f07fc08898b2.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP7</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13230-1-1.html" target="_blank">2015中国国家形象全球调查报告（完整版）</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年8月29日，中国外文局对外传播研究中心联合全球领先的市场调查及品牌咨询机构华通明略和Lightspeed GMI在北京发布了《中国国家形象全球调查报告2015》。迄今为止，这已经是中国国家形象调查平台开展的第四次中国国家形象全球调查。
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-301-1.html" target="_blank">人群分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=301&filter=typeid&typeid=488" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：279</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13312-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/3b/3b4f9237bb2443288cd0845726df09bc.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP8</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13312-1-1.html" target="_blank">G20国家互联网发展研究报告（2016年版）</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年9月，由汕头大学长江新闻与传播学院、新加坡国立大学东亚研究所、上海社科院信息研究所和新闻研究所、中山大学传播与设计学院、互联网实验室、中国与全球化智库（CCG）、清华大学新闻与传播学院等多个国内外研究机构联合参与并编写
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-299-1.html" target="_blank">趋势分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=299&filter=typeid&typeid=484" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：270</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13206-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/d6/d6295f3a027ad51adf53511e52ad4476.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP9</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13206-1-1.html" target="_blank">艾瑞：2016年中国网络社群研究报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+中国网络社群研究报告 2016年
+
+
+中国网络社群基本概况
+
+2016年中国网络社群概念及特征
+社群是有共同爱好、需求的人组成的群体，有内容、有互动，由多种形式组成。社群实现了人与人、人与物的连接，提升了营销和服务的深度，建立
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-301-1.html" target="_blank">人群分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=301&filter=typeid&typeid=488" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：258</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13329-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/71/713bf901f191dea8c590360da2d157a7.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP10</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13329-1-1.html" target="_blank">中国互联网协会：中国互联网发展报告（2016）精华版</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+由中国互联网协会和中国互联网络信息中心（CNNIC）联合组织编写的《中国互联网发展报告》（2016）(以下简称《报告》)。 《报告》定位为互联网行业大型年度研究报告，具有国际标准书号，由电子工业出版社出版。《报告》客观、忠实记录地
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-299-1.html" target="_blank">趋势分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=299&filter=typeid&typeid=484" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：246</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13217-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/81/81b5325ea8206f183ea107fa01191694.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP11</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13217-1-1.html" target="_blank">欧瑞信息咨询：2016年全球消费者十大趋势</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+欧瑞信息咨询（Euromonitor International）发布了《2016年全球消费者十大趋势》（TOP 10 Global Consumer Trends for 2016），给出全球消费领域的十大最新动向，包括：
+[*]大家更愿意花钱买时间
+
+[*]吃得越来越健康
+[*]智能手机普及
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-299-1.html" target="_blank">趋势分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=299&filter=typeid&typeid=484" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：235</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13166-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/f2/f22bfb8dd70e600901e1829df0173e62.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP12</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13166-1-1.html" target="_blank">德勤：2016年足球俱乐部财富榜</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+欢迎您参阅德勤足球财富榜第19期报告，报告中罗列了世界最流行的体育赛事-足球竞赛中收入最高的俱乐部。该报告于2014/15赛季结束8个月后发布，足球财富榜针对俱乐部的财务状况做出了最及时和可参考性的分析。
+
+今年的财富榜再次展现了
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-301-1.html" target="_blank">人群分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=301&filter=typeid&typeid=488" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：216</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13188-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/6f/6f0845e759cf613d11fe291d5130ac69.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP13</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13188-1-1.html" target="_blank">IBM 商业价值研究院：2016年全球位置趋势报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+尽管一些关键经济体的发展前景扑朔迷离，未来全球化政治承诺的不确定性日益增长，企业仍在国际化道路上不断向前发展，在全球各地寻找商机。作为其中的一部分，企业改变了投资模式，同时许多国家或地区在全球价值链中扮演着不同的角色。
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-302-1.html" target="_blank">地域分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=302&filter=typeid&typeid=492" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：166</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13238-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/9e/9e6f51c4c5c9564ee02aec3881f1e134.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP14</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13238-1-1.html" target="_blank">艾瑞&amp;猎豹：2016 清理/优化App用户数据洞察报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+中国移动端清理/优化App用户数据洞察报告
+
+中国移动互联网经济发展概览
+
+2007年3月-2016年3月PC端网页、手机端App、Pad端App月度使用时长情况
+
+2012-2018年中国网络广告市场规模及预测
+
+2012-2018年中国移动广告市场规模及预测
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-55-1.html" target="_blank">用户分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=55&filter=typeid&typeid=180" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：158</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13374-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/9f/9f3058a0a99d623b99d55e82656f53fa.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP15</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13374-1-1.html" target="_blank">DCCI：2016年90后人群移动购物研究报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年中国90后人群移动购物 研究报告
+
+
+研究背景与目的
+随着网络的普及和移动互联网时代的到来与网络支付的发展，移动购物的便捷性迅速被市场认可、接受，市场规模迅速扩大,各类移动购物平台涌现。尽管80后人群仍被视为消费主力人
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-301-1.html" target="_blank">人群分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=301&filter=typeid&typeid=488" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：156</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li></div></div><div id="portal_block_1949" class="block move-span"><div class="blocktitle title"><span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">互联网行业</span></div><div id="portal_block_1949_content" class="dxb_bc"><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13152-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/92/927185a9a2684dda6992335068fc9caa.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP1</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13152-1-1.html" target="_blank">罗兰贝格：旅游3.0，数字化旅行变革时代中的应对之道</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+从手机屏幕中显示的二维码登机牌，到APP预定的接机专车，从利用地理定位而选定最便捷舒适的酒店，到使用手机或个人穿戴设备就能直接打开的智能房门，多种基于数字技术的旅行场景正在我们身边发生，推动着全球旅游业进入数字化变革中的3.0
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-334-1.html" target="_blank">旅游</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=334&filter=typeid&typeid=456" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：448</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13202-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/c8/c860ebe2b346a00e80af4adb7d43817a.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP2</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13202-1-1.html" target="_blank">CNNIC：2015 年农村互联网发展状况研究报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年8月，CNNIC发布《2015年农村互联网发展状况研究报告》，报告为了解农村网民上网状态与行为及农村互联网发展存在的问题，CNNIC自2007年开始发布《中国农村互联网发展状况研究报告》，引起较大社会反响。本次报告以CNNIC第37次中国互
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-333-1.html" target="_blank">农业/农产品</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=333&filter=typeid&typeid=468" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：439</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13209-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/e4/e4d4b532730f0175c55834594954e4f4.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP3</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13209-1-1.html" target="_blank">益普索视角：如何抓住年轻辣妈的心？</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+如何对中国新生代辣妈群体进行营销是众多快消与母婴品牌始终关注的一个热点。作为一个比较特殊的群体，当下的中国新妈妈群体主要为互联网时代成长起来的 85 后和 90 后，她们的媒介使用习惯与购买考虑因素呈现哪些特征？品牌应当如何应对
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-331-1.html" target="_blank">生活/居家/母婴</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=331&filter=typeid&typeid=465" target="_blank">观点洞察</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：414</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13146-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/59/59e63b7217661770ee92a3961a24b941.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP4</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13146-1-1.html" target="_blank">BCG：商业医保风口来临，险企须建设六大能力</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+《商业医保风口来临，险企须建设六大能力》(Opportunities Open Up in Chinese Private Health Insurance)由波士顿咨询公司（BCG）与慕尼黑再保险（Munich Re）联合发布。报告指出，在中产阶层与富裕人群积极寻求公共医保替代方案的驱动
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-332-1.html" target="_blank">在线医疗/健康</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=332&filter=typeid&typeid=448" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：329</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13260-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/94/94abd2193a5fc8972bdb80582f522be1.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP5</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13260-1-1.html" target="_blank">艺恩：2016VR影视行业报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+VR影视行业简析，艺恩上海分公司
+
+
+本报告主要以2015-2016（8月）时间段内，VR影视（电影、短片）作为研究主题对象进行研究分析。报告中VR视频除特殊说明，其余均特指全景视频（包括CG内容、实拍内容）。
+
+
+VR影视行业简析
+
+VR
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-67-1.html" target="_blank">视频/电影/音乐</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=67&filter=typeid&typeid=91" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：268</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13142-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/80/80a32d80b385b29f5b652008ef84b9aa.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP6</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13142-1-1.html" target="_blank">360研究院：2016年Q2游戏行业研究报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+360研究院 2016年Q2游戏行业研究报告
+
+报告导读
+人群定义：
+①	全网人群：指使用360搜索的全部人群
+②	游戏人群：指在360搜索平台上，搜索过游戏相关内容的群体
+③	游戏细分人群：指在360搜索平台游戏人群中，搜索过相关内容的群
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-278-1.html" target="_blank">游戏/手游/动漫</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=278&filter=typeid&typeid=401" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：266</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13361-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/f5/f5a6960b546b3ccc6c64340eadd92608.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP7</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13361-1-1.html" target="_blank">企鹅智酷：2016年中国移动旅游市场全数据报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+对于旅游行业而言，新的趋势正在形成：得移动者，得天下。随着移动互联网普及和支付链条的完善，越来越多的消费行为转移到移动端。而随着消费升级的加速，这一波移动浪潮的用户，也恰晗是旅游出行的高潜力人群。无论是在线旅游生态的平台
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-334-1.html" target="_blank">旅游</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=334&filter=typeid&typeid=456" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：259</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13249-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/ae/ae86015f6180f17a0ab99f5fde6868a1.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP8</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13249-1-1.html" target="_blank">艺恩网：2016年演出在线购票消费者研究报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+谁在为中国演出票买单？——演出在线购票消费者全解析
+
+
+
+演出市场概况
+自2013年中央"八项规定〃实施所带来的演出市场低潮之后,演出市场在市场导向下开始理性发展，并于2014年开始回暖,总收入在2015年突破160亿大关。在160亿演出
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-67-1.html" target="_blank">视频/电影/音乐</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=67&filter=typeid&typeid=91" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：247</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13278-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/1e/1eba6c13dffd8633e19fe8fb231c68b9.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP9</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13278-1-1.html" target="_blank">如何利用视频吸引受众关注</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+在过去的一年中，网络视频的浏览量增长达到了60%；越来越多的公关、市场从业人员开始学习使用视频，并且取得了非常好的回报。是时候认真学习如何利用视频来进行传播了！
+
+视频传播五要素
+不知道大家有没有意识到，从近几年开始，很多
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-67-1.html" target="_blank">视频/电影/音乐</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=67&filter=typeid&typeid=151" target="_blank">实用理论</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：200</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13335-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/7c/7c9233374e03bad8ee68bba6fd5791e6.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP10</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13335-1-1.html" target="_blank">易观：2016中国互联网出行产业生态图谱</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+中国互联网出行产业生态图谱2016 2016年9月
+
+中国互联网出行产业生态图谱
+
+地图导航应用将继续增强基础功能
+地图与交通数据：地图与交通数据提供商处于互联网出行产业链上游，需要获得相应资质，行业进入门槛较高。地图导航：当前
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-342-1.html" target="_blank">汽车/交通</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=342&filter=typeid&typeid=452" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：184</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13275-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/d8/d8e27013750eb97ae3f3b1a86ae000ac.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP11</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13275-1-1.html" target="_blank">36Kr：2016年医疗影像行业研究报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+近20年来：（1）我国人口总数不断增长，造成需求基量增大；（2）人口结构中，疾病高发的老龄群体持续增大，造成人均医疗需求增大；（3）人均GDP提高带来消费升级，居民需要更好、更多的医疗服务提高生活质量，也使得医学影像需求增大。由
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-332-1.html" target="_blank">在线医疗/健康</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=332&filter=typeid&typeid=448" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：177</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13324-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/d9/d974af79066fadcd8e86e5d51b6dc648.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP12</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13324-1-1.html" target="_blank">中国饭店协会：2016 中国餐饮业年度报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+《中国餐饮业年度报告》自2009 年发布以来，受到了国家商务部、各地商务主管部门、餐饮企业和新闻媒体的高度关注，已成为中国餐饮行业最真实的统计研究资料，为行业培育品牌、树立标杆和企业上市服务发挥了重大作用。本次报告共汇总了全
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-337-1.html" target="_blank">食品/餐饮</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=337&filter=typeid&typeid=476" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：172</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13338-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/de/de461312e212d896c72dcd319769e8ed.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP13</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13338-1-1.html" target="_blank">探马来报：2016上海美食餐饮行业分析</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+美食餐饮行业分析—城市篇 （上海）
+探马来报大数据出品 西安交通大学管理学院技术支持
+
+
+
+上海市餐饮行业概况
+
+上海市各行政区餐厅数量
+浦东新区餐厅数量最多，有9683家，占比21.58%;其次是闵行区，有4229家，占比9.43%，徐汇
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-337-1.html" target="_blank">食品/餐饮</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=337&filter=typeid&typeid=476" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：162</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13245-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/d2/d224b3132edd19f1066cbe7be030b5e6.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP14</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13245-1-1.html" target="_blank">盈灿咨询：2016 互联网汽车金融白皮书</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+汽车金融起源于20 世纪20 年代的美国，最早的业务模式是提供购车人的汽车销售分期贷款服务。广义的汽车金融是指在汽车的生产、流通、购买与消费环节中融通资金的金融活动；狭义的汽车金融服务是指汽车销售过程中对消费者或经销商所提供的
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-342-1.html" target="_blank">汽车/交通</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=342&filter=typeid&typeid=452" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：140</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13181-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/c4/c49d5ea69e97fe3ed174686d7ac0c0c1.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP15</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13181-1-1.html" target="_blank">FreeWheel：2016年第一季度视频行业发展趋势报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+视频行业正在经历一场变革，电视媒体和纯数字视频媒体愈发难以掌握观众行为而获取最优变现。为应对这一挑战，业内各方必须全面了解这些不断涌现且影响剧烈的变化。
+
+得益于FreeWheel始终处于高端视频经济中心的有利地位，我们能够对视
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-67-1.html" target="_blank">视频/电影/音乐</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=67&filter=typeid&typeid=91" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：130</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li></div></div><div id="portal_block_1944" class="block move-span"><div class="blocktitle title"><span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">互联网营销</span></div><div id="portal_block_1944_content" class="dxb_bc"><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13218-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/b4/b434677193bf4f784e60d54254ccd90b.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP1</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13218-1-1.html" target="_blank">国际劳工组织 ILO：2016年轻人就业详录（中国册）</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+年轻人就业详录（YEI）由多个部门共同发起制作，旨在收集世界各地有关年轻人就业措施的信息及实证。年轻人就业详录（YEI）是首套专门就年轻人就业措施的设计、执行与有效性提供比较信息的综合信息库。2015年，国际劳工组织（ILO）和中华
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-328-1.html" target="_blank">团队/人才</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=328&filter=typeid&typeid=444" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：281</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13157-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/57/572641303fa2a628fabcfbb57c49304f.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP2</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13157-1-1.html" target="_blank">RTBChina：2016中国程序化广告技术生态图</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+RTBChina：2016中国程序化广告技术生态图 China Programmatic Ad Tech Landscape
+
+RTBChina在2016年5月12日更新了《中国程序化广告技术生态图》(China Programmatic Ad Tech Landscape)，本次修正决定将SSP与Exchange类别合并，形成
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-79-1.html" target="_blank">营销管理</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=79&filter=typeid&typeid=43" target="_blank">实用理论</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：244</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13215-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/34/34f81e53fcee3c2008510f557bee6585.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP3</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13215-1-1.html" target="_blank">腾讯研究院：2016年互联网广告管理暂行办法解读</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年9月1日，随着《互联网广告管理暂行办法》即将实施，互联网广告将进入更为规范的发展阶段。《办法》是对新《广告法》的细化，也是对我国互联网广告行业发展的诸多创新的积极回应，背后体现了促进产业健康发展和消费者权益保护的平衡
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-79-1.html" target="_blank">营销管理</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=79&filter=typeid&typeid=114" target="_blank">观点洞察</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：232</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13285-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/2e/2e07aa64bc58822944b5c611db2ae500.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP4</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13285-1-1.html" target="_blank">胜三：2016年中国奢侈品、美妆及时尚行业洞察报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年8月29日，Bomoda（胜三投资企业）发布了《2016年第三季度中国奢侈品、美妆及时尚行业洞察报告》，Bomoda选出了中国所有重要社媒平台上最具影响力的 400 位博主和明星意见领袖，共为 25 个知名时尚品牌代言。 
+Bomoda 共分析了 400
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-303-1.html" target="_blank">营销分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=303&filter=typeid&typeid=436" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：217</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13226-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/ee/eee1907060aecffd674f36cf5d74574e.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP5</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13226-1-1.html" target="_blank">Insights2020——推动以客户为中心的增长</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+Insights2020该项研究是由Millward Brown Vermeer牵头，广告研究基金会（ARF）、欧洲民意与市场研究协会（ESOMAR）、LinkedIn、Kantar集团和光辉国际咨询公司（Korn Ferry）， 长江商学院，《Campaign Asia》，《成功营销》协助进行的，
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-79-1.html" target="_blank">营销管理</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=79&filter=typeid&typeid=194" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：201</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13185-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/18/182dd23c94631cddcd7d9b93abd4327e.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP6</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13185-1-1.html" target="_blank">点入移动 张雯怡：从移动广告市场占有率，看精准营销的核心价值</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+从移动广告市场占有率，看精准营销的核心价值
+
+
+
+移动广告发展趋势
+2015年，中国移动营销的市场营收规模达901.3亿元。2013-2015年，中国移动营销市场营收保持了超过160%的增长速度，艾瑞预计移动营销市场营收的增长符合移动互联网
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-79-1.html" target="_blank">营销管理</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=79&filter=typeid&typeid=160" target="_blank">案例方案</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：198</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13340-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/19/19ca1c3286fb06ee9880e3cbc8fd12a8.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP7</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13340-1-1.html" target="_blank">100EC：2016年（上）中国电子商务市场数据监测报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年9月13日，国内知名电商研究智库——中国电子商务研究中心(100EC.CN)发布《2016年(上)中国电子商务市场数据监测报告》。报告显示，2016年上半年，中国电子商务交易额达10.5万亿元，同比增长37.6%，增幅上升7.2个百分点。其中，B2B市
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-275-1.html" target="_blank">微电商</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=275&filter=typeid&typeid=391" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：197</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13280-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/56/56b5b107012515e71c69512b7d0ea305.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP8</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13280-1-1.html" target="_blank">2016年中国网民科普需求搜索行为报告（第一季度）</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+当今世界，以数字化、网络化、智能化为标志的信息技术革命日新月异，互联网日益成为创新驱动发展的先导力量，深刻改变着人们的生产生活，有力推动着社会发展，对国际政治、经济、文化、社会等领域发展产生深刻影响。截至2015 年12 月，我
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-44-1.html" target="_blank">搜索引擎(SEO)</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=44&filter=typeid&typeid=9" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：182</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13295-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/0a/0a4cd8c62651f0bf36adfe906da94291.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP9</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13295-1-1.html" target="_blank">Sizmek：2016中国数字广告可见性白皮书</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+前言：
+真正走在行业的前沿，需要对专业的持久专注，承担更深远的市场教育责任，进而推动行业向前。继2015年10月Sizmek发布中国第一份数字广告可见性的白皮书和基准报告之后，籍此次2016中国可见性基准报告的发布，与中国数字广告行业同
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-303-1.html" target="_blank">营销分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=303&filter=typeid&typeid=436" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：182</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13147-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/8b/8b4ad253704fcb70743de02e72091d76.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP10</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13147-1-1.html" target="_blank">很快：2016年中国微商行业市场研究报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+中国微商市场研究报告 2016年
+
+微商定义
+狭义：单指在微信朋友圈进行宣传售卖的商家。
+广义：微商是基于微信生态的社会化分销模式，它是企业或者个人基于社会化媒体开店的新型电商，也称社交化电商。从模式上来说主要分为两种：基
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-275-1.html" target="_blank">微电商</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=275&filter=typeid&typeid=391" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：171</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13349-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/a6/a6dc73f297e3ee52978f1fd78af8825d.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP11</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13349-1-1.html" target="_blank">新意互动：汽车品牌2016里约奥运营销先锋盘点</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+全球车企如何玩转奥运营销大考,汽车品牌2016里约奥运营销先锋盘点
+
+
+有人说奥运会如同营销的狂欢节，用好了这一机会，可大大助力品牌传播，培育用户品牌认知度和好感度；也有人说奥运会更像营销的黑洞，大部分营销投入及用户注意力
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-79-1.html" target="_blank">营销管理</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=79&filter=typeid&typeid=194" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：159</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13327-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/8d/8d0c53b9deb17d56e5b780eddc5b7cfb.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP12</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13327-1-1.html" target="_blank">GrowingIO：企业服务行业数据驱动四个关键体系</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+企业服务行业数据驱动四个关键体系，GrowingIO 揭发2016 年9 月
+为什么SAAS 如此独特，典型场景下，一个客户的现金流
+续约是重中之重
+企业服务数据驱动的重要性
+[*]获客成本相对较高
+[*]ARPA( Average Revue Per Account ) 值高
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-303-1.html" target="_blank">营销分析</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=303&filter=typeid&typeid=439" target="_blank">实用理论</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：151</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13273-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/bf/bfb14eab5a9fc928b6bfe6c3e97a9a74.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP13</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13273-1-1.html" target="_blank">世贸组织：2015世界贸易报告（完整版）</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+WTO发布《2015年世界贸易报告》（WORLD TRADE REPORT 2015）。对此，WTO总干事表示，2015年的报告侧重于实施WTO《贸易便利化协定》（TFA）的收益和挑战。该协定于2013年12月第九次部长级会议上达成。 
+《贸易便利化协定》旨在标准化、简
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-273-1.html" target="_blank">跨境电商</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=273&filter=typeid&typeid=355" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：135</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13204-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/92/9236bd5b1738747bcf0694bc7ebcb037.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP14</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13204-1-1.html" target="_blank">德勤：2016年保险行业高管薪酬暨长期激励现状及趋势研究报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+德勤对境内、外领先保险公司的高管薪酬和长期激励实践进行了深度调研，汇总保险行业上市公司高管薪酬变化趋势，总结保险行业长期激励典型实践。基于4家外资保险企业高管薪酬和长期激励实践、8家内资A股上市/H股上市保险企业总人工成本和
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-328-1.html" target="_blank">团队/人才</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=328&filter=typeid&typeid=444" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：118</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13297-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/dc/dc29ce406f288504ee23a720627ad390.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP15</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13297-1-1.html" target="_blank">一张图读懂：跨境电商的9大运营模式</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+一张图读懂：跨境电商的9大运营模式
+
+[*]平台模式，电商将第三方商家引入平台，提供商品服务，轻资产模式，收入仅靠佣金，第三方商家品质难以保障。
+[*]自台+平台模式，一部分采取自营，一部分允许商家入驻，供应链管理能力强，对爆
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-273-1.html" target="_blank">跨境电商</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=273&filter=typeid&typeid=353" target="_blank">实用理论</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：104</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li></div></div><div id="portal_block_1945" class="block move-span"><div class="blocktitle title"><span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">互联网平台</span></div><div id="portal_block_1945_content" class="dxb_bc"><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13205-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/1c/1cde401491471af137f02ac4e9cd42bf.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP1</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13205-1-1.html" target="_blank">易观&amp;京东：2016京东超市购发展白皮书</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+中国网上超市消费者行为专题研究报告2016 2016年8月
+——京东超市购发展白皮书
+
+
+本报告研究的对象为中国大陆所有使用PC端、移动智能终端的用户，不包含港澳台地区用户
+
+关键发现
+新世代是网络超市购的主要人群&#8226;新世代是
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-125-1.html" target="_blank">京东</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=125&filter=typeid&typeid=212" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：516</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13232-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/26/26f771b57051bf0421429f3d31b3e876.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP2</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13232-1-1.html" target="_blank">阿里研究院：2016中国跨境电商发展报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年9月1日，阿里研究院在北京发布了G20主题新经济系列研究报告，包括《读懂G20四大主题：洞悉数据时代经济发展动向》和《贸易的未来：跨境电商连接世界——2016中国跨境电商发展报告》。在G20 峰会即将召开之际，这两份重磅研究成果再
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-51-1.html" target="_blank">阿里/淘宝</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=51&filter=typeid&typeid=201" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：489</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13154-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/17/172670c37a741c22de845a28ee6257f5.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP3</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13154-1-1.html" target="_blank">李星：玩转大数据，助力京东618</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+京东POP平台部商家生态负责人李星毅在以“解读618：数据运营背后的思维战争”为主题的北京亿邦疯人会上发表演讲，他在演讲中从技术，采销，营销，物流，商家这五个方面详细讲解了京东如何运用数据实现精准营销以及如何通过应用场景运用数
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-125-1.html" target="_blank">京东</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=125&filter=typeid&typeid=212" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：258</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13224-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/d0/d0bffb83e97307bdff19d8f8be6d60bb.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP4</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13224-1-1.html" target="_blank">公众号案例：微信企业号与车商CRM</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+微信企业号与车商CRM
+
+移动互联时代已经到来
+
+2015年，中国互联网百强出炉：百度、阿里、腾讯位列前三
+
+三巨头的移动互联网
+
+那么，移动互联网的本质是什么？
+
+
+移动互联网的信息传递特性
+
+移动CRM的基础已经打下
+
+[*]
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-66-1.html" target="_blank">微信/QQ</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=66&filter=typeid&typeid=134" target="_blank">案例方案</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：242</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13350-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/cd/cd1c35748f1108030749f41e53ed4abf.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP5</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13350-1-1.html" target="_blank">Google：2016时尚趋势报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+近日， Google 发布 2016 年有关「时尚服饰」的数据报告(Fashion Trends 2016)，整合 2014 至 2016 年间，用户搜寻有关时装的纪录，再分析本年度的时尚趋势！拥有数以亿计的用户，相信 Google 的时尚数据，会是最有公信力的潮流指标。基
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-321-1.html" target="_blank">Goolge</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=321&filter=typeid&typeid=428" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：233</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13153-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/86/86b7bb9f3a35c190ba4113825703b871.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP6</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13153-1-1.html" target="_blank">邓景宏：亚马逊物流+VP，高效物流助力跨境电商生态重构</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+高效物流助力跨境电商生态重构
+邓景宏 亚马逊全球物流中国销售副总裁
+
+
+关于亚马逊
+
+[*]1995年7月成立，总部位于美国西雅图
+[*]全球活跃用户约为 3.04亿
+[*]2015年财富世界500强公司 第88位
+[*]2016年财富全球最受赞赏公司 第
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-296-1.html" target="_blank">亚马逊</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=296&filter=typeid&typeid=421" target="_blank">观点洞察</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：227</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13311-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/90/90267e4494544ef39c8b2a45c3ee2fbf.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP7</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13311-1-1.html" target="_blank">Facebook深度研究报告（85页）</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+Facebook深度研究报告 要的：
+
+[*]Facebook是全球最大的社交网络平台以及第二大的在线广告公司。本篇报告详细分析了Facebook各项业务以及未来重要的战略要点。
+[*]我们认为Facebook凭借庞大的用户全体，完整的社交生态系统，以及精准
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-322-1.html" target="_blank">Facebook</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=322&filter=typeid&typeid=424" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：217</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13289-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/eb/eb28f80a8903764a7563f52e453738aa.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP8</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13289-1-1.html" target="_blank">阿里研究院：2016年返乡电商创业研究报告</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年9月6日，由阿里巴巴集团主办的“新农业·新乡村——农业电子商务论坛”在苏州举办，约600名新农人、政府代表参与了本次论坛。会上，阿里研究院发布了国内首份返乡电商创业研究报告。报告指出，返乡电商创业正在成为一种新的潮流，
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-51-1.html" target="_blank">阿里/淘宝</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=51&filter=typeid&typeid=201" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：188</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13233-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/1b/1b1ce06d67879cdb7db5edb22ecea208.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP9</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13233-1-1.html" target="_blank">阿里研究院：读懂G20四大主题，洞悉数据时代经济发展动向</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+报告目录：
+1.创新：商业社会将迎来颠覆式变革
+1.1 云平台一数据时代创新的技术基石
+1.2 开放式创新一数据时代企业创新的主导模式
+1.3 C2B—数据时代创新的商业范式
+2.活力：消费升级迎来黄金年代
+2.1 2020年中国将出现6100万互联
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-51-1.html" target="_blank">阿里/淘宝</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=51&filter=typeid&typeid=182" target="_blank">观点洞察</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：187</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13332-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/ae/ae36d91e5f62b2b5fcbdff59ad404fda.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP10</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13332-1-1.html" target="_blank">Facebook：2016年跨境业务手册</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年9月11日，全球最大的网络社交平台Facebook发布了《2016年跨境业务手册》报告(Cross-Border Business Handbook)。Facebook的使命是“连接世界”，同时也帮助企业和客户之间建立“联结”。
+通过这份64页全球性报告，你可以获得10个
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-322-1.html" target="_blank">Facebook</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=322&filter=typeid&typeid=424" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：187</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13221-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/a3/a3f293ca63e45855f8163dfcd112708c.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP11</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13221-1-1.html" target="_blank">天猫推荐算法团队：个性化的天猫</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+个性化的天猫 张奇（得福） 天猫推荐算法团队
+
+
+张奇
+
+[*]中国科学技术大学，本科（2005），博士（2010），方向：信息检索
+[*]2010年-2012年，阿里云搜索与广告团队
+[*]2012年-现在，天猫推荐算法团队(10个人、15@7月)
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-51-1.html" target="_blank">阿里/淘宝</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=51&filter=typeid&typeid=183" target="_blank">案例方案</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：126</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13310-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/4f/4f07a738a71a80519d0dc53f956fef0f.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP12</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13310-1-1.html" target="_blank">百度地图开放平台：基于LBS云的海量位置数据存储和检索实现</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+张鑫是百度高级研发工程师，目前是百度开放平台LBS云方向的技术负责人，主要负责LBS云存储云检索的架构优化和RGC（逆地理编码）的系统架构优化产品布局，主导了百度RGC效果性能优化项目，项目获得百度创新奖。重新设计优化了云存储基础
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-323-1.html" target="_blank">Baidu</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=323&filter=typeid&typeid=434" target="_blank">案例方案</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：120</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13254-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/33/331df82edd8de8456bdcba7d9f7decc6.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP13</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13254-1-1.html" target="_blank">百度 DBA 王剑英：百度数据库变更发布系统</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+随着百度重点投入 O2O 业务，百度糯米、钱包面对的流量日益增长。如何打造一个高效的数据库系统架构来应对交易支付类型的负载，成为百度 DBA 团队面对的一个新挑战。本次分享将向大家介绍百度 DBA 团队如何以 MySQL 为中心，通过一套高效
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-323-1.html" target="_blank">Baidu</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=323&filter=typeid&typeid=434" target="_blank">案例方案</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：104</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13294-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/7a/7a1e341659bbe56fba486a6575e90cc2.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP14</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13294-1-1.html" target="_blank">新浪微博：2016年6月电影微博月报</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+在微博中进行电影推广和传播已在近两年成为电影营销的重要手段，电影自身的话题性和故事性在微博中往往成为用户讨论和分享的关键内容。为此，微博数据中心特撰写本报告，对电影的热议度、热搜度、电影评分及其与电影票房的关系予以分析和
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-272-1.html" target="_blank">微博</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=272&filter=typeid&typeid=370" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：80</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13408-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/13/1368e0680d851b7a784ea08f8b4c2dd8.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP15</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13408-1-1.html" target="_blank">中国电子商务研究中心：京东“五环”战略生态图</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+2016年9月19日，电商门户、国内“互联网+”智库中国电子商务研究中心(100EC.CN)正式推出生态型电商案例系列四——“京东‘五环’战略生态——中国电子商务研究中心走进京东集团”专题，对京东(JD)进行全面剖析，通过动态、研究、生态图、
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-125-1.html" target="_blank">京东</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=125&filter=typeid&typeid=225" target="_blank">观点洞察</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：52</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li></div></div><div id="portal_block_1947" class="block move-span"><div class="blocktitle title"><span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">互联网技术</span></div><div id="portal_block_1947_content" class="dxb_bc"><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13162-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/9d/9dbaf3cbdb13fa1a18b6c7c17b0e5bee.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP1</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13162-1-1.html" target="_blank">滴滴出行：用数据驱动滴滴产品决策</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+三年时间，滴滴出行已经是一个日成交订单过千万的 App，为了降低运营开销和成本，在产品体验上持续打磨成为我们的重点，每一个 feature 上线的决策也从产品经理单纯拍脑袋转变为用数据事实说话。这次 QCon，我们想为大家分享滴滴基于数据
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-292-1.html" target="_blank">产品经理</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=292&filter=typeid&typeid=418" target="_blank">案例方案</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：300</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13199-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/89/89198c124f0e8c2c856cfc1bcc4a959e.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP2</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13199-1-1.html" target="_blank">腾讯云品牌书（Tencent Cloud Brand Book）</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+本规范手册包含的品牌基本原则和使用案例，通过基本标志、品牌色、图形设计以及图像排版风格，以保持“腾讯云”的品牌视觉识别统一性。本手册将呈现品牌所有的关键视觉元素以及系统地告诉大家如何在各个应用和物料上正确和统一地使用它们
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-290-1.html" target="_blank">UI视觉美工</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=290&filter=typeid&typeid=410" target="_blank">案例方案</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：163</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13200-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/29/29a4f0df36e20595649ec04d58d41699.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP3</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13200-1-1.html" target="_blank">天天P图品牌书（Pitu Brand Book）</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+本规范手册包含的品牌基本原则和使用案例，通过基本标志、品牌色、图形设计以及图像排版风格，以保持“天天P图”的品牌视觉识别统一性。本手册将呈现品牌所有的关键视觉元素以及系统地告诉大家如何在各个应用和物料上正确和统一地使用它
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-290-1.html" target="_blank">UI视觉美工</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=290&filter=typeid&typeid=410" target="_blank">案例方案</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：140</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13197-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/0e/0e11e0abe4b635da2871bbacb2d7efb2.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP4</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13197-1-1.html" target="_blank">QQ品牌手册（QQ Brand Book）</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+本规范手册包含的品牌基本原则和使用案例，通过基本标志、品牌色、图形设计以及图像排版风格，以保持“腾讯QQ”的品牌视觉识别统一性。本手册将呈现品牌所有的关键视觉元素以及系统地告诉大家如何在各个应用和物料上正确和统一地使用它们
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-290-1.html" target="_blank">UI视觉美工</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=290&filter=typeid&typeid=408" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：138</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13198-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/7a/7aa4211b4b0dfb44e48facc4f4f339f0.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP5</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13198-1-1.html" target="_blank">QQ 空间品牌书(Qzone Brand Book)</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+本规范手册包含的品牌基本原则和使用案例，通过基本标志、品牌色、图形设计以及图像排版风格，以保持“QQ空间”的品牌视觉识别统一性。本手册将呈现品牌所有的关键视觉元素以及系统地告诉大家如何在各个应用和物料上正确和统一地使用它们
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-290-1.html" target="_blank">UI视觉美工</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=290&filter=typeid&typeid=410" target="_blank">案例方案</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：117</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13287-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/20/2056cda59ed73ca21534263e3085c8d0.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP6</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13287-1-1.html" target="_blank">TestBird：2016上半年APP测试白皮书</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+《2016上半年APP测试白皮书》（以下简称"白皮书"）一共采集了20806款APP数据，是TestBird第一期关于APP行业的白皮书，该白皮书将结合TestBird从2014年来定期发布的手游行业白皮书经验，同时在内容上做了针对性的改动和创新。
+
+首先，对
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-292-1.html" target="_blank">产品经理</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=292&filter=typeid&typeid=416" target="_blank">数据报告</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：111</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13220-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/04/041a4ac78b874779d9b598cb0a9af5d0.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP7</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13220-1-1.html" target="_blank">蔡立勋：21CN前端开发团队之发展史</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+21CN前端开发团队之发展史 蔡立勋
+
+
+目录
+
+[*]21CN前端概况
+[*]实践经验与心得
+[*]前端发展展望
+
+
+
+21CN公司简介
+是一个拥有超过十年互联网从业经验的国有企业，是中国电信集团下属的全资子公司，也是中国电信旗下最具媒体
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-292-1.html" target="_blank">产品经理</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=292&filter=typeid&typeid=418" target="_blank">案例方案</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：107</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13290-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/7a/7a6e712923f62cd6e6a044feb4a33807.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP8</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13290-1-1.html" target="_blank">大规模机器学习在蚂蚁+阿里的应用</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+大规模机器学习在蚂蚁+阿里的应用
+蚂蚁金服-人工智能部 西亭
+
+
+
+设计理念
+
+Big Data Era
+
+Big Data Era—how to use data?
+用户在不同场景下有不同的相应，结合这些数据，通过机器学习得到模型，然后进行智能决策（个性化推
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-292-1.html" target="_blank">产品经理</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=292&filter=typeid&typeid=418" target="_blank">案例方案</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：98</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13255-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/70/7009f9c5a0d90bf6b82296ad448bacb6.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP9</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13255-1-1.html" target="_blank">ThoughtWorks 刘庆华：内建安全的软件开发</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+近年来，国内外互联网安全事件层出不穷，惨痛的教训让大家越来越重视安全，其中应用本身的安全性是极其重要的一部分。虽然企业已经采取了一些安全措施，然而大多数做法都存在或多或少的问题，主要表现在安全问题反馈周期太长，反馈速度慢
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-292-1.html" target="_blank">产品经理</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=292&filter=typeid&typeid=418" target="_blank">案例方案</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：95</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13360-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/c6/c6629db7c626664faa5b0c34e906d7cd.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP10</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13360-1-1.html" target="_blank">张小亮：阿里集团CDN架构介绍</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+阿里集团CDN架构介绍 阿里集团技术保障部 集团CDN运维负责人
+张小亮（空明）
+
+
+提纲
+&#8226;CDN概述
+&#8226;阿里CDN架构
+&#8226;阿里CDN上的应用
+&#8226;阿里CDN云展望
+
+
+什么是CDN？
+&#8226;互联网上的“特快专递”
+&#82
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-292-1.html" target="_blank">产品经理</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=292&filter=typeid&typeid=418" target="_blank">案例方案</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：48</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13359-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/84/84e20e49845e7857ee605fd98ad65e4f.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP11</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13359-1-1.html" target="_blank">马鑫：前端性能统计与优化</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+前端性能统计与优化 马鑫
+
+
+
+[*]为什么做这件事情
+[*]前端性能指标
+[*]如何统计与优化
+
+
+
+原因：页面速度影响用户体验，我们要不断加强用户体验。
+
+为什么做这件事情
+
+[*]亚马逊：加载时间每增加100MS，就会减少1%的销售
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-292-1.html" target="_blank">产品经理</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=292&filter=typeid&typeid=418" target="_blank">案例方案</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：47</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13396-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/0d/0d5cf9d1e526f3ae7d4ef3b992c4571d.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP12</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13396-1-1.html" target="_blank">张丹：如何用R语言做量化分析</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+如何用R语言做量化分析
+张丹，《R的极客理想》系列图书作者
+
+
+R语言适合做量化分析的5个理由
+
+
+1.R语言是统计语言，对数学计算和统计计算有良好的支持。
+2.R语言是面向数据的，金融玩的就是数据。
+3.R语言有完善第三方包体系
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-292-1.html" target="_blank">产品经理</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=292&filter=typeid&typeid=418" target="_blank">案例方案</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：29</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li><li class=" bgfff top15 ">
+    <div class="deanarticec">
+        <div class="deanarticel">
+        	<a href="http://www.useit.com.cn/thread-13417-1-1.html" target="_blank"><img src="http://data.useit.com.cn/useitdata/block/57/572bf101bb2b4d72678cb73775ad7a03.jpg" width="320" height="230" /></a>
+        </div>
+        <div class="deanarticer">
+        	<div class="deanarticername"><div class="top"><span class="font">TOP13</span><span class="tri"></span></div> <a href="http://www.useit.com.cn/thread-13417-1-1.html" target="_blank">信息图：如何撰写一份靠谱的立项报告（可行性报告）</a></div>
+        	<div class="clear"></div>
+        	<div class="deanboxrsummary">
+信息图：如何撰写一份靠谱的立项报告（可行性报告）
+
+
+[*]背景介绍：此项主要介绍行业趋势，社会背景，以及政策背景之类的，重点在于说明行业发展，行政许可以及用户行为趋势等导致的该项目能不能做，符合不符合整体发展趋势。
+[*]
+......</div>
+        	<div class="deanarticertag">
+            	<div class="deanarticerforum">板块：<a href="http://www.useit.com.cn/forum-292-1.html" target="_blank">产品经理</a> 类型：<a href="http://www.useit.com.cn/forum.php?mod=forumdisplay&fid=292&filter=typeid&typeid=419" target="_blank">实用理论</a> </div> 
+                <div class="deanarticerauthor"><span>浏览量：0</span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="clear"></div>
+   	 	
+    </div>
+</li></div></div><div id="portal_block_1946" class="block move-span"><div id="portal_block_1946_content" class="dxb_bc"><div class="module cl xl xl1">
+<ul><li><a href="http://www.useit.com.cn/thread-13424-1-1.html" title="探马来报：2016年北京美食餐饮行业分析" target="_blank">探马来报：2016年北京美食餐饮行业分析</a></li><li><a href="http://www.useit.com.cn/thread-13423-1-1.html" title="胡润研究院：2016胡润品牌榜（附榜单）" target="_blank">胡润研究院：2016胡润品牌榜（附榜单）</a></li><li><a href="http://www.useit.com.cn/thread-13422-1-1.html" title="中国信通院：2016年(二季度)国内移动互联网市场运行分析报告" target="_blank">中国信通院：2016年(二季度)国内移动互联网</a></li><li><a href="http://www.useit.com.cn/thread-13421-1-1.html" title="新浪微博数据中心：2016年直播行业洞察报告" target="_blank">新浪微博数据中心：2016年直播行业洞察报告</a></li><li><a href="http://www.useit.com.cn/thread-13420-1-1.html" title="米尔肯研究所：2016年中国最佳表现城市（附排名）" target="_blank">米尔肯研究所：2016年中国最佳表现城市（附</a></li><li><a href="http://www.useit.com.cn/thread-13419-1-1.html" title="艾媒：2016(上半年)中国在线直播市场研究报告" target="_blank">艾媒：2016(上半年)中国在线直播市场研究报</a></li><li><a href="http://www.useit.com.cn/thread-13418-1-1.html" title="腾讯研究院：2016互联网创新创业白皮书" target="_blank">腾讯研究院：2016互联网创新创业白皮书</a></li><li><a href="http://www.useit.com.cn/thread-11505-1-1.html" title="易观智库：2016年主流消费人群六大标签与互联网行业变化分析" target="_blank">易观智库：2016年主流消费人群六大标签与互</a></li><li><a href="http://www.useit.com.cn/thread-11991-1-1.html" title="ThoughtWorks：从1到100，设计思维提升产品体验" target="_blank">ThoughtWorks：从1到100，设计思维提升产品</a></li><li><a href="http://www.useit.com.cn/thread-13413-1-1.html" title="知而行 孔宇：零售业大数据创新应用" target="_blank">知而行 孔宇：零售业大数据创新应用</a></li></ul>
+</div></div></div></div><div id="tabHQqaIq_content" class="tb-c"></div><script type="text/javascript">initTab("tabHQqaIq","click");</script></div><div id="framekZMQCQ" class="cl_frame_bm frame move-span cl frame-1"><div id="framekZMQCQ_left" class="column frame-1-c"><div id="framekZMQCQ_left_temp" class="move-span temp"></div></div></div></div><!--[/diy]--></ul></div>
+        </div>
+        <div class="clear"></div>
+  </div>
+<div class="deanpartr">
+
+<div class="deanmember h30 bgfff">
+        	<div class="deantitle"><span>知识精选，每周推荐</span><a href="http://dy.useit.com.cn/" target="_blank" title="Useit订阅中心"></a><div class="clear"></div></div>
+<div class="clear"></div>
+<div class="deanmore yahei"><a href="http://dy.useit.com.cn/weixin/" target="_blank">微信订阅 &gt;&gt; </a> <a href="http://dy.useit.com.cn/subscribe/" target="_blank">邮件订阅 &gt;&gt;</a><a href="http://dy.useit.com.cn/" target="_blank">历史</a></div>
+            <div>
+<script src="http://www.useit.com.cn/api.php?mod=js&bid=1941" type="text/javascript"></script>
+</div>
+        </div>
+
+
+    	<div class="deanmember h30 bgfff">
+        	<div class="deantitle"><span>热门知识</span><a href="http://www.useit.com.cn/forum.php" target="_blank" title="Useit知识板块"></a><div class="clear"></div></div>
+            <div class="clear"></div>
+
+            <ul><!--[diy=diydeanhd]--><div id="diydeanhd" class="area"><div id="frameU34CPT" class=" frame move-span cl frame-1"><div id="frameU34CPT_left" class="column frame-1-c"><div id="frameU34CPT_left_temp" class="move-span temp"></div><div id="portal_block_1948" class="block move-span"><div id="portal_block_1948_content" class="dxb_bc"><div class="module cl xl xl1">
+<ol><li><em>共有：72篇</em><a href="http://www.useit.com.cn/forum-331-1.html" title="生活/居家/母婴" target="_blank">生活/居家/母婴</a></li><li><em>共有：111篇</em><a href="http://www.useit.com.cn/forum-342-1.html" title="汽车/交通" target="_blank">汽车/交通</a></li><li><em>共有：70篇</em><a href="http://www.useit.com.cn/forum-298-1.html" title="客户管理" target="_blank">客户管理</a></li><li><em>共有：166篇</em><a href="http://www.useit.com.cn/forum-127-1.html" title="O2O" target="_blank">O2O</a></li><li><em>共有：268篇</em><a href="http://www.useit.com.cn/forum-55-1.html" title="用户分析" target="_blank">用户分析</a></li><li><em>共有：567篇</em><a href="http://www.useit.com.cn/forum-51-1.html" title="阿里/淘宝" target="_blank">阿里/淘宝</a></li><li><em>共有：572篇</em><a href="http://www.useit.com.cn/forum-272-1.html" title="微博" target="_blank">微博</a></li><li><em>共有：171篇</em><a href="http://www.useit.com.cn/forum-334-1.html" title="旅游" target="_blank">旅游</a></li><li><em>共有：127篇</em><a href="http://www.useit.com.cn/forum-303-1.html" title="营销分析" target="_blank">营销分析</a></li><li><em>共有：604篇</em><a href="http://www.useit.com.cn/forum-131-1.html" title="新媒体" target="_blank">新媒体</a></li><li><em>共有：566篇</em><a href="http://www.useit.com.cn/forum-101-1.html" title="品牌分析" target="_blank">品牌分析</a></li><li><em>共有：198篇</em><a href="http://www.useit.com.cn/forum-278-1.html" title="游戏/手游/动漫" target="_blank">游戏/手游/动漫</a></li><li><em>共有：143篇</em><a href="http://www.useit.com.cn/forum-286-1.html" title="互联网思维" target="_blank">互联网思维</a></li><li><em>共有：291篇</em><a href="http://www.useit.com.cn/forum-299-1.html" title="趋势分析" target="_blank">趋势分析</a></li><li><em>共有：16篇</em><a href="http://www.useit.com.cn/forum-339-1.html" title="其他" target="_blank">其他</a></li></ol>
+</div></div></div></div></div></div><!--[/diy]--></ul>
+            <div class="clear"></div>
+            <div class="deanmore yahei"><a href="http://www.useit.com.cn/forum.php" target="_blank">所有板块&gt;&gt;</a></div>
+        </div>
+        <div class="clear"></div>
+
+
+
+        <div class="deanmember h30 bgfff">
+        	<div class="deantitle"><span>广告</span></div>
+            <div class="deanmemberc h30">
+<script type="text/javascript">
+    /*知识库首页_广告招租-嵌入式_300*250-图片*/
+    var cpro_id = "u2341537";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript" type="text/javascript"></script>
+
+</div>
+        </div>
+        
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="clear"></div>	</div>
+<div class="wp a_f"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+
+<script type="text/javascript">
+    /*useit首页-PC版本-468*60-尾部广告*/
+    var cpro_id = "u2235688";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+	
+
+</td>
+    <td align="center">
+	
+<script type="text/javascript">
+    /*useit首页-PC版本-468*60-尾部广告*/
+    var cpro_id = "u2235688";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+
+</td>
+  </tr>
+</table>
+</div>
+
+
+<div id="ft" class="wp cl">
+<div id="flk" class="y">
+<p>
+<a href="misc.php?mod=faq" target="_blank" >帮助中心</a><span class="pipe">|</span><a href="misc.php?mod=faq&action=faq&id=3" target="_blank" >关于我们</a><span class="pipe">|</span><a href="misc.php?mod=faq&action=faq&id=7" target="_blank" >注册协议</a><span class="pipe">|</span><a href="misc.php?mod=faq&action=faq&id=15" target="_blank" >投诉指引</a><span class="pipe">|</span><a href="misc.php?mod=faq&action=faq&id=1" target="_blank" >获取积分</a><span class="pipe">|</span><a href="misc.php?mod=faq&action=faq&id=25" target="_blank" >作者权益</a><span class="pipe">|</span><a href="misc.php?mod=faq&action=faq&id=26" target="_blank" >下载须知</a><span class="pipe">|</span><a href="misc.php?mod=faq&action=faq&id=9" target="_blank" >联系我们</a><span class="pipe">|</span><a href="#" title="鄂ICP备13013806号-1" >鄂ICP备13013806号-1</a><span class="pipe">|</span><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011202000160" title="鄂公网安备 42011202000160号" target="_blank" >鄂公网安备 42011202000160号</a><span class="pipe">|</span><a href="http://m.useit.com.cn" >手机版</a><span class="pipe">|</span><strong><a href="http://www.useit.com.cn" target="_blank">USEIT Inc.</a></strong>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?1578cb37907376e18354c34847e65d60";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script></p>
+<p class="xs0"> 
+GMT+8, 2016-9-23 09:56<span id="debuginfo">
+, Processed in 0.187726 second(s), 8 queries
+, Gzip On, Memcache On.
+</span>			</p>
+</div>
+<div id="frt">
+</div></div>
+<script src="home.php?mod=misc&ac=sendmail&rand=1474595790" type="text/javascript"></script>
+<div id="scrolltop">
+<span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa" ><b>返回顶部</b></a></span>
+</div>
+<script type="text/javascript">_attachEvent(window, 'scroll', function () { showTopLink(); });checkBlind();</script>
+			<div id="discuz_tips" style="display:none;"></div>
+			<script type="text/javascript">
+				var tipsinfo = '9923171|X3.2|0.6||0||0|7|1474595790|fa44ceba8e18f0b8a620aaaa3147cc28|2';
+			</script>
+			<script src="http://discuz.gtimg.cn/cloud/scripts/discuz_tips.js?v=1" type="text/javascript" charset="UTF-8"></script></body>
+</html>

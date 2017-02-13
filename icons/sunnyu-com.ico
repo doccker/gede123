@@ -1,0 +1,811 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="verify-v1" content="y+rk55TNd65w3HMKOweZ26e6jSgECVwZUeRExGiwVQ8=" />
+<meta name="distribution" content="global" />
+<meta name="robots" content="follow, all" />
+<meta name="language" content="en, sv" />
+
+<title> sunnyu</title>
+<meta name="generator" content="WordPress 3.0.1" />
+<!-- leave this for stats please -->
+
+<link rel="Shortcut Icon" href="http://www.sunnyu.com/wp-content/themes/silhouette/images/favicon.ico" type="image/x-icon" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.sunnyu.com/?feed=rss2" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="http://www.sunnyu.com/?feed=rss" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://www.sunnyu.com/?feed=atom" />
+<link rel="pingback" href="http://www.sunnyu.com/wordpress/xmlrpc.php" />
+	<link rel='archives' title='August 2015' href='http://www.sunnyu.com/?m=201508' />
+	<link rel='archives' title='July 2015' href='http://www.sunnyu.com/?m=201507' />
+	<link rel='archives' title='June 2015' href='http://www.sunnyu.com/?m=201506' />
+	<link rel='archives' title='May 2015' href='http://www.sunnyu.com/?m=201505' />
+	<link rel='archives' title='April 2015' href='http://www.sunnyu.com/?m=201504' />
+	<link rel='archives' title='December 2014' href='http://www.sunnyu.com/?m=201412' />
+	<link rel='archives' title='November 2014' href='http://www.sunnyu.com/?m=201411' />
+	<link rel='archives' title='September 2014' href='http://www.sunnyu.com/?m=201409' />
+	<link rel='archives' title='June 2014' href='http://www.sunnyu.com/?m=201406' />
+	<link rel='archives' title='May 2014' href='http://www.sunnyu.com/?m=201405' />
+	<link rel='archives' title='April 2014' href='http://www.sunnyu.com/?m=201404' />
+	<link rel='archives' title='January 2014' href='http://www.sunnyu.com/?m=201401' />
+	<link rel='archives' title='December 2013' href='http://www.sunnyu.com/?m=201312' />
+	<link rel='archives' title='November 2013' href='http://www.sunnyu.com/?m=201311' />
+	<link rel='archives' title='September 2013' href='http://www.sunnyu.com/?m=201309' />
+	<link rel='archives' title='June 2013' href='http://www.sunnyu.com/?m=201306' />
+	<link rel='archives' title='May 2013' href='http://www.sunnyu.com/?m=201305' />
+	<link rel='archives' title='November 2012' href='http://www.sunnyu.com/?m=201211' />
+	<link rel='archives' title='September 2012' href='http://www.sunnyu.com/?m=201209' />
+	<link rel='archives' title='August 2012' href='http://www.sunnyu.com/?m=201208' />
+	<link rel='archives' title='May 2012' href='http://www.sunnyu.com/?m=201205' />
+	<link rel='archives' title='April 2012' href='http://www.sunnyu.com/?m=201204' />
+	<link rel='archives' title='February 2012' href='http://www.sunnyu.com/?m=201202' />
+	<link rel='archives' title='January 2012' href='http://www.sunnyu.com/?m=201201' />
+	<link rel='archives' title='August 2011' href='http://www.sunnyu.com/?m=201108' />
+	<link rel='archives' title='March 2011' href='http://www.sunnyu.com/?m=201103' />
+	<link rel='archives' title='February 2011' href='http://www.sunnyu.com/?m=201102' />
+	<link rel='archives' title='November 2010' href='http://www.sunnyu.com/?m=201011' />
+	<link rel='archives' title='September 2010' href='http://www.sunnyu.com/?m=201009' />
+	<link rel='archives' title='August 2010' href='http://www.sunnyu.com/?m=201008' />
+	<link rel='archives' title='May 2010' href='http://www.sunnyu.com/?m=201005' />
+	<link rel='archives' title='April 2010' href='http://www.sunnyu.com/?m=201004' />
+	<link rel='archives' title='March 2010' href='http://www.sunnyu.com/?m=201003' />
+	<link rel='archives' title='February 2010' href='http://www.sunnyu.com/?m=201002' />
+	<link rel='archives' title='January 2010' href='http://www.sunnyu.com/?m=201001' />
+	<link rel='archives' title='December 2009' href='http://www.sunnyu.com/?m=200912' />
+	<link rel='archives' title='September 2009' href='http://www.sunnyu.com/?m=200909' />
+	<link rel='archives' title='August 2009' href='http://www.sunnyu.com/?m=200908' />
+	<link rel='archives' title='June 2009' href='http://www.sunnyu.com/?m=200906' />
+	<link rel='archives' title='May 2009' href='http://www.sunnyu.com/?m=200905' />
+	<link rel='archives' title='April 2009' href='http://www.sunnyu.com/?m=200904' />
+	<link rel='archives' title='March 2009' href='http://www.sunnyu.com/?m=200903' />
+	<link rel='archives' title='February 2009' href='http://www.sunnyu.com/?m=200902' />
+	<link rel='archives' title='January 2009' href='http://www.sunnyu.com/?m=200901' />
+	<link rel='archives' title='December 2008' href='http://www.sunnyu.com/?m=200812' />
+	<link rel='archives' title='November 2008' href='http://www.sunnyu.com/?m=200811' />
+	<link rel='archives' title='October 2008' href='http://www.sunnyu.com/?m=200810' />
+	<link rel='archives' title='September 2008' href='http://www.sunnyu.com/?m=200809' />
+	<link rel='archives' title='August 2008' href='http://www.sunnyu.com/?m=200808' />
+	<link rel='archives' title='July 2008' href='http://www.sunnyu.com/?m=200807' />
+	<link rel='archives' title='June 2008' href='http://www.sunnyu.com/?m=200806' />
+	<link rel='archives' title='May 2008' href='http://www.sunnyu.com/?m=200805' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.sunnyu.com/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.sunnyu.com/wordpress/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='sunnyu' href='http://www.sunnyu.com' />
+<meta name="generator" content="WordPress 3.0.1" />
+<link rel="stylesheet" type="text/css" href="http://www.sunnyu.com/wordpress/wp-content/plugins/highlight-source-pro/all.css" /><!--[if IE]><link rel="stylesheet" type="text/css" href="http://www.sunnyu.com/wordpress/wp-content/plugins/highlight-source-pro/ie.css" /><![endif]--><link rel="stylesheet" href="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/wp-collapsible-cats.css" type="text/css" media="screen" />
+<script language="text/javascript" type="text/javascript" src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/wp-collapsible-cats.js"></script>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<!-- wp thread comment 1.4.7.4.034 -->
+<style type="text/css" media="screen">
+.editComment, .editableComment, .textComment{
+	display: inline;
+}
+.comment-childs{
+	border: 1px solid #999;
+	margin: 5px 2px 2px 4px;
+	padding: 4px 2px 2px 4px;
+	background-color: white;
+}
+.chalt{
+	background-color: #E2E2E2;
+}
+#newcomment{
+	border:1px dashed #777;width:90%;
+}
+#newcommentsubmit{
+	color:red;
+}
+.adminreplycomment{
+	border:1px dashed #777;
+	width:99%;
+	margin:4px;
+	padding:4px;
+}
+.mvccls{
+	color: #999;
+}
+			
+</style>
+<style type="text/css" media="screen">
+<!-- @import url( http://www.sunnyu.com/wordpress/wp-content/themes/silhouette-2column/style.css ); -->
+</style>
+</head>
+
+<body>
+
+<div id="header">
+	<div class="headerleft">
+		<a href="http://www.sunnyu.com/">sunnyu</a><br />
+		<b>sunnyu的学习研究记录</b>
+	</div>
+	
+	<div class="headerright">
+		<ul>
+			<li><a href="http://www.sunnyu.com">Home</a></li>
+			<li class="page_item page-item-2"><a href="http://www.sunnyu.com/?page_id=2" title="About">About</a></li>
+<li class="page_item page-item-279"><a href="http://www.sunnyu.com/?page_id=279" title="网络协议应用开发辅助工具">网络协议应用开发辅助工具</a></li>
+<li class="page_item page-item-54"><a href="http://www.sunnyu.com/?page_id=54" title="记忆模型项目">记忆模型项目</a></li>
+			<li><a href="http://www.sunnyu.com/?feed=rss2">RSS</a></li>
+		</ul>
+	</div>
+</div>
+
+<div style="clear:both;"></div>
+<div align="center">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-6775604558778241";
+/* ��ҳ���ֺ�� */
+google_ad_slot = "3657672287";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<div id="content">
+
+	<div id="contentleft">
+		
+				<h1><a href="http://www.sunnyu.com/?p=372" rel="bookmark">JIRA和HipChat服务端集成时，提示不能访问HipChat服务器地址问题的解决</a></h1>
+		<p>HipChat现在可以安装在本地环境，试着装了一个，在网上申请了免费SSL证书设置后，浏览器打开没有提示非安全站点的问题，一切正常。<br />
+然后尝试将HipChat和Jira集成，<br />
+通过Market市场在Jira上下载安装了HipChat的插件，安装后，在Jira后台管理界面系统那页Email配置项目下面出现了HipChat集成设置菜单项，<br />
+输入安装的HipChat服务器地址, https://mychat.mydomain.com, 点击确定，提示不能连接HipChat服务地址，浏览器中打开地址确是正常的。<br />
+想不通问题，查看jira的日志文件，发现有日志
+<pre>
+javax.net.ssl.SSLHandshakeException: sun.security.validateor.ValidatorException:
+  PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException:
+    unable to find valid certification path to requested target
+</pre>
+<p>原来是SSL证书问题，因为不是默认可以被java认可的根证书签名，需要导入证书。</p>
+<pre>
+keytool -import  -alias mycert -file root.crt -keystore $JAVA_HOME/jre/lib/security/cacerts
+</pre>
+<p>输入密码 changeit，导入证书<br />
+使用如上命令导入申请的免费SSL证书的crt证书文件后，再次设置HipChat服务器地址，确认，顺利进入集成设置界面。</p>
+<p class="akpc_pop">Popularity: 1% <span class="akpc_help">[<a href="http://alexking.org/projects/wordpress/popularity-contest" title="What does this mean?">?</a>]</span></p><div style="clear:both;"></div>
+                <h3>Random Posts</h3><ul class="related_post"></ul>		<div class="postinfo">
+                        <br/>
+			August 4, 2015 | Filed Under <a href="http://www.sunnyu.com/?cat=3" title="View all posts in LAMP" rel="category">LAMP</a> | <a href="http://www.sunnyu.com/?p=372#respond" title="Comment on JIRA和HipChat服务端集成时，提示不能访问HipChat服务器地址问题的解决">Leave a Comment</a>&nbsp;		</div>
+	
+		<!--
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://www.sunnyu.com/?p=372"
+    dc:identifier="http://www.sunnyu.com/?p=372"
+    dc:title="JIRA和HipChat服务端集成时，提示不能访问HipChat服务器地址问题的解决"
+    trackback:ping="http://www.sunnyu.com/wordpress/wp-trackback.php?p=372" />
+</rdf:RDF>		-->
+		
+				<h1><a href="http://www.sunnyu.com/?p=374" rel="bookmark">使用Insure编译代码出现Warning: unable to instrument &#8220;xxx.cpp&#8221; (4) compiling original source code</a></h1>
+		<p>使用Insre工具做代码的内存泄露检查，编译代码时发现提示 Warning: unable to instrument &#8220;xxx.cpp&#8221; (4) compiling original source code，没有能正常插桩， 对代码逐步分析排除问题后，发现是代码中使用了 jsoncpp 库，Insure编译时对jsoncpp的头文件没有能处理好，只要引用到了json.h的代码文件，都出现了 Warning: unable to instrument 的提示。</p>
+<p>逐个尝试修改jsoncpp的头文件做分析，最后发现只要修改jsoncpp的 value.h 文件，<br />
+将 class JSON_API value 类下面</p>
+<pre>private:
+#ifndef JSONCPP_DOC_EXCLUDE_IMPLEMENTATION
+# ifndef JSON_VALUE_USE_INTERNAL_MAP
+    class CZString
+   {
+</pre>
+<p>的private:修改为public:变为</p>
+<pre>public:
+#ifndef JSONCPP_DOC_EXCLUDE_IMPLEMENTATION
+# ifndef JSON_VALUE_USE_INTERNAL_MAP
+    class CZString
+   {
+</pre>
+<p>后，重新使用Insure编译，正常插桩，编译通过，未再提示 warning: unable to instrument 错误。</p>
+<p class="akpc_pop">Popularity: 1% <span class="akpc_help">[<a href="http://alexking.org/projects/wordpress/popularity-contest" title="What does this mean?">?</a>]</span></p><div style="clear:both;"></div>
+                <h3>Random Posts</h3><ul class="related_post"></ul>		<div class="postinfo">
+                        <br/>
+			August 4, 2015 | Filed Under <a href="http://www.sunnyu.com/?cat=84" title="View all posts in C/C++" rel="category">C/C++</a>, <a href="http://www.sunnyu.com/?cat=82" title="View all posts in Programming" rel="category">Programming</a> | <a href="http://www.sunnyu.com/?p=374#respond" title="Comment on 使用Insure编译代码出现Warning: unable to instrument &#8220;xxx.cpp&#8221; (4) compiling original source code">Leave a Comment</a>&nbsp;		</div>
+	
+		<!--
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://www.sunnyu.com/?p=374"
+    dc:identifier="http://www.sunnyu.com/?p=374"
+    dc:title="使用Insure编译代码出现Warning: unable to instrument &#8220;xxx.cpp&#8221; (4) compiling original source code"
+    trackback:ping="http://www.sunnyu.com/wordpress/wp-trackback.php?p=374" />
+</rdf:RDF>		-->
+		
+				<h1><a href="http://www.sunnyu.com/?p=365" rel="bookmark">SOATest浅尝使用脚本设置HTTP请求参数</a></h1>
+		<p>SOATest是Parasoft公司的一款测试工具，功能强大，可以用于Http接口测试。通常指定好接口地址，设置好输入参数列表后，即可获得接口数据做检查。<br />
+碰到一个http请求要做参数签名的情况，请求需要添加两个参数，<br />
+_timestamp 请求发生时的Unixtime 时间戳<br />
+_sign 对所有参数值排序后连接起来，和一个协商好的 secret 值做md5运算 _sign=md5(secret + 排序后的参数值字符串 + secret)</p>
+<p>这两个参数不能在输入时确定，需要在发生请求是动态生成，因此需要写脚本来设置。<br />
+翻看了SOAtest的用户手册 和 SOAtest Extensibility API帮助文档，没有找到获取请求参数列表的方法，<br />
+经过多番研究尝试，最终搞定，脚本如下</p>
+<p>脚本1. 获取时间戳值</p>
+<pre>
+from java.util import *
+from java.text import *
+from java.lang import *
+
+def getTime():
+  calendar = Calendar.getInstance()
+
+  date = calendar.getTime()
+
+  ts = date.getTime() / 1000
+  return ts
+</pre>
+<p>脚本2. 获取参数列表后，对参数列表做签名计算</p>
+<pre>
+from com.parasoft.api import *
+from webtool.data import *
+from java.lang import *
+from java.util import HashMap
+from java.security import *
+
+#计算参数签名
+def getParamsSign(context):
+    mc = context.getTool()
+    params = mc.getURLParams()
+    names = []
+    mp = HashMap()
+    for p in params:
+        name = p.getName()
+        if name != "_sign":
+            value = p.getValue(context)
+            mp.put(name,value)  # 将需要签名的参数放到列表中存起来
+            names += [name]
+            #Application.showMessage('param ' + name + ' value '+ value)
+        else:
+            #Application.showMessage('param _sign value ' + p.getActualValue())  #不能调用p.getValue(context), 会触发死循环  
+
+    #拼装要签名的字符串
+    names.sort()
+    tosign = ''
+    for k in names: #mp.keySet():
+        tosign += k;
+        tosign += mp.get(k)
+    secret = context.getEnvironmentVariableValue('client_secret')
+    tosign = secret + tosign + secret
+    Application.showMessage('tosign:' + tosign)
+
+    #作签名运算
+    md5Inst = MessageDigest.getInstance('MD5')
+    md5Inst.update(tosign.encode('utf-8'))
+    hexDigits = '0123456789abcdef'
+    md = md5Inst.digest()
+    signed = ''
+    for v in md:
+        t = v >> 4 &#038; 0x0f
+        signed += hexDigits[t]
+        t = v &#038; 0x0f
+        signed += hexDigits[t]
+    Application.showMessage('signed:' + signed)
+    #返回签名结果
+    return signed
+</pre>
+<p>注意要点，在获取参数列表时，用于参数签名的 _sign 字段名要刨除在外，否则获取_sign值时会触发脚本，陷入死循环</p>
+<p class="akpc_pop">Popularity: 1% <span class="akpc_help">[<a href="http://alexking.org/projects/wordpress/popularity-contest" title="What does this mean?">?</a>]</span></p><div style="clear:both;"></div>
+                <h3>Random Posts</h3><ul class="related_post"></ul>		<div class="postinfo">
+                        <br/>
+			July 30, 2015 | Filed Under <a href="http://www.sunnyu.com/?cat=3" title="View all posts in LAMP" rel="category">LAMP</a>, <a href="http://www.sunnyu.com/?cat=177" title="View all posts in Perl/Python" rel="category">Perl/Python</a> | <a href="http://www.sunnyu.com/?p=365#respond" title="Comment on SOATest浅尝使用脚本设置HTTP请求参数">Leave a Comment</a>&nbsp;		</div>
+	
+		<!--
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://www.sunnyu.com/?p=365"
+    dc:identifier="http://www.sunnyu.com/?p=365"
+    dc:title="SOATest浅尝使用脚本设置HTTP请求参数"
+    trackback:ping="http://www.sunnyu.com/wordpress/wp-trackback.php?p=365" />
+</rdf:RDF>		-->
+		
+				<h1><a href="http://www.sunnyu.com/?p=362" rel="bookmark">MAC系统下JTest死机问题的解决方法</a></h1>
+		<p>辛苦找到一个Mac版的JTest,安装运行一切正常，高兴中，<br />
+打开一个实际的java项目做检查，检查出了代码中得问题，继续高兴中，<br />
+然后双击问题转到问题代码行进行编辑，保存，JTest界面上小轮子不停转动，失去反应，悲伤中。</p>
+<p>查找原因，发现日志有记录 </p>
+<pre>
+java.lang.OutOfMemoryError:  PermGen space
+</pre>
+<p>google搜索，发现要添加如下两行到Eclipse.app/Contents/MacOS/eclipse.ini 文件中</p>
+<pre>
+-XX:PermSize=256M
+-XX:MaxPermSize=256M
+</pre>
+<p>保存后，运行jtest命令，发现问题依旧，经过多次尝试后，<br />
+发现直接双击运行位于parasoft/test目录下的Eclipse，问题消失。<br />
+分析直接运行jtest命令失败原因，可能是需要添加如下运行参数运行</p>
+<pre>
+jtest -vmargs -Xmx1024m -XX:MaxPermSize=256m
+</pre>
+<p class="akpc_pop">Popularity: 1% <span class="akpc_help">[<a href="http://alexking.org/projects/wordpress/popularity-contest" title="What does this mean?">?</a>]</span></p><div style="clear:both;"></div>
+                <h3>Random Posts</h3><ul class="related_post"></ul>		<div class="postinfo">
+                        <br/>
+			July 15, 2015 | Filed Under <a href="http://www.sunnyu.com/?cat=3" title="View all posts in LAMP" rel="category">LAMP</a> | <a href="http://www.sunnyu.com/?p=362#respond" title="Comment on MAC系统下JTest死机问题的解决方法">Leave a Comment</a>&nbsp;		</div>
+	
+		<!--
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://www.sunnyu.com/?p=362"
+    dc:identifier="http://www.sunnyu.com/?p=362"
+    dc:title="MAC系统下JTest死机问题的解决方法"
+    trackback:ping="http://www.sunnyu.com/wordpress/wp-trackback.php?p=362" />
+</rdf:RDF>		-->
+		
+				<h1><a href="http://www.sunnyu.com/?p=357" rel="bookmark">Concerto在Linux下安装成中文版本</a></h1>
+		<p>近日搞到一套Parasoft公司的Concerto,<br />
+在Linux下安装后，<br />
+使用 ./concertoconsole.sh 命令<br />
+开启服务运行后</p>
+<p>浏览器界面打开总是英文，而该公司的产品是有做过中文化的，<br />
+经过一番研究，发现安装程序是自动根据系统环境变量来设置安装得语言包得。<br />
+简单验证方法，在Linux下输入命令 date 看输出的日期格式，<br />
+看到的是英文的日期，安装后的显示界面（Report Center 和 Project Center) 是英文的。<br />
+看到的是中文的日期，则安装后得使用界面就是中文的。</p>
+<p>如果显示是英文，但是想要安装成中文的，可以对linux系统做如下设置<br />
+修改 /etc/sysconfig/i18n 文件，将其中内容修改为</p>
+<pre>
+#LANG="en_US.UTF-8"
+#SYSFONT="latarcyrheb-sun16"
+
+LANG="zh_CN.UTF-8"
+SYSFONT="latarcyrheb-sun16"
+SUPPORTED="zh_CN.UTF-8:zh_CN:zh"
+</pre>
+<p>删除之前安装文件，重新安装，再次打开界面，登录后看到期待已久得中文界面了。</p>
+<p>安装成中文使用界面后在实际使用中发现另外一个问题，<br />
+Dashboard 先显示的报告图片的标题的中文显示的是一个一个小方框，<br />
+估计是使用了什么对中文支持不是很好的库，有待进一步研究修订。</p>
+<p class="akpc_pop">Popularity: 1% <span class="akpc_help">[<a href="http://alexking.org/projects/wordpress/popularity-contest" title="What does this mean?">?</a>]</span></p><div style="clear:both;"></div>
+                <h3>Random Posts</h3><ul class="related_post"></ul>		<div class="postinfo">
+                        <br/>
+			June 24, 2015 | Filed Under <a href="http://www.sunnyu.com/?cat=82" title="View all posts in Programming" rel="category">Programming</a> | <a href="http://www.sunnyu.com/?p=357#respond" title="Comment on Concerto在Linux下安装成中文版本">Leave a Comment</a>&nbsp;		</div>
+	
+		<!--
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://www.sunnyu.com/?p=357"
+    dc:identifier="http://www.sunnyu.com/?p=357"
+    dc:title="Concerto在Linux下安装成中文版本"
+    trackback:ping="http://www.sunnyu.com/wordpress/wp-trackback.php?p=357" />
+</rdf:RDF>		-->
+		
+				<h1><a href="http://www.sunnyu.com/?p=354" rel="bookmark">浅尝内存泄露检查工具Insure++在Linux_X64平台下得使用</a></h1>
+		<p>首先安装Insure++, 按照说明展开安装文件install后，运行.install进行安装，一路默认值下去安装成功<br />
+使用：</p>
+<h3>第一步</h3>
+<p>修改profile文件，将insure的bin路径添加到PATH中</p>
+<pre>
+export PATH=$PATH:~/insure/bin
+</pre>
+<h3>第二步</h3>
+<p>重新建立终端连接，到项目目录下检查修改Makefile文件<br />
+如果直接使用g++的，需要修改每一个g++为 insure g++<br />
+还好我是使用的CXX=g++方式，需要insure编译时只要在执行命令的时候使用</p>
+<pre>
+make CXX="insure g++"
+</pre>
+<p>即可，不用修改文件，就可以方便切换insure++编译版本和非Insure++编译版本<br />
+重新编译前，要先执行
+<pre>make clean</pre>
+<p>做目录清理</p>
+<h3>第三步</h3>
+<p>运行编译后得程序，做内存泄露检查，呵呵一下看到一堆提示，慢慢研究提示信息含义。<br />
+后续代码效率、覆盖等功能等待进一步研究。</p>
+<p><font color="red">使用insure++编译过程中碰到的一个问题</font><br />
+所有文件编译完成后，在最后链接阶段提示
+<pre>/usr/bin/ld: cannot find -ldl</pre>
+<p>这个在未使用insure++编译前，是没有出现这个错误得，<br />
+首先尝试修改 ~/insure/.psrc 文件，添加了
+<pre>insure++.static_linking on</pre>
+<p>开关行，使用静态编译方式，结果链接时出现缺少一些inusre目录下得.a, .o文件,行不通<br />
+继续网上搜索，发现是少了符号链接 /usr/lib64/libdl.so，添加符号链接
+<pre>ln -s /lib64/libdl.so.2 /usr/lib64/libdl.so</pre>
+<p>重新编译连接，问题消失，可以正常编译链接。</p>
+<p class="akpc_pop">Popularity: 1% <span class="akpc_help">[<a href="http://alexking.org/projects/wordpress/popularity-contest" title="What does this mean?">?</a>]</span></p><div style="clear:both;"></div>
+                <h3>Random Posts</h3><ul class="related_post"></ul>		<div class="postinfo">
+                        <br/>
+			May 12, 2015 | Filed Under <a href="http://www.sunnyu.com/?cat=84" title="View all posts in C/C++" rel="category">C/C++</a>, <a href="http://www.sunnyu.com/?cat=82" title="View all posts in Programming" rel="category">Programming</a> | <a href="http://www.sunnyu.com/?p=354#respond" title="Comment on 浅尝内存泄露检查工具Insure++在Linux_X64平台下得使用">Leave a Comment</a>&nbsp;		</div>
+	
+		<!--
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://www.sunnyu.com/?p=354"
+    dc:identifier="http://www.sunnyu.com/?p=354"
+    dc:title="浅尝内存泄露检查工具Insure++在Linux_X64平台下得使用"
+    trackback:ping="http://www.sunnyu.com/wordpress/wp-trackback.php?p=354" />
+</rdf:RDF>		-->
+		
+				<h1><a href="http://www.sunnyu.com/?p=350" rel="bookmark">初试Coverity对C++代码的静态检查</a></h1>
+		<p>之前一直在使用一个版本的goanna做C++静态代码，前两天搞到一套Coverity，尝试安装了一下，发现Coverity检查功能还是挺强大，之前goanna未检查出得一些问题它检查出来了，比如<br />
+if ((x &#038; 0&#215;80) == 1)) {<br />
+}<br />
+这么一个判断代码，之前的goanna就没有报出问题，这个Coverity就报出了一个无效语句的问题，一下子发现等于的判断条件写错了。<br />
+Coverity的简单使用流程<br />
+第一步, 使用 cov-build 捕获代码Build过程涉及到得文件</p>
+<pre >
+./cov-build --dir . make
+</pre>
+<p>第二步, 使用 cov-analysis 对捕获的结果做代码分析（分析在cov-build步骤捕获到得相关代码文件）</p>
+<pre>
+./cov-analysis --dir .
+</pre>
+<p>第三步, 使用 cov-format-errors 输出html格式的分析结果，方便查看出问题得代码位置做代码修订。（这一步也可以使用 cov-commit-defects 提交分析结果到中心服务器，没有安装 platform 没有做效果尝试） </p>
+<pre>
+./cov-format-errors --dir . --html-output ./html
+</pre>
+<p>     打开html目录下的 index.html 即可查看分析结果。</p>
+<p class="akpc_pop">Popularity: 1% <span class="akpc_help">[<a href="http://alexking.org/projects/wordpress/popularity-contest" title="What does this mean?">?</a>]</span></p><div style="clear:both;"></div>
+                <h3>Random Posts</h3><ul class="related_post"></ul>		<div class="postinfo">
+                        <br/>
+			April 26, 2015 | Filed Under <a href="http://www.sunnyu.com/?cat=84" title="View all posts in C/C++" rel="category">C/C++</a>, <a href="http://www.sunnyu.com/?cat=3" title="View all posts in LAMP" rel="category">LAMP</a>, <a href="http://www.sunnyu.com/?cat=82" title="View all posts in Programming" rel="category">Programming</a> | <a href="http://www.sunnyu.com/?p=350#respond" title="Comment on 初试Coverity对C++代码的静态检查">Leave a Comment</a>&nbsp;		</div>
+	
+		<!--
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://www.sunnyu.com/?p=350"
+    dc:identifier="http://www.sunnyu.com/?p=350"
+    dc:title="初试Coverity对C++代码的静态检查"
+    trackback:ping="http://www.sunnyu.com/wordpress/wp-trackback.php?p=350" />
+</rdf:RDF>		-->
+		
+				<h1><a href="http://www.sunnyu.com/?p=346" rel="bookmark">Confluence版本升级要点2</a></h1>
+		<p>对使用的Confluence升级了一下，发现升级过程中得备份原数据速度较慢，<br />
+经过分析，发现Confluence在数据目录下建立了备份目录，升级备份时也会将这个目录下的文件再次备份<br />
+登录到管理后台，转到每日备份的设置界面，发现只能修改备份的文件名，备份的目录不能修改，<br />
+到atlassian官方网站查看，发现要修改一下数据目录下的confluence.cfg.xml文件，在其中添加一个如下项目</p>
+<pre>
+<property name="admin.ui.allow.daily.backup.custom.location" >true</property>
+</pre>
+<p>保存文件后，重新启动confluence服务，发现每日备份的备份目录可以修改，<br />
+修改到其他目录下，保存，以后升级时就不用再担心升级时再次备份这些每日备份的打包文件了。</p>
+<p class="akpc_pop">Popularity: 1% <span class="akpc_help">[<a href="http://alexking.org/projects/wordpress/popularity-contest" title="What does this mean?">?</a>]</span></p><div style="clear:both;"></div>
+                <h3>Random Posts</h3><ul class="related_post"></ul>		<div class="postinfo">
+                        <br/>
+			December 25, 2014 | Filed Under <a href="http://www.sunnyu.com/?cat=3" title="View all posts in LAMP" rel="category">LAMP</a> | <a href="http://www.sunnyu.com/?p=346#respond" title="Comment on Confluence版本升级要点2">Leave a Comment</a>&nbsp;		</div>
+	
+		<!--
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://www.sunnyu.com/?p=346"
+    dc:identifier="http://www.sunnyu.com/?p=346"
+    dc:title="Confluence版本升级要点2"
+    trackback:ping="http://www.sunnyu.com/wordpress/wp-trackback.php?p=346" />
+</rdf:RDF>		-->
+		
+				<h1><a href="http://www.sunnyu.com/?p=342" rel="bookmark">JIRA升级后碰到授权码为空打不开网页问题的解决方法</a></h1>
+		<p>闲来手快，从atlassian官网下载了最新版本的Jira将原先安装的老版本升级了一下，然后悲催了，jira只能显示首页，然后一登陆系统就打不开了，看日志总是提示</p>
+<pre>
+Caused by: com.atlassian.extras.decoder.api.LicenseDecoderNotFoundException: Could not find any valid decoders in [com.atlassian.extras.decoder.v2.Version2LicenseDecoder@5925307e, com.atlassian.extras.decoder.v1.Version1LicenseDecoder@11ccab9e] for license string <>
+</pre>
+<p>看来是是授权码问题，于是找输入授权码的地方，不过还是很悲催，网页打不开没有办法输入授权码信息。<br />
+琢磨一阵以后，最后采用如下方法步骤解决：<br />
+1. 新建一个空得数据库，然后全新安装一个新版本到这个库上，在这个过程中输入授权码信息，直到正确登陆JIRA后。<br />
+2. 将新安装得表结构和老得数据库对比，找到数据库中存放授权码信息的表位置和值<br />
+    （表propertyentry中有一个如下值</p>
+<pre>
+       ID	ENTITY_NAME	ENTITY_ID	PROPERTY_KEY	propertytype
+10027	jira.properties	1	License20	6
+</pre>
+<p>propertytype值为6的数据记录在propertytext表中，将这个记录值补充到原始库表中，<br />
+propertyentry和propertytext两张表都要插入对应的值，启动Jira后发现提示授权不对，<br />
+继续找发现还有如下一个记录值要对应修改</p>
+<pre>
+ID	ENTITY_NAME	ENTITY_ID	PROPERTY_KEY	propertytype
+10013	jira.properties	1	jira.sid.key	5
+</pre>
+<p>propertytype值为5的数据值存放在propertystring表中，<br />
+两个地方都修改一致后，再次重启jira，正常登陆使用。</p>
+<p class="akpc_pop">Popularity: 1% <span class="akpc_help">[<a href="http://alexking.org/projects/wordpress/popularity-contest" title="What does this mean?">?</a>]</span></p><div style="clear:both;"></div>
+                <h3>Random Posts</h3><ul class="related_post"></ul>		<div class="postinfo">
+                        <br/>
+			December 23, 2014 | Filed Under <a href="http://www.sunnyu.com/?cat=3" title="View all posts in LAMP" rel="category">LAMP</a> | <a href="http://www.sunnyu.com/?p=342#respond" title="Comment on JIRA升级后碰到授权码为空打不开网页问题的解决方法">Leave a Comment</a>&nbsp;		</div>
+	
+		<!--
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://www.sunnyu.com/?p=342"
+    dc:identifier="http://www.sunnyu.com/?p=342"
+    dc:title="JIRA升级后碰到授权码为空打不开网页问题的解决方法"
+    trackback:ping="http://www.sunnyu.com/wordpress/wp-trackback.php?p=342" />
+</rdf:RDF>		-->
+		
+				<h1><a href="http://www.sunnyu.com/?p=340" rel="bookmark">在Linux下搜索包含特定字符串的文件列表</a></h1>
+		<p>之前一直使用 </p>
+<p>find . |xargs grep &#8220;文字&#8221; </p>
+<p>的方式查找包含文字的文件列表，<br />
+但是最近发现一个问题，当要查找的字符串是Unicode编码的时候，这种方式只能查找ansi的字符串，遇到Unicode的字符串查找不到</p>
+<p>替换为如下方式查找</p>
+<p>find . |xargs strings -e l -f |grep &#8220;文字&#8221; </p>
+<p>找到需要的文件列表，<br />
+strings  的-e l 参数表示提取文件中的unicode字符串。 -f  参数表示在字符串前面列出文件名</p>
+<p class="akpc_pop">Popularity: 2% <span class="akpc_help">[<a href="http://alexking.org/projects/wordpress/popularity-contest" title="What does this mean?">?</a>]</span></p><div style="clear:both;"></div>
+                <h3>Random Posts</h3><ul class="related_post"></ul>		<div class="postinfo">
+                        <br/>
+			November 3, 2014 | Filed Under <a href="http://www.sunnyu.com/?cat=3" title="View all posts in LAMP" rel="category">LAMP</a> | <a href="http://www.sunnyu.com/?p=340#respond" title="Comment on 在Linux下搜索包含特定字符串的文件列表">Leave a Comment</a>&nbsp;		</div>
+	
+		<!--
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://www.sunnyu.com/?p=340"
+    dc:identifier="http://www.sunnyu.com/?p=340"
+    dc:title="在Linux下搜索包含特定字符串的文件列表"
+    trackback:ping="http://www.sunnyu.com/wordpress/wp-trackback.php?p=340" />
+</rdf:RDF>		-->
+		
+				<p><a href="http://www.sunnyu.com/wp-content/themes/silhouette/images/favicon.ico/?paged=2" >Next Page &rarr;</a></p>
+	
+	</div>
+	
+<!-- begin sidebar -->
+
+<div id="sidebar">
+
+	<ul id="sidebarwidgeted">
+	<li id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" action="http://www.sunnyu.com/" >
+	<div><label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" value="" name="s" id="s" />
+	<input type="submit" id="searchsubmit" value="Search" />
+	</div>
+	</form></li>
+<li id="calendar-2" class="widget widget_calendar"><h2 class="widgettitle">&nbsp;</h2>
+<div id="calendar_wrap"><table id="wp-calendar" summary="Calendar">
+	<caption>August 2015</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="http://www.sunnyu.com/?m=201507" title="View posts for July 2015">&laquo; Jul</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="5" class="pad">&nbsp;</td><td>1</td><td>2</td>
+	</tr>
+	<tr>
+		<td>3</td><td><a href="http://www.sunnyu.com/?m=20150804" title="使用Insure编译代码出现Warning: unable to instrument &#8220;xxx.cpp&#8221; (4) compiling original source code, JIRA和HipChat服务端集成时，提示不能访问HipChat服务器地址问题的解决">4</a></td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+	</tr>
+	<tr>
+		<td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
+	</tr>
+	<tr>
+		<td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
+	</tr>
+	<tr>
+		<td id="today">24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+	</tr>
+	<tr>
+		<td>31</td>
+		<td class="pad" colspan="6">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></li>
+<li id="collapsible-cate-1" class="widget widget_collapsible_cate"><h2 class="widgettitle">Categories</h2>
+<div id="cateTree">
+	<div id="branch_1" class="branch" style="display:none;">
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=200" title="View all posts filed under " class="hint_link">Android</a> [7]</div>
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=87" title="View all posts filed under " class="hint_link">ARM</a> [1]</div>
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=84" title="View all posts filed under " class="hint_link">C/C++</a> [18]</div>
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=83" title="View all posts filed under " class="hint_link">Delphi</a> [18]</div>
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=186" title="View all posts filed under " class="hint_link">DFS</a> [8]</div>
+	</div>
+	<div id="parent_1" class="parent_first"><a href="javascript:Show_Child(1)" onfocus="blur()" class="branch_link" ><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="点击展开/收缩子分类" /></a> <a href="http://www.sunnyu.com/?cat=5" title="View all posts filed under " class="hint_link">embeded</a> [31]</div>
+	<div id="parent_1" class="no_parent"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=24" title="View all posts filed under " class="hint_link">Hack</a> [3]</div>
+	<div id="branch_2" class="branch" style="display:none;">
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=202" title="View all posts filed under " class="hint_link">iPhone</a> [4]</div>
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=86" title="View all posts filed under " class="hint_link">Java</a> [2]</div>
+	</div>
+	<div id="parent_2" class="parent"><a href="javascript:Show_Child(2)" onfocus="blur()" class="branch_link" ><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="点击展开/收缩子分类" /></a> <a href="http://www.sunnyu.com/?cat=3" title="View all posts filed under " class="hint_link">LAMP</a> [155]</div>
+	<div id="parent_3" class="parent"><a href="javascript:Show_Child(3)" onfocus="blur()" class="branch_link" ><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="点击展开/收缩子分类" /></a> <a href="http://www.sunnyu.com/?cat=23" title="View all posts filed under " class="hint_link">My Projects</a> [9]</div>
+	<div id="branch_3" class="branch" style="display:none;">
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=4" title="View all posts filed under " class="hint_link">MySQL</a> [22]</div>
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=177" title="View all posts filed under " class="hint_link">Perl/Python</a> [1]</div>
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=85" title="View all posts filed under " class="hint_link">PHP</a> [6]</div>
+	</div>
+	<div class="no_parent"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=150" title="View all posts filed under " class="hint_link">Productivity</a> [15]</div>
+	<div id="parent_4" class="parent"><a href="javascript:Show_Child(4)" onfocus="blur()" class="branch_link" ><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="点击展开/收缩子分类" /></a> <a href="http://www.sunnyu.com/?cat=82" title="View all posts filed under " class="hint_link">Programming</a> [56]</div>
+	<div id="parent_4" class="no_parent"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=190" title="View all posts filed under " class="hint_link">ProjectManager</a> [3]</div>
+	<div id="branch_4" class="branch" style="display:none;">
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=175" title="View all posts filed under " class="hint_link">PSP</a> [1]</div>
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=185" title="View all posts filed under " class="hint_link">Search</a> [3]</div>
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=179" title="View all posts filed under " class="hint_link">SEO</a> [6]</div>
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=45" title="View all posts filed under " class="hint_link">Speech</a> [4]</div>
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=176" title="View all posts filed under " class="hint_link">Symbian</a> [14]</div>
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=184" title="View all posts filed under " class="hint_link">Trac</a> [8]</div>
+	</div>
+	<div class="no_parent_last"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=1" title="View all posts filed under " class="hint_link">Uncategorized</a> [15]</div>
+	<div id="branch_5" class="branch_last" style="display:none;">
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=6" title="View all posts filed under " class="hint_link">WebServer</a> [22]</div>
+		<div class="branch_item"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=178" title="View all posts filed under " class="hint_link">WebUI</a> [2]</div>
+		<div class="last_cate"><img src="http://www.sunnyu.com/wordpress/wp-content/plugins/wp-collapsible-cats/images/empty.gif" class="empty_img" alt="" /> <a href="http://www.sunnyu.com/?cat=188" title="View all posts filed under " class="hint_link">WINCE</a> [1]</div>
+</div>
+</li>
+		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+				<li><a href="http://www.sunnyu.com/?p=372" title="JIRA和HipChat服务端集成时，提示不能访问HipChat服务器地址问题的解决">JIRA和HipChat服务端集成时，提示不能访问HipChat服务器地址问题的解决</a></li>
+				<li><a href="http://www.sunnyu.com/?p=374" title="使用Insure编译代码出现Warning: unable to instrument &#8220;xxx.cpp&#8221; (4) compiling original source code">使用Insure编译代码出现Warning: unable to instrument &#8220;xxx.cpp&#8221; (4) compiling original source code</a></li>
+				<li><a href="http://www.sunnyu.com/?p=365" title="SOATest浅尝使用脚本设置HTTP请求参数">SOATest浅尝使用脚本设置HTTP请求参数</a></li>
+				<li><a href="http://www.sunnyu.com/?p=362" title="MAC系统下JTest死机问题的解决方法">MAC系统下JTest死机问题的解决方法</a></li>
+				<li><a href="http://www.sunnyu.com/?p=357" title="Concerto在Linux下安装成中文版本">Concerto在Linux下安装成中文版本</a></li>
+				</ul>
+		</li>
+<li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+		<select name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> <option value="">Select Month</option> 	<option value='http://www.sunnyu.com/?m=201508'> August 2015 &nbsp;(2)</option>
+	<option value='http://www.sunnyu.com/?m=201507'> July 2015 &nbsp;(2)</option>
+	<option value='http://www.sunnyu.com/?m=201506'> June 2015 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201505'> May 2015 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201504'> April 2015 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201412'> December 2014 &nbsp;(2)</option>
+	<option value='http://www.sunnyu.com/?m=201411'> November 2014 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201409'> September 2014 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201406'> June 2014 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201405'> May 2014 &nbsp;(3)</option>
+	<option value='http://www.sunnyu.com/?m=201404'> April 2014 &nbsp;(2)</option>
+	<option value='http://www.sunnyu.com/?m=201401'> January 2014 &nbsp;(3)</option>
+	<option value='http://www.sunnyu.com/?m=201312'> December 2013 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201311'> November 2013 &nbsp;(2)</option>
+	<option value='http://www.sunnyu.com/?m=201309'> September 2013 &nbsp;(2)</option>
+	<option value='http://www.sunnyu.com/?m=201306'> June 2013 &nbsp;(2)</option>
+	<option value='http://www.sunnyu.com/?m=201305'> May 2013 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201211'> November 2012 &nbsp;(2)</option>
+	<option value='http://www.sunnyu.com/?m=201209'> September 2012 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201208'> August 2012 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201205'> May 2012 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201204'> April 2012 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201202'> February 2012 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201201'> January 2012 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201108'> August 2011 &nbsp;(7)</option>
+	<option value='http://www.sunnyu.com/?m=201103'> March 2011 &nbsp;(2)</option>
+	<option value='http://www.sunnyu.com/?m=201102'> February 2011 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201011'> November 2010 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201009'> September 2010 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201008'> August 2010 &nbsp;(2)</option>
+	<option value='http://www.sunnyu.com/?m=201005'> May 2010 &nbsp;(2)</option>
+	<option value='http://www.sunnyu.com/?m=201004'> April 2010 &nbsp;(2)</option>
+	<option value='http://www.sunnyu.com/?m=201003'> March 2010 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201002'> February 2010 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=201001'> January 2010 &nbsp;(2)</option>
+	<option value='http://www.sunnyu.com/?m=200912'> December 2009 &nbsp;(5)</option>
+	<option value='http://www.sunnyu.com/?m=200909'> September 2009 &nbsp;(4)</option>
+	<option value='http://www.sunnyu.com/?m=200908'> August 2009 &nbsp;(5)</option>
+	<option value='http://www.sunnyu.com/?m=200906'> June 2009 &nbsp;(1)</option>
+	<option value='http://www.sunnyu.com/?m=200905'> May 2009 &nbsp;(4)</option>
+	<option value='http://www.sunnyu.com/?m=200904'> April 2009 &nbsp;(6)</option>
+	<option value='http://www.sunnyu.com/?m=200903'> March 2009 &nbsp;(7)</option>
+	<option value='http://www.sunnyu.com/?m=200902'> February 2009 &nbsp;(8)</option>
+	<option value='http://www.sunnyu.com/?m=200901'> January 2009 &nbsp;(5)</option>
+	<option value='http://www.sunnyu.com/?m=200812'> December 2008 &nbsp;(9)</option>
+	<option value='http://www.sunnyu.com/?m=200811'> November 2008 &nbsp;(21)</option>
+	<option value='http://www.sunnyu.com/?m=200810'> October 2008 &nbsp;(29)</option>
+	<option value='http://www.sunnyu.com/?m=200809'> September 2008 &nbsp;(11)</option>
+	<option value='http://www.sunnyu.com/?m=200808'> August 2008 &nbsp;(18)</option>
+	<option value='http://www.sunnyu.com/?m=200807'> July 2008 &nbsp;(37)</option>
+	<option value='http://www.sunnyu.com/?m=200806'> June 2008 &nbsp;(12)</option>
+	<option value='http://www.sunnyu.com/?m=200805'> May 2008 &nbsp;(4)</option>
+ </select>
+</li>
+<li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div><a href='http://www.sunnyu.com/?tag=android' class='tag-link-199' title='6 topics' style='font-size: 14.317073170732pt;'>android</a>
+<a href='http://www.sunnyu.com/?tag=awstats' class='tag-link-167' title='4 topics' style='font-size: 11.756097560976pt;'>AWStats</a>
+<a href='http://www.sunnyu.com/?tag=cache' class='tag-link-68' title='4 topics' style='font-size: 11.756097560976pt;'>Cache</a>
+<a href='http://www.sunnyu.com/?tag=crosstool' class='tag-link-125' title='2 topics' style='font-size: 8pt;'>crosstool</a>
+<a href='http://www.sunnyu.com/?tag=delphi' class='tag-link-83' title='8 topics' style='font-size: 16.024390243902pt;'>Delphi</a>
+<a href='http://www.sunnyu.com/?tag=distributed-file-system' class='tag-link-77' title='2 topics' style='font-size: 8pt;'>Distributed File System</a>
+<a href='http://www.sunnyu.com/?tag=eclipse' class='tag-link-124' title='2 topics' style='font-size: 8pt;'>Eclipse</a>
+<a href='http://www.sunnyu.com/?tag=extmail' class='tag-link-26' title='3 topics' style='font-size: 10.048780487805pt;'>ExtMail</a>
+<a href='http://www.sunnyu.com/?tag=fastcgi' class='tag-link-100' title='4 topics' style='font-size: 11.756097560976pt;'>Fastcgi</a>
+<a href='http://www.sunnyu.com/?tag=firebug' class='tag-link-39' title='2 topics' style='font-size: 8pt;'>Firebug</a>
+<a href='http://www.sunnyu.com/?tag=firefox' class='tag-link-38' title='2 topics' style='font-size: 8pt;'>FireFox</a>
+<a href='http://www.sunnyu.com/?tag=gtd' class='tag-link-146' title='6 topics' style='font-size: 14.317073170732pt;'>GTD</a>
+<a href='http://www.sunnyu.com/?tag=gyroq' class='tag-link-152' title='4 topics' style='font-size: 11.756097560976pt;'>GyroQ</a>
+<a href='http://www.sunnyu.com/?tag=htk' class='tag-link-27' title='4 topics' style='font-size: 11.756097560976pt;'>HTK</a>
+<a href='http://www.sunnyu.com/?tag=indy' class='tag-link-192' title='3 topics' style='font-size: 10.048780487805pt;'>indy</a>
+<a href='http://www.sunnyu.com/?tag=libmpg123' class='tag-link-16' title='3 topics' style='font-size: 10.048780487805pt;'>libMPG123</a>
+<a href='http://www.sunnyu.com/?tag=linux' class='tag-link-96' title='12 topics' style='font-size: 18.756097560976pt;'>Linux</a>
+<a href='http://www.sunnyu.com/?tag=memcached' class='tag-link-32' title='5 topics' style='font-size: 13.121951219512pt;'>Memcached</a>
+<a href='http://www.sunnyu.com/?tag=mindmanager' class='tag-link-153' title='9 topics' style='font-size: 16.878048780488pt;'>MindManager</a>
+<a href='http://www.sunnyu.com/?tag=mindreader' class='tag-link-154' title='5 topics' style='font-size: 13.121951219512pt;'>MindReader</a>
+<a href='http://www.sunnyu.com/?tag=mogilefs' class='tag-link-76' title='7 topics' style='font-size: 15.170731707317pt;'>mogileFS</a>
+<a href='http://www.sunnyu.com/?tag=mysql' class='tag-link-4' title='19 topics' style='font-size: 22pt;'>MySQL</a>
+<a href='http://www.sunnyu.com/?tag=mysqlhotcopy' class='tag-link-51' title='3 topics' style='font-size: 10.048780487805pt;'>mysqlhotcopy</a>
+<a href='http://www.sunnyu.com/?tag=nginx' class='tag-link-31' title='7 topics' style='font-size: 15.170731707317pt;'>Nginx</a>
+<a href='http://www.sunnyu.com/?tag=openssl' class='tag-link-97' title='3 topics' style='font-size: 10.048780487805pt;'>OpenSSL</a>
+<a href='http://www.sunnyu.com/?tag=performance' class='tag-link-34' title='2 topics' style='font-size: 8pt;'>Performance</a>
+<a href='http://www.sunnyu.com/?tag=php' class='tag-link-35' title='14 topics' style='font-size: 19.951219512195pt;'>Php</a>
+<a href='http://www.sunnyu.com/?tag=plugins' class='tag-link-73' title='9 topics' style='font-size: 16.878048780488pt;'>Plugins</a>
+<a href='http://www.sunnyu.com/?tag=popularity' class='tag-link-74' title='2 topics' style='font-size: 8pt;'>Popularity</a>
+<a href='http://www.sunnyu.com/?tag=psp' class='tag-link-20' title='2 topics' style='font-size: 8pt;'>PSP</a>
+<a href='http://www.sunnyu.com/?tag=resultsmanager' class='tag-link-151' title='7 topics' style='font-size: 15.170731707317pt;'>ResultsManager</a>
+<a href='http://www.sunnyu.com/?tag=seo' class='tag-link-179' title='4 topics' style='font-size: 11.756097560976pt;'>SEO</a>
+<a href='http://www.sunnyu.com/?tag=sqlite' class='tag-link-171' title='4 topics' style='font-size: 11.756097560976pt;'>Sqlite</a>
+<a href='http://www.sunnyu.com/?tag=symbian' class='tag-link-176' title='10 topics' style='font-size: 17.560975609756pt;'>Symbian</a>
+<a href='http://www.sunnyu.com/?tag=trac' class='tag-link-169' title='8 topics' style='font-size: 16.024390243902pt;'>Trac</a>
+<a href='http://www.sunnyu.com/?tag=vc' class='tag-link-15' title='5 topics' style='font-size: 13.121951219512pt;'>VC</a>
+<a href='http://www.sunnyu.com/?tag=vsftpd' class='tag-link-122' title='2 topics' style='font-size: 8pt;'>vsftpd</a>
+<a href='http://www.sunnyu.com/?tag=weblogs' class='tag-link-12' title='7 topics' style='font-size: 15.170731707317pt;'>WebLogs</a>
+<a href='http://www.sunnyu.com/?tag=wordpress' class='tag-link-71' title='4 topics' style='font-size: 11.756097560976pt;'>WordPress</a>
+<a href='http://www.sunnyu.com/?tag=yslow' class='tag-link-40' title='2 topics' style='font-size: 8pt;'>YSlow</a>
+<a href='http://www.sunnyu.com/?tag=%e4%bb%a3%e7%a0%81%e7%bc%93%e5%86%b2' class='tag-link-111' title='2 topics' style='font-size: 8pt;'>代码缓冲</a>
+<a href='http://www.sunnyu.com/?tag=%e5%88%86%e5%b8%83%e5%bc%8f%e6%96%87%e4%bb%b6%e5%ad%98%e5%82%a8' class='tag-link-78' title='2 topics' style='font-size: 8pt;'>分布式文件存储</a>
+<a href='http://www.sunnyu.com/?tag=%e5%8a%a0%e9%80%9f%e5%99%a8' class='tag-link-110' title='2 topics' style='font-size: 8pt;'>加速器</a>
+<a href='http://www.sunnyu.com/?tag=%e6%8f%92%e4%bb%b6' class='tag-link-75' title='3 topics' style='font-size: 10.048780487805pt;'>插件</a>
+<a href='http://www.sunnyu.com/?tag=%e6%97%a5%e5%bf%97%e5%88%86%e6%9e%90' class='tag-link-13' title='2 topics' style='font-size: 8pt;'>日志分析</a></div>
+</li>
+<li id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2>
+<ul id="recentcomments"><li class="recentcomments"><a href='http://www.dongzhendong.com.cn/2014/03/12/%e7%bf%bb%e8%af%91%ef%bc%9aweb%e5%88%b6%e4%bd%9c%e3%80%81%e5%bc%80%e5%8f%91%e4%ba%ba%e5%91%98%e9%9c%80%e7%9f%a5%e7%9a%84web%e7%bc%93%e5%ad%98%e7%9f%a5%e8%af%8' rel='external nofollow' class='url'>翻译：web制作、开发人员需知的Web缓存知识 | 心雨纷扬</a> on <a href="http://www.sunnyu.com/?p=163#comment-976344">Web Cache Tutorial for Web Authors and Webmasters(译)Part-1</a></li><li class="recentcomments">LoveDelphi on <a href="http://www.sunnyu.com/?p=269#comment-968176">TMS的MEMO控件（TAdvMemo／TTMSFMXMemo） 中文处理修订补丁</a></li><li class="recentcomments"><a href='http://www.sunnyu.com' rel='external nofollow' class='url'>sunny</a> on <a href="http://www.sunnyu.com/?p=330#comment-940840">Gitlab Issues to Jira Issues 问题转换</a></li><li class="recentcomments"><a href='http://www.sunnyu.com' rel='external nofollow' class='url'>sunny</a> on <a href="http://www.sunnyu.com/?p=269#comment-940817">TMS的MEMO控件（TAdvMemo／TTMSFMXMemo） 中文处理修订补丁</a></li><li class="recentcomments">liusng on <a href="http://www.sunnyu.com/?p=269#comment-933099">TMS的MEMO控件（TAdvMemo／TTMSFMXMemo） 中文处理修订补丁</a></li></ul></li>
+<li id="meta-2" class="widget widget_meta"><h2 class="widgettitle">Meta</h2>
+			<ul>
+						<li><a href="http://www.sunnyu.com/wordpress/wp-login.php">Log in</a></li>
+			<li><a href="http://www.sunnyu.com/?feed=rss2" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://www.sunnyu.com/?feed=comments-rss2" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+</li>
+<li id="linkcat-47" class="widget widget_links"><h2 class="widgettitle">Friends</h2>
+
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.ahryan.com/" title="Ah Ryan&#8217;s Blog" target="_blank">Ah Ryan</a></li>
+<li><a href="http://www.dbanotes.net" title="冯大辉的Blog">DBAnotes</a></li>
+
+	</ul>
+</li>
+
+<li id="linkcat-23" class="widget widget_links"><h2 class="widgettitle">My Projects</h2>
+
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.exuexi.com" title="阳光背单词，将认知学习的记忆理论引入具体应用，轻松达到50词/小时以上记忆效果" target="_blank">阳光背单词(exuexi.com)</a></li>
+
+	</ul>
+</li>
+
+	</ul>
+			
+</div>
+
+<!-- end sidebar -->
+</div>
+
+<!-- The main column ends  -->
+
+<!-- begin footer -->
+
+<div style="clear:both;"></div>
+
+<div id="footer">
+	<p>Copyright &copy; 2007 <a href="http://www.sunnyu.com/">sunnyu</a> &bull; Powered by <a href="http://www.wordpress.org">WordPress</a> &bull; Using <a href="http://www.briangardner.com/themes/silhouette-wordpress-theme.htm" >Silhouette</a> theme created by <a href="http://www.briangardner.com" >Brian Gardner</a></p>
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4191672-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>

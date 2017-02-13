@@ -1,0 +1,87 @@
+/*
+* night 2015年5月28日08:38:50
+*/
+@charset "utf-8";
+
+.logo{
+    background: url("../imgs/logo-normal.png") center center no-repeat;
+    background-size: 200px 55px;
+}
+
+body{
+    background: url("imgs/bg-image-paper.png") #a58561;
+    background-size: cover, 100%;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    color:#333;
+}
+
+a{
+    color: #333;
+}
+
+a:hover,a:focus {
+    color: #000;
+}
+
+/********* - top menu */
+
+.navbar-default {
+    background-color: rgba(247, 247, 247, 0.33);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar .dropdown-menu{
+    border: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+/********* - top menu */
+
+.menu{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.query{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.query button{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.setting,.url,.channel,.cate{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.dropdown-menu-search {
+    min-width: 103px;
+    border: none;
+}
+
+.channel li.focus,.cate li.focus,.dropdown-menu-search li:hover{
+    background-color: #e1e1e1;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default, .dropdown.open .dropdown-toggle {
+    background-color: #e7e7e7;
+}
+
+.setting a:hover,.url li:hover,.cate li:hover,.channel li:hover{
+    background-color: #e7e7e7;
+}
+
+.footer {
+    color: #DCDCDC;
+}
+
+.menu,.query,.main{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}

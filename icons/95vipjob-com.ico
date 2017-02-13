@@ -1,0 +1,417 @@
+﻿
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>朝九晚五App,一款寻找附近工作,支持视频简历的蓝领招聘平台手机应用</title>
+		<meta name="keywords" content="朝九晚五APP，视频简历，朝九晚五，附近工作，找工作App，招聘平台，蓝领求职"/>
+		<meta name="description" content="朝九晚五App是一款基于地理位置查找附近工作,跟职业社交相结合的一款专注蓝领招聘的手机客户端，特色功能主要有：附近招聘、视频简历、发现附近人才、招聘会场等功能"/>
+
+		<!-- Foundation -->	
+		<link rel="stylesheet" href="/css/foundation.min.css" />
+
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="/css/animate.min.css" />
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="/css/font-awesome.min.css" />
+
+		<!-- Simple Line Icons -->
+		<link rel="stylesheet" href="/css/simple-line-icons.css" />
+
+		<!-- Bxslider-->
+		<link rel="stylesheet" href="/css/jquery.bxslider.css" />
+
+		<!-- Magnific Popup-->
+		<link rel="stylesheet" href="/css/magnific-popup.css" />
+
+		<!-- Odometer-->
+		<link rel="stylesheet" href="/css/odometer-theme-default.css" />
+		
+        <link rel="stylesheet" href="/css/button.css" />
+        
+		<!-- Main Style -->
+		<link rel="stylesheet" href="/css/style.css" />
+
+		<script src="/js/modernizr.js"></script>
+
+		<style>
+			#friendlink{color: #333333; max-width: 68rem; width: 100%; margin: 15px auto;font-size: 12px;}
+			#friendlink a{color:#333333;}
+			</style>
+	</head>
+	
+	<body class="preload">
+		
+		<!-- Main -->
+		<div id="main">
+
+
+			<!-- Navigation -->
+			<div id="navigation-container" class="navigation-white sticky">
+				<nav class="navigation top-bar" data-topbar data-options="scrolltop:false; back_text:&larr;" role="navigation">
+					<ul class="title-area">
+						<!-- Logo -->
+						<li class="name">
+							<a href="http://www.95vipjob.com"><img class="logo" src="/images/logo.png" alt="朝九晚五APP" width="150" height="45" ></a>
+						</li>
+						
+						<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+						<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+					</ul>
+					<!-- Menu Section -->
+					<section class="top-bar-section">
+						<ul class="right">
+							<li><a href="/" data-scroll>首页Home</a></li>
+							<li><a href="#About" data-scroll>关于我们 About Us</a></li>
+							<li><a href="#Download">APP下载 Download</a></li>
+							<li><a href="#Contact" data-scroll>联系我们 Contact</a></li>
+							<li class="has-form hide-for-medium-only">
+                            	<a target="_blank" href="http://company.95vipjob.com" class="button button-pill button-flat-primary" rel="nofollow"><i class="fa fa-cloud"></i> 企业登录 Company Login</a>
+                            </li>                       <li class="has-form hide-for-medium-only">
+                            	<a target="_blank" href="http://hr.95vipjob.com" class="button button-pill button-flat-primary" rel="nofollow"><i class="fa fa-cloud"></i> HR登录 HR Login</a>
+                            </li>
+						</ul>
+					</section>
+					<!-- End Menu Section -->
+				</nav>
+			</div>
+			<!--/ End Navigation -->
+			
+			<!-- About Section -->
+			<section id="about" class="section padding-t-large">
+				<!-- Section Title -->
+				<div class="section-title row">
+					<div class="large-4 medium-12 columns animate" data-animation="flipInX">
+						<h1 style="font-size: 40px;">朝九晚五APP-2.3.0</h1>
+					</div>
+					<div class="large-8 medium-12 columns animate infop" data-animation="fadeInRight">
+						<p>通过朝九晚五，您可以查看附近的招聘信息、附近的用户，发现附近工作机会、优秀人才；</p>
+                        <p>一款可以找工作的APP，全新的信息分享模式，支持视频简历，更注重于蓝领求职招聘的平台。</p>
+					</div>
+				</div>
+				<!-- Section Content -->
+				<div class="row row-wide">
+					<div class="large-12 columns animate" data-animation="fadeInUp">
+						<!-- Featured Image -->	
+						<div class="featured-image">
+							<img src="/images/about-img.jpg" alt="about">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--/ End About Section -->	
+
+			<!-- Subsection -->
+			<section class="subsection padding-v-large">
+				<div id="Download" class="row">
+					<div class="medium-4 columns animate" data-animation="flipInY">
+						<span class="icon large brand"><i class="fa fa-camera"></i></span>
+						<h3>二维码扫描</h3>
+						<p><img src="/images/code.jpg"></p>
+					</div>
+					<div class="medium-4 columns animate" data-animation="flipInY">
+						<span class="icon large brand"><i class="fa fa-apple"></i></span>
+						<h3>苹果 - iPhone</h3>
+						<p>
+                            <span class="button-wrap button-download">
+                                <a class="button button-circle button-flat button-flat-primary glow" target="_blank" href="https://appsto.re/cn/EmdY2.i" rel="nofollow">点击下载</a>
+                            </span>
+                        </p>
+					</div>
+					<div class="medium-4 columns animate" data-animation="flipInY">
+						<span class="icon large brand"><i class="fa fa-android"></i></span>
+						<h3>安卓 - Android</h3>
+						<p>
+                        	<span class="button-wrap button-download">
+                                <a class="button button-circle button-flat button-flat-primary glow" target="_blank" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.olptech.zjww" rel="nofollow">点击下载</a>
+                            </span>
+                        </p>
+					</div>
+				</div>
+			</section>
+			<!--/ End Subsection -->	
+
+			
+			<!-- Team Section -->
+			<section id="team" class="section padding-v-large">
+				<!-- Section Title -->
+				<div class="section-title row">
+					<div class="large-4 medium-12 columns animate" data-animation="flipInX">
+						<h2>部分功能说明</h2>
+					</div>
+					<div class="large-8 medium-12 columns animate infop" data-animation="fadeInRight">
+						<p>您可以在安装之前大致了解 朝九晚五APP 的部分功能以及使用教程; </p>
+                        <p>附近职位筛选、用户中心、我的简历、附近发现</p>
+					</div>
+				</div>
+				<!-- Team Block -->
+				<div class="team-block row row-wide">
+					<!-- Team Person -->
+					<div class="small-6 large-3 columns animate" data-animation="flipInY">
+						<div class="team-person">
+							<a href="#">
+								<img src="/images/t1.png" alt="team 1">
+								<div class="team-person-info padding-small">
+									<div class="team-person-info-detail display-table">
+										<div class="display-table-cell">
+											<h3 class="name">附近职位筛选</h3>
+											<h6 class="position">查看详情</h6>
+										</div>
+									</div>
+								</div>
+							</a>
+							<!-- team-bio -->
+							<div class="team-bio">
+								<!-- team-bio-pict -->
+								<div class="team-bio-pict">
+									<img src="/images/t11.jpg" alt="Member Bio image">
+								</div>
+								<!-- team-bio-content -->
+								<div class="team-bio-content">
+									<hr>
+									<h4>功能介绍</h4>
+									<p>根据您的求职意向适当的设置筛选条件,那么在下一次当您打开附近招聘信息的时候，APP就会自动根据您上次的筛选设置进行附近的招聘信息筛选,快速的为您提供有效的招聘信息,过滤不在您关心范围内的招聘信息。</p>
+									<hr>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Team Person -->
+					<div class="small-6 large-3 columns animate" data-animation="flipInY">
+						<div class="team-person">
+							<a href="#">
+								<img src="/images/t2.png" alt="team 2">
+								<div class="team-person-info padding-small">
+									<div class="team-person-info-detail display-table">
+										<div class="display-table-cell">
+											<h3 class="name">用户中心</h3>
+											<h6 class="position">查看详情</h6>
+										</div>
+									</div>
+								</div>
+							</a>
+							<!-- team-bio -->
+							<div class="team-bio">
+								<!-- team-bio-pict -->
+								<div class="team-bio-pict">
+									<img src="/images/t22.jpg" alt="Member Bio image">
+								</div>
+								<!-- team-bio-content -->
+								<div class="team-bio-content">
+									<hr>
+									<h4>功能介绍</h4>
+									<p>用户中心中包含的功能有我的简历、申请记录、谁看过我的简历、人事经理来信、我关注的企业、招聘信息推荐、系统设置，简历完善之后才能申请职位的哦,当然您应该也希望在HR面前展示更多您的专业技能^_^</p>
+									<hr>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Team Person -->
+					<div class="small-6 large-3 columns animate" data-animation="flipInY">
+						<div class="team-person">
+							<a href="#">
+								<img src="/images/t3.png" alt="team 3">
+								<div class="team-person-info padding-small">
+									<div class="team-person-info-detail display-table">
+										<div class="display-table-cell">
+											<h3 class="name">我的简历</h3>
+											<h6 class="position">查看详情</h6>
+										</div>
+									</div>
+								</div>
+							</a>
+							<!-- team-bio -->
+							<div class="team-bio">
+								<!-- team-bio-pict -->
+								<div class="team-bio-pict">
+									<img src="/images/t33.jpg" alt="Member Bio image">
+								</div>
+								<!-- team-bio-content -->
+								<div class="team-bio-content">
+									<hr>
+									<h4>功能介绍</h4>
+									<p>简历有三项是必填项有个人信息、工作经验、教育经历这三项是必填项,如果未能填写完整这三项您将不具备有申请职位功能的使用权限，同时朝九晚五也未能准确的为您推荐招聘信息哦。</p>
+									<hr>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Team Person -->
+					<div class="small-6 large-3 columns animate" data-animation="flipInY">
+						<div class="team-person">
+							<a href="#">
+								<img src="/images/t4.png" alt="team 4">
+								<div class="team-person-info padding-small">
+									<div class="team-person-info-detail display-table">
+										<div class="display-table-cell">
+											<h3 class="name">附近发现</h3>
+											<h6 class="position">查看详情</h6>
+										</div>
+									</div>
+								</div>
+							</a>
+							<!-- team-bio -->
+							<div class="team-bio">
+								<!-- team-bio-pict -->
+								<div class="team-bio-pict">
+									<img src="/images/t44.jpg" alt="Member Bio image">
+								</div>
+								<!-- team-bio-content -->
+								<div class="team-bio-content">
+									<hr>
+									<h4>功能介绍</h4>
+									<p>您可以把工作中遇到的一些问题或者愉悦的事情分享出去,同时您也可以看到附近人分享的动态,一起讨论工作或生活中的点点滴滴。</p>
+									<hr>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--/ End Team Section -->
+            
+            
+            <!-- Subsection -->
+			<!--/ End Subsection -->
+
+			<!-- Subsection -->
+			<section class="subsection padding-v-medium padding20">
+            <!-- Section Title -->
+				<div id="About" class="section-title row mgm20">
+					<div class="large-12 medium-12 columns animate txtcenter" data-animation="fadeInRight">
+                    	<h2>关于我们</h2>
+						<p>广州欧洛帕信息科技有限公司于2014年9月推出的一款基于地理位置的移动招聘产品"朝九晚五"。</p>
+                        <p>通过朝九晚五，您可以查看附近的招聘信息、查看附近的用户，发现附近优秀人才；全新的信息分享模式，获取新鲜资讯，行业内幕，就业前景。</p>
+                        <p>公司于2014年6月由陈晓龙、高东明、高志灵联合创始。核心团队均来自顶尖互联网公司。</p>
+					</div>
+				</div>
+			</section>
+			<!--/ End Subsection -->
+
+			<!-- Service Section -->
+			<section id="service" class="section padding-v-large">
+				<!-- Parallax Image Background -->
+				<div class="background-image parallax" style="background-image:url(images/service-bg.jpg)"></div>
+				<!-- Section Title -->
+				<div id="Contact" class="section-title row">
+					<div class="large-4 medium-12 columns animate" data-animation="flipInX">
+						<h2>联系我们</h2>
+					</div>
+					<div class="large-8 medium-12 columns animate infop" data-animation="fadeInRight">
+						<p>您可以通过下面的联系方式与我们联系</p>
+                        <p>我们的工作时间早上09:00至下午18:00，欢迎您的咨询</p>
+			<p>公司地址:广州市天河区黄村东路35号启星商务中心B区B252</p>
+					</div>
+				</div>
+				<!-- Service Block -->
+				<div class="service-block row row-wide">
+					<!-- Service Item -->
+					<div class="large-4 medium-6 columns animate" data-animation="flipInX">
+						<div class="service-item" data-match-height="services">
+							<span class="service-icon icon large"><i class="fa fa-group"></i></span>
+							<div class="service-desc">
+								<h4 class="text-uppercase">商务洽谈</h4>
+								<p>陈经理</p><p>chen(at)95vipjob.com</p>
+							</div>
+						</div>
+					</div>
+					<!-- Service Item -->
+					<div class="large-4 medium-6 columns animate" data-animation="flipInX">
+						<div class="service-item" data-match-height="services">
+							<span class="service-icon icon large"><i class="fa fa-photo"></i></span>
+							<div class="service-desc">
+								<h4 class="text-uppercase">广告业务</h4>
+								<p>高经理</p><p>gao(at)95vipjob.com</p>
+							</div>
+						</div>
+					</div>
+					<!-- Service Item -->
+					<div class="large-4 medium-6 columns animate" data-animation="flipInX">
+						<div class="service-item" data-match-height="services">
+							<span class="service-icon icon large"><i class="fa fa-file-video-o"></i></span>
+							<div class="service-desc">
+								<h4 class="text-uppercase">媒体采访</h4>
+								<p>陈经理</p><p>chen(at)95vipjob.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--/ End Service Section -->
+			
+		</div>
+		<!--/ End Main -->
+
+		<!-- Footer -->
+		<footer id="footer" class="footer padding-v-medium">
+			<div class="row">
+				<div class="medium-4 columns">
+					<a href="http://www.95vipjob.com" class="logo-bottom"><img class="logo" src="/images/logo-alt.png" alt="朝九晚五APP" width="150" height="45" ></a>
+				</div>
+				<div class="medium-8 text-right small-only-text-left columns mgtop20">
+					
+					<p class="copyright-text">朝九晚五 &copy; Copyright 2015. All Rights Reserved.<a target="_blank" href="/yssm.html">隐私声明</a><a> 粤ICP备14065505号-1</a><a href="http://game.tongbu.com" style="color:#1d1d1d" rel="nofollow">苹果手机游戏</a></p>
+				</div>
+			</div>
+			
+			<!--警告：请不要再删除 ——by seven-->
+			<div id="frienlink" style="color: #333333;">
+			友情链接：<a target="_blank" href="http://www.591liwu.com" style="color: #333333;">礼物网</a> 
+			<a target="_blank" href="http://www.cosxitong.cn" style="color: #333333;">COS操作系统</a> 
+			<a target="_blank" href="http://www.feiwenseo.com" style="color: #333333;">深圳网站优化</a>
+			<a target="_blank" href="http://www.jlyuni.com" style="color: #333333;">文化衫定做</a>
+			</div>
+			
+		</footer>
+		<!--/ End Footer -->
+
+		<!-- Scripts -->
+		<script src="/js/jquery.js"></script>
+		<script src="/js/jquery.easing.min.js"></script>
+		<script src="/js/jquery.bxslider.min.js"></script>
+		<script src="/js/jquery.mixitup.min.js"></script>
+		<script src="/js/jquery.magnific-popup.min.js"></script>
+		<script src="/js/jquery.matchHeight-min.js"></script>
+		<script src="/js/jquery.vide.min.js"></script>
+		<script src="/js/waypoints.min.js"></script>
+		<script src="/js/odometer.min.js"></script>
+		<script src="/js/imagesloaded.pkgd.min.js"></script>
+		<script src="/js/smoothscroll.min.js"></script>
+		<script src="/js/retina.min.js"></script>
+		<script src="/js/foundation.min.js"></script>
+		<script src="/js/script.js"></script>
+		<script src="/js/zjwwapp.js"></script>
+        <script type="text/javascript" src="/js/scroll.js"></script>
+
+		<!-- Demo Only -->
+<div style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb763aaa221e2fb0602929a7211aa6501' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+
+<!--客服-->
+<link rel="stylesheet" href="/css/quanping.css">
+<script type='text/javascript' src='/js/kefu.js'></script>
+<div class="right_contact_img" style="z-index: 9998; right: 0px;">
+    <ul>
+    
+        <li><a href="#"><img src="images/qq.png" width="56" height="56" /></a>
+        	<div class="pull_down2 qq"><A id="BizQQWPA" href="http://wpa.qq.com/msgrd?v=3&uin=1929790419&site=qq&menu=yes"><img src="images/qq_03.png" width="180" height="56"></A></div>
+        </li>
+        
+        <li><a href="#"><img src="images/phone.png" width="56" height="56" /></a>
+        	<div class="pull_down2 dianhua"><img src="images/phone_03.png" width="180" height="56"></div>
+        </li>
+        
+        <li class="last"><a href="#"><img src="images/weixin.png" width="56" height="56" /></a>
+        	<div class="pull_down2 weixin"><img src="images/weixin3.png" width="180" height="56"></div>
+        </li>    
+    </ul>
+</div>
+<!--客服-->
+	</body>
+</html>

@@ -1,0 +1,2197 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>商友圈-互动营销社区圈子-慧聪商学院  </title>
+	<script src="http://style.org.hc360.com/js/build/source/core/hc.common.js"></script>
+	<meta content="商友圈,互动营销,社区圈子" name="keywords">
+	<meta content="商友圈主要服务于企业商友和行业商友，让他们随时了解企业大拿和行业大拿的最新动态，掌握相关行业上下游的第一手资料，与大拿前辈们更接近，做生意更事半功倍。" name="description">
+	
+	<link href="http://style.xt.hc360.com/css/mycss.css" rel="stylesheet" type="text/css" />
+	<link href="http://style.xt.hc360.com/css/public.css" rel="stylesheet" type="text/css">
+	
+	<!-- html5.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+		<script src="http://style.xt.hc360.com/js/html5.js"></script>
+	<![endif]-->
+	<!--[if IE]>
+	<script>
+	(function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header, hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})()
+	</script>
+	<![endif]-->
+	<style>
+	/*validator*/
+	span.errorTip{ font-size:12px; color:#F00; }
+	div.errorTip { font-size:12px; color:#F00; }
+	div.validTip, span.validTip{ font-size:12px; display:none; } 
+	span.require { color:#C00; font-weight:bold; }
+	.noerror .errorTip, .noerror .validTip { display: none; } 
+	.errorInput{ background-color:#FAFFBD; }
+	</style>
+	<script>
+		/**
+		 * 全局变量
+		 */
+		var SITE_URL  = 'http://sxy.hc360.com';
+		var UPLOAD_URL= 'http://sxy.hc360.com/data/upload';
+		var THEME_URL = 'http://sxy.hc360.com/addons/theme/stv1/_static';
+		var APPNAME   = 'public';
+		var MID		  = '0';
+		var UID		  = '0';
+		var initNums  =  '0';
+		var SYS_VERSION = '';
+		
+		var userInit  =  '';
+		
+		// Js语言变量
+		var LANG = new Array();
+		
+		var _ROOT_  = 'http://sxy.hc360.com';
+		var _THEME_ = 'http://sxy.hc360.com/addons/theme/stv1/_static';
+		var _PUBLIC_ = 'http://sxy.hc360.com/addons/theme/stv1/_static';
+		
+	</script>
+	
+	<script src="http://style.xt.hc360.com/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script src="http://style.xt.hc360.com/js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="http://style.xt.hc360.com/js/index_slide.js" type="text/javascript"></script>
+	<script src="http://style.xt.hc360.com/js/common.js" type="text/javascript"></script>
+ 	<script src="http://style.xt.hc360.com/js/mycode.js" type="text/javascript"></script>
+	
+</head>
+<body>
+<p class="ie_tip"><span>您的IE浏览器版本过低，可能会导致慧聪商学院某些重要功能无法使用，强烈建议您升级到高版本IE浏览器！您可百度搜索“ie浏览器”自行下载升级!</span><a href="javascript:;" ><img src="http://style.xt.hc360.com/images/ie_close.png"></a></p>
+<!-- 关注弹框 -->   
+<div class="guan_ok"></div>
+<!-- 关注弹框 end -->
+<!--登录弹窗-->
+<div class="divbg"></div><!-- 背景 -->
+ 
+ <div class="msg_login">
+  <div class="msg_login_title">
+      <img src="http://style.xt.hc360.com/images/msg_logo.png" style="margin-top:8px;"/>
+      <p style="margin-left:8px;display:inline">学习 · 分享 · 互动</p>
+      <p>一切从慧聪商学院开始</p>
+      <div class="clear"></div>
+      <a href="javascript:;" class="msg_close"><img src="http://style.xt.hc360.com/images/msg_close.png" /></a>
+   </div>
+   <div class="msg_login_cont">
+    <!--  <form action="#"> -->
+     	<input type="hidden" id="popLoginTicket" name="popLoginTicket" value="" />
+     	<input type="hidden" id="clickfun" class="clickfun" placeholder="" value="0" />
+     	<!--错误信息提示--><p id="loginmsg" style="margin:0px;"></p>
+        <span>会员名</span><input type="text" id="snsname" class="snsname" placeholder="用户名/手机号"  /><br />
+        <span>密&nbsp;&nbsp;&nbsp;码</span><input type="password" id="snspass" class="snspass" placeholder="" />
+        <div class="clear"></div>
+        <div id="log" style="display:none;">
+	        
+	    </div>
+        <input type="button" value="登录" onclick="ajaxssologins();" class='login_btn_sub' style="cursor:pointer;">
+     <!-- </form> -->
+     <a href="http://sxy.hc360.com/index.php?app=public&mod=Register&act=index" class="login_btn_zhu">注册</a><a style="float:right;margin-top:10px;" href="http://sso.hc360.com/VerifyLoginName.html" target="_blank">找回密码</a>
+     <div class="clear"></div>
+  </div>
+ </div>
+<!--登录弹窗 end-->
+<script type="text/javascript">
+$(function () { 
+    $(".snsname").focus(function(){
+    	$("#loginmsg").hide();
+    	$("#loginmsg").html('');
+    });
+    $(".snsname").keyup(function(){
+    	$("#loginmsg").hide();
+    	$(".snspass").val('');
+    });
+    $(".snspass").focus(function(){
+    	$("#loginmsg").hide();
+    	$("#loginmsg").html('');
+    });
+    
+  //登录回车事件
+	$('#snsname').keydown(function(e){
+		if(e.keyCode==13){
+			ajaxssologins(); //处理登录事件
+		}
+	});
+	$('#snspass').keydown(function(e){
+		if(e.keyCode==13){
+			ajaxssologins(); //处理登录事件
+		}
+	});
+	$('#ulogcode').keydown(function(e){
+		if(e.keyCode==13){
+			ajaxssologins(); //处理登录事件
+		}
+	});
+	//public_add
+	$(".mmt").hover(function(){
+	  $(this).parent(".Topitem_nav").addClass("first");
+	  $(this).next("ul").show();
+	 })
+	 $(".Topitem_nav").mouseleave(function(){ 
+	      $(this).find("ul").hide();
+		   $(this).removeClass("first");
+	 })	
+	/**
+	 $('.search_input').bind('input propertychange', function() {
+	   if($(this).val().length){
+	        $(".wenda_search").show();
+	   }else{
+	        $(".wenda_search").hide();
+	   }
+	 });  
+	*/
+	$("body").click(function(){
+		if($(".search_input").is(":focus") == false && $(".wenda_search").is(":focus") == false ){
+			wendaTableHide();
+		}
+	})
+});
+function inputSeachQestion(){
+	var oldKey = $("#search_keywords_val").val()
+	var key = $('.search_input').val();
+	var wendaSeachHtml = $(".wenda_search_list").html();
+	if(key.length > 0 ){
+		if(key != oldKey){
+			$("#search_keywords_val").val(key);
+			$.ajax({
+		        url:"http://sxy.hc360.com/index.php?app=public&mod=Search&act=getQuestionSearchForAjaxNeed",
+		        data:{key:key},
+		        type:'GET',
+		        dataType:'JSON',
+		        async:true,
+		        error:function(e){
+		        	ui.error("请求错误");
+		        },
+		        success:function(json){
+		        	if(json.status == 1){
+		        		$(".wenda_search").html(json.data);
+		        		$(".wenda_search").show();
+		        	}else if(json.status == 0){
+		        		$(".wenda_search").hide();
+		        	}
+		        }
+		    });
+		}else if(wendaSeachHtml != ""){
+			$(".wenda_search").show();
+		}
+		
+	}else{
+		$(".wenda_search").hide();
+	}
+}
+function wendaTableHide(){
+	$(".wenda_search").hide();
+}
+function clear_news(b){
+	var thisNumber =  $("."+b).find(".news_num").text();
+	var allNumber = $("#all_news_num").text();
+	if(allNumber != ""){
+		allNumber = allNumber - thisNumber;
+		if(allNumber == 0){
+			$("#all_news_num").remove();
+		}else{
+			$("#all_news_num").text(allNumber);
+		}
+		
+	}
+	$("."+b).find(".news_num").remove();
+}
+
+function keydown(evt){
+	var evt=evt?evt:(window.event?window.event:null);//兼容IE和FF
+	if (evt.keyCode==13){
+		ajaxssologins();
+	}
+}
+get_regvalidkey();
+function get_regvalidkey(){
+	$.getJSON("http://sso.hc360.com/LoginTicket.jsp?&callback=?",
+	function(json) {
+		if(json!=null){
+			$('#popLoginTicket').val(json.key);
+		}
+	});
+} 
+
+function get_regvalidkeys(){
+	$("#log").html('<span>验证码</span><input onkeydown="keydown(event)" type="text" size="5" id="ulogcode" value="" style="width:60px;margin-right:10px;"/><a href="javascript:get_regvalidkeys();"><img id="logcode_validimg" src="" />看不清？换一换</a>');
+	$("#log").slideDown('slow');
+	$.getJSON("http://sso.hc360.com/LoginTicket.jsp?&callback=?",
+	function(json) {
+		if(json!=null){
+			$('#popLoginTicket').val(json.key);
+			_newUrl='http://sso.hc360.com/ValidImage.jsp?seed='+json.value;
+			$('#logcode_validimg').attr('src',_newUrl);
+		}
+	});
+} 
+
+function ajaxssologins() {
+	  returnurl = document.URL;
+	  var ulogcodes = '';
+	  if( $("#ulogcode").val() ){ ulogcodes = $("#ulogcode").val(); }
+      $.getJSON("http://sso.hc360.com/ssologin?callback=?",
+      {
+        LoginType : "json",
+        LoginID : document.getElementById("snsname").value,
+        Passwd : document.getElementById("snspass").value,
+        ValidKey : ulogcodes,
+        ctoken : document.getElementById("popLoginTicket").value,
+        ReturnURL : returnurl
+      },
+      function(json) {
+	        if ( json != null) {
+				if( json.success == "yes" ){
+					$("#loginmsg").toggle();
+					$("#loginmsg").html("登录成功...");
+					var fun = $("#clickfun").val();
+					if(fun=='0'){
+						window.location.reload();
+					}else{
+						//隐藏登录框
+						$(".divbg").hide();
+						$(".msg_login").hide();
+						$("#snspass").val('');
+						$("#loginmsg").html("");
+						//ajax去后台判断登录  并写session
+						$.post("http://sxy.hc360.com/index.php?app=public&mod=Passport&act=quickLoginAjax",function(msg){
+							if(msg>0){
+								//MID = //设置js登录id
+								MID = msg;
+								$("#clickfun").val('0')
+								//执行传过来的fun
+								eval(fun);
+								$.post("http://sxy.hc360.com/index.php?app=widget&mod=Login&act=updateDate",function(data){
+									if(data != '0'){
+										$("#header_tools").html(data);
+									}else{
+										window.location.reload();
+									}
+								});
+							}else{
+								$("#loginmsg").toggle();
+								if(msg==0){
+									alert('登录失败！');	
+								}else{
+									alert('该用户已被禁用！');
+								}
+								
+							}
+						});
+					}
+					
+				}else{
+					$(".snspass").val('');
+					get_regvalidkeys();
+					$("#loginmsg").toggle();
+					$("#loginmsg").html(json.value);
+				}
+	        } else {
+				$(".snspass").val(''); 
+				get_regvalidkeys();
+	          
+	        }
+      });
+}
+function rmNoctie(type){
+	$.post("http://sxy.hc360.com/index.php?app=public&mod=Feed&act=rmUserNotice", { 'type': type } );
+}
+</script>
+<!-- 顶部条开始 -->
+ <div class="public_add">
+    <div class="public_add_main">
+       <div class="public_add_l">
+        <a href="http://www.hc360.com" target="_blank" class='huicong_img'>慧聪首页</a>
+        <div class="usermodule">
+           <!--登录前-->
+                      <div class="user_before">
+           <span class="user_welcome">欢迎来慧聪商学院</span>
+           <a href="http://sso.hc360.com/ssologin?ReturnURL=http%3A%2F%2Fsxy.hc360.com" class="TopLogin">请登录</a> 
+           <a href="http://my.b2b.hc360.com/my/turbine/template/firstview,reg.html?sourcetypeid=3654&skey=top&ReturnURL=http%3A%2F%2Fsxy.hc360.com" class="freeRegist">免费注册</a>
+        	</div>
+        	       </div> 
+     </div>
+       <div class="public_add_r">
+         <ul class="TopNavUl">
+           <li class="Topitem_nav mmtControl">
+						<a href="http://b2b.hc360.com/intro/index.htm" onmousedown="return hcclick('?hctracelog=newstopmmt')" target="_blank" class='mmt'>买卖通<s>&nbsp;</s></a>
+						<ul id="mmtDistrict" style="display:none">
+							<li><a href="http://b2b.hc360.com/intro/jrmmt.html" onmousedown="return hcclick('?hctracelog=newstopmmt')" target="_blank">在线申请买卖通</a></li>
+							<li><a href="http://b2b.hc360.com/intro/index.htm" onmousedown="return hcclick('?hctracelog=newstopmmt')" target="_blank">免费网络在线咨询</a></li>
+							<li><a href="http://b2b.hc360.com/mmtTrade/liuyantijiao.html" onmousedown="return hcclick('?hctracelog=newstopmmt')" target="_blank">免费留言咨询</a></li>
+							<li>联系我们:400-6360-888</li>
+						</ul>
+					</li>
+                    <li class="Glin">&nbsp;</li>
+                    <li class="Topitem_nav serveControl">
+						<a href="http://sso.hc360.com/ssologin?logincode=11&loginparam=ssupply_myb2btop&sourcetypeid=&ReturnURL=http%3A%2F%2Fmy.b2b.hc360.com%2Fmy%2Fturbine%2Ftemplate%2Fcorcenter%2Ccompany%2Cmain.html%3Flogincode%3D11%26loginparam%3Dssupply_myb2btop"
+						 onmousedown="return hcclick('?hctracelog=newstopswzx')" class='mmt' target="_blank">我的会员中心<s></s></a>
+						<ul class="ServeCenter" style="display:none">
+							<li><a href="http://sso.hc360.com/ssologin?logincode=&loginparam=&ReturnURL=http%3A%2F%2Fmy.b2b.hc360.com%2Fmy%2Fturbine%2Ftemplate%2Fcorcenter%2Cbusiness%2Csupplydetailedit.html"
+							onmousedown="return hcclick('?hctracelog=newstopswzx')"  target="_blank">发布采购</a></li>
+							<li><a href="http://my.b2b.hc360.com/my/turbine/template/pubinfo,infopub,businpub.html?pubinfo=index&logincode=11&loginparam=ssupply_myputtop"
+							onmousedown="return hcclick('?hctracelog=newstopswzx')" target="_blank" >发布供应</a></li>
+                            <li><a href="http://sso.hc360.com/ssologin?logincode=11&loginparam=ssupply_shopssotop&ReturnURL=http%3A%2F%2Fmy.b2b.hc360.com%2Fmy%2Fturbine%2Ftemplate%2Fcorcenter%2Cmatchinfo%2Cmatchinfo.html%3Fpubinfo%3Dindex%26logincode%3D11%26loginparam%3Dssupply_shopssotop"
+                            onmousedown="return hcclick('?hctracelog=newstopswzx')" target="_blank" >买卖速配</a></li>
+                            <li><a href="http://sso.hc360.com/ssologin?logincode=&loginparam=&ReturnURL=http%3A%2F%2Fmy.b2b.hc360.com%2Fmy%2Fturbine%2Ftemplate%2Fcorcenter%2Cbusiness%2Csupplydetailedit.html"
+                            onmousedown="return hcclick('?hctracelog=newstopswzx')" target="_blank" >炫铺管理</a></li>
+                            <li><a href="http://sso.hc360.com/ssologin?logincode=&loginparam=&ReturnURL=http%3A%2F%2Fmy.b2b.hc360.com%2Fmy%2Fturbine%2Ftemplate%2Fcorcenter%2Cbusinnotes%2Crecwords.html"
+                            onmousedown="return hcclick('?hctracelog=newstopswzx')" target="_blank" >我的留言</a></li>							
+						</ul>
+					</li>
+         </ul>
+       </div>
+       <div class="clear"></div>
+    </div>
+ </div>
+<!-- 顶部条结束 -->
+<!-- sns end -->
+ <div class="public_top">
+ <header id="header">
+
+  <!--网页头部-->
+      <div class="logo">
+         <a href="http://sxy.hc360.com" class="logo_img"></a>
+      </div>
+            <div class="header_nav">
+       <!--nav-->
+       <div class="nav_top">
+         <a href="http://sxy.hc360.com/index.html">首页</a>
+         <span class="icon-sep"></span>
+                  	<a href="http://sxy.hc360.com/course/0-0-0-0-0-0.html" >课程</a>
+                  <span class="icon-sep"></span>
+                  	<a href="http://sxy.hc360.com/lector/0-0-0-0.html" >讲师</a>
+                  <span class="icon-sep"></span>
+         
+                  	<a href="http://sxy.hc360.com/feed/0.html" class="on">圈子<i class="icon_hot"></i></a>
+                  
+         <span class="icon-sep" ></span>
+         <a href="http://sxy.hc360.com/niushang.html" >牛商故事</a>
+         
+         <span class="icon-sep" ></span>
+                  	<a href="http://sxy.hc360.com/grow.html" >成长营</a>
+                  <span class="icon-sep" ></span>
+                  	<a href="http://sxy.hc360.com/index.php?app=public&mod=Salon&act=index" >线下活动</a>
+                </div> 
+      </div> 
+            <!-- 搜索 -->
+      <div class="header_search">
+      	<div id="searchform">
+      		<input type="hidden" id="search_keywords_val" value="">
+      			      			      		 <input type="search" class="search_input" id="s"  autocomplete="off" maxlength="15" value="" />
+	      		      					<a href="javascript:;" id="search_btn_top" class="search_btn">搜索</a>
+		</div>
+		       <!--wenda_search_list-->
+           </div> 
+    <div class="header_right font_mic"> 
+           	       	  <!--登录前-->
+       	  <div class="header_login">
+          <span class="login"><a href="javascript:;" class="login">登录</a></span><span class="line">
+          </span><span class="reg"><a href="http://sxy.hc360.com/index.php?app=public&mod=Register&act=index&url=L2ZlZWQvMC5odG1s">注册</a></span>
+          </div>
+             </div>
+     <div class="clear"></div>
+	    <div class="clear"></div>
+  </header>
+</div> 
+ <link href="http://style.xt.hc360.com/css/syq.css" rel="stylesheet"  type="text/css">
+<script src="http://style.xt.hc360.com/js/index_slide.js" type="text/javascript"></script>
+<script src="http://style.xt.hc360.com/js/jquery.flexslider-min.js" type="text/javascript"></script>
+<script type="text/javascript">
+var time_out= '';
+$(document).ready(function(e){
+
+    $('.flexslider').flexslider({
+        directionNav: false,
+        pauseOnAction:false,
+    });
+	//list_pl_tool
+	$(".list_pl_tool .pl_1").click(function(){
+	   $('.list_pl_fb textarea').eq($('.list_pl_tool > .pl_1').index(this)).focus();
+
+	})
+	//hytj
+$('.kwicks').kwicks({
+        max:280,//控制.extension区块的宽度
+        spacing:4//控制图片之间的距离
+      });
+//  $(".hytj header a").click(function(){
+// 	 $(".kwicks").toggle();
+//  })
+ /*
+ $(window).scroll(function(){
+	 var h=$(".syq_main_r").height()-110;
+    if($(document).scrollTop() >= h){ 
+	  $(".hytj").css({"position":"fixed","top":"200px","width":"353px","_position":"absolute","_top":"expression(eval(document.documentElement.scrollTop))"});
+    }else{
+	  $(".hytj").css({"position":"relative","top":"0px","width":"353px"});
+	}	
+ })
+*/
+//滚动通栏导航固定
+$(window).scroll(function(){
+  var st_height=document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+  if( st_height >= 130 ){
+     $(".full_nav").addClass("fix_nav");
+  }else{
+      $(".full_nav").removeClass("fix_nav");
+  }
+  var h=$(".syq_main_r").height()+40;
+  if( st_height >= h ){
+	  
+	  $(".hytj").addClass("fix_hytj");	 
+  }else{
+	   $(".hytj").removeClass("fix_hytj");	 
+  }
+})
+ //shuaxin
+$('.shuaxin').live("mousedown",function(e){
+     $('.shuaxin').bind("contextmenu",function(e){
+         return false;
+    });
+     if(e.which==1){
+        $(".shuaxin").find("img")[0].src="http://style.xt.hc360.com/images/123.png";
+     }
+  });
+  
+ if(screen.width<=1280){
+  $("hr.refurbish_2").css("left","-15px");
+  $("a.refurbish_2 img").css("left","-30px");
+  $(".shuaxin").css("left","-30px");
+ }
+ 
+ $('.shuaxin').live("mouseup",function(e){
+       $(".shuaxin").find("img")[0].src="http://style.xt.hc360.com/images/1232.png";
+ })
+  //热点动态
+   $(".qz_tab a").click(function(){
+	 var index = $(this).index();
+	   	
+	 $(this).addClass("cur").siblings(".qz_tab a").removeClass("cur");
+	 if(index == 0){
+		$("#new_article").hide();
+		$("#hot_article").show();
+	 }else{
+		$("#new_article").show();
+		$("#hot_article").hide();
+	 }
+	   	
+   	}) 
+//share修改
+ $("span.fb_share ").click(function(){
+	var parent=$(this).parents(".sys_dt_tool");
+   if(parent.height()==30){
+       parent.find(".share_ico_line").fadeTo("show",0.99).css("display","block");
+        parent.animate({height:"60px"})
+   }else{
+	 parent.find(".share_ico_line").fadeTo("show",0).css("display","none");
+      parent.animate({height:"30px"})
+	}
+  
+ })
+   //fanzhuan
+  $(".sjczb_title a").bind("click",function(){
+    $(".sjczb").toggle();
+    });   
+	
+//zan
+$('a.zan').click(function(){
+   	obj=$(this);
+   	if(obj.attr('class')=='zan2'){
+   		return false;
+   	}
+   	obj.removeClass('zan');
+   	obj.addClass('zan2');
+  	$(this).append('<div id="zhan"><b>+1<\/b></\div>');
+  	$('#zhan').css({'position':'absolute','z-index':'99', 'color':'#90cb6c','left':'270px','top':'-10px'}).animate({top:-15,left:275},'slow',function(){
+   		$(this).fadeIn('fast').remove();
+   		/* var Num = parseInt(obj.find('span').text());
+    	Num++;
+   		obj.find('span').text(Num); */
+  	});
+  	var type= obj.attr('type');
+    var app_id = obj.attr('appid');
+    var touid = obj.attr('touid'); 
+    
+    $.post("http://sxy.hc360.com/index.php?app=public&mod=Laud&act=addLaud",{type:type,app_id:app_id,to_uid:touid},function(msg){
+    	if(msg != 1){
+    		obj.removeClass('zan2');
+    		obj.addClass('zan');
+    		ui.error('点赞失败！');
+    	}else{
+    		 var Num = parseInt(obj.find('span').text());
+    		 Num=Num+1; 
+		     obj.find('span').text(Num);
+			 if(MID > 0){
+			 	var ns = 0;
+				$(".list_zan_"+app_id+type).each(function(i){
+				    ns=ns+1;
+				    if(ns>=6){
+				    	$(this).remove();
+				    }
+				});
+			   	$(".zans_"+app_id+type).prepend("<span class='fb_zan_list list_zan_"+app_id+type+"'><a title='' href='' target='_blank' ><img src='' /></a></span>");
+			}
+    	}
+    });
+  	
+  	return false;
+});
+
+time_out = setInterval('brushs(3)',30000);
+
+});
+</script>
+<script type="text/javascript">
+<!--
+function feedMore(page){
+	$("#Loading").addClass("Loading");
+	$("#Loading").text("正在加载");
+	var type = '';
+	var updateTime = $("#updateTime").val();
+		$.post("http://sxy.hc360.com/index.php?app=public&mod=Feed&act=feedMore",{page:page,type:type,updateTime:updateTime},function(html){
+		var jn=eval('('+html+')');
+		if( jn.num < 15 && jn.num >= 0 ){
+			$("#Loading").removeClass("Loading");
+			$("#Loading").html("<span>已无更多...</span><div class='clear'></div>");
+		}else if(jn.num == 15){
+			page = page+1;
+			$("#Loading").removeClass("Loading");
+			$("#Loading").html("<a id='load_pl' href='javascript:;' onclick='feedMore("+page+")' ><span>点击加载更多</span><div class='clear'></div></a>");
+		}
+		$('#Loading').before(jn.content);
+	});
+}
+
+function brushs(type){
+	//alert(type);
+	if(type == 1){
+		$("body,html").animate({scrollTop: 0}, 0);
+		window.location.reload();
+	}else if(type==2){
+		$("body,html").animate({scrollTop: 0}, 0);
+		window.location.reload();
+	}else if(type==3){
+		var max_id = $("#maxFid").val();
+		var user_gid = $("#user_group_id").val();
+		if(max_id){
+			$.post(U('public/Feed/brush'),{max_id:max_id,user_gid:user_gid},function(msg){
+				if(msg>0){
+					$(".refurbish").hide();
+					$(".refurbish_2").show();
+					clearInterval(time_out);
+				}
+			});
+		}
+	}
+}
+
+function checkloginstatus(){
+	if(checkLogin()==0){
+		var height=$(document).height()+"px";
+		
+		var st_height = $(document).scrollTop(), winh_height = $(window).height();
+		var div_height=$(".msg_login").height();
+		if($(".full_nav").length){
+		  $(".msg_login").css("top",  (winh_height-div_height)/2+"px");
+		}else{
+		  $(".msg_login").css("top", st_height + (winh_height-div_height)/2+"px");
+		}
+		$(".divbg").css("height",height);
+		$(".divbg").show();
+		
+		$(".msg_login").show();//弹登录框
+		return false;
+	}else{
+		return true;
+	}
+}
+//-->
+</script>
+<!-- 配置文件 -->
+<script type="text/javascript" src="http://sxy.hc360.com/addons/theme/stv1/_static/sns/js/ueditor1_4_3-utf8-php/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="http://sxy.hc360.com/addons/theme/stv1/_static/sns/js/ueditor1_4_3-utf8-php/ueditor.all.js"></script>
+<!--提问弹框-->
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$(".answer_close,.msg_btn_1").click(function(){
+	    $(".divbg").hide();
+	    $(".answer_msg").hide();
+	})
+	$(".classify_item").click(function(){
+	 $(this).addClass("item_selected").siblings(".classify_item").removeClass("item_selected");
+	 $(".hd_tip").eq($('.classify_item').index(this)).show().siblings(".hd_tip").hide();
+	 
+	})
+	//提问分类 
+	$(".classify_item").click(function(){
+		 $(this).addClass("item_selected").siblings(".classify_item").removeClass("item_selected");
+		 $(".hd_tip").eq($('.classify_item').index(this)).show().siblings(".hd_tip").hide();
+		 $("#questionCate").val($(this).attr("data"));
+	});
+	ue.addListener("focus", function (type, event) {
+		$(".wenda_tishi_msg").hide();
+	    var content = ue.getContentTxt();
+	    if(content == '•请清晰、准确的描述您所遇到的问题，方便大家了解与解答；•如果是操作类问题，请描述清楚问题出现时的前后动作，可以适当增加操作截图，直接呈现问题；'){
+	        ue.execCommand('cleardoc');
+	    }
+    });
+	//问题提示
+    $('.fbwz_title').bind('input propertychange', function() {
+    	if($(this).val().length > 1){
+        	questionListAjax($(this).val());
+        }else{
+            $(".wenda_tishi_msg").hide();
+        }
+    });
+    $(".wenda_tishi_close,.divbg,.answer_msg,.answer_msg_textarea,.edui-default").click(function(){
+         $(".wenda_tishi_msg").hide();
+    })
+
+});
+
+//提问弹窗
+function openQuestionAddWindow(){
+	var document_height=$(document).height();
+	var window_height=$(window).height();
+	if(!checkloginstatus()){
+		return false;
+	}
+	if($(".wdq_tip").css("display")=="none"){
+		$(".wdq_tip").show();
+	    $(".hf_btn").hide();
+		var divcss = {
+			height:98,    
+              border: '1px solid #CCC'
+		}; 
+	   $(".wdq_textarea").css(divcss);
+	   UE.getEditor('editor').setHide();
+	}
+	var wendaAwardNums = $(".wenda_award_nums i").html();
+	if(wendaAwardNums == ""){
+		$.ajax({
+	        url:"http://sxy.hc360.com/index.php?app=widget&mod=QuestionAdd&act=getUserCredit",
+	        data:{},
+	        type:'POST',
+	        dataType:'JSON',
+	        async:true,
+	        error:function(){
+	        	ui.error('请求错误');},
+	        success:function(json){
+	        	if(json.status == 1){
+	        		$(".wenda_award_nums i").html(json.data);
+	        	}else{
+	        		 window.location.reload();
+	        	}
+	        }
+	    });
+	}
+    $(".divbg").css("height",document_height);
+    $(".divbg").show();
+    $(".answer_msg").css("top",window_height/2-250);
+    $(".answer_msg").show();
+}
+
+
+//检查发布问题的标题
+function checktitle(){
+	//标题长度验证
+	if($("#title").val().replace(/(^\s*)|(\s*$)/g, "").length <6){
+		$("#title_tip").addClass("not_ok");
+		$("#title").addClass("errorInput");
+		return false;
+	}else{
+		$("#title_tip").removeClass("not_ok");
+		$("#title").removeClass("errorInput");
+		return true;
+	}
+}
+
+//发布问题
+function subQuestion(){
+	if(!checktitle()){
+		return false;
+	}
+	var award_nums=parseInt($(".wenda_award_select").val());
+    var wealth_nums=parseInt($(".wenda_award_nums i").text());
+    if(award_nums>wealth_nums){
+        $(".wenda_award_tip").show();
+        return false;
+    }else{
+        $(".wenda_award_tip").hide();
+    }
+    var title  = $("#title").val();
+    var cate   = $("#questionCate").val();
+    var source = $("#source").val();
+    var sourceid = $("#sourceid").val();
+    var content = ue.getContent();
+    if(ue.getContentLength(true)>1000){
+    	return false;
+    }
+    $.ajax({
+        url:"http://sxy.hc360.com/index.php?app=public&mod=Question&act=addQuestion",
+        data:{cate:cate,title:title,content:content,awardNums:award_nums,source:source,sourceid:sourceid},
+        type:'POST',
+        dataType:'JSON',
+        async:true,
+        error:function(){
+        	ui.error('请求错误');
+        },
+        success:function(json){
+        	if(json.status != 4){
+        		ui.error(json.data);
+        	}else{
+        		$("#newid").val(json.newid);
+        		//隐藏发布窗口
+                $(".answer_msg").hide();
+        		//打开提交成功邀请窗口
+        		var document_height=$(document).height();
+        	    var window_height=$(window).height();
+        		var scroll_height=$(document).scrollTop();
+                $(".divbg").css("height", document_height);
+                $(".divbg").show();
+                $(".wenda_msg").css("top",scroll_height+window_height/2-265);
+                $(".wenda_msg").show();
+                $(".classify_item").eq(0).addClass("item_selected").siblings(".classify_item").removeClass("item_selected");
+        		$(".hd_tip").eq($('.classify_item').index($(".classify_item").eq(0))).show().siblings(".hd_tip").hide();
+        		$("#questionCate").val($($(".classify_item").eq(0)).attr("data"));
+        		$("#title").val("");
+        		ue.setContent("");
+        	}
+        }
+    });
+    return false;
+}
+</script>
+
+<div class="answer_msg">
+    <div class="answer_msg_tit">
+        <span>提问</span>
+        <a href="javascript:;" class="answer_close"></a>
+    </div>
+    <div class="answer_msg_main">
+	<input type="hidden" value=""  id="newid" name="newid"/>
+	<input type="hidden" value=""  id="id" name="id"/>
+	<input type="hidden" value="1"  id="questionCate" name="questionCate"/>
+	<input type="hidden" value="1"  id="source" name="source"/>
+	<input type="hidden" value="0"  id="sourceid" name="sourceid"/>
+    <div class="input_entry">
+        <span class="problem_classify">分类：</span>
+                             <a href="javascript:;" class="classify_item item_selected" data="1">慧聪服务</a>
+                                        <a href="javascript:;" class="classify_item" data="2">店铺运营</a>
+                                        <a href="javascript:;" class="classify_item" data="3">电商百科</a>
+                       </div>
+    <div class="input_entry">
+		                                 <p class="hd_tip" style="display:block;">注：该分类须发布慧聪产品及服务相关的问题，分类越精准答案就越精准<a class='wd_fw'  href='http://sxy.hc360.com/question-3252.html ' target='_blank'>参考范本</a>。</p>
+                                                              <p class="hd_tip" style="display:none;">注：该分类须发布店铺操作及推广类的问题，分类越精准答案就越精准<a class='wd_fw'  href='http://sxy.hc360.com/question-3252.html ' target='_blank'>参考范本</a>。</p>
+                                                              <p class="hd_tip" style="display:none;">注：该分类须发布营销及电商综合类问题，分类越精准答案就越精准<a class='wd_fw' href='http://sxy.hc360.com/question-3252.html' target='_blank'>参考范本</a>。</p>
+                                   </div>
+    
+    
+    <div class="input_entry">
+            <input  id="title" name="title" type="text" class='fbwz_title' placeholder="写下您的问题" maxlength="50"  onBlur="checktitle();"/>
+            <span id="title_tip" class="title_tip ">必填，6-50个字以内</span>
+    </div>
+    <!-- 问答提示框 start -->
+     <div class="wenda_tishi_msg">
+         <div class="wenda_tishi_tit">
+             <span>看看有没有您想要的问题</span>
+             <a href="javascript:;" class="wenda_tishi_close"></a>
+         </div>
+          <ul class="wenda_tishi_list">
+          </ul>
+      </div>
+   <!-- 问答提示框 end -->
+   <div class="input_entry wenda_buchong">问题补充描述：</div>
+    <div class="answer_msg_textarea">
+        <script  id="answer_content" name="answer_content" type="text/plain"><span style="color:#999;font-size:12px;">•请清晰、准确的描述您所遇到的问题，方便大家了解与解答；<br />•如果是操作类问题，请描述清楚问题出现时的前后动作，可以适当增加操作截图，直接呈现问题；</span></script>
+    </div>
+        <div class="input_entry wenda_tangbi">
+            <span class="wenda_award_txt">悬赏：</span>
+            <select class="wenda_award_select"  name="wenda_award">
+                <option>0</option>
+                <option>5</option>
+                <option>10</option>
+                <option>20</option>
+                <option>50</option>
+                <option>100</option>
+            </select>
+            <span class="wenda_award_nums">现有<i></i>个糖币</span><a class="wenda_award_ico" href="http://sxy.hc360.com/article-11724.html" target="_blank"></a>
+            <p class="wenda_award_tip">糖币不足！</p>
+        </div>
+    <div class="answer_msg_btn">
+        <a href="javascript:;" class="msg_btn_1">取消</a><a href="javascript:;" class="msg_btn_2" onclick="return subQuestion();">发布</a>
+    </div>
+        <script type="text/javascript">
+            //ue
+            var ue = UE.getEditor('answer_content', {
+                toolbars:[['FullScreen', 'bold','simpleupload','insertorderedlist','removeformat']],
+                initialFrameWidth: '798',
+                initialFrameHeight: '200',
+                maximumWords: '1000',
+                autoFloatEnabled: true,
+                topOffset: 1,
+                autoHeightEnabled: false,
+                wordOverFlowMsg: '<span style="color:red;">文字超出最大限制，会造成问题无法发布!</span>',
+                isCheckNullContent:false
+
+            });
+        </script>
+	</div>
+</div><!-- 邀请 -->
+<script type="text/javascript">
+<!--
+$(document).ready(function(e) {
+	//关闭邀请窗口
+	$(".wenda_invite_close").click(function(){
+		$(".divbg").hide();
+		$(".wenda_msg").hide();
+				 window.location.href = "http://sxy.hc360.com/index.php?app=public&mod=Question&act=myQuestion";
+			});
+});
+
+//-->
+//邀请回答
+function inviteAnswerForThisQuestion(ev){
+	var uid = $(ev).attr('id');
+	var qid = $("#newid").val();
+	$this=$(ev);
+	if($this.hasClass("invite_before")){
+		$.ajax({
+            url:"http://sxy.hc360.com/index.php?app=public&mod=Answer&act=inviteUser",
+            data:{uid:uid,qid:qid},
+            type:'POST',
+            dataType:'JSON',
+            async:true,
+            error:function(){
+            	ui.error('请求错误');
+            },
+            success:function(json){
+            	if(json.status == '1'){
+            		$this.removeClass("invite_before").addClass("invite_after");
+            		$this.removeAttr("onclick");
+            		$this.text("已邀请");
+            	}else{
+            		ui.error(json.data);
+            	}
+            }
+        });
+	}
+}
+function getMoreInviteUser(nextPage){
+	var page    = 1;
+	var nowpage = 1;
+	var qid = $("#newid").val();
+	var controlNumber = $("#wenda_invite_controll_number").val();
+	if(page >= nextPage){
+		if(controlNumber == 1){
+			$("#wenda_invite_controll_number").val(0);
+			$.ajax({
+		        url:"http://sxy.hc360.com/index.php?app=widget&mod=QuestionInvite&act=getMoreInviteUser",
+		        data:{page:nextPage,qid:qid},
+		        type:'GET',
+		        dataType:'JSON',
+		        async:true,
+		        success:function(json){
+		        	if(json.status == 1){
+		        		$(".wenda_invite ul").html(json.data);
+		        		
+		        		if(page > nextPage){
+		        			nowpage = nextPage + 1;
+		        		}
+		        		$("#wenda_invite_change_others").attr("onclick","getMoreInviteUser("+nowpage+")");
+		        		$("#wenda_invite_controll_number").val(1);
+		        	}
+		        }
+		    })
+		}
+		
+	}
+}
+</script>
+<!--add_msg-->
+<div class="wenda_msg">
+    <div class="wenda_tip">
+        <p class="wenda_tip_txt1"><i></i>提交成功！</p>
+        		 <p class="wenda_tip_txt2">邀请达人解答，更快速精准的获得答案！</p>
+		        
+    </div>
+    <a href="javascript:;" class="wenda_invite_close"></a>
+    <div class="wenda_invite">
+    	        <ul>
+                <li class="invite_list">
+            <div class="invite_img"><a target="_blank" href="http://sxy.hc360.com/home/class/84170-0.html"><img src="http://img010.hc360.cn/m7/M09/1D/07/wKhQpFW5mp6ET32QAAAAACHgFGo875.jpg..100x100.jpg?v1474128000.3194"></a></div>
+            <div class="invite_info">
+                <p><a  target="_blank" href="http://sxy.hc360.com/home/class/84170-0.html" class="name_txt">胡德昌</a><a href="http://sxy.hc360.com/help.html#q4" title="金牌讲师" class="name_ico" target="_blank" ><i class="lecture_1"></i></a><a href="http://sxy.hc360.com/help.html#q5" title="顾问团" class="name_ico" target="_blank" ><i class="lecture_adviser"></i></a></p>
+                <p class="invite_com"><a  target="_blank" href="http://sxy.hc360.com/home/class/84170-0.html">尚信光伏科技有限公司</a></p>
+                <p class="invite_post">运营总监</p>
+                <a href="javascript:;" class="invite_btn invite_before" id="84170" onclick="inviteAnswerForThisQuestion(this)">邀请回答</a>
+            </div>
+        </li>
+                <li class="invite_list">
+            <div class="invite_img"><a target="_blank" href="http://sxy.hc360.com/home/class/25226-0.html"><img src="http://img004.hc360.cn/m7/M0A/80/17/wKhQpFdADG6Edg3sAAAAANbr7XQ618.jpg..100x100.jpg?v1474128000.3213"></a></div>
+            <div class="invite_info">
+                <p><a  target="_blank" href="http://sxy.hc360.com/home/class/25226-0.html" class="name_txt">罗德平</a></p>
+                <p class="invite_com"><a  target="_blank" href="http://sxy.hc360.com/home/class/25226-0.html">成都鑫旺食品机械有限公司</a></p>
+                <p class="invite_post">总经理</p>
+                <a href="javascript:;" class="invite_btn invite_before" id="25226" onclick="inviteAnswerForThisQuestion(this)">邀请回答</a>
+            </div>
+        </li>
+                <li class="invite_list">
+            <div class="invite_img"><a target="_blank" href="http://sxy.hc360.com/home/class/400-0.html"><img src="http://img004.hc360.cn/m3/M04/7E/40/wKhQ5lTKCDaEfbFWAAAAABTsKIc318.jpg..100x100.jpg?v1474128000.3157"></a></div>
+            <div class="invite_info">
+                <p><a  target="_blank" href="http://sxy.hc360.com/home/class/400-0.html" class="name_txt">曾凡松</a><a href="http://sxy.hc360.com/help.html#q4" title="金牌讲师" class="name_ico" target="_blank" ><i class="lecture_1"></i></a><a href="http://sxy.hc360.com/help.html#q5" title="顾问团" class="name_ico" target="_blank" ><i class="lecture_adviser"></i></a></p>
+                <p class="invite_com"><a  target="_blank" href="http://sxy.hc360.com/home/class/400-0.html">苏州工业园区宏亿标准件有限公司</a></p>
+                <p class="invite_post">总经理</p>
+                <a href="javascript:;" class="invite_btn invite_before" id="400" onclick="inviteAnswerForThisQuestion(this)">邀请回答</a>
+            </div>
+        </li>
+                <li class="invite_list">
+            <div class="invite_img"><a target="_blank" href="http://sxy.hc360.com/home/class/415-0.html"><img src="http://img000.hc360.cn/m4/M02/77/60/wKhQ6FTKCMiEXE3bAAAAAHHrnKk433.jpg..100x100.jpg?v1474128000.3121"></a></div>
+            <div class="invite_info">
+                <p><a  target="_blank" href="http://sxy.hc360.com/home/class/415-0.html" class="name_txt">姜泽</a><a href="http://sxy.hc360.com/help.html#q4" title="金牌讲师" class="name_ico" target="_blank" ><i class="lecture_1"></i></a><a href="http://sxy.hc360.com/help.html#q5" title="顾问团" class="name_ico" target="_blank" ><i class="lecture_adviser"></i></a></p>
+                <p class="invite_com"><a  target="_blank" href="http://sxy.hc360.com/home/class/415-0.html">杭州颜悦服装辅料有限公司</a></p>
+                <p class="invite_post">总经理</p>
+                <a href="javascript:;" class="invite_btn invite_before" id="415" onclick="inviteAnswerForThisQuestion(this)">邀请回答</a>
+            </div>
+        </li>
+                <div class="clear"></div>
+       </ul>
+    </div>
+</div><!-- 举报弹窗 -->
+ <script>
+ /**
+ *举报相关js进行封装
+ */
+ var report = {};
+ //举报按钮进行处理
+ report.reportPopup = function(ev,type,app_id){
+  	    var st_height = $(document).scrollTop(), winh_height = $(window).height();
+	 if(MID == 0){
+		var height=$(document).height()+"px";
+ 		var msg_width=($(document).width()-$(".msg_login").width())/2;
+ 		$(".msg_login").css("left",msg_width+"px");
+ 		$(".divbg").css("height",height);
+ 		$(".msg_login").css("top", st_height+(winh_height)/2-250);
+ 	    $(".divbg").show();
+ 		$(".msg_login").show();
+ 		return false;}
+	 $("#reportedType").val(type);
+	 $("#reportedAppId").val(app_id);
+	 $(".divbg").css("height",$(document).height());
+     $(".divbg").show();
+     $(".report_msg").css("top", st_height+winh_height/2-150);
+     $(".report_msg").show();
+ };
+ //提交举报内容
+ report.submitReportInfo = function(){
+	 var type = $("#reportedType").val();
+	 var app_id = $("#reportedAppId").val();
+	 var reportOtherContent = "";
+	 if(type == "" || app_id == ""){
+		 ui.error("参数有错误，请刷新页面重试");
+		 report.closeReportWindow();
+		 return false;
+	 }
+	 var reportVal = $('input:radio[name="reportlist"]:checked').val();
+	 if(reportVal == null){
+		 $(".tip_error").text("请选择一个原因"); 
+		 $(".tip_error").show();
+		 return false;
+	 }
+	 if(reportVal == 9){
+		 reportOtherContent = $("#reportOtherContent").val();
+		 if(reportOtherContent.length == 0 ){
+			 $(".tip_error").text("请填写举报内容");
+			 $(".tip_error").show();
+			 return false;
+		 }else if(reportOtherContent.length > 30){
+			 $(".tip_error").text("其他原因最多编辑30字");
+			 $(".tip_error").show();
+			 return false;
+		 }
+	 }
+	 $.ajax({
+	        url:"http://sxy.hc360.com/index.php?app=widget&mod=Report&act=submitReportInfo",
+	        data:{type:type,app_id:app_id,reportVal:reportVal,reportOtherContent:reportOtherContent},
+	        type:'POST',
+	        dataType:'JSON',
+	        error:function(){
+	        	ui.error('请求错误');
+	        },
+	        success:function(json){
+	        	if(json.status == 1){
+	        		ui.success(json.data);
+	        		$(".report_"+type+"_"+app_id).removeClass("report");
+	        		$(".report_"+type+"_"+app_id).addClass("report2");
+	        		$(".report_"+type+"_"+app_id).removeAttr("onclick");
+	        		$(".report_"+type+"_"+app_id).removeAttr("href");
+	        		$(".report_"+type+"_"+app_id).html("已举报");
+	        		report.closeReportWindow();
+	        	}else if(json.status == 0){
+	        		ui.error(json.data);
+	        		return false;
+	        	}else if(json.status == 2){
+	        		$(".report_"+type+"_"+app_id).removeClass("report");
+	        		$(".report_"+type+"_"+app_id).addClass("report2");
+	        		$(".report_"+type+"_"+app_id).attr("onclick","");
+	        		$(".report_"+type+"_"+app_id).html("已举报");
+	        		report.closeReportWindow();
+	        		ui.error(json.data);
+	        		return false;
+	        	}
+	        }
+	    })
+	 return false;
+	 
+ }
+ //检测是否是其它原因
+ report.checkReportlist = function (ev){
+	 $(".tip_error").text("");
+	 var reportValue = $(ev).val();
+	 if(reportValue == 9){
+		$(".report_input").fadeIn(1000); 
+		$("#reportOtherContent").focus();
+	 }else{
+		$("#reportOtherContent").val("");
+		$(".report_input").fadeOut();
+	 }
+ }
+ //关闭举报弹窗
+ report.closeReportWindow = function(){
+	 $("#reportedType").val("");
+	 $("#reportedAppId").val("");
+	 $("#reportOtherContent").val("");
+	 $('input:radio[name="reportlist"]:checked').removeAttr("checked");
+	 $(".report_input").hide();
+	 $(".divbg").hide();
+     $(".report_msg").hide();
+     $(".tip_error").hide();
+     return false;
+ }
+ report.showReportButton = function(ev){
+	 $(ev).find(".report").show();
+	 $(ev).find(".report2").show();
+ }
+ report.hideReportButton = function(ev){
+	 $(ev).find(".report").hide();
+	 $(ev).find(".report2").hide();
+ }
+ </script>
+ <div class="report_msg">
+     <div class="report_tit">
+         <span class="tit_txt">确定举报该内容？</span>
+         <a href="javascript:;" class="report_close" onclick="report.closeReportWindow()"><img src="http://style.xt.hc360.com/images/msg_close.png"></a>
+         <input type="hidden" value="" id="reportedType" />
+         <input type="hidden" value="" id="reportedAppId" />
+     </div>
+     <div class="report_main">
+         <div class="report_tip">
+             <span class="tip_tit">举报原因：</span>
+             <span class="tip_error">请填写举报原因</span>
+         </div>
+         <div class="report_radio">
+             <label class="radio_item"><input type="radio" onclick="report.checkReportlist(this)" name="reportlist" value="1" class="radioclass"/>含有广告或垃圾信息</label>
+             <label class="radio_item"><input type="radio" onclick="report.checkReportlist(this)" name="reportlist" value="2" class="radioclass"/>含有敏感信息</label>
+             <label class="radio_item"><input type="radio" onclick="report.checkReportlist(this)" name="reportlist" value="3" class="radioclass"/>政治谣言</label>
+             <label class="radio_item"><input type="radio" onclick="report.checkReportlist(this)" name="reportlist" value="4" class="radioclass"/>侵权（冒名、诽谤、抄袭）</label>
+             <label class="radio_item"><input type="radio" onclick="report.checkReportlist(this)" name="reportlist" value="5" class="radioclass"/>侵犯隐私</label>
+             <label class="radio_item"><input type="radio" onclick="report.checkReportlist(this)" name="reportlist" value="9" class="radioclass"/>其他原因</label>
+             <div class="clear"></div>
+         </div>
+         <div class="report_input" style="display: none;">
+          <input type="text" maxlength="30" name="otherContent" id="reportOtherContent" placeholder="请描述举报原因(最多30个字)"/>
+         </div>
+         <div class="report_btn">
+             <input type="button" value="确定" class="report_submit"  onclick="return report.submitReportInfo()"/> 
+             <input type="button" value="取消" class="report_reset"  onclick="return report.closeReportWindow()"/>
+         </div>
+     </div>
+ </div> <!--通栏导航-->
+  <div class="full_nav">
+    <div class="nav_main">
+    <div class="nav_left">
+<!--     <ul> -->
+<!--        <li  class="cur" ><a href="http://sxy.hc360.com/feed/0.html">全部动态</a></li> -->
+<!--         -->
+<!--        <div class="clear"></div> -->
+<!--     </ul> -->
+    <ul class="nav_ul">
+        <li  class="cur" ><a href="http://sxy.hc360.com/feed/0.html">全部动态</a></li>
+        <li ><a href="http://sxy.hc360.com/feed/1000.html">经验圈</a></li>
+        <li ><a href="http://sxy.hc360.com/feed/1011.html">话题圈</a></li>
+        <li ><a href="http://sxy.hc360.com/feed/1013.html">优品圈</a></li>
+        <li ><a href="http://sxy.hc360.com/feed/1014.html">活动圈</a></li>
+        <li ><a href="http://sxy.hc360.com/feed/1015.html">问答圈</a><i class="new_ico"></i></li>
+        <div class="clear"></div>            
+      </ul>
+      <input type="hidden" id="updateTime" name="updateTime" value="1474161073"/>
+	       <div class="nav_btn">
+                        <a href="http://sxy.hc360.com/index.php?app=public&mod=Article&act=addArticle" target="_blank"  onclick="return checkloginstatus();"><em></em><span>发布动态</span></a>
+                                                      <div class="clear"></div>
+       </div>
+           </div>
+    <div class="nav_right">
+        
+    </div>
+      <!--shuxin 有新动态时这个隐藏，没有新动态时，显示这个--> 
+	  <a class="refurbish shuaxin" onclick="brushs(1);" style="position:absolute;left:-66px;top:33px;" href="javascript:;"  title="点击刷新当前动态" ><img src="http://style.xt.hc360.com/images/123.png" /></a>
+
+<!--新消息叶子转动-->
+    <hr class="refurbish_2" style="display:none;width:1px;height:80px;border:none;border-left:1px solid #5091FC;position:absolute;left:-50px;top:34px;z-index:99;">
+   	<a class="refurbish_2" onclick="brushs(2);" style="display:none;" href="javascript:;"><img src="http://style.xt.hc360.com/images/12345.gif" style="position:absolute;left:-66px;top:104px;" title="您有新的动态，请点击查看"/>
+ 	</a>
+  </div>
+  </div>
+ <!--主体--> 
+<div class="syq_main"> 
+ <div class="syq_main_l">
+             	<div class="qz_tj">
+	         	         <!-- 全部推荐  -->
+		         <div class="qztj_tit">
+	              <i class="tjlist_ico"></i><span class="qztj_txt">圈子头条</span><span class="tjlist_txt">精品动态会被推荐到这里</span>
+	             </div>
+	             <div class="qztj_main">
+	               <div class="qztj_left">
+	                   <div class="flexslider">
+	                       <ul class="slides">
+		                           		                           					                           <li class="flex-active-slide"><a href="http://sxy.hc360.com/article-166924.html" target="_blank" class="banner_img"> <img src="http://img001.hc360.cn/k3/M0C/B2/D1/wKhQx1fOeXWEBCsoAAAAADs-ems425.jpg" alt=""/></a></li>
+		                           				                           		                           					                           <li><a href="http://sxy.hc360.com/article-167306.html" target="_blank" class="banner_img"> <img src="http://img007.hc360.cn/k1/M0B/F8/39/wKhQw1fSKsKEU-pnAAAAALywFM4475.jpg"  alt=""/></a></li>
+		                           				                           		                           					                           <li><a href="http://sxy.hc360.com/course/video-2633.html" target="_blank" class="banner_img"> <img src="http://img000.hc360.cn/k3/M00/58/BA/wKhQv1e-T7GEfnLNAAAAAFncmSA365.jpg"  alt="团队冲突"/></a></li>
+		                           				                           		                         <div class="clear"></div>
+	                       </ul>
+	                   </div>
+	               </div>
+	               <div class="qztj_right">
+	                    <div class="qztj_r_top">
+	                        <h2><a href="http://sxy.hc360.com/article-166998.html" target="_blank">【慧聪商学院】8月糖果top20公告榜！</a></h2>
+	                        <p>什么是“糖果”从2016年开始，为了回馈一路支持慧聪商学院的商友们，商学院给予线上活跃同时全力贡献的商友们新的称号“糖果...</p>
+	                    </div>
+	                    <ul class="qztj_r_list">
+		                    								 							 								 								 	<li><i></i><a href="http://sxy.hc360.com/article-165877.html" class="qztj_title_link" target="_blank" >营销人员拿不到订单的真正原因是什么？</a><span class="qztj_view_nums">1385阅读</span></li>
+								 							 								 								 	<li><i></i><a href="http://sxy.hc360.com/article-166993.html" class="qztj_title_link" target="_blank" >【慧聪商学院】企业员工与精益的关系</a><span class="qztj_view_nums">681阅读</span></li>
+								 							 								 								 	<li><i></i><a href="http://sxy.hc360.com/article-166540.html" class="qztj_title_link" target="_blank" >销售的重点应放在解决客户问题的方案上而不是产品</a><span class="qztj_view_nums">654阅读</span></li>
+								 							 								 								 	<li><i></i><a href="http://sxy.hc360.com/article-167719.html" class="qztj_title_link" target="_blank" >9月13日电商早班机✈</a><span class="qztj_view_nums">567阅读</span></li>
+								 							 						 </ul>
+	               </div>
+	               <div class="clear"></div>
+           		</div>
+			 	                  	         	         							         <div class="clear"></div>
+      </div>
+      	      <div class="sys_dt">
+            <input type="hidden" id="maxFid" value="650536" >      <input type="hidden" id="user_group_id" value="0" >
+      	      <!--发布文章的样式-->
+	       <div class="sys_dt1">
+	         <div class="sys_dt_left">
+	            <a href="http://sxy.hc360.com/home/class/209003-0.html" target="_blank"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a>
+	         </div>
+	         <div class="sys_dt_right">
+	            <div class="sys_dt_top">
+	              <a href="http://sxy.hc360.com/home/class/209003-0.html" target="_blank" class="name_txt">朱经理</a>	              <span class='action'>发布话题</span>
+	               <!-- 举报 -->
+		          	               <a href="javascript:;" class="report report_1_168222"  onclick="report.reportPopup(this,1,168222)">举报</a>
+	              	            </div>
+	            <div class="sys_dt_main">
+	              <div class="dt_sq_right" style="width:700px;">
+	                 <p class="dt_sq_title"><a href="http://sxy.hc360.com/article-168222.html" target="_blank" >你荒废的每个瞬间，都是未来</a></p>
+	                 <p class="dt_sq_info">
+	                 朋友小可总说现在的工作不适合她，希望可以申请出国读书。她把这个想法在嘴上挂了三年，说：“申请至少需要半年准备，读书又需要一到两年，时间太长啦。”　　三年前她有这个想法的时候，我鼓励她利用零星的时间准备，总得为自己想要的生活付出时间...	                 </p>
+	              </div>
+	              <div class="clear"></div>
+	            </div>  
+	              <div class="sys_dt_tool">
+	                <span class="fb_time">1分钟前</span>
+	                <span class="fb_pl"><a href="http://sxy.hc360.com/article-168222.html#tags" target="_blank" >评论（1）</a></span>
+	                <span class="fb_share"><a href="javascript:;">分享</a></span>
+	                <span class="fb_zan">
+	                		                	<a href="javascript:;" class="zan" appid="168222" type="1" touid="209003">赞（<span style="float:none;display:inline;">0</span>）</a>
+	                		                </span>
+	                <div class="zan_rens zans_1682221" style="margin-top: 0px; margin-left: 10px;">
+	                	                </div>
+	                 <!--分享-->
+	               <div class="share_ico_line">
+	                     <!-- JiaThis Button BEGIN -->
+	                <div class="jiathis">
+		               	<a class="jiathis_button_tsina"></a>
+		                <a class="jiathis_button_weixin"></a>
+		                <a class="jiathis_button_qzone"></a>
+	                    <a class="jiathis_button_cqq"></a>
+	                </div>
+	               <!-- JiaThis Button END -->
+	              </div>
+	             </div>
+	         </div>
+	         <div class="clear"></div>
+	      </div>
+                                                    <input type="hidden" id="user_group_id" value="0" >
+      	      <!--发布文章的样式-->
+	       <div class="sys_dt1">
+	         <div class="sys_dt_left">
+	            <a href="http://sxy.hc360.com/home/class/335234-0.html" target="_blank"><img src="http://style.xt.hc360.com/images/noavatar/4/small.png" /></a>
+	         </div>
+	         <div class="sys_dt_right">
+	            <div class="sys_dt_top">
+	              <a href="http://sxy.hc360.com/home/class/335234-0.html" target="_blank" class="name_txt">崔女士</a>	              <span class='action'>发布话题</span>
+	               <!-- 举报 -->
+		          	               <a href="javascript:;" class="report report_1_168220"  onclick="report.reportPopup(this,1,168220)">举报</a>
+	              	            </div>
+	            <div class="sys_dt_main">
+	              <div class="dt_sq_right" style="width:700px;">
+	                 <p class="dt_sq_title"><a href="http://sxy.hc360.com/article-168220.html" target="_blank" >营销用心比用力更有效</a></p>
+	                 <p class="dt_sq_info">
+	                 如今关于营销为主题的演讲有很多，其实这一现象主要源于营销是关乎到企业发展的命脉。国外一位名人曾毫无顾忌的说：在企业里所有部门所有人员都是成本，唯独营销部门营销人员是创造价值和利润的。工作没有高低贵贱之分，我们衡量价值的标准就是利润...	                 </p>
+	              </div>
+	              <div class="clear"></div>
+	            </div>  
+	              <div class="sys_dt_tool">
+	                <span class="fb_time">3分钟前</span>
+	                <span class="fb_pl"><a href="http://sxy.hc360.com/article-168220.html#tags" target="_blank" >评论（0）</a></span>
+	                <span class="fb_share"><a href="javascript:;">分享</a></span>
+	                <span class="fb_zan">
+	                		                	<a href="javascript:;" class="zan" appid="168220" type="1" touid="335234">赞（<span style="float:none;display:inline;">1</span>）</a>
+	                		                </span>
+	                <div class="zan_rens zans_1682201" style="margin-top: 0px; margin-left: 10px;">
+	                	                	                <span class="fb_zan_list list_zan_1682201"><a target='_blank' href="http://sxy.hc360.com/home/class/209003-0.html" title="朱经理"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a></span>
+	                	                <span class="fb_zan_nums">等已赞过</span>
+	                	                </div>
+	                 <!--分享-->
+	               <div class="share_ico_line">
+	                     <!-- JiaThis Button BEGIN -->
+	                <div class="jiathis">
+		               	<a class="jiathis_button_tsina"></a>
+		                <a class="jiathis_button_weixin"></a>
+		                <a class="jiathis_button_qzone"></a>
+	                    <a class="jiathis_button_cqq"></a>
+	                </div>
+	               <!-- JiaThis Button END -->
+	              </div>
+	             </div>
+	         </div>
+	         <div class="clear"></div>
+	      </div>
+                                                    <input type="hidden" id="user_group_id" value="0" >
+      	      <!--发布文章的样式-->
+	       <div class="sys_dt1">
+	         <div class="sys_dt_left">
+	            <a href="http://sxy.hc360.com/home/class/335234-0.html" target="_blank"><img src="http://style.xt.hc360.com/images/noavatar/4/small.png" /></a>
+	         </div>
+	         <div class="sys_dt_right">
+	            <div class="sys_dt_top">
+	              <a href="http://sxy.hc360.com/home/class/335234-0.html" target="_blank" class="name_txt">崔女士</a>	              <span class='action'>发布话题</span>
+	               <!-- 举报 -->
+		          	               <a href="javascript:;" class="report report_1_168219"  onclick="report.reportPopup(this,1,168219)">举报</a>
+	              	            </div>
+	            <div class="sys_dt_main">
+	              <div class="dt_sq_right" style="width:700px;">
+	                 <p class="dt_sq_title"><a href="http://sxy.hc360.com/article-168219.html" target="_blank" >企业网络营销与客户建立信任法则</a></p>
+	                 <p class="dt_sq_info">
+	                 新一季苹果新品上市，就像很多年前一样，大家仍然对此趋之若鹜。这是沉甸甸的品牌价值。如何让用户像爱苹果一样，爱上你的产品？客户信任你才是关键。全球领先的智能化营销服务商Webpower调查发现，信任在邮件营销、短信d营销、微信营销等...	                 </p>
+	              </div>
+	              <div class="clear"></div>
+	            </div>  
+	              <div class="sys_dt_tool">
+	                <span class="fb_time">7分钟前</span>
+	                <span class="fb_pl"><a href="http://sxy.hc360.com/article-168219.html#tags" target="_blank" >评论（0）</a></span>
+	                <span class="fb_share"><a href="javascript:;">分享</a></span>
+	                <span class="fb_zan">
+	                		                	<a href="javascript:;" class="zan" appid="168219" type="1" touid="335234">赞（<span style="float:none;display:inline;">1</span>）</a>
+	                		                </span>
+	                <div class="zan_rens zans_1682191" style="margin-top: 0px; margin-left: 10px;">
+	                	                	                <span class="fb_zan_list list_zan_1682191"><a target='_blank' href="http://sxy.hc360.com/home/class/209003-0.html" title="朱经理"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a></span>
+	                	                <span class="fb_zan_nums">等已赞过</span>
+	                	                </div>
+	                 <!--分享-->
+	               <div class="share_ico_line">
+	                     <!-- JiaThis Button BEGIN -->
+	                <div class="jiathis">
+		               	<a class="jiathis_button_tsina"></a>
+		                <a class="jiathis_button_weixin"></a>
+		                <a class="jiathis_button_qzone"></a>
+	                    <a class="jiathis_button_cqq"></a>
+	                </div>
+	               <!-- JiaThis Button END -->
+	              </div>
+	             </div>
+	         </div>
+	         <div class="clear"></div>
+	      </div>
+                                                    <input type="hidden" id="user_group_id" value="0" >
+      	      <!--发布文章的样式-->
+	       <div class="sys_dt1">
+	         <div class="sys_dt_left">
+	            <a href="http://sxy.hc360.com/home/class/334871-0.html" target="_blank"><img src="http://img002.hc360.cn/k2/M0A/D8/66/wKhQxVfPxjyEKCclAAAAANFg7SM679.jpg..50x50.jpg?v1474161073.3132" /></a>
+	         </div>
+	         <div class="sys_dt_right">
+	            <div class="sys_dt_top">
+	              <a href="http://sxy.hc360.com/home/class/334871-0.html" target="_blank" class="name_txt">依靠</a>	              <span class='action'>发布话题</span>
+	               <!-- 举报 -->
+		          	               <a href="javascript:;" class="report report_1_167530"  onclick="report.reportPopup(this,1,167530)">举报</a>
+	              	            </div>
+	            <div class="sys_dt_main">
+	              <div class="dt_sq_right" style="width:700px;">
+	                 <p class="dt_sq_title"><a href="http://sxy.hc360.com/article-167530.html" target="_blank" >很多有道理的话都是你自己的亲身经历被被人说出来！</a></p>
+	                 <p class="dt_sq_info">
+	                 衣柜的衣服千千万，只有新买的最好看。　　人和人之间的一大区别，就是逛完商场后下电梯，你按1楼，别人都按B1。　　生活中大部分的问题都来自没有思考的行动或者是没有行动的思考。　　你的报酬不是与劳动的辛苦程度成正比，而是与劳动的不可替...	                 </p>
+	              </div>
+	              <div class="clear"></div>
+	            </div>  
+	              <div class="sys_dt_tool">
+	                <span class="fb_time">8分钟前</span>
+	                <span class="fb_pl"><a href="http://sxy.hc360.com/article-167530.html#tags" target="_blank" >评论（17）</a></span>
+	                <span class="fb_share"><a href="javascript:;">分享</a></span>
+	                <span class="fb_zan">
+	                		                	<a href="javascript:;" class="zan" appid="167530" type="1" touid="334871">赞（<span style="float:none;display:inline;">12</span>）</a>
+	                		                </span>
+	                <div class="zan_rens zans_1675301" style="margin-top: 0px; margin-left: 10px;">
+	                	                	                <span class="fb_zan_list list_zan_1675301"><a target='_blank' href="http://sxy.hc360.com/home/class/209003-0.html" title="朱经理"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1675301"><a target='_blank' href="http://sxy.hc360.com/home/class/335234-0.html" title="崔女士"><img src="http://style.xt.hc360.com/images/noavatar/4/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1675301"><a target='_blank' href="http://sxy.hc360.com/home/class/51585-0.html" title="林芝如"><img src="http://img011.hc360.cn/m3/M05/D0/46/wKhQ51TRb0aEMl_SAAAAAGl8z1Y380.jpg..50x50.jpg?v1474158353.0098" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1675301"><a target='_blank' href="http://sxy.hc360.com/home/class/267325-0.html" title="贾世涛"><img src="http://style.xt.hc360.com/images/noavatar/5/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1675301"><a target='_blank' href="http://sxy.hc360.com/home/class/83121-0.html" title="卷卷"><img src="http://img004.hc360.cn/m8/M0F/B8/09/wKhQpldP91OEIxCTAAAAAOQ-kvY568.jpg..50x50.jpg?v1474158735.0896" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1675301"><a target='_blank' href="http://sxy.hc360.com/home/class/86346-0.html" title="李慧"><img src="http://img006.hc360.cn/m6/M0D/34/4C/wKhQoldNTkeEQ9t-AAAAAMXz-n4705.jpg..50x50.jpg?v1474158151.4671" /></a></span>
+	                	                <span class="fb_zan_nums">等已赞过</span>
+	                	                </div>
+	                 <!--分享-->
+	               <div class="share_ico_line">
+	                     <!-- JiaThis Button BEGIN -->
+	                <div class="jiathis">
+		               	<a class="jiathis_button_tsina"></a>
+		                <a class="jiathis_button_weixin"></a>
+		                <a class="jiathis_button_qzone"></a>
+	                    <a class="jiathis_button_cqq"></a>
+	                </div>
+	               <!-- JiaThis Button END -->
+	              </div>
+	             </div>
+	         </div>
+	         <div class="clear"></div>
+	      </div>
+                                                    <input type="hidden" id="user_group_id" value="0" >
+      	      <!--发布文章的样式-->
+	       <div class="sys_dt1">
+	         <div class="sys_dt_left">
+	            <a href="http://sxy.hc360.com/home/class/209003-0.html" target="_blank"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a>
+	         </div>
+	         <div class="sys_dt_right">
+	            <div class="sys_dt_top">
+	              <a href="http://sxy.hc360.com/home/class/209003-0.html" target="_blank" class="name_txt">朱经理</a>	              <span class='action'>发布话题</span>
+	               <!-- 举报 -->
+		          	               <a href="javascript:;" class="report report_1_168218"  onclick="report.reportPopup(this,1,168218)">举报</a>
+	              	            </div>
+	            <div class="sys_dt_main">
+	              <div class="dt_sq_right" style="width:700px;">
+	                 <p class="dt_sq_title"><a href="http://sxy.hc360.com/article-168218.html" target="_blank" >改变命运那两小时，你在做什么？</a></p>
+	                 <p class="dt_sq_info">
+	                 　01　　我的高三以及高四生活，皆是我一个人度过的。父母忙着生意，所以少了很多类似的陪伴。　　每天早上，父母比我走得早，我会吃前一天的剩饭，简简单单；晚自习前，在座位上吃一碗泡面，晚自习结束后则一路背着单词，一路骑着单车，不知不觉...	                 </p>
+	              </div>
+	              <div class="clear"></div>
+	            </div>  
+	              <div class="sys_dt_tool">
+	                <span class="fb_time">9分钟前</span>
+	                <span class="fb_pl"><a href="http://sxy.hc360.com/article-168218.html#tags" target="_blank" >评论（0）</a></span>
+	                <span class="fb_share"><a href="javascript:;">分享</a></span>
+	                <span class="fb_zan">
+	                		                	<a href="javascript:;" class="zan" appid="168218" type="1" touid="209003">赞（<span style="float:none;display:inline;">2</span>）</a>
+	                		                </span>
+	                <div class="zan_rens zans_1682181" style="margin-top: 0px; margin-left: 10px;">
+	                	                	                <span class="fb_zan_list list_zan_1682181"><a target='_blank' href="http://sxy.hc360.com/home/class/209003-0.html" title="朱经理"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682181"><a target='_blank' href="http://sxy.hc360.com/home/class/86346-0.html" title="李慧"><img src="http://img006.hc360.cn/m6/M0D/34/4C/wKhQoldNTkeEQ9t-AAAAAMXz-n4705.jpg..50x50.jpg?v1474158151.4671" /></a></span>
+	                	                <span class="fb_zan_nums">等已赞过</span>
+	                	                </div>
+	                 <!--分享-->
+	               <div class="share_ico_line">
+	                     <!-- JiaThis Button BEGIN -->
+	                <div class="jiathis">
+		               	<a class="jiathis_button_tsina"></a>
+		                <a class="jiathis_button_weixin"></a>
+		                <a class="jiathis_button_qzone"></a>
+	                    <a class="jiathis_button_cqq"></a>
+	                </div>
+	               <!-- JiaThis Button END -->
+	              </div>
+	             </div>
+	         </div>
+	         <div class="clear"></div>
+	      </div>
+                                                    <input type="hidden" id="user_group_id" value="0" >
+      	      <!--发布文章的样式-->
+	       <div class="sys_dt1">
+	         <div class="sys_dt_left">
+	            <a href="http://sxy.hc360.com/home/class/209003-0.html" target="_blank"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a>
+	         </div>
+	         <div class="sys_dt_right">
+	            <div class="sys_dt_top">
+	              <a href="http://sxy.hc360.com/home/class/209003-0.html" target="_blank" class="name_txt">朱经理</a>	              <span class='action'>发布优品</span>
+	               <!-- 举报 -->
+		          	               <a href="javascript:;" class="report report_1_168217"  onclick="report.reportPopup(this,1,168217)">举报</a>
+	              	            </div>
+	            <div class="sys_dt_main">
+	              <div class="dt_sq_right" style="width:700px;">
+	                 <p class="dt_sq_title"><a href="http://sxy.hc360.com/article-168217.html" target="_blank" >出租房智能门禁生产厂家代加工找哪家100P</a></p>
+	                 <p class="dt_sq_info">
+	                 出租房智能门禁生产厂家代加工找哪家100P文/智慧社区云对讲厂家 珠海全视通小朱一个城市一般会有城中村，城中村里有大量的出租房，在出租房里住的大多是外来的流动人口，数量多，人口杂，而且流动相对比较频繁，管理难度比较大，因此，寻求有...	                 </p>
+	              </div>
+	              <div class="clear"></div>
+	            </div>  
+	              <div class="sys_dt_tool">
+	                <span class="fb_time">16分钟前</span>
+	                <span class="fb_pl"><a href="http://sxy.hc360.com/article-168217.html#tags" target="_blank" >评论（1）</a></span>
+	                <span class="fb_share"><a href="javascript:;">分享</a></span>
+	                <span class="fb_zan">
+	                		                	<a href="javascript:;" class="zan" appid="168217" type="1" touid="209003">赞（<span style="float:none;display:inline;">2</span>）</a>
+	                		                </span>
+	                <div class="zan_rens zans_1682171" style="margin-top: 0px; margin-left: 10px;">
+	                	                	                <span class="fb_zan_list list_zan_1682171"><a target='_blank' href="http://sxy.hc360.com/home/class/209003-0.html" title="朱经理"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682171"><a target='_blank' href="http://sxy.hc360.com/home/class/173111-0.html" title="贝王族食品"><img src="http://style.xt.hc360.com/images/noavatar/1/small.png" /></a></span>
+	                	                <span class="fb_zan_nums">等已赞过</span>
+	                	                </div>
+	                 <!--分享-->
+	               <div class="share_ico_line">
+	                     <!-- JiaThis Button BEGIN -->
+	                <div class="jiathis">
+		               	<a class="jiathis_button_tsina"></a>
+		                <a class="jiathis_button_weixin"></a>
+		                <a class="jiathis_button_qzone"></a>
+	                    <a class="jiathis_button_cqq"></a>
+	                </div>
+	               <!-- JiaThis Button END -->
+	              </div>
+	             </div>
+	         </div>
+	         <div class="clear"></div>
+	      </div>
+                                                    <input type="hidden" id="user_group_id" value="0" >
+      	      <!--发布文章的样式-->
+	       <div class="sys_dt1">
+	         <div class="sys_dt_left">
+	            <a href="http://sxy.hc360.com/home/class/335234-0.html" target="_blank"><img src="http://style.xt.hc360.com/images/noavatar/4/small.png" /></a>
+	         </div>
+	         <div class="sys_dt_right">
+	            <div class="sys_dt_top">
+	              <a href="http://sxy.hc360.com/home/class/335234-0.html" target="_blank" class="name_txt">崔女士</a>	              <span class='action'>发布话题</span>
+	               <!-- 举报 -->
+		          	               <a href="javascript:;" class="report report_1_168215"  onclick="report.reportPopup(this,1,168215)">举报</a>
+	              	            </div>
+	            <div class="sys_dt_main">
+	              <div class="dt_sq_right" style="width:700px;">
+	                 <p class="dt_sq_title"><a href="http://sxy.hc360.com/article-168215.html" target="_blank" >品牌营销策略中的“统一”法则</a></p>
+	                 <p class="dt_sq_info">
+	                 找出一个品牌或产品找到“第一”或“唯一”价值因素之后，需要通过“统一”的执行与推动，将这个核心价值贯穿于整个品牌营销过程中，使其在消费者五官体验空间中产生良好的记忆点，这样才能为品牌的建设添砖加瓦。众所周知，统一性和个性是品牌的两...	                 </p>
+	              </div>
+	              <div class="clear"></div>
+	            </div>  
+	              <div class="sys_dt_tool">
+	                <span class="fb_time">19分钟前</span>
+	                <span class="fb_pl"><a href="http://sxy.hc360.com/article-168215.html#tags" target="_blank" >评论（2）</a></span>
+	                <span class="fb_share"><a href="javascript:;">分享</a></span>
+	                <span class="fb_zan">
+	                		                	<a href="javascript:;" class="zan" appid="168215" type="1" touid="335234">赞（<span style="float:none;display:inline;">2</span>）</a>
+	                		                </span>
+	                <div class="zan_rens zans_1682151" style="margin-top: 0px; margin-left: 10px;">
+	                	                	                <span class="fb_zan_list list_zan_1682151"><a target='_blank' href="http://sxy.hc360.com/home/class/209003-0.html" title="朱经理"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682151"><a target='_blank' href="http://sxy.hc360.com/home/class/173111-0.html" title="贝王族食品"><img src="http://style.xt.hc360.com/images/noavatar/1/small.png" /></a></span>
+	                	                <span class="fb_zan_nums">等已赞过</span>
+	                	                </div>
+	                 <!--分享-->
+	               <div class="share_ico_line">
+	                     <!-- JiaThis Button BEGIN -->
+	                <div class="jiathis">
+		               	<a class="jiathis_button_tsina"></a>
+		                <a class="jiathis_button_weixin"></a>
+		                <a class="jiathis_button_qzone"></a>
+	                    <a class="jiathis_button_cqq"></a>
+	                </div>
+	               <!-- JiaThis Button END -->
+	              </div>
+	             </div>
+	         </div>
+	         <div class="clear"></div>
+	      </div>
+                                                    <input type="hidden" id="user_group_id" value="0" >
+      	      <!--发布文章的样式-->
+	       <div class="sys_dt1">
+	         <div class="sys_dt_left">
+	            <a href="http://sxy.hc360.com/home/class/1292-0.html" target="_blank"><img src="http://style.xt.hc360.com/images/noavatar/2/small.png" /></a>
+	         </div>
+	         <div class="sys_dt_right">
+	            <div class="sys_dt_top">
+	              <a href="http://sxy.hc360.com/home/class/1292-0.html" target="_blank" class="name_txt">杨素丽</a>	              <span class='action'>发布优品</span>
+	               <!-- 举报 -->
+		          	               <a href="javascript:;" class="report report_1_168216"  onclick="report.reportPopup(this,1,168216)">举报</a>
+	              	            </div>
+	            <div class="sys_dt_main">
+	              <div class="dt_sq_right" style="width:700px;">
+	                 <p class="dt_sq_title"><a href="http://sxy.hc360.com/article-168216.html" target="_blank" >摇摇卡承重多大的纸片大小多少？摇摇卡行业知识P10</a></p>
+	                 <p class="dt_sq_info">
+	                 摇摇卡承重多大的纸片大小多少？摇摇卡行业知识P10   摇摆器（摇摇卡）通用做法就是上面贴爆炸贴切，字形状和大小不一样。摇摆器能够承受的重量不是很大，普通的882，没有钢珠。他能承受的重量大概4克左右，纸张的大小八厘米左右。  很...	                 </p>
+	              </div>
+	              <div class="clear"></div>
+	            </div>  
+	              <div class="sys_dt_tool">
+	                <span class="fb_time">20分钟前</span>
+	                <span class="fb_pl"><a href="http://sxy.hc360.com/article-168216.html#tags" target="_blank" >评论（1）</a></span>
+	                <span class="fb_share"><a href="javascript:;">分享</a></span>
+	                <span class="fb_zan">
+	                		                	<a href="javascript:;" class="zan" appid="168216" type="1" touid="1292">赞（<span style="float:none;display:inline;">2</span>）</a>
+	                		                </span>
+	                <div class="zan_rens zans_1682161" style="margin-top: 0px; margin-left: 10px;">
+	                	                	                <span class="fb_zan_list list_zan_1682161"><a target='_blank' href="http://sxy.hc360.com/home/class/209003-0.html" title="朱经理"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682161"><a target='_blank' href="http://sxy.hc360.com/home/class/173111-0.html" title="贝王族食品"><img src="http://style.xt.hc360.com/images/noavatar/1/small.png" /></a></span>
+	                	                <span class="fb_zan_nums">等已赞过</span>
+	                	                </div>
+	                 <!--分享-->
+	               <div class="share_ico_line">
+	                     <!-- JiaThis Button BEGIN -->
+	                <div class="jiathis">
+		               	<a class="jiathis_button_tsina"></a>
+		                <a class="jiathis_button_weixin"></a>
+		                <a class="jiathis_button_qzone"></a>
+	                    <a class="jiathis_button_cqq"></a>
+	                </div>
+	               <!-- JiaThis Button END -->
+	              </div>
+	             </div>
+	         </div>
+	         <div class="clear"></div>
+	      </div>
+                                                    <input type="hidden" id="user_group_id" value="0" >
+      	      <!--发布文章的样式-->
+	       <div class="sys_dt1">
+	         <div class="sys_dt_left">
+	            <a href="http://sxy.hc360.com/home/class/324682-0.html" target="_blank"><img src="http://img008.hc360.cn/k2/M00/15/87/wKhQxFeu7gKEYjiEAAAAADeAGBw540.jpg..50x50.jpg?v1474161073.3342" /></a>
+	         </div>
+	         <div class="sys_dt_right">
+	            <div class="sys_dt_top">
+	              <a href="http://sxy.hc360.com/home/class/324682-0.html" target="_blank" class="name_txt">黎秀平</a>	              <span class='action'>发布话题</span>
+	               <!-- 举报 -->
+		          	               <a href="javascript:;" class="report report_1_168199"  onclick="report.reportPopup(this,1,168199)">举报</a>
+	              	            </div>
+	            <div class="sys_dt_main">
+	              <div class="dt_sq_right" style="width:700px;">
+	                 <p class="dt_sq_title"><a href="http://sxy.hc360.com/article-168199.html" target="_blank" >黎秀平由零开始的故事370</a></p>
+	                 <p class="dt_sq_info">
+	                 2016年9月17日        星期六今天我们小休二天假后，第一天上班；众人问：怎么你公司不是放假三天呢？我的主，生意好时过年都要上班，生意不好想放就放，到这种想放就放时再想天天上班就会太迟了。 我的伙伴们有些可能是高高兴兴的...	                 </p>
+	              </div>
+	              <div class="clear"></div>
+	            </div>  
+	              <div class="sys_dt_tool">
+	                <span class="fb_time">23分钟前</span>
+	                <span class="fb_pl"><a href="http://sxy.hc360.com/article-168199.html#tags" target="_blank" >评论（3）</a></span>
+	                <span class="fb_share"><a href="javascript:;">分享</a></span>
+	                <span class="fb_zan">
+	                		                	<a href="javascript:;" class="zan" appid="168199" type="1" touid="324682">赞（<span style="float:none;display:inline;">7</span>）</a>
+	                		                </span>
+	                <div class="zan_rens zans_1681991" style="margin-top: 0px; margin-left: 10px;">
+	                	                	                <span class="fb_zan_list list_zan_1681991"><a target='_blank' href="http://sxy.hc360.com/home/class/209003-0.html" title="朱经理"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1681991"><a target='_blank' href="http://sxy.hc360.com/home/class/173111-0.html" title="贝王族食品"><img src="http://style.xt.hc360.com/images/noavatar/1/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1681991"><a target='_blank' href="http://sxy.hc360.com/home/class/174605-0.html" title="于经理"><img src="http://style.xt.hc360.com/images/noavatar/5/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1681991"><a target='_blank' href="http://sxy.hc360.com/home/class/240718-0.html" title="李涛"><img src="http://img008.hc360.cn/k2/M00/E7/9F/wKhQxFd5_YOEEwpQAAAAADr2Tp8668.png..50x50.png?v1474159410.77" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1681991"><a target='_blank' href="http://sxy.hc360.com/home/class/72860-0.html" title="张奕扬"><img src="http://style.xt.hc360.com/images/noavatar/0/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1681991"><a target='_blank' href="http://sxy.hc360.com/home/class/324315-0.html" title="翟宝成"><img src="http://style.xt.hc360.com/images/noavatar/5/small.png" /></a></span>
+	                	                <span class="fb_zan_nums">等已赞过</span>
+	                	                </div>
+	                 <!--分享-->
+	               <div class="share_ico_line">
+	                     <!-- JiaThis Button BEGIN -->
+	                <div class="jiathis">
+		               	<a class="jiathis_button_tsina"></a>
+		                <a class="jiathis_button_weixin"></a>
+		                <a class="jiathis_button_qzone"></a>
+	                    <a class="jiathis_button_cqq"></a>
+	                </div>
+	               <!-- JiaThis Button END -->
+	              </div>
+	             </div>
+	         </div>
+	         <div class="clear"></div>
+	      </div>
+                                                    <input type="hidden" id="user_group_id" value="0" >
+      	      <!--发布文章的样式-->
+	       <div class="sys_dt1">
+	         <div class="sys_dt_left">
+	            <a href="http://sxy.hc360.com/home/class/72860-0.html" target="_blank"><img src="http://style.xt.hc360.com/images/noavatar/0/small.png" /></a>
+	         </div>
+	         <div class="sys_dt_right">
+	            <div class="sys_dt_top">
+	              <a href="http://sxy.hc360.com/home/class/72860-0.html" target="_blank" class="name_txt">张奕扬</a>	              <span class='action'>发布优品</span>
+	               <!-- 举报 -->
+		          	               <a href="javascript:;" class="report report_1_167018"  onclick="report.reportPopup(this,1,167018)">举报</a>
+	              	            </div>
+	            <div class="sys_dt_main">
+	              <div class="dt_sq_right" style="width:700px;">
+	                 <p class="dt_sq_title"><a href="http://sxy.hc360.com/article-167018.html" target="_blank" >鲁创分析仪器：气相色谱仪氮磷检测器如何进行正确保养</a></p>
+	                 <p class="dt_sq_info">
+	                 【鲁创分析仪器】大家知道不论是对于哪种仪器设备，在日常使用过程中，一定不要忘记给它进行定期正确的保养，这样才能保证产品的质量性能等方面的寿命。那么如何对气相色谱仪的氮磷检测器进行正确保养呢？山东鲁创分析仪器作为一家研发生产气相色谱...	                 </p>
+	              </div>
+	              <div class="clear"></div>
+	            </div>  
+	              <div class="sys_dt_tool">
+	                <span class="fb_time">24分钟前</span>
+	                <span class="fb_pl"><a href="http://sxy.hc360.com/article-167018.html#tags" target="_blank" >评论（4）</a></span>
+	                <span class="fb_share"><a href="javascript:;">分享</a></span>
+	                <span class="fb_zan">
+	                		                	<a href="javascript:;" class="zan" appid="167018" type="1" touid="72860">赞（<span style="float:none;display:inline;">16</span>）</a>
+	                		                </span>
+	                <div class="zan_rens zans_1670181" style="margin-top: 0px; margin-left: 10px;">
+	                	                	                <span class="fb_zan_list list_zan_1670181"><a target='_blank' href="http://sxy.hc360.com/home/class/209003-0.html" title="朱经理"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1670181"><a target='_blank' href="http://sxy.hc360.com/home/class/173111-0.html" title="贝王族食品"><img src="http://style.xt.hc360.com/images/noavatar/1/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1670181"><a target='_blank' href="http://sxy.hc360.com/home/class/174605-0.html" title="于经理"><img src="http://style.xt.hc360.com/images/noavatar/5/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1670181"><a target='_blank' href="http://sxy.hc360.com/home/class/106853-0.html" title="周啡"><img src="http://img007.hc360.cn/k3/M09/00/49/wKhQv1eAVxyEKzOxAAAAAMG1hjY442.jpg..50x50.jpg?v1474160615.2315" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1670181"><a target='_blank' href="http://sxy.hc360.com/home/class/1274-0.html" title="陆川"><img src="http://img010.hc360.cn/m5/M06/77/FB/wKhQ6lTKDKGELNNQAAAAADXjrg0975.jpg..50x50.jpg?v1474160036.477" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1670181"><a target='_blank' href="http://sxy.hc360.com/home/class/183277-0.html" title="小裴"><img src="http://img001.hc360.cn/m7/M01/2C/9F/wKhQpFZ1AsWEO_RaAAAAAA-g2wE755.jpg..50x50.jpg?v1474160920.4663" /></a></span>
+	                	                <span class="fb_zan_nums">等已赞过</span>
+	                	                </div>
+	                 <!--分享-->
+	               <div class="share_ico_line">
+	                     <!-- JiaThis Button BEGIN -->
+	                <div class="jiathis">
+		               	<a class="jiathis_button_tsina"></a>
+		                <a class="jiathis_button_weixin"></a>
+		                <a class="jiathis_button_qzone"></a>
+	                    <a class="jiathis_button_cqq"></a>
+	                </div>
+	               <!-- JiaThis Button END -->
+	              </div>
+	             </div>
+	         </div>
+	         <div class="clear"></div>
+	      </div>
+                                                    <input type="hidden" id="user_group_id" value="0" >
+      	      <!--发布文章的样式-->
+	       <div class="sys_dt1">
+	         <div class="sys_dt_left">
+	            <a href="http://sxy.hc360.com/home/class/240718-0.html" target="_blank"><img src="http://img008.hc360.cn/k2/M00/E7/9F/wKhQxFd5_YOEEwpQAAAAADr2Tp8668.png..50x50.png?v1474161073.3463" /></a>
+	         </div>
+	         <div class="sys_dt_right">
+	            <div class="sys_dt_top">
+	              <a href="http://sxy.hc360.com/home/class/240718-0.html" target="_blank" class="name_txt">李涛</a><a href="http://sxy.hc360.com/help.html#q4" title="金牌讲师" class="name_ico" target="_blank" ><i class="lecture_1"></i></a>	              <span class='action'>发布话题</span>
+	               <!-- 举报 -->
+		          	               <a href="javascript:;" class="report report_1_168214"  onclick="report.reportPopup(this,1,168214)">举报</a>
+	              	            </div>
+	            <div class="sys_dt_main">
+	              <div class="dt_sq_right" style="width:700px;">
+	                 <p class="dt_sq_title"><a href="http://sxy.hc360.com/article-168214.html" target="_blank" >当好的习惯积累多了，自然会有一个好的人生</a></p>
+	                 <p class="dt_sq_info">
+	                 　父子两住山上，每天都要赶牛车下山卖柴。老父较有经验，坐镇驾车，山路崎岖，弯道特多，儿子眼神较好，总是在要转弯时提醒道：“爹，转弯啦！”　　有一次父亲因病没有下山，儿子一人驾车。到了弯道，牛怎么也不肯转弯，儿子用尽各种方法，下车又...	                 </p>
+	              </div>
+	              <div class="clear"></div>
+	            </div>  
+	              <div class="sys_dt_tool">
+	                <span class="fb_time">26分钟前</span>
+	                <span class="fb_pl"><a href="http://sxy.hc360.com/article-168214.html#tags" target="_blank" >评论（3）</a></span>
+	                <span class="fb_share"><a href="javascript:;">分享</a></span>
+	                <span class="fb_zan">
+	                		                	<a href="javascript:;" class="zan" appid="168214" type="1" touid="240718">赞（<span style="float:none;display:inline;">6</span>）</a>
+	                		                </span>
+	                <div class="zan_rens zans_1682141" style="margin-top: 0px; margin-left: 10px;">
+	                	                	                <span class="fb_zan_list list_zan_1682141"><a target='_blank' href="http://sxy.hc360.com/home/class/209003-0.html" title="朱经理"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682141"><a target='_blank' href="http://sxy.hc360.com/home/class/86346-0.html" title="李慧"><img src="http://img006.hc360.cn/m6/M0D/34/4C/wKhQoldNTkeEQ9t-AAAAAMXz-n4705.jpg..50x50.jpg?v1474158151.4671" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682141"><a target='_blank' href="http://sxy.hc360.com/home/class/173111-0.html" title="贝王族食品"><img src="http://style.xt.hc360.com/images/noavatar/1/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682141"><a target='_blank' href="http://sxy.hc360.com/home/class/36881-0.html" title="擎川小李"><img src="http://img008.hc360.cn/m8/M0B/97/A5/wKhQpVdPhHGEealUAAAAAAHgQok639.jpg..50x50.jpg?v1474159231.5575" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682141"><a target='_blank' href="http://sxy.hc360.com/home/class/174605-0.html" title="于经理"><img src="http://style.xt.hc360.com/images/noavatar/5/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682141"><a target='_blank' href="http://sxy.hc360.com/home/class/240718-0.html" title="李涛"><img src="http://img008.hc360.cn/k2/M00/E7/9F/wKhQxFd5_YOEEwpQAAAAADr2Tp8668.png..50x50.png?v1474159410.77" /></a></span>
+	                	                <span class="fb_zan_nums">等已赞过</span>
+	                	                </div>
+	                 <!--分享-->
+	               <div class="share_ico_line">
+	                     <!-- JiaThis Button BEGIN -->
+	                <div class="jiathis">
+		               	<a class="jiathis_button_tsina"></a>
+		                <a class="jiathis_button_weixin"></a>
+		                <a class="jiathis_button_qzone"></a>
+	                    <a class="jiathis_button_cqq"></a>
+	                </div>
+	               <!-- JiaThis Button END -->
+	              </div>
+	             </div>
+	         </div>
+	         <div class="clear"></div>
+	      </div>
+                                                    <input type="hidden" id="user_group_id" value="0" >
+      	      <!--发布文章的样式-->
+	       <div class="sys_dt1">
+	         <div class="sys_dt_left">
+	            <a href="http://sxy.hc360.com/home/class/192281-0.html" target="_blank"><img src="http://style.xt.hc360.com/images/noavatar/1/small.png" /></a>
+	         </div>
+	         <div class="sys_dt_right">
+	            <div class="sys_dt_top">
+	              <a href="http://sxy.hc360.com/home/class/192281-0.html" target="_blank" class="name_txt">常量</a>	              <span class='action'>发布话题</span>
+	               <!-- 举报 -->
+		          	               <a href="javascript:;" class="report report_1_168212"  onclick="report.reportPopup(this,1,168212)">举报</a>
+	              	            </div>
+	            <div class="sys_dt_main">
+	              <div class="dt_sq_right" style="width:700px;">
+	                 <p class="dt_sq_title"><a href="http://sxy.hc360.com/article-168212.html" target="_blank" >选择vi设计公司的小技巧</a></p>
+	                 <p class="dt_sq_info">
+	                 相信有相当一部分企业对于vi设计公司都有着很大的需求。但是，往往因为预算不够，或者是因为对行业信息不了解，就导致在具体选择何种公司的时候犯难。其实，在选择这一类设计公司的时候，有很多小技巧是可以遵循的。尤其是当经费比较紧张的时候，...	                 </p>
+	              </div>
+	              <div class="clear"></div>
+	            </div>  
+	              <div class="sys_dt_tool">
+	                <span class="fb_time">26分钟前</span>
+	                <span class="fb_pl"><a href="http://sxy.hc360.com/article-168212.html#tags" target="_blank" >评论（1）</a></span>
+	                <span class="fb_share"><a href="javascript:;">分享</a></span>
+	                <span class="fb_zan">
+	                		                	<a href="javascript:;" class="zan" appid="168212" type="1" touid="192281">赞（<span style="float:none;display:inline;">3</span>）</a>
+	                		                </span>
+	                <div class="zan_rens zans_1682121" style="margin-top: 0px; margin-left: 10px;">
+	                	                	                <span class="fb_zan_list list_zan_1682121"><a target='_blank' href="http://sxy.hc360.com/home/class/209003-0.html" title="朱经理"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682121"><a target='_blank' href="http://sxy.hc360.com/home/class/173111-0.html" title="贝王族食品"><img src="http://style.xt.hc360.com/images/noavatar/1/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682121"><a target='_blank' href="http://sxy.hc360.com/home/class/174605-0.html" title="于经理"><img src="http://style.xt.hc360.com/images/noavatar/5/small.png" /></a></span>
+	                	                <span class="fb_zan_nums">等已赞过</span>
+	                	                </div>
+	                 <!--分享-->
+	               <div class="share_ico_line">
+	                     <!-- JiaThis Button BEGIN -->
+	                <div class="jiathis">
+		               	<a class="jiathis_button_tsina"></a>
+		                <a class="jiathis_button_weixin"></a>
+		                <a class="jiathis_button_qzone"></a>
+	                    <a class="jiathis_button_cqq"></a>
+	                </div>
+	               <!-- JiaThis Button END -->
+	              </div>
+	             </div>
+	         </div>
+	         <div class="clear"></div>
+	      </div>
+                                                    <input type="hidden" id="user_group_id" value="0" >
+      	      <!--发布文章的样式-->
+	       <div class="sys_dt1">
+	         <div class="sys_dt_left">
+	            <a href="http://sxy.hc360.com/home/class/415-0.html" target="_blank"><img src="http://img000.hc360.cn/m4/M02/77/60/wKhQ6FTKCMiEXE3bAAAAAHHrnKk433.jpg..50x50.jpg?v1474161073.3574" /></a>
+	         </div>
+	         <div class="sys_dt_right">
+	            <div class="sys_dt_top">
+	              <a href="http://sxy.hc360.com/home/class/415-0.html" target="_blank" class="name_txt">姜泽</a><a href="http://sxy.hc360.com/help.html#q4" title="金牌讲师" class="name_ico" target="_blank" ><i class="lecture_1"></i></a><a href="http://sxy.hc360.com/help.html#q5" title="顾问团" class="name_ico" target="_blank" ><i class="lecture_adviser"></i></a>	              <span class='action'>发布经验</span>
+	               <!-- 举报 -->
+		          	               <a href="javascript:;" class="report report_1_168186"  onclick="report.reportPopup(this,1,168186)">举报</a>
+	              	            </div>
+	            <div class="sys_dt_main">
+	              <div class="dt_sq_right" style="width:700px;">
+	                 <p class="dt_sq_title"><a href="http://sxy.hc360.com/article-168186.html" target="_blank" >【商友观点】织唛哥姜泽老师讲述企业网站基础优化领悟</a></p>
+	                 <p class="dt_sq_info">
+	                 【商友观点】织唛哥姜泽老师讲述企业网站基础优化领悟 【姜泽观点】企业网站基础优化一般来讲都是从狭义的网站优化这个方向来讲述，即搜索引擎优化（SEO），是一种利用搜索引擎的搜索规则来提高目的网站在有关搜索引擎内的排名的方式。seo网...	                 </p>
+	              </div>
+	              <div class="clear"></div>
+	            </div>  
+	              <div class="sys_dt_tool">
+	                <span class="fb_time">30分钟前</span>
+	                <span class="fb_pl"><a href="http://sxy.hc360.com/article-168186.html#tags" target="_blank" >评论（2）</a></span>
+	                <span class="fb_share"><a href="javascript:;">分享</a></span>
+	                <span class="fb_zan">
+	                		                	<a href="javascript:;" class="zan" appid="168186" type="1" touid="415">赞（<span style="float:none;display:inline;">9</span>）</a>
+	                		                </span>
+	                <div class="zan_rens zans_1681861" style="margin-top: 0px; margin-left: 10px;">
+	                	                	                <span class="fb_zan_list list_zan_1681861"><a target='_blank' href="http://sxy.hc360.com/home/class/209003-0.html" title="朱经理"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1681861"><a target='_blank' href="http://sxy.hc360.com/home/class/173111-0.html" title="贝王族食品"><img src="http://style.xt.hc360.com/images/noavatar/1/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1681861"><a target='_blank' href="http://sxy.hc360.com/home/class/36881-0.html" title="擎川小李"><img src="http://img008.hc360.cn/m8/M0B/97/A5/wKhQpVdPhHGEealUAAAAAAHgQok639.jpg..50x50.jpg?v1474159231.5575" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1681861"><a target='_blank' href="http://sxy.hc360.com/home/class/174605-0.html" title="于经理"><img src="http://style.xt.hc360.com/images/noavatar/5/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1681861"><a target='_blank' href="http://sxy.hc360.com/home/class/72860-0.html" title="张奕扬"><img src="http://style.xt.hc360.com/images/noavatar/0/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1681861"><a target='_blank' href="http://sxy.hc360.com/home/class/324315-0.html" title="翟宝成"><img src="http://style.xt.hc360.com/images/noavatar/5/small.png" /></a></span>
+	                	                <span class="fb_zan_nums">等已赞过</span>
+	                	                </div>
+	                 <!--分享-->
+	               <div class="share_ico_line">
+	                     <!-- JiaThis Button BEGIN -->
+	                <div class="jiathis">
+		               	<a class="jiathis_button_tsina"></a>
+		                <a class="jiathis_button_weixin"></a>
+		                <a class="jiathis_button_qzone"></a>
+	                    <a class="jiathis_button_cqq"></a>
+	                </div>
+	               <!-- JiaThis Button END -->
+	              </div>
+	             </div>
+	         </div>
+	         <div class="clear"></div>
+	      </div>
+                                                    <input type="hidden" id="user_group_id" value="0" >
+      	      <!--发布文章的样式-->
+	       <div class="sys_dt1">
+	         <div class="sys_dt_left">
+	            <a href="http://sxy.hc360.com/home/class/240718-0.html" target="_blank"><img src="http://img008.hc360.cn/k2/M00/E7/9F/wKhQxFd5_YOEEwpQAAAAADr2Tp8668.png..50x50.png?v1474161073.3643" /></a>
+	         </div>
+	         <div class="sys_dt_right">
+	            <div class="sys_dt_top">
+	              <a href="http://sxy.hc360.com/home/class/240718-0.html" target="_blank" class="name_txt">李涛</a><a href="http://sxy.hc360.com/help.html#q4" title="金牌讲师" class="name_ico" target="_blank" ><i class="lecture_1"></i></a>	              <span class='action'>发布话题</span>
+	               <!-- 举报 -->
+		          	               <a href="javascript:;" class="report report_1_168213"  onclick="report.reportPopup(this,1,168213)">举报</a>
+	              	            </div>
+	            <div class="sys_dt_main">
+	              <div class="dt_sq_right" style="width:700px;">
+	                 <p class="dt_sq_title"><a href="http://sxy.hc360.com/article-168213.html" target="_blank" >白天图生存，晚上求发展</a></p>
+	                 <p class="dt_sq_info">
+	                 有个富家子弟特别爱吃饺子，每天都要吃。但他又特别刁，只吃馅，两头的皮尖尖就丢到后面的小河里去。　　好景不长，在他十六岁那年，一把大火烧了他的全家，父母急怒中相继病逝。这下他身无分文，又不好意思要饭。邻居家大嫂非常好，每餐给他吃一碗...	                 </p>
+	              </div>
+	              <div class="clear"></div>
+	            </div>  
+	              <div class="sys_dt_tool">
+	                <span class="fb_time">33分钟前</span>
+	                <span class="fb_pl"><a href="http://sxy.hc360.com/article-168213.html#tags" target="_blank" >评论（3）</a></span>
+	                <span class="fb_share"><a href="javascript:;">分享</a></span>
+	                <span class="fb_zan">
+	                		                	<a href="javascript:;" class="zan" appid="168213" type="1" touid="240718">赞（<span style="float:none;display:inline;">6</span>）</a>
+	                		                </span>
+	                <div class="zan_rens zans_1682131" style="margin-top: 0px; margin-left: 10px;">
+	                	                	                <span class="fb_zan_list list_zan_1682131"><a target='_blank' href="http://sxy.hc360.com/home/class/209003-0.html" title="朱经理"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682131"><a target='_blank' href="http://sxy.hc360.com/home/class/86346-0.html" title="李慧"><img src="http://img006.hc360.cn/m6/M0D/34/4C/wKhQoldNTkeEQ9t-AAAAAMXz-n4705.jpg..50x50.jpg?v1474158151.4671" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682131"><a target='_blank' href="http://sxy.hc360.com/home/class/173111-0.html" title="贝王族食品"><img src="http://style.xt.hc360.com/images/noavatar/1/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682131"><a target='_blank' href="http://sxy.hc360.com/home/class/36881-0.html" title="擎川小李"><img src="http://img008.hc360.cn/m8/M0B/97/A5/wKhQpVdPhHGEealUAAAAAAHgQok639.jpg..50x50.jpg?v1474159231.5575" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682131"><a target='_blank' href="http://sxy.hc360.com/home/class/174605-0.html" title="于经理"><img src="http://style.xt.hc360.com/images/noavatar/5/small.png" /></a></span>
+	                	                <span class="fb_zan_nums">等已赞过</span>
+	                	                </div>
+	                 <!--分享-->
+	               <div class="share_ico_line">
+	                     <!-- JiaThis Button BEGIN -->
+	                <div class="jiathis">
+		               	<a class="jiathis_button_tsina"></a>
+		                <a class="jiathis_button_weixin"></a>
+		                <a class="jiathis_button_qzone"></a>
+	                    <a class="jiathis_button_cqq"></a>
+	                </div>
+	               <!-- JiaThis Button END -->
+	              </div>
+	             </div>
+	         </div>
+	         <div class="clear"></div>
+	      </div>
+                                                    <input type="hidden" id="user_group_id" value="0" >
+      	      <!--发布文章的样式-->
+	       <div class="sys_dt1">
+	         <div class="sys_dt_left">
+	            <a href="http://sxy.hc360.com/home/class/240718-0.html" target="_blank"><img src="http://img008.hc360.cn/k2/M00/E7/9F/wKhQxFd5_YOEEwpQAAAAADr2Tp8668.png..50x50.png?v1474161073.3705" /></a>
+	         </div>
+	         <div class="sys_dt_right">
+	            <div class="sys_dt_top">
+	              <a href="http://sxy.hc360.com/home/class/240718-0.html" target="_blank" class="name_txt">李涛</a><a href="http://sxy.hc360.com/help.html#q4" title="金牌讲师" class="name_ico" target="_blank" ><i class="lecture_1"></i></a>	              <span class='action'>发布话题</span>
+	               <!-- 举报 -->
+		          	               <a href="javascript:;" class="report report_1_168211"  onclick="report.reportPopup(this,1,168211)">举报</a>
+	              	            </div>
+	            <div class="sys_dt_main">
+	              <div class="dt_sq_right" style="width:700px;">
+	                 <p class="dt_sq_title"><a href="http://sxy.hc360.com/article-168211.html" target="_blank" >善于倾听，才是成熟的人最基本的素质</a></p>
+	                 <p class="dt_sq_info">
+	                 曾经有个小国到中国来，进贡了三个一模一样的金人，金壁辉煌，把皇帝高兴坏了。可是这小国不厚道，同时出一道题目：这三个金人哪个最有价值？　　皇帝想了许多的办法，请来珠宝匠检查，称重量，看做工，都是一模一样的。怎么办？使者还等着回去汇报...	                 </p>
+	              </div>
+	              <div class="clear"></div>
+	            </div>  
+	              <div class="sys_dt_tool">
+	                <span class="fb_time">42分钟前</span>
+	                <span class="fb_pl"><a href="http://sxy.hc360.com/article-168211.html#tags" target="_blank" >评论（2）</a></span>
+	                <span class="fb_share"><a href="javascript:;">分享</a></span>
+	                <span class="fb_zan">
+	                		                	<a href="javascript:;" class="zan" appid="168211" type="1" touid="240718">赞（<span style="float:none;display:inline;">5</span>）</a>
+	                		                </span>
+	                <div class="zan_rens zans_1682111" style="margin-top: 0px; margin-left: 10px;">
+	                	                	                <span class="fb_zan_list list_zan_1682111"><a target='_blank' href="http://sxy.hc360.com/home/class/209003-0.html" title="朱经理"><img src="http://style.xt.hc360.com/images/noavatar/3/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682111"><a target='_blank' href="http://sxy.hc360.com/home/class/86346-0.html" title="李慧"><img src="http://img006.hc360.cn/m6/M0D/34/4C/wKhQoldNTkeEQ9t-AAAAAMXz-n4705.jpg..50x50.jpg?v1474158151.4671" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682111"><a target='_blank' href="http://sxy.hc360.com/home/class/173111-0.html" title="贝王族食品"><img src="http://style.xt.hc360.com/images/noavatar/1/small.png" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682111"><a target='_blank' href="http://sxy.hc360.com/home/class/36881-0.html" title="擎川小李"><img src="http://img008.hc360.cn/m8/M0B/97/A5/wKhQpVdPhHGEealUAAAAAAHgQok639.jpg..50x50.jpg?v1474159231.5575" /></a></span>
+	                	                <span class="fb_zan_list list_zan_1682111"><a target='_blank' href="http://sxy.hc360.com/home/class/174605-0.html" title="于经理"><img src="http://style.xt.hc360.com/images/noavatar/5/small.png" /></a></span>
+	                	                <span class="fb_zan_nums">等已赞过</span>
+	                	                </div>
+	                 <!--分享-->
+	               <div class="share_ico_line">
+	                     <!-- JiaThis Button BEGIN -->
+	                <div class="jiathis">
+		               	<a class="jiathis_button_tsina"></a>
+		                <a class="jiathis_button_weixin"></a>
+		                <a class="jiathis_button_qzone"></a>
+	                    <a class="jiathis_button_cqq"></a>
+	                </div>
+	               <!-- JiaThis Button END -->
+	              </div>
+	             </div>
+	         </div>
+	         <div class="clear"></div>
+	      </div>
+                                                	<div id="Loading" ><a href="javascript:;" onclick="feedMore(2)">点击加载更多</a></div>
+   	    </div> 
+    
+ </div>
+ <div class="syq_main_r">
+ 
+          <!--圈子领袖-->
+    <div class="qz_cms">
+		<iframe src="http://info.seller.hc360.com/list/index_iframe_qzlx.shtml" scrolling="no" frameborder="0" style="width:100%;height:460px;"></iframe>
+    </div>
+    <!--圈子热点-->
+    <div class="qz_cms">
+    <div class="cate_tit marginTop">
+       <div class="tit_l">
+         <h1>圈子热点</h1>
+       </div>
+       <div class="tit_r qz_tab"><a href="javascript:;" class="cur">最热</a><span>|</span><a href="javascript:;">最新</a></div>
+       <div class="clear"></div>
+       </div>
+       <div class="cate_list5 list ">
+         			<ul class="hot_ul" style="display:none" id="new_article"> 
+									<li >
+		               <span class="li_order li_list_1"></span><div class="rmfx_title">
+		               <a href="http://sxy.hc360.com/article-168220.html" target="_blank">营销用心比用力更有效</a></div>
+		                <div class="rmexp_author">
+		                    <a href="http://sxy.hc360.com/home/class/335234-0.html" target="_blank" class="name_txt">崔女士</a>
+		                    <span class="name_ico2"></span>
+		                    <div class="rmexp_time fr">2016-09-18   09:08</div>
+		                    <div class="clear"></div>
+		                </div>
+		             </li>
+									<li >
+		               <span class="li_order li_list_2"></span><div class="rmfx_title">
+		               <a href="http://sxy.hc360.com/article-168219.html" target="_blank">企业网络营销与客户建立信任法则</a></div>
+		                <div class="rmexp_author">
+		                    <a href="http://sxy.hc360.com/home/class/335234-0.html" target="_blank" class="name_txt">崔女士</a>
+		                    <span class="name_ico2"></span>
+		                    <div class="rmexp_time fr">2016-09-18   09:04</div>
+		                    <div class="clear"></div>
+		                </div>
+		             </li>
+									<li >
+		               <span class="li_order li_list_3"></span><div class="rmfx_title">
+		               <a href="http://sxy.hc360.com/article-168218.html" target="_blank">改变命运那两小时，你在做什么？</a></div>
+		                <div class="rmexp_author">
+		                    <a href="http://sxy.hc360.com/home/class/209003-0.html" target="_blank" class="name_txt">朱经理</a>
+		                    <span class="name_ico2"></span>
+		                    <div class="rmexp_time fr">2016-09-18   09:02</div>
+		                    <div class="clear"></div>
+		                </div>
+		             </li>
+									<li >
+		               <span class="li_order li_list_4"></span><div class="rmfx_title">
+		               <a href="http://sxy.hc360.com/article-168217.html" target="_blank">出租房智能门禁生产厂家代加工找哪家100P</a></div>
+		                <div class="rmexp_author">
+		                    <a href="http://sxy.hc360.com/home/class/209003-0.html" target="_blank" class="name_txt">朱经理</a>
+		                    <span class="name_ico2"></span>
+		                    <div class="rmexp_time fr">2016-09-18   08:54</div>
+		                    <div class="clear"></div>
+		                </div>
+		             </li>
+									<li >
+		               <span class="li_order li_list_5"></span><div class="rmfx_title">
+		               <a href="http://sxy.hc360.com/article-168215.html" target="_blank">品牌营销策略中的“统一”法则</a></div>
+		                <div class="rmexp_author">
+		                    <a href="http://sxy.hc360.com/home/class/335234-0.html" target="_blank" class="name_txt">崔女士</a>
+		                    <span class="name_ico2"></span>
+		                    <div class="rmexp_time fr">2016-09-18   08:51</div>
+		                    <div class="clear"></div>
+		                </div>
+		             </li>
+				            </ul>         			<ul class="hot_ul" id="hot_article" > 
+									<li >
+		               <span class="li_order li_list_1"></span><div class="rmfx_title">
+		               <a href="http://sxy.hc360.com/article-167722.html" target="_blank">今天的主题关于送礼，不看你后悔死。</a></div>
+		                <div class="rmexp_author">
+		                    <a href="http://sxy.hc360.com/home/class/153390-0.html" target="_blank" class="name_txt">涂料软件</a>
+		                    <span class="name_ico2"></span>
+		                    <div class="rmexp_time fr">09月13日 09:46</div>
+		                    <div class="clear"></div>
+		                </div>
+		             </li>
+									<li >
+		               <span class="li_order li_list_2"></span><div class="rmfx_title">
+		               <a href="http://sxy.hc360.com/article-167969.html" target="_blank">以文化塑造品牌灵魂，看星巴克是如何打造品牌效应的？</a></div>
+		                <div class="rmexp_author">
+		                    <a href="http://sxy.hc360.com/home/class/335599-0.html" target="_blank" class="name_txt">吴紫兰</a>
+		                    <span class="name_ico2"></span>
+		                    <div class="rmexp_time fr">09月14日 19:04</div>
+		                    <div class="clear"></div>
+		                </div>
+		             </li>
+									<li >
+		               <span class="li_order li_list_3"></span><div class="rmfx_title">
+		               <a href="http://sxy.hc360.com/article-167967.html" target="_blank">商友观点+SEO优化师提醒织唛哥姜泽的友情链接陷阱</a></div>
+		                <div class="rmexp_author">
+		                    <a href="http://sxy.hc360.com/home/class/415-0.html" target="_blank" class="name_txt">姜泽</a>
+		                    <span class="name_ico2"><a href="http://sxy.hc360.com/help.html#q4" title="金牌讲师" class="name_ico" target="_blank" ><i class="lecture_1"></i></a><a href="http://sxy.hc360.com/help.html#q5" title="顾问团" class="name_ico" target="_blank" ><i class="lecture_adviser"></i></a></span>
+		                    <div class="rmexp_time fr">09月14日 19:01</div>
+		                    <div class="clear"></div>
+		                </div>
+		             </li>
+									<li >
+		               <span class="li_order li_list_4"></span><div class="rmfx_title">
+		               <a href="http://sxy.hc360.com/article-167965.html" target="_blank">【商友观点】织唛哥姜泽看透SEO优化老司机的心事</a></div>
+		                <div class="rmexp_author">
+		                    <a href="http://sxy.hc360.com/home/class/415-0.html" target="_blank" class="name_txt">姜泽</a>
+		                    <span class="name_ico2"><a href="http://sxy.hc360.com/help.html#q4" title="金牌讲师" class="name_ico" target="_blank" ><i class="lecture_1"></i></a><a href="http://sxy.hc360.com/help.html#q5" title="顾问团" class="name_ico" target="_blank" ><i class="lecture_adviser"></i></a></span>
+		                    <div class="rmexp_time fr">09月14日 18:56</div>
+		                    <div class="clear"></div>
+		                </div>
+		             </li>
+									<li >
+		               <span class="li_order li_list_5"></span><div class="rmfx_title">
+		               <a href="http://sxy.hc360.com/article-167990.html" target="_blank">二胎政策带来儿童乐园项目的机遇</a></div>
+		                <div class="rmexp_author">
+		                    <a href="http://sxy.hc360.com/home/class/21446-0.html" target="_blank" class="name_txt">星期六</a>
+		                    <span class="name_ico2"></span>
+		                    <div class="rmexp_time fr">09月15日 16:40</div>
+		                    <div class="clear"></div>
+		                </div>
+		             </li>
+				            </ul>     </div>
+    </div>
+     <!--商家成长班-->
+   <div class="sjczb">
+       <div class="sjczb_title"><span>商友成长</span><a href="javascript:;"><img src="http://style.xt.hc360.com/images/syq_btn.png" /></a></div>
+       <div class="sjczb_txt clear">
+         <ul>
+           <li>汇聚千万商友，共筑网商成长之路，我们风雨同舟</li>
+           <li>一路互帮互助，提升网商实操技能，我们共同进步</li>
+           <li>分享海量资源，助力掌握实战干货，我们倾囊奉献</li>
+           <li>结识更多人脉，拓展商场生意圈子，我们只为成功</li>
+         </ul>
+       </div>
+       <div class="sjczb_btn"><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=a8ffb6fc60268766e51db184633499c6210eaf799b30f3316956c06e330e591c">商友成长QQ群</a></div>
+   </div>
+     <!--新手成长班-->
+   <div class="sjczb" style="display:none;">
+       <div class="sjczb_title"><span>慧聪商学院交流</span><a href="javascript:;"><img src="http://style.xt.hc360.com/images/syq_btn2.png" /></a></div>
+       <div class="sjczb_txt clear">
+         <ul>
+           <li>汇聚优质讲师，打造讲师互动平台，我们畅谈感想</li>
+           <li>交流讲师心得，倾听每位讲师内心，我们必有我师</li>
+           <li>听取讲师建议，努力打造慧聪商学院，我们努力做好</li>
+           <li>结识行业大拿，线上线下都是朋友，我们良师益友</li>
+         </ul>
+       </div>
+      <div class="sjczb_btn"><a href="http://shang.qq.com/wpa/qunwpa?idkey=3ec5c70765150182cea480e137a6922806daade1ff253556b9a3d46f39f2ae87" target="_blank">慧聪商学院交流QQ群</a></div>
+   </div>
+            
+
+ </div>
+ <div class="clear"></div>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1407145589593878" charset="utf-8"></script>
+ <!--link-->
+  	<div class="links">
+	 <div class="links_main">
+		<dl>
+		   <dt><i class="link_ico"></i>友情链接：</dt>
+		   <dd>
+		   			   <a target="_blank" href="http://www.hc360.com"  >慧聪网</a>
+			   				<span class="links_line"></span> 
+			    
+			   
+		   			   <a target="_blank" href="http://www.bossmba.com/"  >慧聪书院</a>
+			   				<span class="links_line"></span> 
+			    
+			   
+		   			   <a target="_blank" href="http://sh.114px.com"  >上海培训网</a>
+			   				<span class="links_line"></span> 
+			    
+			   
+		   			   <a target="_blank" href="http://www.yingsheng.com/pxzx-zjwz/"  >专家文章</a>
+			   				<span class="links_line"></span> 
+			    
+			   
+		   			   <a target="_blank" href="http://www.jiadiancity.com/"  >慧聪家电城</a>
+			   				<span class="links_line"></span> 
+			    
+			   
+		   			   <a target="_blank" href="http://ask.zol.com.cn/"  >zol问答</a>
+			   				<span class="links_line"></span> 
+			    
+			   
+		   			   <a target="_blank" href="http://www.2b.cn/"  >托比网</a>
+			   				<span class="links_line"></span> 
+			    
+			   
+		   			   <a target="_blank" href="http://www.dabingseo.com/"  >seo商学院</a>
+			   				<span class="links_line"></span> 
+			    
+			   
+		   			   <a target="_blank" href="http://minglu.707070.cn/"  >名录资讯</a>
+			   				<span class="links_line"></span> 
+			    
+			   
+		   			   <a target="_blank" href="http://www.ganji.com/zhiyepeixun/"  >职业培训</a>
+			   				<span class="links_line"></span> 
+			    
+			   
+		   			   <a target="_blank" href="http://sy.ohqly.com"  >沈阳信息网</a>
+			   				<span class="links_line"></span> 
+			    
+			   
+		   			   <a target="_blank" href="http://www.wenmingwang.com"  >文明网</a>
+			    
+			   
+		   		   </dd>
+		</dl>
+	</div>
+	</div>
+  <!--学堂右侧悬浮-->
+	<div class="xt_float">
+	  <div class="xt_float_div">
+	  	    <a href="javascript:;" class="xt_sign_btn login">每日签到</a>
+	  	  </div>
+	  <div class="xt_float_div">
+	    	  	<a href="javascript:;" class="xt_js_btn login">讲师认证</a>
+	    	  </div>
+	    <div class="xt_float_div">
+        <a onclick="doyoo.util.openChat('g=93804');return false;" class="xt_advice_btn">在线咨询</a>
+      </div>
+	  <div class="xt_float_div xt_erwm">
+	     <a href="javascript:;" class="xt_erwm_btn"></a>
+	     <div class="erwm_div"></div>
+	  </div>
+
+	  <!--返回顶部-->
+	  <div class="xt_float_div backTop">
+	    <a href="javascript:;"  class="btop">返回顶部</a>
+	   </div>
+	</div>
+
+
+
+
+<footer class="public_footer">
+ <div id="footer2">
+        <p>
+         <a href="http://hcgroup.hc360.com" target="_blank">关于慧聪</a> | 
+         <a href="http://hcgroup.hc360.com/hcjj_fzjg.htm" target="_blank">分支机构</a> | <a href="http://agent.hc360.com/" target="_blank">买卖通渠道</a> | 
+         <a rel="nofollow" href="http://www.hc360.com/jm/franchisee.html">行业加盟</a> | <a rel="nofollow" href="http://www.hc360.com/ad/ad.htm">广告服务</a> |
+         <a href="http://www.hc360.com/map-new.htm">网站导航</a> | <a href="http://www.hc360.com/job/jobneed.htm" target="_blank">诚聘英才</a> | <a href="mailto:b2b@hc360.com" target="_blank">意见投诉</a> | <a href="http://www.hc360.com/law.htm" target="_blank">法律声明</a> | 
+        <a rel="nofollow" href="http://sxy.hc360.com/help.html">帮助中心</a> | <a href="http://www.hc360.com/link.htm" target="_blank">友情链接</a> | <a rel="nofollow" href="http://info.hc360.com/list/ue_cs.shtml">用户体验 我有话说</a>
+       </p>
+       <p>版权所有 慧聪网 京ICP证010051号 通用网址：hc360 互联网药品信息服务资格证书：（京）－经营性－2014－0015　海淀公安局网络备案编号：11010802015485
+Copyright©2000-2016 hc360.com. All Rights Reserved</p>
+ </div> 
+</footer>
+<!------------------------->
+<script>
+//backTop
+$(window).scroll(function () { 
+    if($(document).scrollTop()> $(window).height()){
+	  $(".backTop").fadeIn(400);
+	}else{
+	   $(".backTop").fadeOut(200);
+	}
+ }) 
+</script>
+
+
+<!--提醒弹框-->
+
+ 	<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253634837'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D1253634837' type='text/javascript'%3E%3C/script%3E"));</script>
+<script src="http://style.org.hc360.com/js/build/source/core/hc.control.js"></script>
+</body>
+</html>
