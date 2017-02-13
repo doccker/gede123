@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>前端观察</title>
+		<meta name="description" content="专注于网站前端设计与前端开发" />
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="MobileOptimized" content="320">
+		<meta name="theme-color" content="#2c3e50">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="google-site-verification" content="ERxwvLrqp2lRLHjmDo-9E1LNehbiI3l7FPRTzRn-_oA" />
+		<link rel="shortcut icon" href="/assets/favicon.png?v=7a36170d91">
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css?v=7a36170d91" />
+		<link rel="canonical" href="http://www.qianduan.net/" />
+    <link rel="next" href="http://www.qianduan.net/page/2/" />
+    
+    <meta property="og:site_name" content="前端观察" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="前端观察" />
+    <meta property="og:description" content="专注于网站前端设计与前端开发" />
+    <meta property="og:url" content="http://www.qianduan.net/" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="前端观察" />
+    <meta name="twitter:description" content="专注于网站前端设计与前端开发" />
+    <meta name="twitter:url" content="http://www.qianduan.net/" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Website",
+    "publisher": "前端观察",
+    "url": "http://www.qianduan.net/",
+    "description": "专注于网站前端设计与前端开发"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.6" />
+    <link rel="alternate" type="application/rss+xml" title="前端观察" href="http://www.qianduan.net/rss/" />
+	</head>
+	<body class="home-template nav-closed">
+		
+		<div class="site-wrapper">
+			<header class="main-header">
+	<nav class="main-nav clearfix">
+		<div class="inner">
+            <div class="nav">
+    <ul>
+            <li class="nav-home nav-current" role="presentation"><a href="http://www.qianduan.net/">Home</a></li>
+            <li class="nav-about" role="presentation"><a href="http://www.qianduan.net/about/">About</a></li>
+            <li class="nav-copyright" role="presentation"><a href="http://www.qianduan.net/copyright/">Copyright</a></li>
+            <li class="nav-jobs" role="presentation"><a href="http://www.qianduan.net/teng-xun-zhao-pin/">Jobs</a></li>
+    </ul>
+</div>
+
+            <form id="search" onsubmit="return search()">
+                <input id="bdcsMain" type="text" placeholder="search">
+                <button type="submit">search</button>
+            </form>
+			<a href="http://www.qianduan.net/rss/">Subscribe</a>
+		</div>
+	</nav>
+	<div class="main-header-content">
+		<h1 class="page-title"><a href="http://www.qianduan.net">前端观察</a></h1>
+	</div>
+</header>
+<div class="main-content">
+<main id="content" class="content" role="main">
+<article class="post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/30-awesome-svg-animation/">30个超棒的SVG动画展示</a></h2>
+    </header>
+    <div class="post-meta">
+        <img class="author-thumb" src="/content/images/2015/04/me-1.jpg" alt="Author image" nopin="nopin" />
+        <a href="/author/shenfei/">神飞</a>
+        
+        <time class="post-date" datetime="2015-08-13">13 August 2015</time>
+    </div>
+    <section class="post-excerpt">
+        <p>这里我们收集了一些超酷的基于SVG的动画效果，给大家一些参考。这些动画有的使用了SVG动画，也有是使用CSS做基本动画，用JS做更丰富的效果。 Border Animation by Sean McCaffery 纯CSS，文字边框环绕，hover时触发。    Elastic </p>
+        <p><a class="read-more" href="/30-awesome-svg-animation/">查看全文</a></p>
+    </section>
+</article>
+<article class="post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/static-site-generator-summer/">static site generator: Summer</a></h2>
+    </header>
+    <div class="post-meta">
+        <img class="author-thumb" src="/content/images/2015/04/110521-----.jpg" alt="Author image" nopin="nopin" />
+        <a href="/author/gaowhen/">糖伴西红柿</a>
+        
+        <time class="post-date" datetime="2015-08-04">04 August 2015</time>
+    </div>
+    <section class="post-excerpt">
+        <p>intro 即使明明知道现在已经有非常多的静态博客生成器了，最近我还是造了一个轮子。一方面自己用来学习 python ，另一方面我仅用过的 hexo 并不能满足我的需求。因为我写文章的频率很低，所以每次我都忘了命令行命令，都要去查文档；此外，每次在命令行中新建了文章之后，在一堆文 </p>
+        <p><a class="read-more" href="/static-site-generator-summer/">查看全文</a></p>
+    </section>
+</article>
+<article class="post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/microsoft-edgezhi-chi-de-webkit-apilie-biao/">Microsoft Edge支持的webkit API列表</a></h2>
+    </header>
+    <div class="post-meta">
+        <img class="author-thumb" src="/content/images/2015/04/me-1.jpg" alt="Author image" nopin="nopin" />
+        <a href="/author/shenfei/">神飞</a>
+        
+        <time class="post-date" datetime="2015-07-01">01 July 2015</time>
+    </div>
+    <section class="post-excerpt">
+        <p>微软表示新版的浏览器Edge(spartan)不会再增加新的私有属性，同时移除了部分-ms-属性，但很多标准在没有支持到之前，会使用webkit的api。Edge开发工程师Jacob Rossi列出了一份Edge所支持的webkit api列表。   图片来源 CSS Core </p>
+        <p><a class="read-more" href="/microsoft-edgezhi-chi-de-webkit-apilie-biao/">查看全文</a></p>
+    </section>
+</article>
+<article class="post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/wei-shi-yao-gao-duan-ren-cai-hui-shi-yong-pai-mai-xuan-gong-zuo/">为什么高端人才会使用「拍卖」选工作？</a></h2>
+    </header>
+    <div class="post-meta">
+        <img class="author-thumb" src="/content/images/2015/04/110521-----.jpg" alt="Author image" nopin="nopin" />
+        <a href="/author/gaowhen/">糖伴西红柿</a>
+        
+        <time class="post-date" datetime="2015-06-23">23 June 2015</time>
+    </div>
+    <section class="post-excerpt">
+        <p>想象一下，当你在一个网站上递交你的简历后，你会像珐琅彩瓷一样被各个公司竞相拍卖，确定到合适的「买主」之后，专车把你送到面试的地点；入职当天，你会收到精心准备的小礼物，通过试用期后，你还会收到 3000 元的奖金奖励！ 程序员粘永把简历挂在网站后不久，就接到一个 HR的电话，「太 </p>
+        <p><a class="read-more" href="/wei-shi-yao-gao-duan-ren-cai-hui-shi-yong-pai-mai-xuan-gong-zuo/">查看全文</a></p>
+    </section>
+</article>
+<article class="post tag-html5 tag-e8a1a8e58d95 tag-zheng-ze">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/-xie-you-yong-de-html5-pattern/">一些有用的HTML5 pattern</a></h2>
+    </header>
+    <div class="post-meta">
+        <img class="author-thumb" src="/content/images/2015/04/me-1.jpg" alt="Author image" nopin="nopin" />
+        <a href="/author/shenfei/">神飞</a>
+         on <a href="/tag/html5/">HTML5</a>, <a href="/tag/e8a1a8e58d95/">表单</a>, <a href="/tag/zheng-ze/">正则</a>
+        <time class="post-date" datetime="2015-06-18">18 June 2015</time>
+    </div>
+    <section class="post-excerpt">
+        <p>最近在做手机页面时，遇到数字输入的键盘的问题，之前的做法只是一刀切的使用 type="tel"，不过一直觉得九宫格的电话号码键盘上的英文字母太碍事了。于是想要尝试其它的实现方案，最终的结论却令人沮丧。不过也趁机详细了解了下pattern这个属性。  type="tel" 和 ty </p>
+        <p><a class="read-more" href="/-xie-you-yong-de-html5-pattern/">查看全文</a></p>
+    </section>
+</article>
+<article class="post tag-react-js tag-virtual-dom">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/react-virtual-dom-speed-develop/">用 Virtual DOM 加速开发</a></h2>
+    </header>
+    <div class="post-meta">
+        <img class="author-thumb" src="/content/images/2015/04/me-1.jpg" alt="Author image" nopin="nopin" />
+        <a href="/author/shenfei/">神飞</a>
+         on <a href="/tag/react-js/">react.js</a>, <a href="/tag/virtual-dom/">virtual dom</a>
+        <time class="post-date" datetime="2015-05-29">29 May 2015</time>
+    </div>
+    <section class="post-excerpt">
+        <p>简聊(by Teambition)产品前端中使用了 React，最初开发时使用的 Backbone 搭配 doT.js 模版渲染界面，实践下来效果提升了很多。我们希望能吸引更多同学能够运用 Virtual DOM 改进前端开发，所以这篇文章会主要介绍 React 当中 Virtu </p>
+        <p><a class="read-more" href="/react-virtual-dom-speed-develop/">查看全文</a></p>
+    </section>
+</article>
+<article class="post tag-minimalism">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/25-inspiring-examples-of-ultra-minimal-web-design/">25个超极简的网站设计</a></h2>
+    </header>
+    <div class="post-meta">
+        <img class="author-thumb" src="/content/images/2015/04/me-1.jpg" alt="Author image" nopin="nopin" />
+        <a href="/author/shenfei/">神飞</a>
+         on <a href="/tag/minimalism/">极简主义</a>
+        <time class="post-date" datetime="2015-05-14">14 May 2015</time>
+    </div>
+    <section class="post-excerpt">
+        <p>我们都喜欢寻找最新的使用鲜亮色彩、时尚的标题和令人惊叹的图片的网站设计，但有时欣赏下极简注意的永恒的风格也是很不错的。这些极简主义网站设计结构和排版，它们和其它设计一样充满魅力 Thomas Buffet Socket Studios Jac in a Box Cove Stud </p>
+        <p><a class="read-more" href="/25-inspiring-examples-of-ultra-minimal-web-design/">查看全文</a></p>
+    </section>
+</article>
+<article class="post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/qqliu-lan-qi-x5nei-he-wen-ti-hui-zong/">QQ浏览器X5内核问题汇总</a></h2>
+    </header>
+    <div class="post-meta">
+        <img class="author-thumb" src="/content/images/2015/04/me-1.jpg" alt="Author image" nopin="nopin" />
+        <a href="/author/shenfei/">神飞</a>
+        
+        <time class="post-date" datetime="2015-05-07">07 May 2015</time>
+    </div>
+    <section class="post-excerpt">
+        <p>常常被人问及微信中使用的X5内核的问题，其实我也不是很清楚，只知道它是基于android 4.2的webkit，版本号是webkit 534。今天正好从X5团队拿到了一份问题汇总，梳理下发出来，给各位开发者以参考——不排除明天会删除这篇文章的可能。 1.Android WebVi </p>
+        <p><a class="read-more" href="/qqliu-lan-qi-x5nei-he-wen-ti-hui-zong/">查看全文</a></p>
+    </section>
+</article>
+<article class="post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/mobile-readability-guidelines/">Mobile Readability Guidelines</a></h2>
+    </header>
+    <div class="post-meta">
+        <img class="author-thumb" src="/content/images/2015/04/me-1.jpg" alt="Author image" nopin="nopin" />
+        <a href="/author/shenfei/">神飞</a>
+        
+        <time class="post-date" datetime="2015-05-04">04 May 2015</time>
+    </div>
+    <section class="post-excerpt">
+        <p>前言：这是之前为团队微信账号写的一篇文章，同步过来。 叫 Guidelines 其实有些托大了，只是站在前人的肩膀上，梳理一些移动端文字排版的简单参考。 百度在 2014 年第三季度财报中表示，其移动端的流量已经超过 PC，微信中每天有超过 2 亿人阅读超过20亿次图文消息，这些 </p>
+        <p><a class="read-more" href="/mobile-readability-guidelines/">查看全文</a></p>
+    </section>
+</article>
+<article class="post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/chrome-rem-bug/">Chrome rem bug</a></h2>
+    </header>
+    <div class="post-meta">
+        <img class="author-thumb" src="/content/images/2015/04/me-1.jpg" alt="Author image" nopin="nopin" />
+        <a href="/author/shenfei/">神飞</a>
+        
+        <time class="post-date" datetime="2015-05-04">04 May 2015</time>
+    </div>
+    <section class="post-excerpt">
+        <p>遇到一个bug，发现chrome在初始化页面的时候，会错误的渲染rem单位，导致字体过大。 比如： 正常的应该是这样的： 原因是，为了使用rem单位，我们常常将 html 的font-size设置为62.5%，这样会比较方便计算。 通常浏览器的默认字号是16px，这个是chrom </p>
+        <p><a class="read-more" href="/chrome-rem-bug/">查看全文</a></p>
+    </section>
+</article>
+
+<nav class="pagination" role="navigation">
+    <span class="page-number">Page 1 of 70</span>
+        <a class="older-posts" href="/page/2/">Older Posts &rarr;</a>
+</nav>
+</main><aside class="sidebar">
+	<div class="give-me-five">
+		<a href="http://100offer.com/join/cha?utm_source=qianduan.net&utm_medium=dis&utm_campaign=cha" target="_blank"><img src="http://feimg.qiniudn.com/1002015r.jpg" alt=""></a>
+	</div>
+	<div class="widget">
+        <h3 class="widget-title">热门文章</h3>
+        <div class="widget-box">
+            <ul>
+                <li><a href="http://www.qianduan.net/css-to-achieve-the-vertical-center-of-the-five-kinds-of-methods/" title="CSS实现垂直居中的5种方法" target="_blank">CSS实现垂直居中的5种方法</a></li>
+                <li><a href="http://www.qianduan.net/zen-coding-a-new-way-to-write-html-code/" title="Zen Coding: 一种快速编写HTML/CSS代码的方法" target="_blank">Zen Coding: 一种快速编写HTML/CSS代码的方法</a></li>
+                <li><a href="http://www.qianduan.net/50-amazing-admin-management-templates/" title="50个高端大气上档次的管理后台界面模板" target="_blank">50个高端大气上档次的管理后台界面模板</a></li>
+                <li><a href="http://www.qianduan.net/essential-to-sublime-the-text-2-plugins/" title="一些必不可少的Sublime Text 2插件" target="_blank">一些必不可少的Sublime Text 2插件</a></li>
+                <li><a href="http://www.qianduan.net/high-performance-css3-animations/" title="高性能 CSS3 动画" target="_blank">高性能 CSS3 动画</a></li>
+                <li><a href="http://www.qianduan.net/task-master-gulp-lint/" title="[Task Master] gulp-lint" target="_blank">[Task Master] gulp-lint</a></li>
+                <li><a href="http://www.qianduan.net/qianduan-redesign/" title="前端观察又改版" target="_blank">前端观察又改版</a></li>
+                <li><a href="http://www.qianduan.net/meta-tags-list/" title="meta标签常用属性整理" target="_blank">meta标签常用属性整理</a></li>
+                <li><a href="http://www.qianduan.net/html5-differences-in-the-div-section-article/" title="HTML5 中 div section article 的区别" target="_blank">HTML5 中 div section article 的区别</a></li>
+                <li><a href="http://www.qianduan.net/pseudo-elements/" title="利用伪元素仿苹果手机官网导航" target="_blank">利用伪元素仿苹果手机官网导航</a></li>
+            </ul>
+        </div>
+    </div>
+</aside>
+</div>
+			<footer class="site-footer clearfix">
+				<section class="clearfix footer-widgets">
+					<div class="widgets-wrap">
+						<div class="widget">
+							<h3 class="widget-title">合作网站</h3>
+							<ul>
+								<li><a href="http://accessibilityunion.org/" target="_blank">信息无障碍产品联盟</a></li>
+								<li><a href="http://www.alloyteam.com/" target="_blank">腾讯AlloyTeam</a></li>
+								<li><a href="http://w3ctech.com/" rel="colleague" title="Web 标准化交流会">Web 标准化交流会</a></li>
+								<li><a href="http://www.whyidc.com/" rel="friend" title="国内优质双线全能空间" target="_blank">WhyIDC 双线全能空间</a></li>
+								<li><a href="http://100offer.com/" target="_blank">互联网人才拍卖</a></li>
+							</ul>
+						</div>
+						<div class="widget">
+							<h3 class="widget-title">友情链接</h3>
+							<ul class="blogroll">
+								<li><a href="http://gaowhen.com/" rel="friend co-worker" title="高温的博客" target="_blank">GaoWhen高H温</a></li>
+								<li><a href="http://ivane.me/" rel="friend" target="_blank">黄老湿</a></li>
+								<li><a href="http://www.99css.com/" target="_blank">99CSS</a></li>
+								<li><a href="http://ooxx.me" rel="friend">大猫の意淫网志</a></li>
+								<li><a href="http://ofcss.com/" rel="friend" title="小李刀刀（kairee）的技术博客" target="_blank">裁纸刀下</a></li>
+								<li><a href="http://www.topcss.org/" rel="friend" title="关注信息无障碍" target="_blank">进步博客</a></li>
+								<li><a href="http://www.benben.cc/" target="_blank">笨笨剥壳</a></li>
+								<li><a href="http://www.smallni.com" rel="friend">Smallni's blog</a></li>
+								<li><a href="http://www.misuisui.com/" target="_blank">米随随s5s5</a></li>
+								<li><a href="http://xio.ng" rel="friend">熊宝</a></li>
+								<li><a href="http://blog.wpjam.com/" rel="friend">我爱水煮鱼</a></li>
+								<li><a href="http://www.osmn00.com" title="堂主，WEB前端开发技术" target="_blank">堂主</a></li>
+								<li><a href="http://www.mangguo.org" rel="friend">芒果</a></li>
+								<li><a href="http://pufen.net/" target="_blank" rel="friend">飘飘的生活空间</a></li>
+								<li><a href="http://www.itstrike.cn/" target="_blank">软件开发网</a></li>
+								<li><a href="http://jiawin.com/" title="觉唯前端" target="_blank">觉唯前端</a></li>
+								<li><a href="http://www.qlstudio.cn/" target="_blank">启良工作室</a></li>
+								<li><a href="http://www.jser.com/">JSER</a></li>
+								<li><a href="http://www.iefans.net/" target="_blank">IE浏览器</a></li>
+								<li><a href="http://csshouse.net/" rel="friend" target="_blank">CSS HOUSE</a></li>
+								<li><a href="http://rlog.cn/" title="robin 肉饼">Time Machine</a></li>
+								<li><a href="http://www.whycss.com/" target="_blank">前端网址导航</a></li>
+								<li><a href="http://www.ux265.net/" target="_blank">前端博客导航</a></li>
+								<li><a href="http://www.css88.com/" rel="friend" title="专注前端开发，关注用户体验" target="_blank">WEB前端开发</a></li>
+								<li><a href="http://suta.im/" target="_blank">suta</a></li>
+							</ul>
+						</div>
+						<div class="widget">
+							<h3 class="widget-title">关注前端观察官方微信</h3>
+							<div class="widget-box">
+								<div class="footer-qrcode">><img src="http://feimg.qiniudn.com/qianduan_wechat.jpg" alt="前端观察官方微信二维码"></div
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="copyright">
+					<a href="http://www.qianduan.net">前端观察</a> &copy; 2008-2015 All rights reserved.<br />
+					Hosted by <a href="http://www.linode.com/?r=d5156fa674d41bf96fbace51c9fade505f6fd852">Linode VPS</a><br>
+					Proudly published with <a href="https://ghost.org">Ghost</a>
+				</section>
+			</footer>
+		</div>
+	<script src="/public/jquery.min.js?v=7a36170d91"></script>
+	<script type="text/javascript" src="/assets/js/highlight.js?v=7a36170d91"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=2542259751721431136' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?b1bbdf7dc7e049328c9f9eb4f1b9f659";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,911 @@
+                <!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8" />
+<title>登录 - 调度中心 </title>
+<meta name="description" content="overview &amp; stats" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- basic styles -->
+<link href="/assets/css/bootstrap.min.css"
+	rel="stylesheet" />
+<link rel="stylesheet"
+	href="/assets/css/font-awesome.min.css" />
+<!--[if IE 7]>
+                  <link rel="stylesheet" href="/assets/css/font-awesome-ie7.min.css" />
+                <![endif]-->
+<!-- page specific plugin styles -->
+<!-- fonts -->
+<link rel="stylesheet" href="/assets/css/ace-fonts.css" />
+<!-- ace styles -->
+<link rel="stylesheet" href="/assets/css/ace.min.css" />
+<link rel="stylesheet"
+	href="/assets/css/ace-rtl.min.css" />
+<link rel="stylesheet"
+	href="/assets/css/ace-skins.min.css" />
+<link rel="stylesheet"
+	href="/static/css/custom.css" />
+<!--[if lte IE 8]>
+                  <link rel="stylesheet" href="/assets/css/ace-ie.min.css" />
+                <![endif]-->
+<!-- inline styles related to this page -->
+<!-- ace settings handler -->
+<script src="/assets/js/ace-extra.min.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+                <script src="/assets/js/html5shiv.js"></script>
+                <script src="/assets/js/respond.min.js"></script>
+                <![endif]-->
+<script>
+	//环境变量
+	window.contextPath = "";
+</script></head>
+<body class="login-layout">
+	<div class="main-container">
+	<div class="main-content">
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<div class="login-container">
+					<div class="center">
+						<h1>
+							<i class="icon-leaf green"></i><span
+								class="white"> YScheduler</span>
+						</h1>
+						<h4 class="blue">© NDP media</h4>
+					</div>
+
+					<div class="space-6"></div>
+
+					<div class="position-relative">
+						<div id="login-box" class="login-box visible widget-box no-border">
+							<div class="widget-body">
+								<div class="widget-main">
+
+									<div class="space-6"></div>
+									<div id="alertMessageDiv">
+									</div>
+									<div class="space-6"></div>
+
+									<form method="POST" onsubmit="return login(this)">
+										<fieldset>
+											<label class="block clearfix"> <span
+												class="block input-icon input-icon-right"> <input
+													name="username" type="text" class="form-control"
+													placeholder="用户名"> <i class="icon-user"></i>
+											</span>
+											</label> <label class="block clearfix"> <span
+												class="block input-icon input-icon-right"> <input
+													name="password" type="password" class="form-control"
+													placeholder="密码"> <i class="icon-lock"></i>
+											</span>
+											</label>
+
+											<div class="space"></div>
+
+											<div class="clearfix">
+												<button type="submit"
+													class="width-35 pull-right btn btn-sm btn-primary">
+													<i class="icon-key"></i> Login
+												</button>
+											</div>
+
+											<div class="space-4"></div>
+										</fieldset>
+									</form>
+
+								</div>
+								<!-- /widget-main -->
+							</div>
+							<!-- /widget-body -->
+						</div>
+						<!-- /login-box -->
+
+						<div id="forgot-box" class="forgot-box widget-box no-border">
+							<div class="widget-body">
+								<div class="widget-main">
+									<h4 class="header red lighter bigger">
+										<i class="icon-key"></i> Retrieve Password
+									</h4>
+
+									<div class="space-6"></div>
+									<p>Enter your email and to receive instructions</p>
+
+									<form>
+										<fieldset>
+											<label class="block clearfix"> <span
+												class="block input-icon input-icon-right"> <input
+													type="email" class="form-control" placeholder="Email">
+													<i class="icon-envelope"></i>
+											</span>
+											</label>
+
+											<div class="clearfix">
+												<button type="button"
+													class="width-35 pull-right btn btn-sm btn-danger">
+													<i class="icon-lightbulb"></i> Send Me!
+												</button>
+											</div>
+										</fieldset>
+									</form>
+								</div>
+								<!-- /widget-main -->
+
+								<div class="toolbar center">
+									<a href="#" onclick="show_box('login-box'); return false;"
+										class="back-to-login-link"> Back to login <i
+										class="icon-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+							<!-- /widget-body -->
+						</div>
+						<!-- /forgot-box -->
+
+						<div id="signup-box" class="signup-box widget-box no-border">
+							<div class="widget-body">
+								<div class="widget-main">
+									<h4 class="header green lighter bigger">
+										<i class="icon-group blue"></i> New User Registration
+									</h4>
+
+									<div class="space-6"></div>
+									<p>Enter your details to begin:</p>
+
+									<form>
+										<fieldset>
+											<label class="block clearfix"> <span
+												class="block input-icon input-icon-right"> <input
+													type="email" class="form-control" placeholder="Email">
+													<i class="icon-envelope"></i>
+											</span>
+											</label> <label class="block clearfix"> <span
+												class="block input-icon input-icon-right"> <input
+													type="text" class="form-control" placeholder="Username">
+													<i class="icon-user"></i>
+											</span>
+											</label> <label class="block clearfix"> <span
+												class="block input-icon input-icon-right"> <input
+													type="password" class="form-control" placeholder="Password">
+													<i class="icon-lock"></i>
+											</span>
+											</label> <label class="block clearfix"> <span
+												class="block input-icon input-icon-right"> <input
+													type="password" class="form-control"
+													placeholder="Repeat password"> <i
+													class="icon-retweet"></i>
+											</span>
+											</label> <label class="block"> <input type="checkbox"
+												class="ace"> <span class="lbl"> I accept the
+													<a href="#">User Agreement</a>
+											</span>
+											</label>
+
+											<div class="space-24"></div>
+
+											<div class="clearfix">
+												<button type="reset" class="width-30 pull-left btn btn-sm">
+													<i class="icon-refresh"></i> Reset
+												</button>
+
+												<button type="button"
+													class="width-65 pull-right btn btn-sm btn-success">
+													Register <i class="icon-arrow-right icon-on-right"></i>
+												</button>
+											</div>
+										</fieldset>
+									</form>
+								</div>
+
+								<div class="toolbar center">
+									<a href="#" onclick="show_box('login-box'); return false;"
+										class="back-to-login-link"> <i class="icon-arrow-left"></i>
+										Back to login
+									</a>
+								</div>
+							</div>
+							<!-- /widget-body -->
+						</div>
+						<!-- /signup-box -->
+					</div>
+					<!-- /position-relative -->
+				</div>
+			</div>
+			<!-- /.col -->
+		</div>
+		<!-- /.row -->
+	</div>
+</div>
+	<!-- /.main-container -->
+	<!-- basic scripts -->
+
+<!--[if !IE]> -->
+
+<script type="text/javascript">
+	window.jQuery || document.write("<script src='/assets/js/jquery-2.0.3.min.js'>" + "<"+"/script>");
+</script>
+
+<!-- <![endif]-->
+
+<!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='/assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+
+<script type="text/javascript">
+	if ("ontouchend" in document)
+		document.write("<script src='/assets/js/jquery.mobile.custom.min.js'>" + "<"+"/script>");
+</script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/typeahead-bs2.min.js"></script>
+
+<!-- page specific plugin scripts -->
+
+<!--[if lte IE 8]>
+                  <script src="/assets/js/excanvas.min.js"></script>
+                <![endif]-->
+
+<script src="/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="/assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="/assets/js/jquery.slimscroll.min.js"></script>
+<script src="/assets/js/jquery.easy-pie-chart.min.js"></script>
+<script src="/assets/js/jquery.sparkline.min.js"></script>
+<script src="/assets/js/jquery.autosize.min.js"></script>
+<script src="/assets/js/flot/jquery.flot.min.js"></script>
+<script src="/assets/js/flot/jquery.flot.pie.min.js"></script>
+<script src="/assets/js/flot/jquery.flot.resize.min.js"></script>
+
+
+<!-- ace scripts -->
+
+<script src="/assets/js/ace-elements.min.js"></script>
+<script src="/assets/js/ace.min.js"></script>
+
+<script src="/static/js/application.js"></script>
+
+<!-- inline scripts related to this page -->
+<script type="text/javascript">
+	jQuery(function($) {
+
+	})
+</script>
+	<!-- 手工执行 -->
+<div aria-hidden="false" role="dialog" data-backdrop="true" class="bootbox modal" id="triggerTaskModal"
+	style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/task/trigger" role="form"
+		onsubmit="return app.triggerTask(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title">手工触发执行</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					确定要马上运行此任务？
+					<div class="form-group">
+						<div class="col-sm-7">
+							<input hidden="true" taskId type="text" name="taskId" class="col-xs-10 col-sm-7">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<!-- 终止执行 -->
+<div aria-hidden="false" role="dialog" data-backdrop="true" class="bootbox modal" id="cancelTaskModal"
+	style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/task/instance/cancel" role="form"
+		onsubmit="return app.cancelTask(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title">终止执行</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					确定要终止此任务？
+					<div class="form-group">
+						<div class="col-sm-7">
+							<input hidden="true" instanceId type="text" name="instanceId" class="col-xs-10 col-sm-7">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!-- 重跑任务 -->
+<div aria-hidden="false" role="dialog" data-backdrop="true" class="bootbox modal" id="rerunTaskModal"
+	style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/task/instance/rerun" role="form"
+		onsubmit="return app.rerunTask(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title">重跑</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					确定要重新执行？
+					<div class="form-group">
+						<div class="col-sm-7">
+							<input hidden="true" instanceId type="text" name="instanceId" class="col-xs-10 col-sm-7">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!-- 重跑工作流 -->
+<div aria-hidden="false" role="dialog" data-backdrop="true" class="bootbox modal" id="rerunWorkflowModal"
+	style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/workflow/instance/rerun" role="form"
+		onsubmit="return app.rerunWorkflow(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title">重跑</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					确定要重新执行工作流？
+					<div class="form-group">
+						<div class="col-sm-7">
+							<input hidden="true" instanceId type="text" name="instanceId" class="col-xs-10 col-sm-7">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!-- confirm -->
+<div aria-hidden="false" role="dialog" data-backdrop="true" class="bootbox modal" id="confirm" style="margin: 0 0 0 0;">
+	<div class="modal-dialog" style="width: 600px;">
+		<div class="modal-content">
+			<div id="modal-header" class="modal-header">
+				<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+				<h4 class="modal-title"></h4>
+			</div>
+			<div id="modal-body" class="modal-body">
+				<p style="text-align: center;"></p>
+			</div>
+			<div id="modal-footer" class="modal-footer">
+				<button type="button" onclick="update()" class="btn btn-primary">确定</button>
+				<button type="button" data-dismiss="modal" class="btn">取消</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 日志 -->
+<div aria-hidden="false" role="dialog" data-backdrop="true" class="bootbox modal bootbox-confirm" id="instanceLogModal"
+	style="margin: 0 0 0 0;">
+	<div class="modal-dialog" style="width: 900px;">
+		<div class="modal-content" style="background-color:">
+			<div class="modal-header">
+				<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+				<h4 class="modal-title">运行日志</h4>
+			</div>
+			<div class="modal-body">
+				<div class="bootbox-body" logBody>
+					<div instanceLogAlertDiv></div>
+					<pre log
+						style="cursor: text; margin-top: 10px; background-color: #222a2d; color: #33FF00; font-size: 12px; width: 100%; height: 400px; overflow-x: auto;"></pre>
+					<a logLink href="">下载日志</a>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" data-dismiss="modal" class="btn btn-primary">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- add User -->
+<div aria-hidden="true" role="dialog" data-backdrop="true" class="bootbox modal" id="createUserModal"
+	style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/user/create" role="form"
+		onsubmit="return app.createUser(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title">添加用户</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					<form class="form-horizontal" role="form" action="/user/create"
+						onsubmit="return app.createUser(this)" method="post">
+						<div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right"> 用户名 </label>
+							<div class="col-sm-9">
+								<input name="username" type="text" placeholder="输入用户名" class="col-xs-10">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right"> 手机号码 </label>
+							<div class="col-sm-9">
+								<input name="telephone" type="text" placeholder="输入手机号码" class="col-xs-10">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!-- 删除User -->
+<div aria-hidden="false" role="dialog" data-backdrop="true" class="bootbox modal" id="removeUserModal"
+	style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/user/remove" role="form"
+		onsubmit="return app.removeUser(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title">删除用户</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					确定要删除用户 <span username></span> ？
+					<div class="form-group">
+						<div class="col-sm-7">
+							<input hidden="true" userId type="text" name="userId" class="col-xs-10 col-sm-7">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!-- 重置User密码 -->
+<div aria-hidden="false" role="dialog" data-backdrop="true" class="bootbox modal" id="resetPasswordModal"
+	style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/user/reset" role="form"
+		onsubmit="return app.resetPassword(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title">重置用户密码</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					确定要重置 <span username></span> 的密码吗？
+					<div class="form-group">
+						<div class="col-sm-7">
+							<input hidden="true" userId type="text" name="userId" class="col-xs-10 col-sm-7">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!-- 重置User Token -->
+<div aria-hidden="false" role="dialog" data-backdrop="true" class="bootbox modal" id="regenTokenModal"
+	style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/user/regenToken" role="form"
+		onsubmit="return app.regenToken(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title">重置用户Token</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					确定要重置 <span username></span> 的Token吗？
+					<div class="form-group">
+						<div class="col-sm-7">
+							<input hidden="true" userId type="text" name="userId" class="col-xs-10 col-sm-7">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!-- add Team -->
+<div aria-hidden="true" role="dialog" data-backdrop="true" class="bootbox modal" id="createTeamModal"
+	style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/team/create" role="form"
+		onsubmit="return app.createTeam(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title">添加团队</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					<form class="form-horizontal" role="form" action="/team/create"
+						onsubmit="return app.createTeam(this)" method="post">
+						<div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right"> 团队名称 </label>
+							<div class="col-sm-9">
+								<input name="teamname" type="text" placeholder="输入团队名称" class="col-xs-10">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!-- 删除Team -->
+<div aria-hidden="false" role="dialog" data-backdrop="true" class="bootbox modal" id="removeTeamModal"
+	style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/team/remove" role="form"
+		onsubmit="return app.removeTeam(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title">删除团队</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					确定要删除团队 <span teamName></span> ？
+					<div class="form-group">
+						<div class="col-sm-7">
+							<input hidden="true" teamId type="text" name="teamId" class="col-xs-10 col-sm-7">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!-- rename Team -->
+<div aria-hidden="true" role="dialog" data-backdrop="true" class="bootbox modal" id="renameTeamModal"
+	style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/team/rename" role="form"
+		onsubmit="return app.renameTeam(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title">团队重命名</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					<form class="form-horizontal" role="form" action="/team/create"
+						onsubmit="return app.renameTeam(this)" method="post">
+						<div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right"> 团队名称 </label>
+							<div class="col-sm-9">
+								<input name="teamName" teamName type="text" placeholder="输入团队名称" class="col-xs-10">
+							</div>
+							<div class="col-sm-7">
+								<input hidden="true" teamId type="text" name="teamId" class="col-xs-10 col-sm-7">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!-- add Agent -->
+<div aria-hidden="true" role="dialog" data-backdrop="true" class="bootbox modal" id="createAgentModal"
+	style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/agent/create" role="form"
+		onsubmit="return app.createAgent(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title">添加Agent</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					<form class="form-horizontal" role="form" action="/agent/create"
+						onsubmit="return app.createAgent(this)" method="post">
+						<div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right"> Agent名称 </label>
+							<div class="col-sm-9">
+								<input name="name" type="text" placeholder="输入Agent名称" class="col-xs-10">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right"> IP </label>
+							<div class="col-sm-9">
+								<input name="ip" type="text" placeholder="输入IP" class="col-xs-10">
+							</div>
+						</div>
+											</form>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!-- 删除Agent -->
+<div aria-hidden="false" role="dialog" data-backdrop="true" class="bootbox modal" id="removeAgentModal"
+	style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/agent/remove" role="form"
+		onsubmit="return app.removeAgent(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title">删除Agent</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					确定要删除Agent <span agentName></span> ？
+					<div class="form-group">
+						<div class="col-sm-7">
+							<input hidden="true" agentId type="text" name="agentId" class="col-xs-10 col-sm-7"> <input hidden="true"
+								agentName type="text" name="agentName" class="col-xs-10 col-sm-7">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+
+<!-- 上线或下线Agent -->
+<div aria-hidden="false" role="dialog" data-backdrop="true" class="bootbox modal" id="enableOrDisableAgentModal"
+	style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/agent/enableOrDisable" role="form"
+		onsubmit="return app.enableOrDisableAgent(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title enable">上线Agent</h4>
+					<h4 class="modal-title disable">下线Agent</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					<div class="enable">
+						<div alertMessage></div>
+						确定要上线Agent <span agentName></span> ？
+					</div>
+					<div class="disable">
+						确定要下线Agent <span agentName></span> ？
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-7">
+							<input hidden="true" agentId type="text" name="agentId" class="col-xs-10 col-sm-7"> <input hidden="true"
+								agentName type="text" name="agentName" class="col-xs-10 col-sm-7"><input hidden="true" enable
+								type="text" name="enable" class="col-xs-10 col-sm-7">
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<div aria-hidden="true" role="dialog" data-backdrop="true" class="bootbox modal" id="updateAgentIpModal"
+	style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/agent/update" role="form"
+		onsubmit="return app.updateAgentIp(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title">修改Agent</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					<form class="form-horizontal" role="form" action="/agent/update"
+						onsubmit="return app.updateAgentIp(this)" method="post">
+						<div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right"> Agent名称 </label>
+							<div class="col-sm-9">
+								<input name="agentName" agentName type="text" readonly class="col-xs-10">
+							</div>
+							<input hidden="true" agentId type="text" name="agentId" class="col-xs-10 col-sm-7">
+						</div>
+						<div class="form-group">
+							<label class="col-sm-3 control-label no-padding-right"> IP </label>
+							<div class="col-sm-9">
+								<input name="ip" ip type="text" placeholder="输入IP" class="col-xs-10">
+							</div>
+						</div>
+											</form>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!-- 错误消息条 -->
+<div style="display: none" id="alert_success">
+	<div class="alert alert-success">
+		<button type="button" class="close" data-dismiss="alert">×</button>
+		<span></span>
+	</div>
+</div>
+<!-- 成功的消息条 -->
+<div style="display: none" id="alert_error">
+	<div class="alert alert-danger">
+		<button type="button" class="close" data-dismiss="alert">×</button>
+		<span style="text-align: center;"></span>
+	</div>
+</div>
+<!-- 错误消息弹出框 -->
+<div aria-hidden="true" role="dialog" tabindex="-1" class="bootbox modal" id="errorMsg">
+	<div class="modal-dialog" style="width: 600px;">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+				<h4 title class="modal-title"></h4>
+			</div>
+			<div class="modal-body" style="text-align: center;">
+				<span alertMessage></span>
+			</div>
+			<div class="modal-footer">
+				<button type="button" data-dismiss="modal" class="btn">确定</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div aria-hidden="false" role="dialog" data-backdrop="true" class="bootbox modal"
+	id="openTriggerWorkflowInstanceCancelModal" style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/workflow/instance/cancel" role="form"
+		onsubmit="return app.cancelWorkflowInstance(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title">终止执行</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					确定要终止工作流执行？
+					<div class="form-group">
+						<div class="col-sm-7">
+							<input hidden="true" workflowInstanceId type="text" name="workflowInstanceId" class="col-xs-10 col-sm-7">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!-- 升级agent -->
+<div aria-hidden="false" role="dialog" data-backdrop="true" class="bootbox modal" id="triggerUpgradeModal"
+	style="margin: 0 0 0 0;">
+	<form style="" class="form-horizontal" action="/task/trigger" role="form"
+		onsubmit="return app.triggerUpgrade(this)" method="post">
+		<div class="modal-dialog" style="width: 600px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					<h4 class="modal-title">升级agent</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<div alertMessage></div>
+					确定要马上升级此agent？
+					<div class="form-group">
+						<div class="col-sm-7">
+							<input hidden="true" taskId type="text" name="taskId" class="col-xs-10 col-sm-7">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">确定</button>
+					<button type="button" data-dismiss="modal" class="btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>                 <script type="text/javascript">
+	function login(form) {
+		app.clearAlertMessage();
+		$.ajax({
+			type : $(form).attr('method'),
+			url : $(form).attr('action'),
+			data : $(form).serialize(),
+			dataType : "json",
+			success : loginDone,
+			error : app.httpError
+		});
+		return false;
+	}
+
+	function loginDone(data) {
+		if (data.success == false) {
+			app.alertError(data.errorMsg);
+		} else {
+			if (!data.returnUrl) {
+				window.location = window.contextPath + "/";
+			} else {
+				window.location = window.contextPath + data.returnUrl;
+			}
+		}
+	}
+	$(document).ready(function() {
+		$("input[name='username']").focus();
+	});
+</script></body>
+</html>

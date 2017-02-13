@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- initial set  -->
+    <meta http-equiv="x-ua-compatible" content="ie=7" />
+        <meta name="baidu-site-verification" content="h0fignccMW" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!--seo -->
+    <title>我们爱讲冷笑话-|爱编冷笑话|挖掘冷猛料|流行冷幽默|-lengxiaohua.com</title>
+    
+    <meta property="wb:webmaster" content="0695f39670ffb8ba" />
+    <meta property="qc:admins" content="2117207557701170516375"/> 
+    <meta name="description" content="爱讲冷笑话的企鹅所在地,善于挖掘冷笑话,发挥冷笑话功力,一个冷笑话就能走天涯.只要听到一个冷笑话,就讲给他人听。2012最新最流行冷笑话,冷笑话其实很好笑,也经常听到别人讲冷笑话, 有人天生爱说冷笑话,痴迷讲冷笑话,人生其实就是一个冷笑话,冷笑话真的很冷啊." />
+    
+    <meta name="keywords" content="冷笑话,最新冷笑话,经典冷笑话,冷笑话谜语,冷笑话大全,lengxiaohua,冷漫画,冷视频,康康冷笑话,小白兔冷笑话,脑筋急转弯,搞笑短信,冷幽默,冷知识,冷图片,冷创意" />
+    
+    <link rel="canonical" href="http://lengxiaohua.com/" />
+
+    <!-- maincss -->
+    <link href="/plugins/icomoon/Icomoon.css?v=291" rel="stylesheet">
+    <link rel="stylesheet" href="/css/page/core.css?v=291" type="text/css" media="screen" charset="UTF-8"/>
+    <link rel="stylesheet" href="/css/page/Base.css?v=291" type="text/css" media="screen" charset="UTF-8"/>
+
+    <!-- favicon -->
+    <link rel="favicon icon" type="image/png" href="/img/page/favicon.ico" />
+
+    <!-- js plugins -->
+    <script type="text/javascript" charset="UTF-8" src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/plugins/zarkfx/jslib/ddpng.js?v=291"></script> 
+    <script type="text/javascript" charset="UTF-8" src="/js/ZarkAPI.js?v=291"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/ZarkF.js?v=291"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/JOKE.js?v=291"></script>
+    <script type="text/javascript" charset="UTF-8" src="/js/lazyload.js?v=291"></script> 
+    <script type="text/javascript" charset="UTF-8" src="/js/Base.js?v=291"></script>
+    <script type="text/javascript" charset="UTF-8" src="/plugins/zarkfx/zarkfx.js?v=291"></script>
+    <!-- sub-page css, js and csshack -->
+    
+</head>
+<body id="body">
+    <div id="wrap">
+        <div id="main">
+            <!--Header-->
+            <div class="header">
+                <div class="header_inner clearfix">
+                    <span class="rabi_top"></span>
+                    <div class="logobox">
+                        <a class="logo" href="/" title="~回到首页吧~"></a>
+                    </div>
+                    <form action="/search">
+                        <div class="search_box" >
+                            <input class="search_but" type="submit" value="" fx="ie6png" />
+                            <input type="text" name="query_word" class="search_inp corner12px" fx="corner[radius=12] ie6png" />
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+
+            <!--SUBPAGE-->
+            <div class="sub_page_content clearfix">
+                <div class="left_wrap">
+                    <div class="nav_wrap clearfix">
+                        <div class="nav_box corner8px">
+                            <div id="main_nav" class="main_nav ">
+                                <a href="/">人气</a> 
+                                <a href="/new">最新</a> 
+                                <a href="/random">随机</a> 
+                                <a href="/gather" class="gather">每日一冷</a> 
+                                <a href="/judge">审贴</a> 
+                                <a href="javascript:;" onclick="JOKE.openPostJokeBox();return false;">发布</a>
+                                <a href="/html/app.html" target="_blank" fx="ie6png" class="app" ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--POST_JOKE-->
+                    <div id="post_joke_box" class="post_box corner8px clearfix hidden" style="margin-bottom:20px; border:1px solid #D6D6D6; box-shadow:0 3px 5px #E1E1E1; overflow:hidden;" >
+                        <a href="javascript:;" onclick="JOKE.closePostBox();return false;" class="btn_close" fx="ie6png" style="top:8px; right:15px;"></a>
+                        <div class="pub_cat_box corner8px_top clearfix">
+                            <a href="javascript:void(0);" fx="switch[switchid=post_content_text;group=post;]"   class="corner8px_lt" style="border-left:0;font-size:16px;">文字</a>
+                            <a href="javascript:void(0);" fx="switch[switchid=post_content_image;group=post;]" style="font-size:16px;">图片</a>
+                            <a href="javascript:void(0);" fx="switch[switchid=post_content_video;group=post;]"  style="border-right:1px solid #ddd;font-size:16px;">视频</a>
+                        </div>
+
+                        <div id="post_joke_content" class="pub_switch_box corner8px_bottom clearfix">
+
+                            <!-- text joke -->
+                            <div id="post_content_text">
+                                <div class="pub_textarea clearfix">
+                                    <textarea name="content" autocomplete="off" fx="keydown[key=ctrl+enter;target=#post_joke_btn]" ></textarea>
+                                    <p id="post_tip" class="pub_tip hidden"></p>
+                                </div>
+                                <a id="post_joke_btn" href="javascript:;" fx="corner[radius=4]" onclick="JOKE.postJoke();return false;" class="btn_submit corner4px" style="_margin-top: 10px;" title="按下Ctrl+Enter可以直接发布">发表</a>
+
+                            </div> <!-- text joke end -->
+
+                            <!-- image joke -->
+                            <div id="post_content_image" class="hidden">
+                                <form action="/post/insert" method="POST" enctype="multipart/form-data" class="basicform" >
+                                    <input type="hidden" name="referer" fx="urlquery[key=post_success;value=1;]" />
+                                    <div class="clearfix" style="margin-bottom:15px;">
+                                        <div class="file corner4px" fx="corner[radius=4]" style="margin-bottom:0;" >
+                                            <input type="file" name="imagefile" autocomplete="off" fx="validation[type=notempty;invalid_id=post_image_error;invalid_msg=请选择一张图片] validation[type=endswith;values=.jpg,.png,.jpeg,.gif;invalid_id=post_image_error;invalid_msg=只能上传jpg/jpeg/png/gif格式的图片;ignorecase;] validation[type=filesize;min=10240;max=4194304;invalid_id=post_image_error;invalid_msg=图片的尺寸必须大于10k,小于4M]"/>
+                                        </div>
+                                    </div>
+                                    <div class="pub_textarea clearfix">
+                                        <textarea name="content" autocomplete="off" fx="keydown[key=ctrl+enter;target=#post_image_btn] validation[type=maxlen;len=300;invalid_id=post_image_error;invalid_msg=内容太长了;] focusclean[color=#999]" style="height:40px; min-height:40px; box-shadow:none;">输入配图文字(可选)</textarea>
+                                        <p id="post_image_error" class="pub_tip"></p>
+                                    </div>
+                                    <input type="hidden" name="type" value="image" />
+                                    <input type="hidden" name="model_name" value="Joke" />
+                                    <input type="hidden" name="title" value="" />
+                                    <input id="post_image_btn" fx="corner[radius=4]" type="submit" class="btn_submit corner4px" style="_margin-top: 10px;" value="发表"  title="按下Ctrl+Enter可以直接发布" >
+                                </form>
+                            </div> <!-- image joke end -->
+
+                            <!-- video joke -->
+                            <div id="post_content_video" class="hidden">
+                                <p class="pub_title">视频地址</p>
+                                <input value="请输入在线视频的网络地址" class="video_url_inp" type="text" name="video_uri" autocomplete="off" fx="validation[type=notempty;invalid_id=post_video_error;invalid_msg=请把视频地址复制到第一栏] validation[type=regex;regex=.+\.youku\..+|.+\.tudou\..+|.+\.sina\..+|.+\.sohu\..+|.+\.56\.com.+|.+\.ku6\.com.+|.+v\.qq\.com.+|.+\.swf;invalid_id=post_video_error;invalid_msg=这个视频地址不对,请提供包含.swf的flash地址;ignorecase;] validation[type=startswith;values=http;invalid_id=post_video_error;invalid_msg=这个视频地址不对,应该以http开头;ignorecase;] focusclean[color=#999]" style="margin-bottom:10px; width:564px;"/>
+                                <div class="pub_textarea clearfix">
+                                    <textarea name="content" autocomplete="off" fx="validation[type=notempty;invalid_id=post_video_error;invalid_msg=请输入视频介绍] validation[type=minlen;len=10;invalid_id=post_video_error;invalid_msg=视频介绍太短了;] validation[type=maxlen;len=300;invalid_id=post_video_error;invalid_msg=内容太长了;]  validation[type=notequal;value=写一点关于此视频的介绍吧;invalid_id=post_video_error;invalid_msg=请输入视频介绍;] focusclean[color=#999] keydown[key=ctrl+enter;target=#post_video_btn]" style="height:40px; min-height:40px;" >写一点关于此视频的介绍吧</textarea>
+                                    <p id="post_video_error" class="pub_tip"></p>
+                                </div>
+                                <a id="post_video_btn" href="javascript:;" fx="corner[radius=4]" onclick="JOKE.postVideoJoke();return false;" class="btn_submit corner4px" style="_margin-top: 10px;" title="按下Ctrl+Enter可以直接发布">发表</a>
+                            </div> <!-- video joke end -->
+
+                        </div>
+                    </div>
+                    <div id="post_joke_success" class="post_box post_success_tip corner8px clearfix hidden" style="margin-bottom: 20px; border: 1px solid rgb(214, 214, 214); box-shadow: 0pt 3px 5px rgb(225, 225, 225); background-color:#fff;" fx="corner[radius=8]" >
+                        <p>发表成功:</p>
+                        <a href="/judging" >查看我发布的内容</a>
+                        <!--
+                        <a href="javascript:;" onclick="JOKE.openPostJokeBox();return false;" >继续发表冷笑话</a>
+                        -->
+                        <a fx="toggle[target=#post_joke_success]" class="btn_close" style="top:14px; right:15px;"></a>
+                    </div>
+                    
+
+
+<!--SHOW_BOX-->
+<!--
+<div class="showbox corner8px clearfix hidden">
+    <a href="#" class="corner8px"><img fx="ie6png" class="corner8px" src="/img/page/app.jpg" /></a>
+</div>
+-->
+
+
+
+<div id="cat_all_div" fx="position[target=#cat_all;my=center bottom;at=center top;offset=0 67;]" class="float_tag hidden" ><span class="tri"></span>全部</div>
+<div id="cat_text_div" fx="position[target=#cat_text;my=center bottom;at=center top;offset=0 67;]" class="float_tag hidden" ><span class="tri"></span>文字</div>
+<div id="cat_pic_div" fx="position[target=#cat_pic;my=center bottom;at=center top;offset=0 67;]" class="float_tag hidden" ><span class="tri"></span>图片</div>
+<div id="cat_video_div" fx="position[target=#cat_video;my=center bottom;at=center top;offset=0 67;]" class="float_tag hidden" ><span class="tri"></span>视频</div>
+
+<div id="chose_type_div" class="cat_wrap"> 
+    <a id="cat_all" href="/" class="cat_all corner4px" fx="corner[radius=4] hovershow[showid=cat_all_div;] ie6png" >
+        <span class="circle_icon" fx="ie6png" ></span>
+        全部
+    </a>
+    <a id="cat_text" href="/text" class="cat_text corner4px" fx="corner[radius=4] hovershow[showid=cat_text_div] ie6png" >
+        <span class="circle_icon" fx="ie6png"></span>
+        文字
+    </a>
+    <a id="cat_pic" href="/image" class="cat_pic corner4px" fx="corner[radius=4] hovershow[showid=cat_pic_div] ie6png" >
+        <span class="circle_icon" fx="ie6png"></span>
+        图片
+    </a>
+    <a id="cat_video" href="/video" class="cat_video corner4px" fx="corner[radius=4] hovershow[showid=cat_video_div] ie6png" >
+        <span class="circle_icon" fx="ie6png"></span>
+        视频
+    </a>
+</div>
+
+<!--SHOW_BOX_LEFT-->
+<!--INDEX_TOOL_BOX-->
+<div id="chose_interval_div" class="toolbox clearfix"> 
+    <div class="t_time_wrap">
+        <a href="/24h" >24h</a>
+        <a class="nohover" >|</a>
+        <a href="/" >本周</a>
+        <a class="nohover" >|</a>
+        <a href="/month" >本月</a>
+    </div>
+</div>
+
+
+<!--JOKE-->
+<div class="joke_wrap">
+    <ul class="joke_ul clearfix">
+        
+<li class="joke_li" id="joke_li_226208" >
+    <div class="j_can clearfix" >
+        <div class="para_box corner8px">
+            <div onmouseover="showReportBtns(this)" onmouseout="hideReportBtns(this)" >
+                <div class="para_can" id="joke_content_226208" >
+                    <pre js="joke_summary"><span class="first_char">一</span>哥们外号叫苍蝇。一直这样喊着但是到现在还不知道他真名叫什么。有天我问他真名，他沉默了很久，然后翻出身份证给我看，我瞬间就明白了……他姓史，名尚飞。</pre>
+                </div>
+                <div class="para_info clearfix">
+                    <div class="user_info">
+                        <img src="/img/user/cover/633238-45937_40x40.jpg" class="left corner4px" height="40" width="40"/>
+                        <a href="/user/633238">小明</a>
+                        <p>6天前</p>
+                        
+                    </div>
+                    <div class="para_tool">
+                        <!--
+                        <a href="javascript:;" js="report_joke" style="visibility: hidden;" showforothers="633238" onclick="JOKE.openReportJokeBox(this, 226208, 'report_joke');return false;" >
+                            <span>举报</span>
+                        </a>
+                        -->
+                        <a href="javascript:void(0)" report="like_joke" jokeid="226208">
+                            <span>顶</span>
+                            <span>(13)</span>
+                        </a>
+                        <a href="javascript:void(0)" report="unlike_joke" jokeid="226208">
+                            <span>踩</span>
+                            <span>(2)</span>
+                        </a>
+                        <div class="share_block">
+                            <span js="share_btn" joke_id="226208" >分享</span>
+                            <div id="share_box_226208" fx="corner[radius=4]" class="share corner4px clearfix hidden" >
+                                    <a fx="share[site=sinaweibo; content_selector=#joke_content_226208 &[js=joke_summary&]; pic_selector=#joke_content_226208 &[js_share=image&]; appkey=2145236240; ralateUid=1642635773; link_selector=#view_all_joke_226208;]" class="sina" title="分享到新浪微博" style="margin-left:0;"></a>
+                                    <a fx="share[site=tencentweibo; content_selector=#joke_content_226208 &[js=joke_summary&]; pic_selector=#joke_content_226208 &[js_share=image&]; appkey=801137460; assname=30818627; link_selector=#view_all_joke_226208;]" class="qq" title="分享到腾讯微博"></a>
+                                    <a fx="share[site=renren; content_selector=#joke_content_226208 &[js=joke_summary&]; pic_selector=#joke_content_226208 &[js_share=image&];  link_selector=#view_all_joke_226208;]" class="renren" title="分享到人人"></a>
+                                <span class="tri"></span>
+                            </div>
+                        </div>
+                        <a href="javascript:;" onclick="openComments(226208, 'joke');return false;" >
+                            <span>评论</span>
+                            <span id="show_comment_count_226208" >(5)</span>
+                            <span class="tri hidden" fx="ie6png" js="comment_line_226208"></span>
+                            <span class="loading01 hidden" js="loading_226208"></span>
+                        </a>
+                        <a id="view_all_joke_226208" href="/joke/226208" target="_self" >
+                            <span>查看全文</span>
+                        </a>
+                        <input type="hidden" id="comment_count_226208" value="5" autocomplete="off" />
+                    </div>
+               </div>
+            </div>
+           <div class="j_comment" id="j_comment_226208" style="display:none;">
+
+                <div js="comment_line_226208" class="comment_line"> </div>
+                <div js="comments" class="hidden"></div>
+
+                <div id="post_comment_226208" class="tool_box clearfix">
+                    <div name="post_btn" class="btn_box clearfix">
+                        <a class="t_b_trigger" href="javascript:;" onclick="openPostComment(226208);return false;" >发表评论</a>
+                    </div>
+                    <div name="post_box" class="post_box clearfix hidden">
+                        <textarea class="t_b_reply" fx="keydown[key=ctrl+enter;target=#post_comment_submit_226208;]" id="comment_content_226208" autocomplete="off" name="content" ></textarea>
+                        <p js="error_tip" class="left" style="color:red;"></p>
+                        <a id="post_comment_submit_226208" class="btn_reply" href="javascript:;" onclick="postComment(226208);return false;" >回复</a>
+                    </div>
+                </div>
+
+           </div>
+       </div>
+       <div class="bottom_fill left">
+           <span class="bottom_left" fx="ie6png"></span>
+           <span class="bottom_mid" fx="ie6png"></span>
+           <span class="bottom_right" fx="ie6png"></span>
+       </div>
+</li>
+
+        
+        
+<li class="joke_li" id="joke_li_226237" >
+    <div class="j_can clearfix" >
+        <div class="para_box corner8px">
+            <div onmouseover="showReportBtns(this)" onmouseout="hideReportBtns(this)" >
+                <div class="para_can" id="joke_content_226237" >
+                    <pre js="joke_summary"><span class="first_char">想</span>在网上买个降落伞，看看差评怎么说的，找了好久也没找到差评，后来想想终于知道为什么没有差评了。。。</pre>
+                </div>
+                <div class="para_info clearfix">
+                    <div class="user_info">
+                        <img src="/img/user/cover/630347-283632_40x40.jpg" class="left corner4px" height="40" width="40"/>
+                        <a href="/user/630347">离愁▍ Feast aw</a>
+                        <p>5天前</p>
+                        
+                    </div>
+                    <div class="para_tool">
+                        <!--
+                        <a href="javascript:;" js="report_joke" style="visibility: hidden;" showforothers="630347" onclick="JOKE.openReportJokeBox(this, 226237, 'report_joke');return false;" >
+                            <span>举报</span>
+                        </a>
+                        -->
+                        <a href="javascript:void(0)" report="like_joke" jokeid="226237">
+                            <span>顶</span>
+                            <span>(7)</span>
+                        </a>
+                        <a href="javascript:void(0)" report="unlike_joke" jokeid="226237">
+                            <span>踩</span>
+                            <span>(4)</span>
+                        </a>
+                        <div class="share_block">
+                            <span js="share_btn" joke_id="226237" >分享</span>
+                            <div id="share_box_226237" fx="corner[radius=4]" class="share corner4px clearfix hidden" >
+                                    <a fx="share[site=sinaweibo; content_selector=#joke_content_226237 &[js=joke_summary&]; pic_selector=#joke_content_226237 &[js_share=image&]; appkey=2145236240; ralateUid=1642635773; link_selector=#view_all_joke_226237;]" class="sina" title="分享到新浪微博" style="margin-left:0;"></a>
+                                    <a fx="share[site=tencentweibo; content_selector=#joke_content_226237 &[js=joke_summary&]; pic_selector=#joke_content_226237 &[js_share=image&]; appkey=801137460; assname=30818627; link_selector=#view_all_joke_226237;]" class="qq" title="分享到腾讯微博"></a>
+                                    <a fx="share[site=renren; content_selector=#joke_content_226237 &[js=joke_summary&]; pic_selector=#joke_content_226237 &[js_share=image&];  link_selector=#view_all_joke_226237;]" class="renren" title="分享到人人"></a>
+                                <span class="tri"></span>
+                            </div>
+                        </div>
+                        <a href="javascript:;" onclick="openComments(226237, 'joke');return false;" >
+                            <span>评论</span>
+                            <span id="show_comment_count_226237" >(3)</span>
+                            <span class="tri hidden" fx="ie6png" js="comment_line_226237"></span>
+                            <span class="loading01 hidden" js="loading_226237"></span>
+                        </a>
+                        <a id="view_all_joke_226237" href="/joke/226237" target="_self" >
+                            <span>查看全文</span>
+                        </a>
+                        <input type="hidden" id="comment_count_226237" value="3" autocomplete="off" />
+                    </div>
+               </div>
+            </div>
+           <div class="j_comment" id="j_comment_226237" style="display:none;">
+
+                <div js="comment_line_226237" class="comment_line"> </div>
+                <div js="comments" class="hidden"></div>
+
+                <div id="post_comment_226237" class="tool_box clearfix">
+                    <div name="post_btn" class="btn_box clearfix">
+                        <a class="t_b_trigger" href="javascript:;" onclick="openPostComment(226237);return false;" >发表评论</a>
+                    </div>
+                    <div name="post_box" class="post_box clearfix hidden">
+                        <textarea class="t_b_reply" fx="keydown[key=ctrl+enter;target=#post_comment_submit_226237;]" id="comment_content_226237" autocomplete="off" name="content" ></textarea>
+                        <p js="error_tip" class="left" style="color:red;"></p>
+                        <a id="post_comment_submit_226237" class="btn_reply" href="javascript:;" onclick="postComment(226237);return false;" >回复</a>
+                    </div>
+                </div>
+
+           </div>
+       </div>
+       <div class="bottom_fill left">
+           <span class="bottom_left" fx="ie6png"></span>
+           <span class="bottom_mid" fx="ie6png"></span>
+           <span class="bottom_right" fx="ie6png"></span>
+       </div>
+</li>
+
+        
+        
+<li class="joke_li" id="joke_li_226209" >
+    <div class="j_can clearfix" >
+        <div class="para_box corner8px">
+            <div onmouseover="showReportBtns(this)" onmouseout="hideReportBtns(this)" >
+                <div class="para_can" id="joke_content_226209" >
+                    <pre js="joke_summary"><span class="first_char">结</span>婚那天，老妈严肃地叮嘱我：“你可不能娶了媳妇忘了娘！”
+我点了点头，道：“那是当然，您是哪位？”</pre>
+                </div>
+                <div class="para_info clearfix">
+                    <div class="user_info">
+                        <img src="/img/user/cover/266596-149575_40x40.gif" class="left corner4px" height="40" width="40"/>
+                        <a href="/user/266596">失身人面像</a>
+                        <p>6天前</p>
+                        
+                    </div>
+                    <div class="para_tool">
+                        <!--
+                        <a href="javascript:;" js="report_joke" style="visibility: hidden;" showforothers="266596" onclick="JOKE.openReportJokeBox(this, 226209, 'report_joke');return false;" >
+                            <span>举报</span>
+                        </a>
+                        -->
+                        <a href="javascript:void(0)" report="like_joke" jokeid="226209">
+                            <span>顶</span>
+                            <span>(4)</span>
+                        </a>
+                        <a href="javascript:void(0)" report="unlike_joke" jokeid="226209">
+                            <span>踩</span>
+                            <span>(1)</span>
+                        </a>
+                        <div class="share_block">
+                            <span js="share_btn" joke_id="226209" >分享</span>
+                            <div id="share_box_226209" fx="corner[radius=4]" class="share corner4px clearfix hidden" >
+                                    <a fx="share[site=sinaweibo; content_selector=#joke_content_226209 &[js=joke_summary&]; pic_selector=#joke_content_226209 &[js_share=image&]; appkey=2145236240; ralateUid=1642635773; link_selector=#view_all_joke_226209;]" class="sina" title="分享到新浪微博" style="margin-left:0;"></a>
+                                    <a fx="share[site=tencentweibo; content_selector=#joke_content_226209 &[js=joke_summary&]; pic_selector=#joke_content_226209 &[js_share=image&]; appkey=801137460; assname=30818627; link_selector=#view_all_joke_226209;]" class="qq" title="分享到腾讯微博"></a>
+                                    <a fx="share[site=renren; content_selector=#joke_content_226209 &[js=joke_summary&]; pic_selector=#joke_content_226209 &[js_share=image&];  link_selector=#view_all_joke_226209;]" class="renren" title="分享到人人"></a>
+                                <span class="tri"></span>
+                            </div>
+                        </div>
+                        <a href="javascript:;" onclick="openComments(226209, 'joke');return false;" >
+                            <span>评论</span>
+                            <span id="show_comment_count_226209" >(1)</span>
+                            <span class="tri hidden" fx="ie6png" js="comment_line_226209"></span>
+                            <span class="loading01 hidden" js="loading_226209"></span>
+                        </a>
+                        <a id="view_all_joke_226209" href="/joke/226209" target="_self" >
+                            <span>查看全文</span>
+                        </a>
+                        <input type="hidden" id="comment_count_226209" value="1" autocomplete="off" />
+                    </div>
+               </div>
+            </div>
+           <div class="j_comment" id="j_comment_226209" style="display:none;">
+
+                <div js="comment_line_226209" class="comment_line"> </div>
+                <div js="comments" class="hidden"></div>
+
+                <div id="post_comment_226209" class="tool_box clearfix">
+                    <div name="post_btn" class="btn_box clearfix">
+                        <a class="t_b_trigger" href="javascript:;" onclick="openPostComment(226209);return false;" >发表评论</a>
+                    </div>
+                    <div name="post_box" class="post_box clearfix hidden">
+                        <textarea class="t_b_reply" fx="keydown[key=ctrl+enter;target=#post_comment_submit_226209;]" id="comment_content_226209" autocomplete="off" name="content" ></textarea>
+                        <p js="error_tip" class="left" style="color:red;"></p>
+                        <a id="post_comment_submit_226209" class="btn_reply" href="javascript:;" onclick="postComment(226209);return false;" >回复</a>
+                    </div>
+                </div>
+
+           </div>
+       </div>
+       <div class="bottom_fill left">
+           <span class="bottom_left" fx="ie6png"></span>
+           <span class="bottom_mid" fx="ie6png"></span>
+           <span class="bottom_right" fx="ie6png"></span>
+       </div>
+</li>
+
+        
+        
+<li class="joke_li" id="joke_li_226202" >
+    <div class="j_can clearfix" >
+        <div class="para_box corner8px">
+            <div onmouseover="showReportBtns(this)" onmouseout="hideReportBtns(this)" >
+                <div class="para_can" id="joke_content_226202" >
+                    <pre js="joke_summary"><span class="first_char">听</span>说这段时间很多人都去赶头七，对此我表示无语，，本人支持（mei）国产（qian）！</pre>
+                </div>
+                <div class="para_info clearfix">
+                    <div class="user_info">
+                        <img src="/img/page/default_user_40x40.png" class="left corner4px" height="40" width="40"/>
+                        <a href="/user/669929">器大活好！</a>
+                        <p>6天前</p>
+                        
+                    </div>
+                    <div class="para_tool">
+                        <!--
+                        <a href="javascript:;" js="report_joke" style="visibility: hidden;" showforothers="669929" onclick="JOKE.openReportJokeBox(this, 226202, 'report_joke');return false;" >
+                            <span>举报</span>
+                        </a>
+                        -->
+                        <a href="javascript:void(0)" report="like_joke" jokeid="226202">
+                            <span>顶</span>
+                            <span>(3)</span>
+                        </a>
+                        <a href="javascript:void(0)" report="unlike_joke" jokeid="226202">
+                            <span>踩</span>
+                            <span>(1)</span>
+                        </a>
+                        <div class="share_block">
+                            <span js="share_btn" joke_id="226202" >分享</span>
+                            <div id="share_box_226202" fx="corner[radius=4]" class="share corner4px clearfix hidden" >
+                                    <a fx="share[site=sinaweibo; content_selector=#joke_content_226202 &[js=joke_summary&]; pic_selector=#joke_content_226202 &[js_share=image&]; appkey=2145236240; ralateUid=1642635773; link_selector=#view_all_joke_226202;]" class="sina" title="分享到新浪微博" style="margin-left:0;"></a>
+                                    <a fx="share[site=tencentweibo; content_selector=#joke_content_226202 &[js=joke_summary&]; pic_selector=#joke_content_226202 &[js_share=image&]; appkey=801137460; assname=30818627; link_selector=#view_all_joke_226202;]" class="qq" title="分享到腾讯微博"></a>
+                                    <a fx="share[site=renren; content_selector=#joke_content_226202 &[js=joke_summary&]; pic_selector=#joke_content_226202 &[js_share=image&];  link_selector=#view_all_joke_226202;]" class="renren" title="分享到人人"></a>
+                                <span class="tri"></span>
+                            </div>
+                        </div>
+                        <a href="javascript:;" onclick="openComments(226202, 'joke');return false;" >
+                            <span>评论</span>
+                            <span id="show_comment_count_226202" >(2)</span>
+                            <span class="tri hidden" fx="ie6png" js="comment_line_226202"></span>
+                            <span class="loading01 hidden" js="loading_226202"></span>
+                        </a>
+                        <a id="view_all_joke_226202" href="/joke/226202" target="_self" >
+                            <span>查看全文</span>
+                        </a>
+                        <input type="hidden" id="comment_count_226202" value="2" autocomplete="off" />
+                    </div>
+               </div>
+            </div>
+           <div class="j_comment" id="j_comment_226202" style="display:none;">
+
+                <div js="comment_line_226202" class="comment_line"> </div>
+                <div js="comments" class="hidden"></div>
+
+                <div id="post_comment_226202" class="tool_box clearfix">
+                    <div name="post_btn" class="btn_box clearfix">
+                        <a class="t_b_trigger" href="javascript:;" onclick="openPostComment(226202);return false;" >发表评论</a>
+                    </div>
+                    <div name="post_box" class="post_box clearfix hidden">
+                        <textarea class="t_b_reply" fx="keydown[key=ctrl+enter;target=#post_comment_submit_226202;]" id="comment_content_226202" autocomplete="off" name="content" ></textarea>
+                        <p js="error_tip" class="left" style="color:red;"></p>
+                        <a id="post_comment_submit_226202" class="btn_reply" href="javascript:;" onclick="postComment(226202);return false;" >回复</a>
+                    </div>
+                </div>
+
+           </div>
+       </div>
+       <div class="bottom_fill left">
+           <span class="bottom_left" fx="ie6png"></span>
+           <span class="bottom_mid" fx="ie6png"></span>
+           <span class="bottom_right" fx="ie6png"></span>
+       </div>
+</li>
+
+        
+        
+<li class="joke_li" id="joke_li_226210" >
+    <div class="j_can clearfix" >
+        <div class="para_box corner8px">
+            <div onmouseover="showReportBtns(this)" onmouseout="hideReportBtns(this)" >
+                <div class="para_can" id="joke_content_226210" >
+                    <pre js="joke_summary"><span class="first_char">编</span>辑：讲座的PPT完成得怎样了？
+我说：搞定三分一了。
+编辑：你是想说搞定个P？
+我觉得人跟人之间太默契了很没意思。</pre>
+                </div>
+                <div class="para_info clearfix">
+                    <div class="user_info">
+                        <img src="/img/user/cover/266596-149575_40x40.gif" class="left corner4px" height="40" width="40"/>
+                        <a href="/user/266596">失身人面像</a>
+                        <p>6天前</p>
+                        
+                    </div>
+                    <div class="para_tool">
+                        <!--
+                        <a href="javascript:;" js="report_joke" style="visibility: hidden;" showforothers="266596" onclick="JOKE.openReportJokeBox(this, 226210, 'report_joke');return false;" >
+                            <span>举报</span>
+                        </a>
+                        -->
+                        <a href="javascript:void(0)" report="like_joke" jokeid="226210">
+                            <span>顶</span>
+                            <span>(4)</span>
+                        </a>
+                        <a href="javascript:void(0)" report="unlike_joke" jokeid="226210">
+                            <span>踩</span>
+                            <span>(2)</span>
+                        </a>
+                        <div class="share_block">
+                            <span js="share_btn" joke_id="226210" >分享</span>
+                            <div id="share_box_226210" fx="corner[radius=4]" class="share corner4px clearfix hidden" >
+                                    <a fx="share[site=sinaweibo; content_selector=#joke_content_226210 &[js=joke_summary&]; pic_selector=#joke_content_226210 &[js_share=image&]; appkey=2145236240; ralateUid=1642635773; link_selector=#view_all_joke_226210;]" class="sina" title="分享到新浪微博" style="margin-left:0;"></a>
+                                    <a fx="share[site=tencentweibo; content_selector=#joke_content_226210 &[js=joke_summary&]; pic_selector=#joke_content_226210 &[js_share=image&]; appkey=801137460; assname=30818627; link_selector=#view_all_joke_226210;]" class="qq" title="分享到腾讯微博"></a>
+                                    <a fx="share[site=renren; content_selector=#joke_content_226210 &[js=joke_summary&]; pic_selector=#joke_content_226210 &[js_share=image&];  link_selector=#view_all_joke_226210;]" class="renren" title="分享到人人"></a>
+                                <span class="tri"></span>
+                            </div>
+                        </div>
+                        <a href="javascript:;" onclick="openComments(226210, 'joke');return false;" >
+                            <span>评论</span>
+                            <span id="show_comment_count_226210" >(0)</span>
+                            <span class="tri hidden" fx="ie6png" js="comment_line_226210"></span>
+                            <span class="loading01 hidden" js="loading_226210"></span>
+                        </a>
+                        <a id="view_all_joke_226210" href="/joke/226210" target="_self" >
+                            <span>查看全文</span>
+                        </a>
+                        <input type="hidden" id="comment_count_226210" value="0" autocomplete="off" />
+                    </div>
+               </div>
+            </div>
+           <div class="j_comment" id="j_comment_226210" style="display:none;">
+
+                <div js="comment_line_226210" class="comment_line hidden" > </div>
+                
+                <div js="comments" class="hidden"></div>
+
+                <a id="no_comment_tip_226210" name="post_btn" href="javascript:;" onclick="openPostComment(226210);return false;" fx="corner[radius=4]" class="tip01 corner4px" style="width:550px; padding:5px 0; margin-bottom:10px; color:#bbb144; border:2px dashed #cfc76d;">这里还没有评论哦，点击文字发表评论吧</a>
+                
+                <div id="post_comment_226210" class="tool_box clearfix">
+                    <div name="post_btn" class="btn_box clearfix">
+                    </div>
+                    <div name="post_box" class="post_box clearfix hidden">
+                        <textarea class="t_b_reply" fx="keydown[key=ctrl+enter;target=#post_comment_submit_226210;]" id="comment_content_226210" autocomplete="off" name="content" ></textarea>
+                        <p js="error_tip" class="left" style="color:red;"></p>
+                        <a id="post_comment_submit_226210" class="btn_reply" href="javascript:;" onclick="postComment(226210);return false;" >回复</a>
+                    </div>
+                </div>
+
+           </div>
+       </div>
+       <div class="bottom_fill left">
+           <span class="bottom_left" fx="ie6png"></span>
+           <span class="bottom_mid" fx="ie6png"></span>
+           <span class="bottom_right" fx="ie6png"></span>
+       </div>
+</li>
+
+        
+        
+<li class="joke_li" id="joke_li_226201" >
+    <div class="j_can clearfix" >
+        <div class="para_box corner8px">
+            <div onmouseover="showReportBtns(this)" onmouseout="hideReportBtns(this)" >
+                <div class="para_can" id="joke_content_226201" >
+                    <pre js="joke_summary"><span class="first_char">今</span>早听到两人对话！A：“你上完厕所是先提裤子还是先冲水？”      B脱口而出：“先锁手机屏幕。”艾玛呀，同道中人……</pre>
+                </div>
+                <div class="para_info clearfix">
+                    <div class="user_info">
+                        <img src="/img/page/default_user_40x40.png" class="left corner4px" height="40" width="40"/>
+                        <a href="/user/669929">器大活好！</a>
+                        <p>6天前</p>
+                        
+                    </div>
+                    <div class="para_tool">
+                        <!--
+                        <a href="javascript:;" js="report_joke" style="visibility: hidden;" showforothers="669929" onclick="JOKE.openReportJokeBox(this, 226201, 'report_joke');return false;" >
+                            <span>举报</span>
+                        </a>
+                        -->
+                        <a href="javascript:void(0)" report="like_joke" jokeid="226201">
+                            <span>顶</span>
+                            <span>(2)</span>
+                        </a>
+                        <a href="javascript:void(0)" report="unlike_joke" jokeid="226201">
+                            <span>踩</span>
+                            <span>(1)</span>
+                        </a>
+                        <div class="share_block">
+                            <span js="share_btn" joke_id="226201" >分享</span>
+                            <div id="share_box_226201" fx="corner[radius=4]" class="share corner4px clearfix hidden" >
+                                    <a fx="share[site=sinaweibo; content_selector=#joke_content_226201 &[js=joke_summary&]; pic_selector=#joke_content_226201 &[js_share=image&]; appkey=2145236240; ralateUid=1642635773; link_selector=#view_all_joke_226201;]" class="sina" title="分享到新浪微博" style="margin-left:0;"></a>
+                                    <a fx="share[site=tencentweibo; content_selector=#joke_content_226201 &[js=joke_summary&]; pic_selector=#joke_content_226201 &[js_share=image&]; appkey=801137460; assname=30818627; link_selector=#view_all_joke_226201;]" class="qq" title="分享到腾讯微博"></a>
+                                    <a fx="share[site=renren; content_selector=#joke_content_226201 &[js=joke_summary&]; pic_selector=#joke_content_226201 &[js_share=image&];  link_selector=#view_all_joke_226201;]" class="renren" title="分享到人人"></a>
+                                <span class="tri"></span>
+                            </div>
+                        </div>
+                        <a href="javascript:;" onclick="openComments(226201, 'joke');return false;" >
+                            <span>评论</span>
+                            <span id="show_comment_count_226201" >(1)</span>
+                            <span class="tri hidden" fx="ie6png" js="comment_line_226201"></span>
+                            <span class="loading01 hidden" js="loading_226201"></span>
+                        </a>
+                        <a id="view_all_joke_226201" href="/joke/226201" target="_self" >
+                            <span>查看全文</span>
+                        </a>
+                        <input type="hidden" id="comment_count_226201" value="1" autocomplete="off" />
+                    </div>
+               </div>
+            </div>
+           <div class="j_comment" id="j_comment_226201" style="display:none;">
+
+                <div js="comment_line_226201" class="comment_line"> </div>
+                <div js="comments" class="hidden"></div>
+
+                <div id="post_comment_226201" class="tool_box clearfix">
+                    <div name="post_btn" class="btn_box clearfix">
+                        <a class="t_b_trigger" href="javascript:;" onclick="openPostComment(226201);return false;" >发表评论</a>
+                    </div>
+                    <div name="post_box" class="post_box clearfix hidden">
+                        <textarea class="t_b_reply" fx="keydown[key=ctrl+enter;target=#post_comment_submit_226201;]" id="comment_content_226201" autocomplete="off" name="content" ></textarea>
+                        <p js="error_tip" class="left" style="color:red;"></p>
+                        <a id="post_comment_submit_226201" class="btn_reply" href="javascript:;" onclick="postComment(226201);return false;" >回复</a>
+                    </div>
+                </div>
+
+           </div>
+       </div>
+       <div class="bottom_fill left">
+           <span class="bottom_left" fx="ie6png"></span>
+           <span class="bottom_mid" fx="ie6png"></span>
+           <span class="bottom_right" fx="ie6png"></span>
+       </div>
+</li>
+
+        
+        
+<li class="joke_li" id="joke_li_226206" >
+    <div class="j_can clearfix" >
+        <div class="para_box corner8px">
+            <div onmouseover="showReportBtns(this)" onmouseout="hideReportBtns(this)" >
+                <div class="para_can" id="joke_content_226206" >
+                    <pre js="joke_summary"><span class="first_char">扁</span>担长板凳宽，扁担想绑在板凳上，板凳说不行</pre>
+                </div>
+                <div class="para_info clearfix">
+                    <div class="user_info">
+                        <img src="/img/user/cover/673293-985985_40x40.jpg" class="left corner4px" height="40" width="40"/>
+                        <a href="/user/673293">\佞虞の①创い韵皇</a>
+                        <p>6天前</p>
+                    </div>
+                    <div class="para_tool">
+                        <!--
+                        <a href="javascript:;" js="report_joke" style="visibility: hidden;" showforothers="673293" onclick="JOKE.openReportJokeBox(this, 226206, 'report_joke');return false;" >
+                            <span>举报</span>
+                        </a>
+                        -->
+                        <a href="javascript:void(0)" report="like_joke" jokeid="226206">
+                            <span>顶</span>
+                            <span>(2)</span>
+                        </a>
+                        <a href="javascript:void(0)" report="unlike_joke" jokeid="226206">
+                            <span>踩</span>
+                            <span>(6)</span>
+                        </a>
+                        <div class="share_block">
+                            <span js="share_btn" joke_id="226206" >分享</span>
+                            <div id="share_box_226206" fx="corner[radius=4]" class="share corner4px clearfix hidden" >
+                                    <a fx="share[site=sinaweibo; content_selector=#joke_content_226206 &[js=joke_summary&]; pic_selector=#joke_content_226206 &[js_share=image&]; appkey=2145236240; ralateUid=1642635773; link_selector=#view_all_joke_226206;]" class="sina" title="分享到新浪微博" style="margin-left:0;"></a>
+                                    <a fx="share[site=tencentweibo; content_selector=#joke_content_226206 &[js=joke_summary&]; pic_selector=#joke_content_226206 &[js_share=image&]; appkey=801137460; assname=30818627; link_selector=#view_all_joke_226206;]" class="qq" title="分享到腾讯微博"></a>
+                                    <a fx="share[site=renren; content_selector=#joke_content_226206 &[js=joke_summary&]; pic_selector=#joke_content_226206 &[js_share=image&];  link_selector=#view_all_joke_226206;]" class="renren" title="分享到人人"></a>
+                                <span class="tri"></span>
+                            </div>
+                        </div>
+                        <a href="javascript:;" onclick="openComments(226206, 'joke');return false;" >
+                            <span>评论</span>
+                            <span id="show_comment_count_226206" >(0)</span>
+                            <span class="tri hidden" fx="ie6png" js="comment_line_226206"></span>
+                            <span class="loading01 hidden" js="loading_226206"></span>
+                        </a>
+                        <a id="view_all_joke_226206" href="/joke/226206" target="_self" >
+                            <span>查看全文</span>
+                        </a>
+                        <input type="hidden" id="comment_count_226206" value="0" autocomplete="off" />
+                    </div>
+               </div>
+            </div>
+           <div class="j_comment" id="j_comment_226206" style="display:none;">
+
+                <div js="comment_line_226206" class="comment_line hidden" > </div>
+                
+                <div js="comments" class="hidden"></div>
+
+                <a id="no_comment_tip_226206" name="post_btn" href="javascript:;" onclick="openPostComment(226206);return false;" fx="corner[radius=4]" class="tip01 corner4px" style="width:550px; padding:5px 0; margin-bottom:10px; color:#bbb144; border:2px dashed #cfc76d;">这里还没有评论哦，点击文字发表评论吧</a>
+                
+                <div id="post_comment_226206" class="tool_box clearfix">
+                    <div name="post_btn" class="btn_box clearfix">
+                    </div>
+                    <div name="post_box" class="post_box clearfix hidden">
+                        <textarea class="t_b_reply" fx="keydown[key=ctrl+enter;target=#post_comment_submit_226206;]" id="comment_content_226206" autocomplete="off" name="content" ></textarea>
+                        <p js="error_tip" class="left" style="color:red;"></p>
+                        <a id="post_comment_submit_226206" class="btn_reply" href="javascript:;" onclick="postComment(226206);return false;" >回复</a>
+                    </div>
+                </div>
+
+           </div>
+       </div>
+       <div class="bottom_fill left">
+           <span class="bottom_left" fx="ie6png"></span>
+           <span class="bottom_mid" fx="ie6png"></span>
+           <span class="bottom_right" fx="ie6png"></span>
+       </div>
+</li>
+
+        
+        
+<li class="joke_li" id="joke_li_226238" >
+    <div class="j_can clearfix" >
+        <div class="para_box corner8px">
+            <div onmouseover="showReportBtns(this)" onmouseout="hideReportBtns(this)" >
+                <div class="para_can" id="joke_content_226238" >
+                    <pre js="joke_summary"><span class="first_char">歹</span>徒将女孩逼到墙角，女孩深色紧张，用颤抖的声音问：“你。。。你想怎样？”
+男人拿起刀比划一下，坏笑着说：“我就想看你因为我紧张的样子。”</pre>
+                </div>
+                <div class="para_info clearfix">
+                    <div class="user_info">
+                        <img src="/img/user/cover/630347-283632_40x40.jpg" class="left corner4px" height="40" width="40"/>
+                        <a href="/user/630347">离愁▍ Feast aw</a>
+                        <p>5天前</p>
+                        
+                    </div>
+                    <div class="para_tool">
+                        <!--
+                        <a href="javascript:;" js="report_joke" style="visibility: hidden;" showforothers="630347" onclick="JOKE.openReportJokeBox(this, 226238, 'report_joke');return false;" >
+                            <span>举报</span>
+                        </a>
+                        -->
+                        <a href="javascript:void(0)" report="like_joke" jokeid="226238">
+                            <span>顶</span>
+                            <span>(3)</span>
+                        </a>
+                        <a href="javascript:void(0)" report="unlike_joke" jokeid="226238">
+                            <span>踩</span>
+                            <span>(3)</span>
+                        </a>
+                        <div class="share_block">
+                            <span js="share_btn" joke_id="226238" >分享</span>
+                            <div id="share_box_226238" fx="corner[radius=4]" class="share corner4px clearfix hidden" >
+                                    <a fx="share[site=sinaweibo; content_selector=#joke_content_226238 &[js=joke_summary&]; pic_selector=#joke_content_226238 &[js_share=image&]; appkey=2145236240; ralateUid=1642635773; link_selector=#view_all_joke_226238;]" class="sina" title="分享到新浪微博" style="margin-left:0;"></a>
+                                    <a fx="share[site=tencentweibo; content_selector=#joke_content_226238 &[js=joke_summary&]; pic_selector=#joke_content_226238 &[js_share=image&]; appkey=801137460; assname=30818627; link_selector=#view_all_joke_226238;]" class="qq" title="分享到腾讯微博"></a>
+                                    <a fx="share[site=renren; content_selector=#joke_content_226238 &[js=joke_summary&]; pic_selector=#joke_content_226238 &[js_share=image&];  link_selector=#view_all_joke_226238;]" class="renren" title="分享到人人"></a>
+                                <span class="tri"></span>
+                            </div>
+                        </div>
+                        <a href="javascript:;" onclick="openComments(226238, 'joke');return false;" >
+                            <span>评论</span>
+                            <span id="show_comment_count_226238" >(0)</span>
+                            <span class="tri hidden" fx="ie6png" js="comment_line_226238"></span>
+                            <span class="loading01 hidden" js="loading_226238"></span>
+                        </a>
+                        <a id="view_all_joke_226238" href="/joke/226238" target="_self" >
+                            <span>查看全文</span>
+                        </a>
+                        <input type="hidden" id="comment_count_226238" value="0" autocomplete="off" />
+                    </div>
+               </div>
+            </div>
+           <div class="j_comment" id="j_comment_226238" 

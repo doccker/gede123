@@ -1,0 +1,594 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FillText.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate JSON datasets for testing or demonstration purposes">
+    <meta name="author" content="Joe Maddalone">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body{margin:10px}
+      .yt{outline:1px solid #222;}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-9">
+            <h1 class="muted">FillText.com</h1>
+        </div>
+        <div class="col-xs-3">
+            <a class="btn btn-sm btn-success pull-right" href="https://twitter.com/intent/tweet?text=FillText%20generates%20JSON%20data%20for%20testing&amp;url=http://www.filltext.com">Tweet</a>
+        </div>
+    </div>
+
+
+      <div class="row">
+          <div class="col-xs-12">
+              <h2>Introduction</h2>
+              <p>FillText generates JSON datasets for testing or demonstration purposes.</p>
+              <h4>Demos:</h4>
+              <a target="_blank" href="http://www.filltext.com/?rows=10&fname={firstName}&lname={lastName}&pretty=true">http://filltext.com/?rows=20&fname={firstName}&lname={lastName}</a>
+              <br />
+              <a target="_blank" href="http://www.filltext.com/?rows=10&fname={firstName}&lname={lastName}&tel={phone|format}&address={streetAddress}&city={city}&state={usState|abbr}&zip={zip}&pretty=true">fname,lname,telephone,address,city,state,zip</a>
+              <br />
+              <a target="_blank" href="http://www.filltext.com/?rows=10&id={index}&email={email}&username={username}&password={randomString|5}&pretty=true">id,email,username,password</a>
+          </div>
+
+      </div>
+
+      <div class="row">
+          <div class="col-xs-12">
+        <h2>AngularJS Example</h2>
+        <iframe width="100%" height="450" src="http://jsfiddle.net/joemaddalone/LUA5p/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        <h2>jQuery Example</h2>
+        <iframe width="100%" height="300" src="http://jsfiddle.net/joemaddalone/fCu4E/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        <h2>Vanilla JS Example</h2>
+        <iframe width="100%" height="300" src="http://jsfiddle.net/joemaddalone/QpY8c/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-xs-12">
+        <h2>Tutorial</h2>
+            <iframe class="yt" width="100%" height="600" src="http://www.youtube.com/embed/rOpD3-2847g?rel=0&hd=1&vq=hd720" frameborder="0" allowfullscreen></iframe>
+          </div>
+      </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Plug-ins</h2>
+        </div>
+        <div class="col-xs-3">
+            <a href="http://adamb.me/backbone-fill-collection/">Backbone Fill Collection</a>
+        </div>
+        <div class="col-xs-3">
+            <a href="http://directiv.es/ng-filltext">ng-filltext</a>
+        </div>
+    </div>
+
+
+<div class="row">
+  <hr />
+</div>
+
+      <div class="row">
+      <div class="col-xs-12">
+        <h4>Options</h4>
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>feature</th>
+              <th>description</th>
+              <th>example</th>
+              <th>output</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>~</td>
+            <td>Concatenates two objects</td>
+            <td>fullname={firstName}~{lastName}</td>
+            <td>fullname:"John Smith"</td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>key=</th>
+              <th>description</th>
+              <th>example</th>
+              <th>output</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="val">rows</td>
+              <td class="">required, limit 1000</td>
+              <td>rows=100</td>
+              <td>100 items</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>optional random flag</td>
+                <td>rows=!</td>
+                <td>0-100 items</td>
+            </tr>
+            <tr>
+              <td>value</td>
+              <td>returns the value for key</td>
+              <td>name=John</td>
+              <td>name:"John"</td>
+            </tr>
+            <tr>
+              <td>{firstName}</td>
+              <td>returns a random first name</td>
+              <td>fname={firstName}</td>
+              <td>"fname":"Joe"</td>
+            </tr>
+            <tr>
+              <td>{lastName}</td>
+              <td>returns a random surname</td>
+              <td>lname={lastName}</td>
+              <td>"lname":"Smith"</td>
+            </tr>
+            <tr>
+              <td>{business}</td>
+              <td>returns a random surname</td>
+              <td>company={business}</td>
+              <td>"company":"Smith Industries"</td>
+            </tr>
+            <tr>
+              <td>{streetAddress}</td>
+              <td>returns a random street address</td>
+              <td>address={streetAddress}</td>
+              <td>"address":"101 Sample Ln"</td>
+            </tr>
+            <tr>
+              <td>{city}</td>
+              <td>returns a random city</td>
+              <td>city={city}</td>
+              <td>"city":"Hill Valley"</td>
+            </tr>
+            <tr>
+              <td>{usState|abbr}</td>
+              <td>returns a random US state name or optionally the 2-letter abbreviation</td>
+              <td>state={usState|abbr}</td>
+              <td>"state":"IL"</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>state={usState}</td>
+                <td>"state":"Illinois"</td>
+            </tr>
+            <tr>
+                <td>{addressObject}</td>
+                <td>returns a full address object</td>
+                <td>address={addressObject}</td>
+                <td>
+                    "address": {<br />
+                    "streetAddress": "1432 Aenean Ct",<br />
+                    "city": "Dayton",<br />
+                    "state": "CO",<br />
+                    "zip": "94840"<br />
+                    }
+                </td>
+            </tr>
+            <tr>
+              <td>{zip}</td>
+              <td>returns a random 5-digit zip code</td>
+              <td>zip={zip}</td>
+              <td>"zip":"12345"</td>
+            </tr>
+            <tr>
+              <td>{email}</td>
+              <td>returns a random email address</td>
+              <td>email={email}</td>
+              <td>"email":"something@somewhere.com"</td>
+            </tr>
+            <tr>
+              <td>{ip}</td>
+              <td>returns a random IPv4 address</td>
+              <td>ip={ip}</td>
+              <td>"ip":"153.123.15.1"</td>
+            </tr>
+            <tr>
+              <td>{username}</td>
+              <td>returns a random username</td>
+              <td>uname={username}</td>
+              <td>"uname":"JSmith"</td>
+            </tr>
+            <tr>
+              <td>{password}</td>
+              <td>returns a random password</td>
+              <td>pwd={password}</td>
+              <td>"pwd":"P88yg"</td>
+            </tr>
+            <tr>
+                <td>{ccType|abbr}</td>
+                <td>returns a credit card type or optionally the abbreviation for that type</td>
+                <td>ccType={ccType|abbr}</td>
+                <td>"ccType":"AMEX"</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>ccType={ccType}</td>
+                <td>"ccType":"American Express"</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Available types</td>
+                <td>AMEX, DISC, MC, VISA</td>
+            </tr>
+            <tr>
+                <td>{ccNumber|type}</td>
+                <td>returns a valid credit card number for the optional type</td>
+                <td>cc={ccNumber|DISC}</td>
+                <td>"cc":"6011467129650052"</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>cc={ccNumber}</td>
+                <td>"cc":"4221275995626366"</td>
+            </tr>
+
+
+            <tr>
+              <td>{phone|format}</td>
+              <td>returns a 10-digit telephone number, optionally formatted as (XXX)XXX-XXXX</td>
+              <td>phone={phone}</td>
+              <td>"phone":"1234567890"</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>phone={phone|format}</td>
+              <td>"phone":"(123)456-7890"</td>
+            </tr>
+            <tr>
+              <td>{index}</td>
+              <td>returns the index of the current record</td>
+              <td>id={index}</td>
+              <td>"id":1</td>
+            </tr>
+
+
+            <tr>
+              <td>{date|min,max}</td>
+              <td>returns a random date between the min and the max dates, the default is <i>1-1-1900</i> to <i>1-1-2100</i></td>
+              <td>x={date}</td>
+              <td>"x":"1930-10-18T04:28:27.432Z"</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>x={date|10-10-2010}</td>
+              <td>"x":"2012-10-18T04:28:27.432Z"</td>
+            </tr>
+
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>x={date|10-10-2010,10-12-2010}</td>
+              <td>"x":"2010-10-11T04:28:27.432Z"</td>
+            </tr>
+
+
+            <tr>
+              <td>{lorem|n}</td>
+              <td>returns a random lorem ipsum of <i>n</i> length, the default is 5</td>
+              <td>words={lorem}</td>
+              <td>"words":"lorem ipsum dolor xoxoxo oooo"</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>words={lorem|2}</td>
+              <td>"words":"lorem ipsum"</td>
+            </tr>
+            <tr>
+              <td>pretty</td>
+              <td>beautifies the JSON data</td>
+              <td>pretty=true</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>callback</td>
+              <td>wraps the JSON data in a callback function</td>
+              <td>callback=cb</td>
+              <td>cb(JSON DATA)</td>
+            </tr>
+            <tr>
+              <td>[x,y,z]</td>
+              <td>sets value to random element from the array passed in</td>
+              <td>category=[1,2,3,4]</td>
+              <td>"category":2</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>category=["x","y","z"]</td>
+              <td>"category":"y"</td>
+            </tr>
+            <tr>
+              <td>{bool|n}</td>
+              <td>returns a random true or false or the optional boolean passed as <i>n</i></td>
+              <td>active={bool}</td>
+              <td>"active":true</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>active={bool|false}</td>
+              <td>"active":false</td>
+            </tr>
+            <tr>
+              <td>
+                  {string|n}<br />
+                  <span class="legacy">legacy function: {randomString|n}</span>
+              </td>
+              <td>returns a random string of <i>n</i> length, the default is 5</td>
+              <td>password={string}</td>
+              <td>"password":"x1KQ5"</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>password={string|8}</td>
+              <td>"password":"p4TtyJ1c"</td>
+            </tr>
+             <tr>
+              <td>
+                  {number|max}<br />
+                  <span class="legacy">legacy function: {randomNumber|max}</span>
+              </td>
+              <td>returns a random integer up to the optional <i>max</i>, the default max is 10</td>
+              <td>id={number}}</td>
+              <td>"id":8</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>id={number|100}}</td>
+              <td>"id":55</td>
+            </tr>
+            <tr>
+              <td>
+                  {numberLength|length}<br />
+                  <span class="legacy">legacy function: {randomNumberLength|length}</span>
+              </td>
+              <td>returns a random string of digits of up to the optional <i>length</i>, the default length is 5</td>
+              <td>id={numberLength}</td>
+              <td>"id":12345</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>id={numberLength|3}}</td>
+              <td>"id":123</td>
+            </tr>
+            <tr>
+              <td>
+                  {numberRange|min, max}
+                  <span class="legacy">{randomNumberRange|MINtoMAX}</span>
+              </td>
+              <td>returns a random integer between <i>MIN</i> and <i>MAX</i>, the deault is 0to1</td>
+              <td>id={randomNumberRange}</td>
+              <td>"id":1</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>id={randomNumberRange|5to50}</td>
+              <td>"id":26</td>
+            </tr>
+            <tr>
+              <td>{randomDecimal|max}</td>
+              <td>returns a random decimal up to 0.00000000000001 minus the optional <i>max</i>, the default max is 1</td>
+              <td>x={randomDecimal}}</td>
+              <td>"x":0.14641021215356886</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>x={randomDecimal|4}}</td>
+              <td>"x":3.741405854932964</td>
+            </tr>
+            <tr>
+              <td>{randomDecimalRange|MINtoMAX}</td>
+              <td>returns a random decimal between <i>MIN</i> and <i>MAX</i>, the deault is 0to1</td>
+              <td>x={randomDecimalRange}</td>
+              <td>"x":0.14641021215356886</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>x={randomDecimalRange|0.25to0.26}</td>
+              <td>"x":0.25155138769885527</td>
+            </tr>
+
+            <tr>
+              <td>{stringArray|length,stringLength}</td>
+              <td>returns a string array of the optional <i>length</i> containing randoms strings of the optional <i>stringLength</i>.  The default is 5,5</td>
+              <td>x={stringArray}</td>
+              <td>"x":["SGvuA","ditZd","S8rBF","YHgPd","jKYB0"]</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>x={stringArray|2}</td>
+              <td>"x":["SGvuA","ditZd"]</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>x={stringArray|2,2}</td>
+              <td>"x":["Sx","dI"]</td>
+            </tr>
+            <tr>
+              <td>delay</td>
+              <td>delays the response up to a maximum of 30 seconds</td>
+              <td>delay=10</td>
+              <td>Response is delayed by 10 seconds</td>
+            </tr>
+            <tr><td>err</td><td>Will return an error of the specified type and override all other inputs, can be used without "rows"</td><td>err=300</td><td>returns "Multiple Choices"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=301</td><td>returns "Moved Permanently"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=302</td><td>returns "Found"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=303</td><td>returns "See Other"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=304</td><td>returns "Not Modified"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=305</td><td>returns "Use Proxy"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=306</td><td>returns "Switch Proxy"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=307</td><td>returns "Temporary Redirect"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=308</td><td>returns "Permanent Redirect"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=400</td><td>returns "Bad Request"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=401</td><td>returns "Unauthorized"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=402</td><td>returns "Payment Required"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=403</td><td>returns "Forbidden"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=404</td><td>returns "Not Found"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=405</td><td>returns "Method Not Allowed"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=406</td><td>returns "Not Acceptable"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=407</td><td>returns "Proxy Authentication Required"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=408</td><td>returns "Request Timeout"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=409</td><td>returns "Conflict"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=410</td><td>returns "Gone"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=411</td><td>returns "Length Required"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=412</td><td>returns "Precondition Failed"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=413</td><td>returns "Request Entity Too Large"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=414</td><td>returns "Request-URI Too Long"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=415</td><td>returns "Unsupported Media Type"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=416</td><td>returns "Requested Range Not Satisfiable"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=417</td><td>returns "Expectation Failed"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=418</td><td>returns "I'm a teapot"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=422</td><td>returns "Unprocessable Entity"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=423</td><td>returns "Locked"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=424</td><td>returns "Failed Dependency"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=425</td><td>returns "Unordered Collection"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=426</td><td>returns "Upgrade Required"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=449</td><td>returns "Retry With"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=450</td><td>returns "Blocked by Windows Parental Controls"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=451</td><td>returns "Legally Restricted"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=500</td><td>returns "Internal Server Error"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=501</td><td>returns "Not Implemented"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=502</td><td>returns "Bad Gateway"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=503</td><td>returns "Service Unavailable"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=504</td><td>returns "Gateway Timeout"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=505</td><td>returns "HTTP Version Not Supported"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=506</td><td>returns "Variant Also Negotiates"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=507</td><td>returns "Insufficient Storage"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=509</td><td>returns "Bandwidth Limit Exceeded"</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>err=510</td><td>returns "Not Extended"</td></tr>
+          </tbody>
+        </table>
+
+
+        <h4>Low Level Functions You'll Probably Never Use</h4>
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>feature</th>
+              <th>description</th>
+              <th>example</th>
+              <th>output</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>{letter|n}</td>
+            <td>returns a random string of any case letters of <i>n</i> length, the default is 5</td>
+            <td>password={letter}</td>
+            <td>"password":"AbCdE"</td>
+          </tr>
+          <tr>
+            <td>{letterLower|n}</td>
+            <td>returns a random string of lowercase letters of <i>n</i> length, the default is 5</td>
+            <td>password={letter}</td>
+            <td>"password":"abcde"</td>
+          </tr>
+          <tr>
+            <td>{letterUpper|n}</td>
+            <td>returns a random string of uppercase letters of <i>n</i> length, the default is 5</td>
+            <td>password={letter}</td>
+            <td>"password":"ABCDE"</td>
+          </tr>
+          <tr>
+            <td>char</td>
+            <td>returns a random Unicode character between 0 and 100</td>
+            <td>?rows=3&c={char}</td>
+            <td>[{"arr":"\u0006"},{"arr":"'"},{"arr":"/"}]</td>
+          </tr>
+          </tbody>
+        </table>
+
+        <h4>Advanced (and sometimes experi/\/\ental)</h4>
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>feature</th>
+              <th>description</th>
+              <th>example</th>
+              <th>output</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>@key</td>
+            <td>generates a nested JSON dataset</td>
+            <td>rows=1&name={firstName}&@friends={rows=5}</td>
+            <td>[{"name":"Sheldon","friends":[{},{},{},{}]}]</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>subset configuration requires * (asterisk) as a parameter delimiter</td>
+            <td>rows=1&name={firstName}&@friends={rows=5*name={firstName}}</td>
+            <td>[{"name":"Kendall","friends":[{"name":"David"},{"name":"Joann"},{"name":"Jerrod"},{"name":"Theresia"},{"name":"Leela"}]}]</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="3">
+              Cannot currently render more than one level of nested data.
+              <br />
+              <span class="text-danger">
+              WILL NOT WORK: ?rows=1&fname={firstName}&@friends={rows=1*friendName={firstName}*@nestedFriends={rows=5}}
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>?gist</td>
+            <td>generates JSON from a gist</td>
+            <td>?gist=2260cda3c59f6df8edef</td>
+            <td><a href="https://gist.github.com/joemaddalone/2260cda3c59f6df8edef" taget="_blank">awesomesauce.</a></td>
+          </tr>
+          </tbody>
+        </table>
+
+
+
+
+
+
+      </div>
+      </div>
+      <hr />
+      <footer>
+        <span> Developed by </span><a href="http://www.twitter.com/joemaddalone">@JoeMaddalone</a><span>.  Sadly, designed by him as well :( -- Other Stuffs: <a href="http://www.javascriptoo.com">JavaScriptOO.com</a></span>
+      </footer>
+  </div>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-91014-17']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+ 
+     <meta name="description" content="基于PMBOK第五版教程的免费在线模拟考试系统，收录了PMP练习题，第5版PMBOK电子书，在线联系，PMP手机练习题目。" />
+     <meta name="Keywords" content="PMP模拟考试，在线pmp题库，pmp练习题 ，PMP在线练习,免费PMP题，第5版PMP模拟题，PMP 答案，PMP试题解析" />
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <meta name="viewport" content="width=device-width" charset="utf-8" />
+     <title>PMP题库-永久免费的在线PMP模拟考试系统-首页</title>
+     <link href="/bundles/Base/CSS?v=ukr1dLdQjHEIfuqwzX8CF_4rSiOAUFVWeH6kLBEdz0A1" rel="stylesheet"/>
+
+     <script src="/Scripts/UI/jQuery?v=VUv2YOeuOgHad-FHZ-vGMDu9wN1j9VZGifI1SBUUSMs1"></script>
+
+     <script src="/bundles/Base/JS?v=PBUbl2kJQwVaANICzp7rtDiIlSc19K_c2VfGDaaZSrE1"></script>
+
+
+     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+     <link rel="icon" type="image/x-icon" href="/favicon.ico" media="screen" />
+
+
+     <!--[if lt IE 11]>
+         <script type="text/javascript">
+             window.location.href ="/nonsupport/index";
+         </script>
+     <![endif]-->
+ <script src="http://tj.dagou100.com/Scripts/Page/Information.min.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?7af45fa7cf2445a49f7ae51de9c8976e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+ </head>
+
+<body>
+    
+<div class="book-tc none" id="hezuo-tc">
+    <div class="mod-nav"><h2>合作</h2><span class="close-btn"></span></div>
+    <div class="cb"></div>
+    <div class="book-con">
+        <div class="hezuo-icon fl"></div>
+        <span class="hezuo-txt">
+            您好！合作请联系13718190584<br />
+            我们期待您的加入!
+        </span>
+        <div class="cb"></div>
+    </div>
+</div>
+
+
+<div class="book-tc none" id="kaifa-tc">
+    <div class="mod-nav"><h2>学习计划</h2><span class="close-btn"></span></div>
+    <div class="cb"></div>
+    <div class="book-con">
+        <div class="kaifa-icon fl"></div>
+        <span class="kaifa-txt">
+            此功能正在开发中...
+        </span>
+        <div class="cb"></div>
+    </div>
+</div>
+
+
+
+<div class="book-tc none" id="chengzhang-tc">
+    <div class="mod-nav"><h2>成长记录</h2><span class="close-btn"></span></div>
+    <div class="cb"></div>
+    <div class="book-con">
+        <div class="kaifa-icon fl"></div>
+        <span class="kaifa-txt">
+            此功能正在开发中...
+        </span>
+        <div class="cb"></div>
+    </div>
+</div>
+
+
+
+<div class="book-tc none" id="tuandui-tc">
+    <div class="mod-nav"><h2>团队学习</h2><span class="close-btn"></span></div>
+    <div class="cb"></div>
+    <div class="book-con">
+        <div class="kaifa-icon fl"></div>
+        <span class="kaifa-txt">
+            此功能正在开发中...
+        </span>
+        <div class="cb"></div>
+    </div>
+</div>
+
+
+<div class="book-tc none" id="fankui-tc">
+    <div class="mod-nav"><h2>问题反馈</h2><span class="close-btn"></span></div>
+    <div class="cb"></div>
+    <div class="book-con  " id="firtfreeback">
+        <div class="fankui">
+            <span class="fk-txt "><em>*</em> 联系方式：</span>
+            <input type="text" id="contactway" class="shuru " placeholder="请输入手机、邮箱、QQ" onfocus="wds_contactway()" />
+            <span class="cw-tishi none" id="wds_tishi">请输入联系方式</span>
+        </div>
+        <div class="cb"></div>
+        <div class="fankui mt10">
+            <span class="fk-txt"><em>*</em> 反馈内容：</span>
+            <textarea id="feedbackcontent" onfocus="wds_getcontentfocus()" placeholder="请输入反馈内容" style="color: #666;"></textarea>
+        </div>
+        <div class="cb"></div>
+        <input type="button" value="提交" class="tijiao-bt" onclick="wds_handlefeedback()" />
+        <span style="margin: 25px;  color: red; display: none" id="gb-errormessagespan">字数限制在300字以内!</span>
+
+        <div class="cb"></div>
+    </div>
+    <div class="book-con none" id="secondfreeback">
+        
+        <div class="cgti-icon "></div>
+        <div class="fl">
+            <span class="cgti-txt fl">
+                反馈问题提交成功！
+            </span><br />
+            <div class="cb"></div>
+            <span class="ml10 mt5 ml">谢谢您的反馈，我们会尽快给您回复！ </span>
+        </div>
+
+        <div class="cb"></div>
+    </div>
+    <div class="book-con none" id="thridfreeback">
+        
+        <span class="sanci-txt fl">
+            每日可提交三次问题反馈！
+        </span><br />
+        <div class="cb"></div>
+        <span class="mt5 fl ml40">谢谢您的反馈，我们会尽快给您回复！ </span>
+        <div class="cb"></div>
+    </div>
+</div>
+
+
+
+
+
+<div class="book-tc none" id="taolun-tc">
+    <div class="mod-nav"><h2>讨论组</h2><span class="close-btn"></span></div>
+    <div class="cb"></div>
+    <div class="book-con">
+        <div class="wx-img mr30 fl ml30">
+            <img width="120" height="120" src="/Content/IMG/ewm_img.jpg">
+            <span class="wx-txt mt10 mb10">微信公众号</span>
+        </div>
+        <div class="cb"></div>
+    </div>
+</div>
+
+
+
+
+<div class="book-tc none" id="banquan-tc">
+    <div class="mod-nav"><h2>版权声明</h2><span class="close-btn"></span></div>
+    <div class="cb"></div>
+    <div class="book-con">
+        <p class="shengming">
+            本站提供的所有练习题目及考试题目，均来自于本站同学群中的网友总结和发布，主要用户本站的自有PMP考试群同学间的自主复习使用。 本站不对题目的版权和正确性做出任何承诺及保障，由此产生的任何法律后果，本站不予任何形式承担，如果本站的任意内容损害到您的利益，请与我们联系。
+
+        </p>
+        <div class="cb"></div>
+    </div>
+</div>
+
+
+
+     <div class="bord" id="bord"></div>
+
+<div class="book-tc none" id="book-tc">
+    <div class="mod-nav"><h2>《PMBOK Guide 5th》</h2><span class="close-btn"></span></div>
+    <div class="cb"></div>
+    <div class="book-con">
+        <div class="book-img">
+            <img src="/Content/IMG/PMPBOK.jpg" width="350" height="350" />
+        </div>
+        <div class="book-txt">
+            <p>《项目管理知识体系指南》<br />第 5 版为管理单个项目提供指导，对项目管 理相关概念进行定义。本指南也描述项目管理生命周期和相关过程，以及项目生命周期。</p>
+        </div>
+        <div class="cb"></div>
+    </div>
+
+</div>
+
+
+
+    <div class="model_">
+        <div class="model_top">
+            <div class="model_top_div">
+                
+<header>
+    <div class="top-logo fl">
+        <a href="/home/index" class="logo-img">
+            <img src="/Content/IMG/testLogo.jpg" width="60" height="45" alt="" class="fl" />
+            <section>
+                <h1>PMP题库<b>·</b>Test System</h1>
+                <p>Project Management Professional</p>
+            </section>
+        </a>
+    </div>
+    <ul class="top-nav fl none">
+        <li><a href="###">Test System</a> </li>
+    </ul>
+
+    <div class="top-right fr">
+        <ul class="r-nav">
+                <li onclick="xxc_redirectLogin()">
+                    <a href="/login/index">登录</a>
+                </li>
+                <li onclick="xxc_redirectRegister()">
+                    <a href=" /register/index">注册</a>
+                </li>
+
+            <li id="yindao-dj">
+                <em class="help-tb"></em>
+            </li>
+        </ul>
+    </div>
+
+</header>
+
+            </div>
+        </div>
+        <div class="model_mid">
+            
+<script>
+    //检测设备类型
+    //高兵兵
+    //2015-2-13
+    function IsPC() {
+        var userAgentInfo = navigator.userAgent;
+        var agents = ["Android", "iPhone",
+                    "SymbianOS", "Windows Phone",
+                    "iPad", "iPod"];
+        for (var v = 0; v < agents.length; v++) {
+            if (userAgentInfo.indexOf(agents[v]) > 0) {
+                return agents[v];
+            }
+        }
+        return "PC";
+    }
+    //如果是手机，则跳转手机
+    if (IsPC() != "PC") {
+        location.replace("http://m.pmptiku.com");
+    }
+</script>
+
+<link href="/bundles/Home/CSS?v=nxYOSNU1HcaEHEJ6Q1t7RTxBc6hNtC-iF2CU3lSdF-Q1" rel="stylesheet"/>
+
+<script src="/bundles/Home/JS?v=YN6LbgWNYhvZPvZ-FjQWrkMYhgqhkQL-R7p_6pVtOJ41"></script>
+
+
+<div class="loading-bar none" id="loading">
+    <img src="/Content/IMG/load.gif" width="100" height="50" />
+</div>
+
+
+<div class="book-tc none" id="exercise_test">
+    <div class="mod-nav"><h2>答题练习</h2><span class="close-btn"></span></div>
+    <div class="cb"></div>
+    <div class="con">
+        <p>选择题目数量：</p>
+        <select class="exe-sel" id="testselect">
+            <option>5</option>
+            <option>10</option>
+            <option>20</option>
+            <option>30</option>
+        </select>
+        <input type="button" value="开始" class="begin-btn" onclick="wds_usertestpaper()" />
+        <input type="hidden" id="selectvalue" value="" />
+    </div>
+
+</div>
+
+<!-- 页面内容 -->
+<div class="main">
+    <div class="main-con">
+        <p>
+            <strong>现在开始学习</strong><br />
+            永久免费
+        </p>
+
+        <nav>
+            <div class="main-nav" id="main-nav">
+                <ul>
+                    <li id="e-book">
+                        <a href="###">
+                            <em></em>
+                            <span>电子书</span>
+                        </a>
+                    </li>
+                    <li id="exercise">
+                        <a href="###">
+                            <em></em>
+                            <span>练习题</span>
+                        </a>
+                    </li>
+                    <li id="online-test">
+                        <a href="###">
+                            <em></em>
+                            <span>模拟考试</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+<input id="showorhide" type="hidden" value="false" />
+
+
+
+        </div>
+        <div class="cb"></div>
+        <div class="model_bottom">
+            <div class="model_bottom_div">
+                   
+<input type="hidden" id="domain" value="www.pmptiku.com" /> 
+<!--footer-->
+<footer>
+    <section>
+        <div class="twocode none" id="twocode">
+            <img src="/Content/IMG/ewm_img.jpg" width="258" height="258" />
+        </div>
+        <ul class="footer_links fl">
+            <li>
+                <dl>
+                    <dt>关于</dt>
+                    <dd><a href="/about.html" target="_blank">关于我们</a></dd>
+                    <dd><a href="/about.html" target="_blank">我们的愿景</a></dd>
+                    <dd><a href="/about.html" target="_blank">我们的团队</a></dd>
+                    <dd>
+                        <img src="/Content/IMG/ewm_img.jpg" width="59" height="59" id="weixin" />
+                    </dd>
+                    <dd><a href="###">微信公共平台</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>帮助</dt>
+                    <dd><a href="javascript:g_showhelp()">如何使用</a></dd>
+                    <dd><a id="fankui-tanchu" href="javascript:void(0)" onclick="wds_closefreeback()">问题反馈</a></dd>
+                </dl>
+                <dl class="mt30">
+                    <dt>链接</dt>
+                    <dd><a href="http://www.pmi.org" target="_blank">PMI 官方网站</a></dd>
+                    <dd><a href="http://exam.chinapmp.cn" target="_blank">外专局培训中心</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>PMP 在线</dt>
+                    <dd><a id="kaifa-tanchu" href="javascript:void(0)">学习计划</a></dd>
+                    <dd><a id="chengz-tanchu" href="javascript:void(0)">成长记录</a></dd>
+                    <dd><a id="tuandui-tanchu" href="javascript:void(0)">团队学习</a></dd>
+                </dl>
+                <dl class="mt8">
+                    <dt>文档</dt>
+                    <dd><a id="book-tanchu" href="javascript:void(0)">《PMBOK Guide 5th》</a></dd>
+                    <dd><a id="book-xieyi" href="javascript:void(0)">版权声明</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>联系我们</dt>
+                    <dd><a id="taolun-tanchu" href="javascript:void(0)">讨论组</a></dd>
+                    <dd><a href="/about.html" target="_blank">志愿者</a></dd>
+                    <dd><a id="hezuo-tanchu" href="javascript:void(0)">合作</a></dd>
+                </dl>
+            </li>
+        </ul>
+        <div class="footer_right fr">
+            
+            <a class="bt_logo" href="http://www.pmptiku.com">PMP</a>
+        </div>
+        <div class="cb"></div>
+    </section>
+    <div class="footer_bq">
+        <p>
+            &copy; 2014 PMP题库<br />
+
+        </p>
+    </div>
+    <link href="/Scripts/video/video-js.css" rel="stylesheet" />
+<script src="/Scripts/video/video.js"></script>
+<script>
+    videojs.options.flash.swf = "/Scripts/video/video-js.swf";
+</script>
+<style>
+         .vjs-default-skin .vjs-big-play-button {
+            left: 40%;
+            top: 30%;
+        }
+
+</style>
+
+<div id="yindao" class="none">
+    <span class="yindao-one"></span>
+    <span class="yindao-two none"></span>
+    <span class="yindao-three none"></span>
+    <div class="yindao-con">
+        <span class="shut"></span>
+
+        <div class="fl qiehuan">
+            <a href="###" class="back-icon none" id="h-erping"></a>
+            <a href="###" class="back-icon none" id="h-sanping"></a>
+            <a href="###" class="bhui-icon" id="h-yiping"></a>
+        </div>
+        <div class="fr qiehuan">
+            <a href="###" class="next-icon" id="diyiping"></a>
+            <a href="###" class="next-icon none" id="dierping"></a>
+            <a href="###" class="nhui-icon none" id="disanping"></a>
+ 
+        </div>
+        
+        <div class="fl  one-con">
+            <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="750" height="421"
+                   poster="http://www.pmptiku.com/Content/IMG/donghuafengmian.jpg"
+                   data-setup="{}">
+                <source src="http://www.pmptiku.com/pmp.flv" type='video/flv' />
+            </video>
+        </div>
+        <div class="two-con none"></div>
+        <div class="three-con none">
+            <a href="###" class="enter-icon">LET'S GO</a>
+        </div>
+    </div>
+    <div class="lunbo">
+        <em class="curr" id="one" onclick="diyipin"></em>
+        <em class="lb-icon" id="two"></em>
+        <em class="lb-icon" id="three"></em>
+    </div>
+
+</div>
+</footer>
+<!--footer end-->
+
+            </div>
+        </div>
+    </div>
+    <div class="bord"></div>
+</body>
+</html>

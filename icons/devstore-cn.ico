@@ -1,0 +1,1284 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DevStore_移动互联网企业运营解决方案整合平台</title>
+<meta name="Keywords" content="DevStore,移动互联网,企业运营,运营解决方案" />
+<meta name="Description" content="DevStore是从产品前期、设计、开发、推广、运维整个项目的流程出发,一站式、全方位、多角度的贯穿整个移动互联网生命周期的企业运营解决方案整合平台。 " />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="wlhlauth" content="668c42925bef0c10d0f69c26b56a59b9"/>
+<meta name="renderer" content="webkit">
+<link rel="shortcut icon" href="/images/dv_favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/css/globle2014.css"/>
+<link rel="stylesheet" type="text/css" href="/css/style.css?data=2016-03-29"/>
+<link rel="stylesheet" type="text/css" href="/css/public.css?data=2016-03-29"/>
+
+<script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+<script type="text/javascript" src="/js/top.js"></script>
+<link rel="stylesheet" type="text/css" href="/private/home/css/main.css?data=2015-04-11"/>
+<script type="text/javascript" src="/private/home/js/banner.js"></script>
+<!-- 弹窗 -->
+<link rel="stylesheet" type="text/css" href="/css/popup.css?data=2015-05-15"/>
+<script type="text/javascript" src="/js/popup.js"></script><script type="text/javascript" src="/js/login.js?data=2015-06-09"></script>
+<script type="text/javascript" src="/private/user/js/md5.js"></script><!-- 分享列表 -->
+<link rel="stylesheet" type="text/css" href="/js/select2/select2.css" />
+<script type="text/javascript" src="/js/jquery-ui-1.11.2.min.js"></script>
+<script type="text/javascript" src="/js/select2/select2.min.js"></script>
+<script type="text/javascript" src="/js/select2/select2_locale_zh-CN.js"></script>
+<script type="text/javascript" src="/js/share.js"></script>
+<script type="text/javascript" src="/js/apollo.js"></script><script type="text/javascript" src="/js/share_list.js"></script>
+<script type="text/javascript" src="/private/project/js/create.project.js"></script>
+<script type="text/javascript">
+$(function(){
+    initSearchProject();
+});
+</script>
+<script type="text/javascript" src="/js/jquery.kinMaxShow-1.1.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+$(function() {
+$("#kinMaxShow").kinMaxShow({
+	height: 129,
+	width: 700,
+	intervalTime: 100,
+	switchTime:100,
+	hoverPause:false,
+	button: {
+		showIndex: false,
+		normal: {
+			background: 'url(/images/banner/button.png) no-repeat -14px 0',
+			marginRight: '8px',
+			border: '0',
+			right: '44%',
+			bottom: '20px'
+		},
+		focus: {
+			background: 'url(/images/banner/button.png) no-repeat 0 0',
+			border: '0'
+		}
+	},
+
+	callback: function(index, action) {
+		switch (index) {
+		case 0:
+			if (action == 'fadeIn') {
+				c = 0;
+				$(".banner_left dl").css({
+					width: "80px",
+				});
+				//演示开始运动
+				timedCount();
+			} else {
+				clearTimeout(t);
+				$(".person_list li:eq(0)").addClass("active");
+			};
+			break;
+
+		case 1:
+			if (action == 'fadeIn') {
+				cc = 0;
+				//演示开始运动
+				timeCount();
+			} else {
+				clearTimeout(tt);
+				};
+			break;
+
+		}
+	}
+
+});
+
+});
+</script>
+</head>
+<body>
+<!--头部-->
+<!--客服 弹窗-->
+<div class="ui-popup glo_kefu_popup" style="display:none;">
+  <div class="ui-popup_box">
+    <div class="pop_close_box"><a href="javascript:;" class="pop_close">&nbsp;</a></div>
+    <div class="glo_kefu">
+      <div class="glo_kefu_title">为了尽快解决大伙儿的问题，请务必要找相对应的客服哦~</div>
+      <div class="glo_kefu_content">
+        <dl>
+          <dt>DEV问题<br>
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=1931358744&site=qq&menu=yes" target="_blank" class="kefu_name01">找楠楠</a></dt>
+          <dd><a href="http://wpa.qq.com/msgrd?v=3&uin=1931358744&site=qq&menu=yes" target="_blank" class="kefu01"></a></dd>
+        </dl>
+        <!--  <dl>
+          <dt>开发测试<br>
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=1931358744&site=qq&menu=yes" target="_blank" class="kefu_name02">找楠楠</a></dt>
+          <dd><a href="http://wpa.qq.com/msgrd?v=3&uin=1931358744&site=qq&menu=yes" target="_blank" class="kefu02"></a></dd>
+        </dl>-->
+        <dl>
+          <dt>DEV合作<br>
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=2850685987&site=qq&menu=yes" target="_blank" class="kefu_name03">找晓鹏</a></dt>
+          <dd><a href="http://wpa.qq.com/msgrd?v=3&uin=2850685987&site=qq&menu=yes" target="_blank" class="kefu03"></a></dd>
+        </dl>
+        <dl>
+          <dt>iClap疑惑<br>
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=2850685984&site=qq&menu=yes" target="_blank" class="kefu_name04">点这里</a></dt>
+          <dd><a href="http://wpa.qq.com/msgrd?v=3&uin=2850685984&site=qq&menu=yes" target="_blank" class="kefu04"></a></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ <!-- <div class="service_float_nav"> <a href="/user_center/addRecommendPage.html" target="_blank" class="ablock ablock01">
+  <p class="pimg"></p>
+  <p class="ptext">服务推荐</p>
+  </a>  <a href="/user_center/myDataDepot.html" target="_blank" class="ablock ablock02">
+  <p class="pimg"></p>
+  <p class="ptext">文件库</p>
+  </a> <a href="/user_center/myCreateProject.html" target="_blank" class="ablock ablock03">
+  <p class="pimg"></p>
+  <p class="ptext">我的项目</p>  
+  </a> <a href="/suggestionBack.html" target="_blank"  class="ablock ablock06">
+  <p class="pimg"></p>
+  <p class="ptext">意见反馈</p>
+  </a> <a href="javascript:;" class="ablock ablock04">
+  <p class="pimg"></p>
+  <p class="ptext">客服咨询</p>
+  </a><a href="javascript:;" class="ablock ablock05 back_top" style="display:none;">
+  <p class="pimg"></p>
+  </a> </div>-->
+  
+<div class="slide-nav-server service_float_nav">
+	<a class="slide-nav-return" href="javascript:;"></a>
+	<a class="server-item" href="/user_center/myDataDepot.html" target="_blank">
+		<span class="icon-server icon-server-file"></span>
+		<span class="title-server">文件库</span>
+	</a>
+	<a class="server-item" href="/resource/add.html" target="_blank">
+		<span class="icon-server icon-server-upload"></span>
+		<span class="title-server">上传资源</span>
+	</a>
+	<a class="server-item" href="/essay/add.html" target="_blank">
+		<span class="icon-server icon-server-contribute"></span>
+		<span class="title-server">投稿</span>
+	</a>
+	<a class="server-item" href="/suggestionBack.html" target="_blank">
+		<span class="icon-server icon-server-feedback"></span>
+		<span class="title-server">意见反馈</span>
+	</a>
+	<a class="server-item ablock04" href="javascript:;">
+		<span class="icon-server icon-server-consult"></span>
+		<span class="title-server">客服咨询</span>
+	</a>
+</div>
+<script type="text/javascript" src="/js/newTop.js"></script>
+<div class="head_box"></div>
+<div id="header">
+	<div class="header">
+		<div class="logo">
+			<a href="/" target="_blank"><img src="/images/tempimg/logo.jpg" alt=" "></a>
+		</div>
+		<!--搜索-->
+		<link rel="stylesheet" href="/css/jquery-ui-1.11.2.min.css" />
+<script type="text/javascript" src="/js/jquery-ui-1.11.2.min.js"></script>
+<div class="search">
+	<div class="search_sort">
+		<p class="set">工具|服务</p>
+		<ul class="sreach_sort_list" style="display:none;">
+			<li l="product">工具|服务</li>
+			<li l="news">资讯</li>
+			<li l="eassy">文章</li>
+			<li l="question">问答</li>
+			<li l="project">项目</li>
+			<li l="resource">资料</li>
+			<li l="sourceCode">源码</li>
+			<li l="evaluation">评测</li>
+			<li l="company">公司</li>
+			<li l="data">数据</li>
+			<li l="user">用户</li>
+		</ul>
+	</div>
+	<div class="search_input">
+		<input type="text" id="top_keyword" class="text_sreach" value="" placeholder="搜索 如:推送">
+	</div>
+	<div class="search_btn">
+		<input type="button" class="button_sreach" value="">
+	</div>
+	<input type="hidden" id="_pName" value="product">
+	<input type="hidden" id="titleInput" value="product">
+</div>
+<script  type="text/javascript">
+$(function($) {
+	$(".sreach_sort_list li").click(function(){
+		$("#_pName").val($(this).attr("l"));
+	});
+	$(".button_sreach").click(function(){
+		if($(".text_sreach").val() !="")
+		{
+			var key ;
+			var opt =  $("#top_keyword").val().indexOf(".");
+			if(opt != -1){
+				key = $("#top_keyword").val().slice(0,opt)+","+$("#top_keyword").val().slice(opt+1);
+			}else{
+				key = $("#top_keyword").val();
+			}
+			key=key.toString().replace(/-/g,"%#");
+			window.location="/search/"+$("#_pName").val()+"/"+encodeURIComponent(key);	
+		}else
+		{
+			alert("请填写关键词后搜索");
+		}
+		
+	});
+	$(".text_sreach").keydown(function(event){
+		  if(event.keyCode =="13") {
+			$(".button_sreach").click();
+		  }
+	});
+	
+	/*搜索效果*/  
+	$(".search_input input").focus(function(){
+		if(  $(this).width() == 150 ){
+		$(this).animate({width:"250px"});
+		}else{
+		$(this).animate({width:"120px"});
+		}
+	});
+	$(".search_input input").focusout(function(){
+		if( $(this).val() == ""){
+			if(  $(this).width() == 250 ){
+			$(this).animate({width:"150px"});
+			}else{
+			$(this).animate({width:"100px"});
+			}
+		}
+	});
+	function search(searchStr){
+		var result=[];
+		$.ajax({
+			type: "POST",
+			dataType: "json",
+			url: '/public_data/getSearchKey',
+			async: false,
+			data: {searchStr:searchStr},
+			success: function(data) {
+				if(data.status==1){
+					var list=data.list;
+					for(var i=0;i<list.length;i++){
+						result.push(list[i].name);
+					}
+				}
+			}
+		});
+		return result;
+	}
+	
+	$(".search_input input").autocomplete({
+		minLength: 1,
+		source:function(request, response){
+			var result=search(request.term);
+			$('.ui-autocomplete').css("z-index",9999);
+			response(result);
+		},
+		delay:600
+	});
+	
+    switch($("#titleInput").val()){
+    case "product":$(".sreach_sort_list li:eq(0)").click();break;
+    case "news":$(".sreach_sort_list li:eq(1)").click();break;
+    case "eassy":$(".sreach_sort_list li:eq(2)").click();break;
+    case "question":$(".sreach_sort_list li:eq(3)").click();break;
+    case "project":$(".sreach_sort_list li:eq(4)").click();break;
+	case "resource":$(".sreach_sort_list li:eq(5)").click();break;
+	case "sourceCode":$(".sreach_sort_list li:eq(6)").click();break;
+	case "evaluation":$(".sreach_sort_list li:eq(7)").click();break;
+	case "company":$(".sreach_sort_list li:eq(8)").click();break;
+	case "data":$(".sreach_sort_list li:eq(9)").click();break;
+	case "user":$(".sreach_sort_list li:eq(10)").click();break;
+	}	
+	
+});
+</script>		<!--导航-->
+		<div class="nav">
+			<ul class="clearfix">
+				<li class="navli"><a href="http://www.iclap.cn" target="_blank" class="cat01">iClap</a></li>
+				<li class="navli "><a href="/service/productHome.html" class="cat01">工具|服务<span>&nbsp;</span></a>
+					<div class="sub_nav sub_nav01 sub_nav05">
+						<div class="nav_icon">
+							<span>&nbsp;</span>
+						</div>
+						<div class="pub_text_box">
+							<span>满足所有需求，助您轻松工作</span>
+						</div>
+						<div class="sub_nav_content01">
+							<ul class="dapai clearfix">
+								<li><a href="/service/newproductList/cla0.html" class="a00">全部</a></li>
+								<li><a href="/service/newproductList/sta1.html" class="a01">产品前期</a></li>
+								<li><a href="/service/newproductList/sta2.html" class="a02">设计</a></li>
+								<li><a href="/service/newproductList/sta3.html" class="a03">开发</a></li>
+								<li><a href="/service/newproductList/sta5.html" class="a04">推广</a></li>
+								<li><a href="/service/newproductList/sta4.html" class="a05">运维</a></li>
+							</ul>
+						</div>
+					</div></li>
+					<li class="navli newsLi"><a href="/new/newsIndex.html" target="_blank" class="cat01">资讯<span>&nbsp;</span></a>
+					<div class="sub_nav">
+						<div class="nav_icon">
+							<span>&nbsp;</span>
+						</div>
+						<div class="pub_text_box">
+							<span>把握市场需求，站在市场前沿</span>
+						</div>
+						<div class="sub_nav_content">
+							<dl class="clearfix">
+								<dt class="zixun">
+									<a href="/new/list/1-1.html" para="1" class="a01">行业动态</a> <a href="/new/list/10-1.html" para="10" class="a02">产品推介</a> <a href="/new/list/7-1.html" para="7" class="a03">投融资</a> <a href="/new/list/9-1.html" para="9" class="a04">人物/团队访谈</a> <a href="/new/list/12-1.html" para="12" class="a05">创业故事</a>
+								</dt>
+								<dd>
+									<ul class="sub_nav_rec_news">
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div></li>
+					<li class="navli"><a href="/resource/resourceHome.html" class="cat01">资源<span>&nbsp;</span></a>
+					<div class="sub_nav">
+						<div class="nav_icon">
+							<span>&nbsp;</span>
+						</div>
+						<div class="pub_text_box">
+							<span>资源分享学习，辅助工作所需</span>
+						</div>
+						<div class="sub_nav_content01">
+							<ul class="dapai clearfix">
+								<li><a href="/resource/resourceList.html" class="a09">资料下载</a></li>
+								<li><a href="/code/list/pn1-or0.html" class="a07">源码下载</a></li>
+								<li><a href="/evaluation/list/ct0-sc0-ot0-or1-pn1.html" class="a08">服务评测</a></li>
+							</ul>
+						</div>
+					</div></li>
+					
+					<li class="navli"><a href="/essay/essayHome.html" class="cat01">干货<span>&nbsp;</span></a>
+					<div class="sub_nav sub_nav01 sub_nav01">
+						<div class="nav_icon">
+							<span>&nbsp;</span>
+						</div>
+						<div class="pub_text_box">
+							<span>借鉴经验分享，提升个人能力</span>
+						</div>
+						<div class="sub_nav_content01">
+							<ul class="dapai clearfix">
+								<li><a href="/essay/essayList/1.html" class="a01">产品前期</a></li>
+								<li><a href="/essay/essayList/2.html" class="a02">设计</a></li>
+								<li><a href="/essay/essayList/3.html" class="a03">开发</a></li>
+								<li><a href="/essay/essayList/5.html" class="a04">推广</a></li>
+								<li><a href="/essay/essayList/4.html" class="a06">运营</a></li>
+							</ul>
+						</div>
+					</div></li>
+					
+					
+					<li class="navli"><a href="/question/home/1-1.html" class="cat01">学习<span>&nbsp;</span></a>
+					<div class="sub_nav">
+						<div class="nav_icon">
+							<span>&nbsp;</span>
+						</div>
+						<div class="pub_text_box">
+							<span>渗入项目始终，切磋解决问题</span>
+						</div>
+						<div class="sub_nav_content01">
+							<ul class="dapai clearfix">
+								<li><a href="/activity/list.html" class="a01">专题/专栏</a></li>
+								<li><a href="/data/home/1.html" class="a02">数据报告</a></li>
+								<li><a href="/question/home/1-1.html" class="a03">问答</a></li>
+							</ul>
+						</div>
+					</div></li>
+					
+				
+					<li class="navli"><a href="http://app.aizichan.cn" target="_blank" class="cat01">爱市场</a></li>
+			</ul>
+		</div>
+		<!--登陆注册按钮-->
+	<div class="landing_group">
+		<a href="/user/loginPage.html" rel="nofollow" class="landing_bt">登录</a> | <a href="/user/regPage.html" rel="nofollow" class="active">注册</a>
+	</div>
+	</div>
+</div><!--end头部--> 
+<!--宣传图-->
+<div id="banner">
+  <div class="banner">
+			<div class="dev_zhanshi">
+				<div id="kinMaxShow">
+					<div>
+						<div class="banner_left clearfix">
+							<dl class="active" style="width:270px;">
+								<dt>
+									<div class="banner_text01">
+										实时新闻动态，全面数据分析<br />让你更精准的把握市场需求
+									</div>
+									<div class="jing_icon">
+										<a href="/new/newsIndex.html" target="_blank">
+										<img src="/images/tempimg/index/yanshi_img01.png" width="42" height="47" alt="市场需求">
+										</a>
+									</div>
+									<div class="dong_icon" style="display:none;">
+										<a href="/new/newsIndex.html" target="_blank">
+										<img src="/images/tempimg/index/yanshi_img02.png" width="42" height="47" alt="市场需求">
+										</a>
+									</div>
+								</dt>
+								<dd><a href="/new/newsIndex.html" target="_blank">市场需求</a></dd>
+							</dl>
+							<dl>
+								<dt>
+									<div class="banner_text01">
+										借鉴经验分享，同行项目对比<br />让你更清晰的确定项目方向
+									</div>
+									<div class="jing_icon">
+										<a href="/essay/essayHome.html" target="_blank">
+										<img src="/images/tempimg/index/yanshi_img03.png" width="42" height="47" alt="项目立项">
+										</a>
+									</div>
+									<div class="dong_icon" style="display:none;">
+										<a href="/essay/essayHome.html" target="_blank">
+										<img src="/images/tempimg/index/yanshi_img04.png" width="42" height="47" alt="项目立项">
+										</a>
+									</div>
+								</dt>
+								<dd><a href="/essay/essayHome.html" target="_blank">项目立项</a></dd>
+							</dl>
+							<dl>
+								<dt>
+									<div class="banner_text01">
+										阶段工具服务，详细资源分享<br />让你更有效的完成项目开发
+									</div>
+									<div class="jing_icon">
+										<a href="/service/productHome.html" target="_blank">
+										<img src="/images/tempimg/index/yanshi_img05.png" width="42" height="47" alt="设计研发">
+										</a>
+									</div>
+									<div class="dong_icon" style="display:none;">
+										<a href="/service/productHome.html" target="_blank">
+										<img src="/images/tempimg/index/yanshi_img06.png" width="42" height="47" alt="设计研发">
+										</a>
+									</div>
+								</dt>
+								<dd><a href="/service/productHome.html" target="_blank">设计研发</a></dd>
+							</dl>
+							<dl class="">
+								<dt>
+									<div class="banner_text01">
+										沟通交流经验，协作挖出项目<br />让你更快速的获得推广资源
+									</div>
+									<div class="jing_icon">
+										<a href="/project/digg.html" target="_blank">
+										<img src="/images/tempimg/index/yanshi_img07.png" width="42" height="47" alt="推广运营">
+										</a>
+									</div>
+									<div class="dong_icon" style="display:none;">
+										<a href="/project/digg.html" target="_blank">
+										<img src="/images/tempimg/index/yanshi_img08.png" width="42" height="47" alt="推广运营">
+										</a>
+									</div>
+								</dt>
+								<dd><a href="/project/digg.html" target="_blank">推广运营</a></dd>
+							</dl>
+						</div>
+					</div>
+					<div>
+						<div class="person_list">
+							<ul class="clearfix">
+								<li class="li01 active"><a href="/activity/onlineActivity/20.html" target="_blank">&nbsp;</a><img src="/images/banner/man_img01.png" alt="设计人员" class="small_man"> <img src="/images/banner/peijian01.png" alt="设计人员" class="peijian">
+									<div class="person_text">
+										我是设计人员，我在DevStore<br> 找工具、找灵感、找素材、找创意
+									</div></li>
+								<li class="li02"><a href="/activity/onlineActivity/21.html" target="_blank">&nbsp;</a><img src="/images/banner/man_img02.png" alt="开发人员" class="small_man"><img src="/images/banner/peijian02.png" alt="开发人员" class="peijian">
+									<div class="person_text">
+										我是开发人员，我在DevStore<br> 找源码、找服务、找评测、找资料
+									</div></li>
+								<li class="li03"><a href="/activity/onlineActivity/22.html" target="_blank">&nbsp;</a><img src="/images/banner/man_img03.png" alt="推广人员" class="small_man"><img src="/images/banner/peijian03.png" alt="推广人员" class="peijian">
+									<div class="person_text">
+										我是推广人员，我在DevStore<br> 找方案、找渠道、找数据、找资源
+									</div></li>
+								<li class="li04"><a href="/activity/onlineActivity/23.html" target="_blank">&nbsp;</a><img src="/images/banner/peijian05.png" alt="运营人员" class="peijian peijian01"><img src="/images/banner/man_img04.png" alt="运营人员" class="small_man"><img src="/images/banner/peijian04.png" class="peijian peijian02">
+									<div class="person_text">
+										我是运营人员，我在DevStore<br> 找经验、找答案、找合作、找方法
+									</div></li>
+								<li class="li05"><a href="/user_center/userIndex" target="_blank">&nbsp;</a><img src="/images/banner/man_img05.png" alt="互联网人士都在DevStore看资讯、读数据、找服务、下资料、做问答、挖项目" class="small_man"><img src="/images/banner/peijian06.png" alt="互联网人士都在DevStore看资讯、读数据、找服务、下资料、做问答、挖项目" class="peijian">
+									<div class="person_text person_text02">互联网人士都在DevStore看资讯、读数据、找服务、下资料、做问答、挖项目</div></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+     <div class="banner_right">
+    <p class="p01">贯穿整个项目的生命周期，解决您的一切问题！</p>
+    <p class="p02 clearfix"><a href="/user/regPage.html" target="_blank" class="zhuce">马上加入</a> <a href="/user/loginPage.html" target="_blank" class="denglu">立即登录</a></p>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--end宣传图--> 
+<!--焦点图-->
+<div class="focus_bg"></div>
+<div class="focus">
+  <dl>
+    <dd class="dd01">
+      <div class="focus_box">
+		<div class="big_img"  style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1476498301420/1476498306842.jpg); width:565px; height:360px;">
+      	</div>
+        <div class="content">
+          <h3><a href="/new/newInfo/26247.html" target="_blank">调查了1000名创业者，我们绘制了一份中国创业者成长图谱</a></h3>
+          <p>创业者是普通人，他们一天同样24小时，也会失眠和失恋；他们又是最独特的群体，以群体之力创造着这个时代...</p>
+          <div class="share" style="display:none" bdText="调查了1000名创业者，我们绘制了一份中国创业者成长图谱" bdDesc="创业者是普通人，他们一天同样24小时，也会失眠和失恋；他们又是最独特的群体，以群体之力创造着这个时代..." bdUrl="/new/newInfo/26247.html" bdPic="http://ds.devstore.cn/dev_store/rdc_file/1476498301420/1476498306842.jpg" shareid="26247" shareType="1">
+            <ul class="clearfix">
+              <li class="xiaoren bdsharebuttonbox"><a href="javascript:;" title="分享给站内好友">&nbsp;</a></li>
+              <li class="qqweibo bdsharebuttonbox" data-tag="share_1"><a href="javascript:;" data-cmd="sqq" title="分享给QQ好友">&nbsp;</a></li>
+              <li class="weibo bdsharebuttonbox"><a href="javascript:;" class="bds_tsina01" data-cmd="tsina" title="分享到新浪微博">&nbsp;</a></li>
+              <li class="weixin bdsharebuttonbox"><a href="javascript:;" data-cmd="weixin">&nbsp;</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="img_link"><a href="/new/newInfo/26247.html" target="_blank">&nbsp;</a></div>
+      </div>
+    </dd>
+    <dd class="dd02">
+      <div class="focus_box">
+      	<div class="big_img" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1476498357576/1476498368326.jpg); width:282.5px; height:360px;">
+      	</div>
+        <div class="content">
+          <h3><a href="/essay/essayInfo/7657.html" target="_blank">关于JavaScript你可能不知道的7个功能</a></h3>
+          <p>本文列举了关于JavaScript的7个不常用功能，可能都是你所不了解的，一起看下吧。</p>
+          <div class="share" style="display:none" bdText="关于JavaScript你可能不知道的7个功能" bdDesc="本文列举了关于JavaScript的7个不常用功能，可能都是你所不了解的，一起看下吧。" bdUrl="/essay/essayInfo/7657.html" bdPic="http://ds.devstore.cn/dev_store/rdc_file/1476498357576/1476498368326.jpg" shareid="7657" shareType="2">
+            <ul class="clearfix">
+              <li class="xiaoren bdsharebuttonbox"><a href="javascript:;" title="分享给站内好友">&nbsp;</a></li>
+              <li class="qqweibo bdsharebuttonbox" data-tag="share_1"><a href="javascript:;" data-cmd="sqq" title="分享给QQ好友">&nbsp;</a></li>
+              <li class="weibo bdsharebuttonbox"><a href="javascript:;" class="bds_tsina01" data-cmd="tsina" title="分享到新浪微博">&nbsp;</a></li>
+              <li class="weixin bdsharebuttonbox"><a href="javascript:;" data-cmd="weixin">&nbsp;</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="img_link"><a href="/essay/essayInfo/7657.html" target="_blank">&nbsp;</a></div>
+      </div>
+    </dd>
+    <dd class="dd03">
+      <div class="focus_box">
+      	<div class="big_img" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1476438237415/1476438370993.png); width:282.5px; height:360px;">
+      	</div>
+        <div class="content">
+          <h3><a href="/essay/essayInfo/7672.html" target="_blank">21个高质量的Swift开源iOS App</a></h3>
+          <p>对Swift初学者来说，学习开源项目，阅读源码是个不错的方法。</p>
+          <div class="share" style="display:none" bdText="21个高质量的Swift开源iOS App" bdDesc="对Swift初学者来说，学习开源项目，阅读源码是个不错的方法。" bdUrl="/essay/essayInfo/7672.html" bdPic="http://ds.devstore.cn/dev_store/rdc_file/1476438237415/1476438370993.png" shareid="7672" shareType="2">
+            <ul class="clearfix">
+              <li class="xiaoren bdsharebuttonbox"><a href="javascript:;" title="分享给站内好友">&nbsp;</a></li>
+              <li class="qqweibo bdsharebuttonbox" data-tag="share_1"><a href="javascript:;" data-cmd="sqq" title="分享给QQ好友">&nbsp;</a></li>
+              <li class="weibo bdsharebuttonbox"><a href="javascript:;" class="bds_tsina01" data-cmd="tsina" title="分享到新浪微博">&nbsp;</a></li>
+              <li class="weixin bdsharebuttonbox"><a href="javascript:;" data-cmd="weixin">&nbsp;</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="img_link"><a href="/essay/essayInfo/7672.html" target="_blank">&nbsp;</a></div>
+      </div>
+    </dd>
+  </dl>
+  <div class="clear"></div>
+</div>
+<!--end焦点图--> 
+<!--项目阶段-->
+<div class="project_phase">
+  <div class="project_phase_title"><span class="span_text"><span>您的项目现在处于哪个阶段</span></span></div>
+  <div class="project_phase_content clearfix">
+    <div class="project_phase_box project_phase_box01">
+      <div class="title"><a href="/service/newproductList/sta1.html" target="_blank">产品前期</a></div>
+      <div class="content">
+              <a href="/service/newproductList/cla8.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428569761303.png);">原型设计</a> 
+              <a href="/service/newproductList/sta1-tag2499.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1428583754566/1428583780597.png);">交互设计</a> 
+              <a href="/service/newproductList/cla48.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1429932482752.png);">融资平台</a> 
+              <a href="/service/newproductList/sta1-tag1558.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1428583959098/1428583985832.png);">产品经理</a> 
+              <a href="/service/newproductList/sta1-tag4141.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1428584092879/1428584120489.png);">商标注册</a> 
+              <a href="/service/newproductList/cla30.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428582560582.png);">文档流程</a> 
+      </div>
+    </div>
+    <div class="project_phase_box project_phase_box02">
+      <div class="title"><a href="/service/newproductList/sta2.html" target="_blank">设计阶段</a></div>
+      <div class="content">
+              <a href="/service/newproductList/cla9.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428582731223.png);">视觉设计</a> 
+              <a href="/service/newproductList/cla19.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428579064608.png);">设计网站</a> 
+              <a href="/service/newproductList/sta2-tag3885.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1428584805393/1428584827315.png);">建站</a> 
+              <a href="/service/newproductList/sta2-tag953.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1428584394489/1428584429505.png);">图片处理</a> 
+              <a href="/service/newproductList/sta2-tag1946.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1428584434536/1428584456348.png);">UI设计</a> 
+              <a href="/service/newproductList/sta2-tag3883.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1428584463395/1428584487520.png);">素材</a> 
+      </div>
+    </div>
+    <div class="project_phase_box project_phase_box03">
+      <div class="title"><a href="/service/newproductList/sta3.html" target="_blank">开发测试</a></div>
+      <div class="content">
+              <a href="/service/newproductList/cla36.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428582940630.png);">服务器</a> 
+              <a href="/service/newproductList/cla12.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428584219082.png);">常用工具</a> 
+              <a href="/service/newproductList/sta3-tag6037.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1428584305833/1428584329473.png);">直播</a> 
+              <a href="/service/newproductList/cla4-cid70.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428578352520.png);">服务类API</a> 
+              <a href="/service/newproductList/cla4.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428586189491.png);">开发者服务</a> 
+              <a href="/service/newproductList/cla38-cid58.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428669599994.png);">测试工具</a> 
+      </div>
+    </div>
+    <div class="project_phase_box project_phase_box04">
+      <div class="title"><a href="/service/newproductList/sta5.html" target="_blank">推广阶段</a></div>
+      <div class="content">
+              <a href="/service/newproductList/cla7.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428583849097.png);">广告平台</a> 
+              <a href="/service/newproductList/cla16.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428583884238.png);">应用市场</a> 
+              <a href="/service/newproductList/cla40.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428583717144.png);">营销服务</a> 
+              <a href="/service/newproductList/cla18.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428583767753.png);">推广网站</a> 
+              <a href="/service/newproductList/sta5-tag1566.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1428584476208/1428584529457.png);">APP运营</a> 
+              <a href="/service/newproductList/sta5-tag3933.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1428584536957/1428584565957.png);">活动平台</a> 
+      </div>
+    </div>
+    <div class="project_phase_box project_phase_box05">
+      <div class="title"><a href="/service/newproductList/sta4.html" target="_blank">运维运营</a></div>
+      <div class="content">
+              <a href="/service/newproductList/cla5.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428580651424.png);">安全服务</a> 
+              <a href="/service/newproductList/cla5-cid29.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428581127737.png);">应用加密</a> 
+              <a href="/service/newproductList/cla14.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428580720565.png);">统计分析</a> 
+              <a href="/service/newproductList/cla45.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428584083332.png);">性能监测</a> 
+              <a href="/service/newproductList/sta4-tag3145.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1428583702941/1428583779144.png);">支付安全</a> 
+              <a href="/service/newproductList/cla15.html" target="_blank" style="background-image:url(http://ds.devstore.cn/dev_store/service_class/logo_image/1428649005277.png);">数据可视化</a> 
+      </div>
+    </div>
+  </div>
+  <div class="more_btn"><a href="/service/productHome.html" target="_blank">更多>></a></div>
+</div>
+
+<!--end项目阶段--> 
+<!--推荐图片-->
+	<div class="recommend_pictures clearfix"> 
+	  	<a href="/new/newInfo/23071.html" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1470792475496/1470792506918.jpg)">
+		<strong class="strong_title">扫码免费拿礼品</strong>
+		<span class="span_text">8大好礼，你值得拥有</span>
+		</a>
+	  	<a href="http://www.devstore.cn/special_column/info/8.html" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1446090472711/1446090548039.jpg)">
+		<strong class="strong_title">运营实战干货集</strong>
+		<span class="span_text">产品运营菜鸟必备资料</span>
+		</a>
+	  	<a href="http://www.devstore.cn/special_column/info/5.html" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1442543769036/1442543781161.jpg)">
+		<strong class="strong_title">iOS开发入门指南</strong>
+		<span class="span_text">iOS开发入门法宝</span>
+		</a>
+	  	<a href="/activity/onlineActivity/12.html" style="background-image:url(http://ds.devstore.cn/dev_store/rdc_file/1447901736746/1447901800261.jpg)">
+		<strong class="strong_title">APP推广</strong>
+		<span class="span_text">实战类干货分享</span>
+		</a>
+	</div>
+	<div class="all_guanzhu"><span class="span_text"><span>大家都在关注</span></span></div>
+<!--综合区域-->
+<div class="main">
+  <div class="main_left news_resources">
+	    <h2 class="title"><a href="/resource/resourceHome.html" target="_blank">更多>></a><strong>最新资源</strong></h2>
+	    <ul class="news_resources_list">
+	        <li>
+		        <h3>
+		          <span class="fenlei"><img src="/images/tempimg/ziyuan_iocn02.png" width="20" height="21" alt=" "></span>
+		        <a href="/code/info/1780.html" target="_blank">仿iPhone的alertview</a>
+		        </h3>
+	        	<p class="ptext"><a href="/user_home/fghjhuang.html" target="_blank" class="user_name">fghjhuang</a> | 
+	        	<span class="span_text">资源
+	        	<a href="/user_home/resource/fghjhuang.html" target="_blank" class="a_num">1</a>
+	        	</span>
+	        	</p>
+	      </li>
+	        <li>
+		        <h3>
+		          <span class="fenlei"><img src="/images/tempimg/ziyuan_iocn02.png" width="20" height="21" alt=" "></span>
+		        <a href="/code/info/1781.html" target="_blank">对话框动画</a>
+		        </h3>
+	        	<p class="ptext"><a href="/user_home/RYT_1314.html" target="_blank" class="user_name">RYT_1314</a> | 
+	        	<span class="span_text">资源
+	        	<a href="/user_home/resource/RYT_1314.html" target="_blank" class="a_num">5</a>
+	        	</span>
+	        	</p>
+	      </li>
+	        <li>
+		        <h3>
+		          <span class="fenlei"><img src="/images/tempimg/ziyuan_iocn02.png" width="20" height="21" alt=" "></span>
+		        <a href="/code/info/1779.html" target="_blank">仿蘑菇街界面设计</a>
+		        </h3>
+	        	<p class="ptext"><a href="/user_home/red450.html" target="_blank" class="user_name">red450</a> | 
+	        	<span class="span_text">资源
+	        	<a href="/user_home/resource/red450.html" target="_blank" class="a_num">1</a>
+	        	</span>
+	        	</p>
+	      </li>
+	        <li>
+		        <h3>
+		          <span class="fenlei"><img src="/images/tempimg/ziyuan_iocn01.png" width="20" height="21" alt=" "></span>
+		        <a href="/resource/resourceInfo/1361.html" target="_blank">AngularJS权威教程</a>
+		        </h3>
+	        	<p class="ptext"><a href="/user_home/ahutchen.html" target="_blank" class="user_name">ahutchen</a> | 
+	        	<span class="span_text">资源
+	        	<a href="/user_home/resource/ahutchen.html" target="_blank" class="a_num">2</a>
+	        	</span>
+	        	</p>
+	      </li>
+	        <li>
+		        <h3>
+		          <span class="fenlei"><img src="/images/tempimg/ziyuan_iocn02.png" width="20" height="21" alt=" "></span>
+		        <a href="/code/info/1778.html" target="_blank">书籍翻页效果的demo</a>
+		        </h3>
+	        	<p class="ptext"><a href="/user_home/ljh2013.html" target="_blank" class="user_name">ljh2013</a> | 
+	        	<span class="span_text">资源
+	        	<a href="/user_home/resource/ljh2013.html" target="_blank" class="a_num">4</a>
+	        	</span>
+	        	</p>
+	      </li>
+	        <li>
+		        <h3>
+		          <span class="fenlei"><img src="/images/tempimg/ziyuan_iocn02.png" width="20" height="21" alt=" "></span>
+		        <a href="/code/info/1775.html" target="_blank">RecyclerView实现时光轴</a>
+		        </h3>
+	        	<p class="ptext"><a href="/user_home/zhanghai_ardapp.html" target="_blank" class="user_name">zhanghai_ardapp</a> | 
+	        	<span class="span_text">资源
+	        	<a href="/user_home/resource/zhanghai_ardapp.html" target="_blank" class="a_num">8</a>
+	        	</span>
+	        	</p>
+	      </li>
+	        <li>
+		        <h3>
+		          <span class="fenlei"><img src="/images/tempimg/ziyuan_iocn02.png" width="20" height="21" alt=" "></span>
+		        <a href="/code/info/1774.html" target="_blank">验证码倒计时AS</a>
+		        </h3>
+	        	<p class="ptext"><a href="/user_home/Do_it.html" target="_blank" class="user_name">Do_it</a> | 
+	        	<span class="span_text">资源
+	        	<a href="/user_home/resource/Do_it.html" target="_blank" class="a_num">1</a>
+	        	</span>
+	        	</p>
+	      </li>
+	        <li>
+		        <h3>
+		          <span class="fenlei"><img src="/images/tempimg/ziyuan_iocn02.png" width="20" height="21" alt=" "></span>
+		        <a href="/code/info/1773.html" target="_blank">Volley框架之网络请求和图片加载</a>
+		        </h3>
+	        	<p class="ptext"><a href="/user_home/切Dicky.html" target="_blank" class="user_name">切Dicky</a> | 
+	        	<span class="span_text">资源
+	        	<a href="/user_home/resource/切Dicky.html" target="_blank" class="a_num">6</a>
+	        	</span>
+	        	</p>
+	      </li>
+	    </ul>
+  </div>
+  <div class="main_center news_img_list">
+			     	<dl class="clearfix">
+				      <dt class="left_img">
+				        <div class="classification"> <a href="/essay/essayList/3.html" target="_blank">开发阶段</a> </div>
+				        <div class="img_box"><a href="/essay/essayInfo/7675.html" target="_blank"><img src="http://ds.devstore.cn/dev_store/rdc_file/1476501809038/1476501813132.jpg" alt=" "></a></div>
+				      </dt>
+				      <dd>
+				        <h3><a href="/essay/essayInfo/7675.html" target="_blank">哪些常用布局是无法用纯 CSS 实现的？</a></h3>
+				        <p>CSS发展到今天，毫不夸张的说，已经成为最广泛的布局描述语言。</p>
+				      </dd>
+				    </dl>
+			     	<dl class="clearfix">
+				      <dt class="left_img">
+				        <div class="classification"> <a href="/essay/essayList/4.html" target="_blank">运营阶段</a> </div>
+				        <div class="img_box"><a href="/essay/essayInfo/7674.html" target="_blank"><img src="http://ds.devstore.cn/dev_store/rdc_file/1476501077817/1476501119803.png" alt=" "></a></div>
+				      </dt>
+				      <dd>
+				        <h3><a href="/essay/essayInfo/7674.html" target="_blank">如何流水化打造微信爆款文</a></h3>
+				        <p>说说打造爆款文的实操方法和简单思路。</p>
+				      </dd>
+				    </dl>
+			     	<dl class="clearfix">
+				      <dt class="left_img">
+				        <div class="classification"> <a href="/new/list/12-1.html" target="_blank">创业故事</a> </div>
+				        <div class="img_box"><a href="/new/newInfo/26249.html" target="_blank"><img src="http://ds.devstore.cn/dev_store/rdc_file/1476498408357/1476498513951.png" alt=" "></a></div>
+				      </dt>
+				      <dd>
+				        <h3><a href="/new/newInfo/26249.html" target="_blank">十年未盈利 但这个网站却不小心改变了世界</a></h3>
+				        <p>跟大家聊聊YouTube这个神奇的网站吧</p>
+				      </dd>
+				    </dl>
+			     	<dl class="clearfix">
+				      <dt class="left_img">
+				        <div class="classification"> <a href="/essay/essayList/3.html" target="_blank">开发阶段</a> </div>
+				        <div class="img_box"><a href="/essay/essayInfo/7663.html" target="_blank"><img src="http://ds.devstore.cn/dev_store/rdc_file/1476429918173/1476429922673.jpg" alt=" "></a></div>
+				      </dt>
+				      <dd>
+				        <h3><a href="/essay/essayInfo/7663.html" target="_blank">REACT.JS 最佳实践(2016)</a></h3>
+				        <p>2016年应该是React逐渐走向成熟的一年,让我们一起来看看国外的开发者们都总结了哪些"最佳实践"。</p>
+				      </dd>
+				    </dl>
+			     	<dl class="clearfix">
+				      <dt class="left_img">
+				        <div class="classification"> <a href="/essay/essayList/4.html" target="_blank">运营阶段</a> </div>
+				        <div class="img_box"><a href="/essay/essayInfo/7660.html" target="_blank"><img src="http://ds.devstore.cn/dev_store/rdc_file/1476415027288/1476415037553.png" alt=" "></a></div>
+				      </dt>
+				      <dd>
+				        <h3><a href="/essay/essayInfo/7660.html" target="_blank">疲于生产内容？你该试试栏目化运营</a></h3>
+				        <p>本文要讲的就是一个事半功倍的公众号日常运营套路。</p>
+				      </dd>
+				    </dl>
+  </div>
+    <div class="main_right service">
+      <h2 class="title"><a href="/user_center/addRecommendPage" target="_blank">我要推荐</a><strong>服务速递</strong></h2>
+      <div class="service_list">
+             <dl class="clearfix">
+	          <dt><a href="/service/serviceDetail/4352.html" target="_blank"><img src="http://ds.devstore.cn/dev_store/service_class/logo_image/1473151179207.jpg" alt=" "></a></dt>
+	          <dd>
+	             <p class="p01"><a href="/service/newproductList/cla7-cid36.html" target="_blank">[广告聚合]</a></p>
+                 <p class="p02"><a href="/service/serviceDetail/4352.html" target="_blank">AdBana移动广告聚合优化平台</a> </p>
+	          </dd>
+	        </dl>
+             <dl class="clearfix">
+	          <dt><a href="/service/serviceDetail/4344.html" target="_blank"><img src="http://ds.devstore.cn/dev_store/service_class/logo_image/1472110075244.jpg" alt=" "></a></dt>
+	          <dd>
+	             <p class="p01"><a href="/service/newproductList/cla45-cid62.html" target="_blank">[性能监测]</a></p>
+                 <p class="p02"><a href="/service/serviceDetail/4344.html" target="_blank">网易云捕</a> </p>
+	          </dd>
+	        </dl>
+             <dl class="clearfix">
+	          <dt><a href="/service/serviceDetail/4342.html" target="_blank"><img src="http://ds.devstore.cn/dev_store/service_class/logo_image/1472010838803.jpg" alt=" "></a></dt>
+	          <dd>
+	             <p class="p01"><a href="/service/newproductList/cla39-cid75.html" target="_blank">[开发学习网站]</a></p>
+                 <p class="p02"><a href="/service/serviceDetail/4342.html" target="_blank">DockerInfo</a> </p>
+	          </dd>
+	        </dl>
+             <dl class="clearfix">
+	          <dt><a href="/service/serviceDetail/4331.html" target="_blank"><img src="http://ds.devstore.cn/dev_store/service_class/logo_image/1471849350266.jpg" alt=" "></a></dt>
+	          <dd>
+	             <p class="p01"><a href="/service/newproductList/cla4-cid37.html" target="_blank">[云存储]</a></p>
+                 <p class="p02"><a href="/service/serviceDetail/4331.html" target="_blank">MaxLeap</a> </p>
+	          </dd>
+	        </dl>
+             <dl class="clearfix">
+	          <dt><a href="/service/serviceDetail/4330.html" target="_blank"><img src="http://ds.devstore.cn/dev_store/service_class/logo_image/1470905509649.jpg" alt=" "></a></dt>
+	          <dd>
+	             <p class="p01"><a href="/service/newproductList/cla4-cid70.html" target="_blank">[服务类API]</a></p>
+                 <p class="p02"><a href="/service/serviceDetail/4330.html" target="_blank">快递鸟</a> </p>
+	          </dd>
+	        </dl>
+             <dl class="clearfix">
+	          <dt><a href="/service/serviceDetail/4319.html" target="_blank"><img src="http://ds.devstore.cn/dev_store/service_class/logo_image/1469450266053.jpg" alt=" "></a></dt>
+	          <dd>
+	             <p class="p01"><a href="/service/newproductList/cla4-cid74.html" target="_blank">[即时通讯]</a></p>
+                 <p class="p02"><a href="/service/serviceDetail/4319.html" target="_blank">yun2win</a> </p>
+	          </dd>
+	        </dl>
+             <dl class="clearfix">
+	          <dt><a href="/service/serviceDetail/4318.html" target="_blank"><img src="http://ds.devstore.cn/dev_store/service_class/logo_image/1469449754998.jpg" alt=" "></a></dt>
+	          <dd>
+	             <p class="p01"><a href="/service/newproductList/cla4-cid56.html" target="_blank">[移动短信]</a></p>
+                 <p class="p02"><a href="/service/serviceDetail/4318.html" target="_blank">邦之信短信平台</a> </p>
+	          </dd>
+	        </dl>
+             <dl class="clearfix">
+	          <dt><a href="/service/serviceDetail/4311.html" target="_blank"><img src="http://ds.devstore.cn/dev_store/service_class/logo_image/1468487004061.jpg" alt=" "></a></dt>
+	          <dd>
+	             <p class="p01"><a href="/service/newproductList/cla4-cid38.html" target="_blank">[云计算]</a></p>
+                 <p class="p02"><a href="/service/serviceDetail/4311.html" target="_blank">乐视云</a> </p>
+	          </dd>
+	        </dl>
+             <dl class="clearfix">
+	          <dt><a href="/service/serviceDetail/4310.html" target="_blank"><img src="http://ds.devstore.cn/dev_store/service_class/logo_image/1468398025486.jpg" alt=" "></a></dt>
+	          <dd>
+	             <p class="p01"><a href="/service/newproductList/cla4-cid55.html" target="_blank">[快速开发]</a></p>
+                 <p class="p02"><a href="/service/serviceDetail/4310.html" target="_blank">爱码哥移动开发平台</a> </p>
+	          </dd>
+	        </dl>
+      </div>
+    </div>
+  <div class="clear"></div>
+</div>
+<!--end综合区域--> 
+<!--推广项目-->
+<div class="promotion_project">
+			<div class="promotion_project_title"><span class="span_text"><span>最懂移动互联网的产品管理系统</span></span></div>
+			<p class="manage-sys-text manage-sys-question">为什么你看了那么多干货，却依然成不了<span class="blue-blod">大咖</span>？</p>
+			<p class="manage-sys-text manage-sys-answer">因为大咖都使用<span class="blue-blod">iClap</span>在项目中滚打</p>
+			<ul class="manage-sys-func clearfix">
+				<li class="func-item">
+					<div class="func-item-icon icon-func-postil"></div>
+					<p class="func-item-text">批注工具</p>
+				</li>
+				<li class="func-item">
+					<div class="func-item-icon icon-func-proto"></div>
+					<p class="func-item-text">原型图工具</p>
+				</li>
+				<li class="func-item">
+					<div class="func-item-icon icon-func-ps"></div>
+					<p class="func-item-text">PS同步工具</p>
+				</li>
+				<li class="func-item">
+					<div class="func-item-icon icon-func-yunFile"></div>
+					<p class="func-item-text">个人云盘</p>
+				</li>
+				<li class="func-item">
+					<div class="func-item-icon icon-func-version"></div>
+					<p class="func-item-text">版本管理</p>
+				</li>
+				<li class="func-item">
+					<div class="func-item-icon icon-func-server"></div>
+					<p class="func-item-text">第三方服务</p>
+				</li>
+			</ul>
+			<a class="comeon-btn" href="http://www.iclap.cn">我要成为大咖</a>
+</div>
+
+	<div class="links">
+		<div class="left">友情链接：</div>
+		<div class="content">
+				<a href="http://www.ijiami.cn/"  target="_blank">爱加密</a>
+				<a href="http://www.safedog.cn/"  target="_blank">安全狗</a>
+				<a href="http://www.php100.com/ "  target="_blank">PHP100中文网</a>
+				<a href="http://www.mtedu.com/"  target="_blank">馒头商学院</a>
+				<a href="http://www.getui.com/" rel="nofollow" target="_blank">个推推送</a>
+				<a href="http://www.oneapm.com" rel="nofollow" target="_blank">OneAPM</a>
+				<a href="http://www.kaikeba.com/"  target="_blank">产品经理培训</a>
+				<a href="http://www.wyzc.com/" rel="nofollow" target="_blank">我赢职场</a>
+				<a href="https://www.jpush.cn/" rel="nofollow" target="_blank">极光推送</a>
+				<a href="http://www.xfyun.cn/"  target="_blank">讯飞开放平台</a>
+				<a href="http://www.ljsdk.com/" rel="nofollow" target="_blank">棱镜</a>
+				<a href="http://www.zbj.com/uisheji/"  target="_blank">猪八戒网</a>
+				<a href="http://www.chanpin100.com/"  target="_blank">产品经理</a>
+				<a href="http://aso114.com/"  target="_blank">ASO</a>
+				<a href="http://www.yuantuan.com/"  target="_blank">猿团</a>
+				<a href="http://developer.huawei.com/cn/ict/"  target="_blank">华为开发者社区</a>
+				<a href="http://www.wqdian.com/"  target="_blank">微企点</a>
+				<a href="http://yuyin.baidu.com/"  target="_blank">百度语音开放平台</a>
+				<a href="http://www.wex5.com/"  target="_blank">Wex5</a>
+				<a href="http://www.lianmeng.la/"  target="_blank">广告联盟评测</a>
+			<a href="/partner.html" rel="nofollow" class="more" target="_blank">更多&gt;&gt;</a>
+		</div>
+	</div>
+<!--end友情链接--> 
+<!--底部-->
+<div id="footer">
+	<div class="footer">
+		<dl class="dl01">
+			<dt>内容专区</dt>
+			<dd>
+				<p>
+					<a href="/new/newsIndex.html" target="_blank">DEV资讯</a>
+				</p>
+				<p>
+					<a href="/data/home.html" target="_blank">DEV数据</a>
+				</p>
+				<p>
+					<a href="/service/productHome.html" target="_blank">工具|服务</a>
+				</p>
+				<p>
+					<a href="/essay/essayHome.html" target="_blank">DEV文章</a>
+				</p>
+				<p>
+					<a href="/question/home.html" target="_blank">DEV问答</a>
+				</p>
+			</dd>
+		</dl>
+		<dl class="dl02">
+			<dt>DevStore</dt>
+			<dd>
+				<p>
+					<a href="/aboutMe.html" rel="nofollow" target="_blank">关于DevStore</a>
+				</p>
+				<p>
+					<a href="/joinUs.html" rel="nofollow" target="_blank">加入DevStore</a>
+				</p>
+				<p>
+					<a href="/partner.html" rel="nofollow" target="_blank">合作伙伴</a>
+				</p>
+				<p>
+					<a href="/copyrightNotice.html" rel="nofollow" target="_blank">版权声明</a>
+				</p>
+				<p>
+					<a href="/map.html" target="_blank">网站地图</a>
+				</p>
+			</dd>
+		</dl>
+		<dl class="dl03">
+			<dt>联系我们</dt>
+			<dd class="share_group clearfix">
+				<a href="http://weibo.com/devstore" rel="nofollow" title="新浪微博" target="_blank"><img src="/images/tempimg/weibo.png" alt=" "></a>
+				<a href="http://t.qq.com/devstorecn" rel="nofollow" title="腾讯微博" target="_blank"><img src="/images/tempimg/qqweibo.png" alt=" "></a>
+				<a href="javascript:;" class="erweima_btn"><img src="/images/tempimg/qr_code.png" alt=" "></a>
+				<div class="footer_weixin_content" style="display:none;">
+					<img  src="/images/tempimg/weixin_img.jpg" title="微信号" alt="微信号"> <span>微信号：DevStore</span>
+				</div>
+			</dd>
+			<dd>
+				<p>
+					客服QQ：1931358744
+				</p>
+				<p>
+					开发者交流群：367554077
+				</p>
+				<p>
+					DevStore技术交流群2：178507424
+				</p>
+				<p>
+					运营交流群：344895847
+				</p>
+				<p>
+					产品交流群：58064712
+				</p>
+			</dd>
+		</dl>
+		<dl class="dl04">
+			<dt>版权所有</dt>
+			<dd>
+				<p>深圳尺子科技有限公司</p>
+				<p>深圳市南山区蛇口网谷万海大厦C栋504</p>
+				<span class="statistical">
+				<a href="/aboutBusinessCertificate.html" class="bei" rel="noFollow">运营许可证编号：粤B2-20150510 &nbsp;</a>
+				</span>
+				<p>Copyright © 2015 DevStore. All Rights Reserved</p>
+				<span class="statistical">
+				<a href="http://www.miibeian.gov.cn/" class="bei" target="_blank" rel="noFollow">粤ICP备14019002号-1 &nbsp;</a>
+				<script type="text/javascript">
+				var cnzz_protocol = (("https:" == document.location.protocol) ? " https://"
+						: " http://");
+				document
+						.write(unescape("%3Cspan id='cnzz_stat_icon_1000287757'%3E%3C/span%3E%3Cscript src='"
+								+ cnzz_protocol
+								+ "s23.cnzz.com/z_stat.php%3Fid%3D1000287757%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+			<script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "//hm.baidu.com/hm.js?610655c64942d12bac3a75ae978a231b";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+			</script>
+			</span>
+			</dd>
+		</dl>
+		<div class="clear"></div>
+	</div>
+</div>
+<p class="remind_timeout"></p>
+<script type="text/javascript">
+	function remind_cion(text) {
+		$(".remind_timeout").html(text);
+		$(".remind_timeout").show();
+		setTimeout(function() {
+			$('.remind_timeout').hide(500);
+		}, 1800);
+	}
+	var a_width = document.body.clientWidth;
+	var b_left = a_width / 2 - 112;
+	$(".remind_timeout").css("left", b_left + "px");
+
+	window.onresize = function() {
+		var a_width = document.body.clientWidth;
+		var b_left = a_width / 2 - 112;
+		$(".remind_timeout").css("left", b_left + "px");
+	}
+	$(function() {
+		var from = "?from=" + escape(window.location.href);
+		$("#exitBtn").attr("href", $("#exitBtn").attr("href") + from);
+		//底部二维码
+		$(".erweima_btn").hover(function(){
+			$(".footer_weixin_content").show();
+		},function(){
+			$(".footer_weixin_content").hide();
+		})
+	});
+</script>
+<link rel="stylesheet" href="/css/win_popup.css">
+<script type="text/javascript" src="/js/user_IM.js"></script><script type="text/javascript">
+var userViewStatObjectId=null;
+var userViewStatObjectType=null;
+var statId=null;
+//$(function(){
+//	if(userViewStatObjectId!=null
+//			&& userViewStatObjectType!=null){
+//		statUserView();
+//	}
+//});
+function statUserView() {
+	var result;
+	$.ajax({
+		type : "POST",
+		dataType: 'JSONP',
+		url : 'http://m.devstore.cn/user_stat/userViewStat',
+		async : false,
+		data : {objectId:userViewStatObjectId,objectType:userViewStatObjectType,statId:statId},
+		jsonp: "userViewStatResult",//服务端用于接收callback调用的function名的参数
+		jsonpCallback:"userViewStatResult",//callback的function名称
+		success : function(data) {
+			if(data.status==1){
+				statId=data.statId;
+				window.onbeforeunload = statUserView;
+				setTimeout(function(){
+					statUserView();
+				},1800000);
+			}
+		}
+	});
+	return result;
+}
+</script><!--end底部--> 
+<!--站内分享-->
+<input type="hidden" id="shareid" value="" btype="" buri="" btitle="" isrequest="1" />
+<div class="glo_station_share" style="display:none;"> <span class="glo_weixin_close">&nbsp;</span>
+  <div class="share_input">
+    <input type="text" id="essay-user" style="width:203px;" >
+  </div>
+  <div class="share_content">
+    <ul class="clearfix">
+    </ul>
+    <div> <a href="javascript:;" id="shareBtn">分享</a> </div>
+  </div>
+</div><div class="ui-popup loginPopupDiv">
+	<div class="ui-popup_box">
+		<div class="pop_close_box">
+			<a href="javascript:;" class="pop_close">&nbsp;</a>
+		</div>
+		<div class="popup_login">
+			<h2>DevStore用户登录</h2>
+			<ul class="popup_login_content clearfix">
+				<li><label>帐号：</label>
+				<span class="validation_style01" id="loginMsg"></span>
+				<input id="userName" name="userName" value="" placeholder="用户名/邮箱" type="text"></li>
+				<li><label>密码：</label> <input id="pwd" name="pwd" type="password" placeholder="请输入密码"></li>
+			</ul>
+			<div class="popup_login_button_box">
+				<input type="button" class="login_button" id="loginSubmitButton" value="登录">
+			</div>
+			<div class="register_p">
+				<a href="/user/backPwd1" rel="nofollow" class="forget_a">忘记密码？</a>还没有DevStore帐号？<a href="/user/regPage.html" rel="nofollow" title="立即注册">立即注册&gt;&gt;</a>
+			</div>
+			<div class="qq_login">
+				<span>快捷登录：</span> <a href="/user/qqLogin" rel="nofollow" class="qq_icon qqLoginA">QQ账号登录</a> <a href="/user/weiboLogin" rel="nofollow" class="sina_icon weiboLoginA">微博快捷登录</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="ui-mask"></div>
+
+<!--弹框-->
+<link rel="stylesheet" type="text/css" href="/css/popup.css?data=2015-05-15"/>
+<script type="text/javascript" src="/js/popup.js"></script><script type="text/javascript">
+    var joinProjectId;
+    function checkLogin(){
+    	var result;
+    	$.ajax({
+    		type: "POST",
+    		dataType: "json",
+    		url: '/user_operate/checkLogin',
+    		async: false,
+    		data: {},
+    		success: function(data) {
+    			result=data;
+    		}
+    	});
+    	return result;
+    }
+    $(function(){
+        //$(".showbox01").click(function(){
+          //  $(".ui-popup01").popupFn();
+            // $(".ui-mask").show();
+        //});
+        $("body").on("click",".showbox01",function(){
+        	var isLogin=checkLogin();
+        	if(isLogin.status==1){
+           		$(".ui-popup01").popupFn();
+        	} else{
+        		showLoginDiv(function(){
+        			location.reload(true);
+        		});
+        	}
+        });
+        $(".showbox02").click(function(){
+
+            var result = Apollo.get("/project/getUserInfo",[]);
+            if(result.success){
+                var user = result.val;
+                $('#fuck-username').text(user.user_name);
+                $('#fuck-realname').val(user.real_name);
+                $('#fuck-jobName').val(user.userJobName);
+                $('#fuck-tel').val(user.tel);
+                $(".ui-popup02").popupFn();
+            }else{
+                switch (result.code){
+                    case -101:
+                        $(".ui-popup02").fadeOut(2000);
+                        $('.ui-mask').fadeOut(2000);
+                        showLoginDiv(function(){});
+                        console.info('用户未登陆');
+                        break;
+                    case -1:
+                        console.info('获取失败');
+                        break;
+                }
+            }
+
+
+        });
+    })
+</script>
+<!-- 创建项目 -->
+<div class="ui-popup ui-popup01">
+    <div class="ui-popup_box">
+        <div class="pop_close_box"><a href="javascript:;" class="pop_close">&nbsp;</a></div>
+        <!-- 创建项目查询 -->
+        <div class="popup_project_chaxun">
+            <div class="chaxun_title"><strong>创建项目</strong> &nbsp; <span>为避免重复创建项目，请您创建前查询是否已被收录哦~</span></div>
+            <div class="chaxun_content">
+                <input type="text" id="search-project" name="" value="" style="width:100%;" placeholder="项目名称一旦创建将无法修改">
+            </div>
+
+            <div class="chaxun_jieguo01" > DevStore欢迎您的加入~！ </div>
+            <div class="chaxun_jieguo02" style="display:none;" >
+                <div class="div01 clearfix"><strong>该项目已被创建</strong> <a href="javascript:" id="join_proj" class="showbox02" >加入项目</a></div>
+                <div class="div02 clearfix" id="div_html_project">
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="chaxun_jieguo03" style="display:none;"><span><strong>该项目还未被创建</strong> <a id="a_create_href" href="javascript:;" >创建项目</a></span> </div>
+        </div>
+    </div>
+</div>
+<div class="ui-popup ui-popup02">
+    <div class="ui-popup_box">
+        <div class="pop_close_box"><a href="javascript:;" class="pop_close">&nbsp;</a></div>
+        <!-- 申请项目 -->
+        <div class="popup_form" style=" width:520px;">
+            <div class="title">申请加入项目</div>
+            <table width="100%" border="0" class="popup_form_table">
+                <tr class="tr01">
+                    <td width="98"><span class="name">用户ID</span></td>
+                    <input type="hidden" id="userId" value="">
+                    <td><span class="span01" id="fuck-username"></span></td>
+                </tr>
+                <tr>
+                    <td><span class="name">真实姓名</span></td>
+                    <td><input type="text" class="input01" id="fuck-realname" name="" value="" style="width:300px;" placeholder="请填写您的真实姓名"></td>
+                </tr>
+                <tr>
+                    <td><span class="name">职位</span></td>
+                    <td><input type="text" class="input01" id="fuck-jobName" name="" value="" style="width:300px;" placeholder="请正确填写您的官方职位"></td>
+                </tr>
+                <tr>
+                    <td><span class="name">电话</span></td>
+                    <td><input type="text" class="input01" id="fuck-tel" name="" value="" style="width:300px;" placeholder="请正确填写您的常用电话"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><div class="popup_submit_box" style="margin-right:100px;"><a href="javascript:joinProject()" class="popup_submit">提交申请</a></div></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+<div class="ui-mask"></div><style type="text/css">
+#kinMaxShow .KMSPrefix_kinMaxShow_button{ width:1132px; right: 0%; left:0px; bottom: 45px; position: absolute; overflow:visible; z-index: 2; _zoom: 1; height:1px; }
+#kinMaxShow .KMSPrefix_kinMaxShow_button li { position:absolute; width: 40px; height: 40px; right:-40px; top:-40px; line-height: 40px; font-size: 10px; background: url(/images/banner/button.png) no-repeat -247px 0; border: 0; text-align: center; font-family: Verdana; float:none;
+cursor: pointer; -webkit-text-size-adjust: none; }
+#kinMaxShow .KMSPrefix_kinMaxShow_button li.KMSPrefix_kinMaxShow_focus{
+top:-40px; right:-40px; background: url(../images/banner/button.png) no-repeat -247px -40px; }
+#kinMaxShow .KMSPrefix_kinMaxShow_button li:first-child  { top:-40px; left:-40px; background: url(/images/banner/button.png) no-repeat 0px 0; }
+#kinMaxShow .KMSPrefix_kinMaxShow_button li.KMSPrefix_kinMaxShow_focus:first-child  { top:-40px; left:-40px; background: url(/images/banner/button.png) no-repeat 0px -40px; }
+</style>
+
+<!--<div class="drop"></div>-->
+</body>
+</html>

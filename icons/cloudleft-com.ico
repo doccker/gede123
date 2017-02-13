@@ -1,0 +1,204 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link type="text/css" media="all" href="http://www.cloudleft.com/wp-content/cache/autoptimize/css/autoptimize_1993b27a167922ec1e51d840dbbdbc4d.css" rel="stylesheet" /><title>云左科技 - 高性价比日本虚拟主机,日本VPS、Linode虚拟主机、Linode合租、Linode代购</title><link rel="shortcut icon" href="/statics/2015/icons/favicon.png" /> <!--[if IE]> <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script> <script src="http://libs.useso.com/js/respond.js/1.4.2/respond.min.js"></script> <![endif]--><meta name="description" itemprop="description" content="云左科技专注于高性价比海外优质主机" /><meta name="keywords" itemprop="keywords" content="云左科技,云左主机,Linode虚拟主机,Linode合租,Linode代购,日本VPS,日本虚拟主机" /><link rel='next' href='http://www.cloudleft.com/page/2' /><link rel="canonical" href="http://www.cloudleft.com/" />  <script type="text/javascript">window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"wpemoji":"http:\/\/www.cloudleft.com\/wp-includes\/js\/wp-emoji.js?ver=4.2.2","twemoji":"http:\/\/www.cloudleft.com\/wp-includes\/js\/twemoji.js?ver=4.2.2"}};
+			( function( window, document, settings ) {
+	var src, ready;
+
+	/**
+	 * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+	 * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param type {String} Whether to test for support of "simple" or "flag" emoji.
+	 * @return {Boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var canvas = document.createElement( 'canvas' ),
+			context = canvas.getContext && canvas.getContext( '2d' );
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		if ( type === 'flag' ) {
+			/*
+			 * This works because the image will be one of three things:
+			 * - Two empty squares, if the browser doesn't render emoji
+			 * - Two squares with 'G' and 'B' in them, if the browser doesn't render flag emoji
+			 * - The British flag
+			 *
+			 * The first two will encode to small images (1-2KB data URLs), the third will encode
+			 * to a larger image (4-5KB data URL).
+			 */
+			context.fillText( String.fromCharCode( 55356, 56812, 55356, 56807 ), 0, 0 );
+			return canvas.toDataURL().length > 3000;
+		} else {
+			/*
+			 * This creates a smiling emoji, and checks to see if there is any image data in the
+			 * center pixel. In browsers that don't support emoji, the character will be rendered
+			 * as an empty square, so the center pixel will be blank.
+			 */
+			context.fillText( String.fromCharCode( 55357, 56835 ), 0, 0 );
+			return context.getImageData( 16, 16, 1, 1 ).data[0] !== 0;
+		}
+	}
+
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	settings.supports = {
+		simple: browserSupportsEmoji( 'simple' ),
+		flag:   browserSupportsEmoji( 'flag' )
+	};
+
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	if ( ! settings.supports.simple || ! settings.supports.flag ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );</script> <script type="text/javascript">var duoshuoQuery = {"short_name":"idcphpclubs","sso":{"login":"http:\/\/www.cloudleft.com\/wp-login.php?action=duoshuo_login","logout":"http:\/\/www.cloudleft.com\/wp-login.php?action=logout&_wpnonce=1e81051b4e"},"theme":"default","stylePatch":"wordpress\/\u4e91\u5de6\u79d1\u6280"};
+duoshuoQuery.sso.login += '&redirect_to=' + encodeURIComponent(window.location.href);
+duoshuoQuery.sso.logout += '&redirect_to=' + encodeURIComponent(window.location.href);</script> <script type="text/javascript" src="http://static.duoshuo.com/embed.js" charset="UTF-8" async="async"></script> <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.cloudleft.com/xmlrpc.php?rsd" /><link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.cloudleft.com/wp-includes/wlwmanifest.xml" /><meta name="generator" content="WordPress 4.2.2" /></head><body><div class="top-bar"><div class="row"><div class="col-sm-3">云左科技-专注海外优质高速主机!</div><div class="col-sm-9"><div class="topnav"><ul id="menu-%e9%a1%b6%e9%83%a8%e8%be%85%e5%af%bc%e8%88%aa" class=""><li id="menu-item-533" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-533"><a href="###"><i class="fa fa-phone-square"></i>400热线电话：4000-300-540</a></li><li id="menu-item-492" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-492"><a title="11" href="http://www.cloudleft.com/category/notice"><i class="fa fa-bullhorn"></i>官方公告</a></li><li id="menu-item-491" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-491"><a href="http://blog.cloudleft.com"><i class="fa fa-cloud"></i>云左博客</a></li><li id="menu-item-490" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-490"><a href="http://www.cloudleft.com/help"><i class="fa fa-lightbulb-o"></i>帮助中心</a></li></ul></div></div></div></div><div class="top"><div class="row"><div class="col-sm-3"><div class="logo"> <a href="/"><img src="/statics/2015/images/logo.png" alt="云左科技" /></a></div></div><div class="col-sm-9"><nav id="desktop-menu"><ul id="navigation" class="sf-menu"><li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-24"><a href="http://www.cloudleft.com">首页</a></li><li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25"><a href="#">产品中心</a><ul class="sub-menu"><li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="http://www.cloudleft.com/linode-host">Linode云虚拟主机</a></li><li id="menu-item-696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-696"><a href="http://www.cloudleft.com/kr-host">韩国云虚拟主机</a></li><li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="http://www.cloudleft.com/backup-host">VPS自动备份专用主机</a></li><li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="http://www.cloudleft.com/linode-vps">Linode东京VPS</a></li><li id="menu-item-615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-615"><a href="http://www.cloudleft.com/usa-vps">美国西雅图VPS</a></li></ul></li><li id="menu-item-776" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-776"><a href="http://my.cloudleft.com/domainchecker.php">域名注册</a></li><li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38"><a href="#">合作代理</a><ul class="sub-menu"><li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="http://www.cloudleft.com/aff">推介联盟</a></li><li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a href="http://www.cloudleft.com/agent">代理招商</a></li></ul></li><li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="http://www.cloudleft.com/about-us">关于我们</a></li><li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a href="http://my.cloudleft.com/"><i class="fa fa-user"></i> 客户中心</a></li></ul> </nav></div></div></div><div class="slidercontainer"><div id="mainslider" class="owl-carousel"><div class="item"><div class="slidecaption"><h2>云左主机2015新版官网正式上线</h2><h4>每一次改变都是为了更好的前行</h4><p style="font-size:56px"><i class="fa fa-html5" STYLE="COLOR:#f96841"></i> + <i class="fa fa-wordpress" STYLE="COLOR:#32b0e0"></i></p></div> <img src="/statics/2015/images/slider/1.jpg" alt="" /></div><div class="item"><div class="slidecaption"><h2>中高端站点首选Linode云虚拟主机</h2><h4>高速 稳定 免备案 SSD硬盘 不限流量 免费网站搬家</h4><p><a class="btn btn-slide" href="/linode-host">查看主机套餐</a></p></div> <img src="/statics/2015/images/slider/2.jpg"/></div><div class="item"><div class="slidecaption"><h2 style="color:#DE6262">美国西雅图VPS</h2><h4>独立IP · SSD-CACHE 硬盘 · 中文主机管理面板 · 性价比超高</h4><p><a class="btn btn-slide" href="/usa-vps">月付9折 · 年付8折</a></p></div> <img src="/statics/2015/images/slider/usa-vps-banner.jpg"/></div><div class="item"><div class="slidecaption"><h2>韩国云虚拟主机</h2><H4>韩国最大的国际电信运营商 · 低延迟 · 不限流量 · SSD硬盘 · 免备案</H4><p><a class="btn btn-slide" href="/kr-host">七折促销中 查看详情</a></div> <img src="/statics/2015/images/slider/slider-krhost.jpg" /></div></div><div class="row"><div class="col-sm-12"><div id="mainslider-nav" class="owl-carousel"><div class="item"><i class="fa fa-refresh"></i>云左2015新版官网上线</div><div class="item"><i class="fa fa-cloud"></i>Linode云虚拟主机</div><div class="item"><i class="fa fa-server"></i>超高性价比美国西雅图VPS</div><div class="item"><i class="fa fa-users"></i>韩国云虚拟主机七折促销</div></div></div></div></div> <section class="features"><div class="row"><div class="col-sm-12"><h2>为什么选择我们</h2> <span>更少的维护时间, 更稳定的性能和更完美的在线率. 我们以高在线率为豪, 贴心的管家式售后技术支持服务，让你建站更省心</span></div></div><div class="row spacing-70"><div class="col-sm-4"><div class="feature wow zoomIn" data-wow-delay="0.2s"> <img src="/statics/2015/images/rocket.png" alt="" /><h4>超高性价比</h4><p>我们的定位是性价比, 保证主机性能的同时, 用最低的价格享受国际顶级主流网络接入商的产品，让你轻松应付各种建站和大数据带宽需求</p></div></div><div class="col-sm-4"><div class="feature wow zoomIn" data-wow-delay="0.4s"> <img src="/statics/2015/images/cpanel.png" alt="" /><h4>友好的中文控制面板</h4><p>除了业内主机控制面板的传统功能外，我们也在进一步的二次开发加入更多更实用的功能，行业内有的功能我们更好用，人无我有,人有我优</p></div></div><div class="col-sm-4"><div class="feature wow zoomIn" data-wow-delay="0.6s"> <img src="/statics/2015/images/backup.png" alt="" /><h4>可靠的异地备份</h4><p>免费为用户提供网站每天的快照备份、每天的增量备份、每三天的完整异地备份，确保您的数据出现意外也能轻松通过备份服务器恢复数据</p></div></div><div class="blank50"></div><div class="col-sm-4"><div class="feature wow zoomIn" data-wow-delay="0.8s"> <img src="/statics/2015/images/datamove.png" alt="" /><h4>贴心的数据迁移</h4><p>我们为每一位客户提供免费的数据迁移、网站代搬家服务，无论您使用任何网站程序，我们都将在极短的时间内完成整体数据的迁移</p></div></div><div class="col-sm-4"><div class="feature wow zoomIn" data-wow-delay="1.0s"> <img src="/statics/2015/images/refund.png" alt="" /><h4>7天无条件退款</h4><p>如果您购买服务之后发现不能完全满足您的需求，7天之内您可以随时和我们的财务取得联系要求退款，我们核实订单详情后立即为您执行无条件退款</p></div></div><div class="col-sm-4"><div class="feature wow zoomIn" data-wow-delay="1.2s"> <img src="/statics/2015/images/services.png" alt="" /><h4>强大的售后支持</h4><p>任何时候只要您发现服务器或网络存在异常, 您均可以登入客户中心提交服务单, 或者联系在线客服, 收到后会立即响应处理</p></div></div></div> </section> <section class="pricingtables vps"><div class="row"><div class="col-sm-12"><h2>Linode云虚拟主机套餐</h2><p>测试IP：<span class="label label-info" style="font-weight: normal;">106.187.96.148</span> 客户网站实测： <a href="http://blog.huangweipeng.org/" rel="nofollow" target="_blank"><span class="label label-success" style="font-weight: normal;">http://blog.huangweipeng.org</span></a> &nbsp;&nbsp; <a href="http://bestcherish.com" rel="nofollow" target="_blank"><span class="label label-success" style="font-weight: normal;">http://bestcherish.com</span></a>&nbsp;&nbsp; <a href="https://wuah.cn/" rel="nofollow" target="_blank"><span class="label label-success" style="font-weight: normal;">https://wuah.cn/</span></a></p><p><span class="red"><i class="fa fa-heart"></i> 温馨提醒：使用日本/韩国主机的客户，主机速度本身已经很快，请勿使用"百度云加速"，特别是在域名没有备案的情况下，会变慢！<br>(百度云针对未备案域名的加速线路：国内访客—&gt;美国—&gt;韩国/日本服务器)</span></p></div></div><div class="row spacing-40"><div class="col-sm-15 wow zoomIn" data-wow-delay="0.2s"><div class="panel panel-info"><div class="panel-heading"><h3 class="text-center">入门型</h3></div><div class="panel-body text-center"><h4>￥99</h4> <span class="per">/ 年</span></div><ul class="text-center"><li><strong>600MB</strong> 磁盘容量</li><li><strong>100MB</strong> Mysql数据库</li><li><strong>不限</strong>流量</li><li><strong>2M</strong> 独享带宽</li><li>可创建<strong> 3 </strong>个独立站点</li><li>可创建<strong> 3 </strong>个数据库</li><li><span class="red">PHP版本自由切换(5.2-5.6)</span></li><li><strong>99%</strong> 在线率</li><li>东京机房</li></ul><div class="panel-footer"> <a class="btn btn-lg btn-pricetable" href="http://my.cloudleft.com/cart.php?a=add&pid=2">立即开通</a></div></div></div><div class="col-sm-15 wow zoomIn" data-wow-delay="0.4s"><div class="panel panel-info"><div class="panel-heading"><h3 class="text-center">标准型</h3></div><div class="panel-body text-center"><h4>￥169</h4> <span class="per">/ 年</span></div><ul class="text-center"><li><strong>1GB</strong> 磁盘容量</li><li><strong>250MB</strong> Mysql数据库</li><li><strong>不限</strong>流量</li><li><strong>2.5M</strong> 独享带宽</li><li>可创建<strong> 5 </strong>个独立站点</li><li>可创建<strong> 5 </strong>个数据库</li><li><span class="red">PHP版本自由切换(5.2-5.6)</span></li><li><strong>99%</strong> 在线率</li><li>东京机房</li></ul><div class="panel-footer"> <a class="btn btn-lg btn-pricetable" href="http://my.cloudleft.com/cart.php?a=add&pid=3">立即开通</a></div></div></div><div class="col-sm-15 wow zoomIn" data-wow-delay="0.6s"><div class="panel panel-info"><div class="panel-heading"><h3 class="text-center">增强型</h3></div><div class="panel-body text-center"><h4>￥269</h4> <span class="per">/ 年</span></div><ul class="text-center"><li><strong>2GB</strong> 磁盘容量</li><li><strong>500MB</strong> Mysql数据库</li><li><strong>不限</strong>流量</li><li><strong>3M</strong> 独享带宽</li><li>可创建<strong> 10 </strong>个独立站点</li><li>可创建<strong> 10 </strong>个数据库</li><li><span class="red">PHP版本自由切换(5.2-5.6)</span></li><li><strong>99%</strong> 在线率</li><li>东京机房</li></ul><div class="panel-footer"> <a class="btn btn-lg btn-pricetable" href="http://my.cloudleft.com/cart.php?a=add&pid=4">立即开通</a></div></div></div><div class="col-sm-15 wow zoomIn" data-wow-delay="0.8s"><div class="panel panel-info"><div class="panel-heading"><h3 class="text-center">尊贵型</h3></div><div class="panel-body text-center"><h4>￥369</h4> <span class="per">/ 年</span></div><ul class="text-center"><li><strong>4GB</strong> 磁盘容量</li><li><strong>1GB</strong> Mysql数据库</li><li><strong>不限</strong>流量</li><li><strong>3.5M</strong> 独享带宽</li><li>可创建<strong> 无限 </strong> 个独立站点</li><li>可创建<strong> 无限 </strong> 个数据库</li><li><span class="red">PHP版本自由切换(5.2-5.6)</span></li><li><strong>99%</strong> 在线率</li><li>东京机房</li></ul><div class="panel-footer"> <a class="btn btn-lg btn-pricetable" href="http://my.cloudleft.com/cart.php?a=add&pid=5">立即开通</a></div></div></div><div class="col-sm-15 wow zoomIn" data-wow-delay="1s"><div class="panel panel-info"><div class="panel-heading"><h3 class="text-center">至尊型</h3></div><div class="panel-body text-center"><h4>￥569</h4> <span class="per">/ 年</span></div><ul class="text-center"><li><strong>8GB</strong> 磁盘容量</li><li><strong>3GB</strong> Mysql数据库</li><li><strong>不限</strong>流量</li><li><strong>5M</strong> 独享带宽</li><li>可创建<strong> 无限 </strong> 个独立站点</li><li>可创建<strong> 无限 </strong> 个数据库</li><li><span class="red">PHP版本自由切换(5.2-5.6)</span></li><li><strong>99%</strong> 在线率</li><li>东京机房</li></ul><div class="panel-footer"> <a class="btn btn-lg btn-pricetable" href="http://my.cloudleft.com/cart.php?a=add&pid=26">立即开通</a></div></div></div></div> </section><div class="testimonials"><div class="row"><div class="col-sm-12"><h3>来自草根站长的评价</h3><p>经得住赞扬,更要受得起批评，自己说的再多顶不上用户的一句真实评价！（云左君为保证网站视觉效果将头像做了替换 *^__^* ）</p><div id="testimonials-carousel" class="owl-carousel"><div class="item"><div class="testimonial-content"><div class="testimonialimg"><img src="/statics/2015/images/user_avatar3.png"/></div><p>当初观察了云左主机的速度才买的，说实话，速度真的很快，我的网站都是秒开</p><div class="whoclient"><h5>大啤酒(dapijiu.com)</h5></div></div></div><div class="item"><div class="testimonial-content"><div class="testimonialimg"><img src="/statics/2015/images/user_avatar2.png"/></div><p>用了一个多月感觉很好,速度和国内主机差不多！</p><div class="whoclient"><h5>我爱资源网</h5></div></div></div><div class="item"><div class="testimonial-content"><div class="testimonialimg"><img src="/statics/2015/images/user_avatar.png"/></div><p>我做的第二个站，用的这里的入门型主机，速度不错。比我以前那个主机强多了，还便宜</p><div class="whoclient"><h5>小月月</h5></div></div></div><div class="item"><div class="testimonial-content"><div class="testimonialimg"><img src="/statics/2015/images/user_avatar3.png"/></div><p style="font-size:15px">上个月买了两个1G的，今天看网站加了个评论功能呢，简单说两句，空间访问真快，跟国内的几乎没区别，售后也很热心，刚开始不会捣鼓伪静态规则，还是客服帮忙弄好的</p><div class="whoclient"><h5>蜘蛛侠951</h5></div></div></div><div class="item"><div class="testimonial-content"><div class="testimonialimg"><img src="/statics/2015/images/user_avatar2.png"/></div><p>支持一下 ，机器挺稳定的，还没碰到过一次打不开的情况，希望继续保持下去</p><div class="whoclient"><h5>明阳blog</h5></div></div></div><div class="item"><div class="testimonial-content"><div class="testimonialimg"><img src="/statics/2015/images/user_avatar3.png"/></div><p>没有高大上的文章，但是有高大上的图片，我彻底服了，只是来晚了，已经买了一个主机。期待下次光临！</p><div class="whoclient"><h5>郑永</h5></div></div></div><div class="item"><div class="testimonial-content"><div class="testimonialimg"><img src="/statics/2015/images/user_avatar2.png"/></div><p>虽然以前也用过海外的主机，但感觉速度上总是不如国内的，这也是必然的。不过在这买的主机确实让我刮目相看，很快很稳定！出乎意料~~~</p><div class="whoclient"><h5>sax</h5></div></div></div></div></div></div></div><div class="enjoy"><div class="container text-center"><h3>是时候，选个好主机了</h3><p>在一起，水滴可以成就海洋。让云左帮你的网站成就更多。</p><a href="http://my.cloudleft.com/register.php">立即加入云左</a></div></div><section class="faq" style="padding:0"><div class="needsupport"><div class="row"><div class="spacing-40 row supportchannels"><div class="col-xs-6 col-md-3 block-grid-item wow zoomIn" data-wow-delay="0.2s"><i class="fa fa-qq"></i><h6>线上咨询</h6> <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=329673018&amp;site=qq&amp;menu=yes" target="_blank"> 闲云</a>    <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=25396199&amp;site=qq&amp;menu=yes" target="_blank"> 小鱼</a>    <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2278235266&amp;site=qq&amp;menu=yes" target="_blank"> 小乐</a></div><div class="col-xs-6 col-md-3 block-grid-item wow zoomIn" data-wow-delay="0.4s"><i class="fa fa-envelope"></i><h6>邮件沟通</h6> <a href="mailto:services@cloudleft.com">Service@cloudleft.com</a></div><div class="col-xs-6 col-md-3 block-grid-item  wow zoomIn" data-wow-delay="0.6s"><i class="fa fa-phone"></i><h6>电话支持</h6> <a>4000-300-540</a></div><div class="col-xs-6 col-md-3 block-grid-item  wow zoomIn" data-wow-delay="0.6s"><i class="fa fa-edit"></i><h6>提交工单</h6> <a>7*24小时待命</a></div></div></div></div> </section><section class="footer"><div class="row"><div class="col-sm-3"><h4>产品中心</h4><ul><li><i class="fa fa-angle-right"></i><a href="/linode-host">Linode云虚拟主机</a></li><li><i class="fa fa-angle-right"></i><a href="/kr-host">韩国云虚拟主机</a></li><li><i class="fa fa-angle-right"></i><a href="/linode-vps">Linode东京VPS</a></li><li><i class="fa fa-angle-right"></i><a href="/usa-vps">美国西雅图VPS</a></li><li><i class="fa fa-angle-right"></i><a href="/backup-host">VPS自动备份专用空间</a></li></ul></div><div class="col-sm-3"><h4>关于我们</h4><ul><li><i class="fa fa-angle-right"></i><a href="/about-us">关于我们</a></li><li><i class="fa fa-angle-right"></i><a href="/category/notice">官方公告</a></li><li><i class="fa fa-angle-right"></i><a href="/category/sales">优惠信息</a></li><li><i class="fa fa-angle-right"></i><a href="http://blog.cloudleft.com">云左博客</a></li></ul></div><div class="col-sm-3"><h4>快速导航</h4><ul><li><i class="fa fa-angle-right"></i><a href="http://my.cloudleft.com">会员中心</a></li><li><i class="fa fa-angle-right"></i><a href="/help">帮助中心</a></li><li><i class="fa fa-angle-right"></i><a href="/aff">推介联盟</a></li><li><i class="fa fa-angle-right"></i><a href="/agent">代理招商</a></li></ul></div><div class="col-sm-3"><h4>客服支持</h4><ul class="questions"><li> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=329673018&site=qq&menu=yes"><i class="fa fa-qq"></i>&nbsp;闲云</a>&nbsp;&nbsp;&nbsp; <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=25396199&site=qq&menu=yes"><i class="fa fa-qq"></i>&nbsp;小鱼</a>&nbsp;&nbsp;&nbsp; <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2278235266&site=qq&menu=yes"><i class="fa fa-qq"></i>&nbsp;小乐</a></li><li><i class="fa fa-phone-square"></i>400热线电话 :&nbsp;4000-300-540</a></li><li><a href="mailto:service@cloudleft.com"><i class="fa fa-envelope"></i>Email : service@cloudleft.com</a></li></ul></div></div> </section><div class="social"><div class="row"><div class="col-xs-12 col-md-6">云左科技 ©2015 All Rights Reserved. <script src="https://s9.cnzz.com/stat.php?id=5653611&web_id=5653611" language="JavaScript"></script> </div><div class="col-xs-12 col-md-6 topslink"> <a href="/aup">产品使用政策</a> <a href="/tos">服务条款</a> <a href="/about-us">关于我们</a></div></div></div> <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a> <script src="/statics/2015/js/jquery.min.js"></script> <script>jQuery.noConflict();</script> <script src="/statics/2015/js/bootstrap.min.js"></script> <script src="/statics/2015/js/hoverIntent.js"></script> <script src="/statics/2015/js/superfish.min.js"></script> <script src="/statics/2015/js/owl.carousel.js"></script> <script src="/statics/2015/js/wow.min.js"></script> <script src="/statics/2015/js/jquery.circliful.min.js"></script> <script src="/statics/2015/js/waypoints.min.js"></script> <script src="/statics/2015/js/jquery.slicknav.min.js"></script> <script src="/statics/2015/js/custom.js"></script> <script>/* Home Page Slider
+   ========================================================================== */
+    jQuery(document).ready(function($) {
+
+
+    var sync1 = $("#mainslider");
+    var sync2 = $("#mainslider-nav");
+
+    sync1.owlCarousel({
+    singleItem : true,
+    slideSpeed : 1000,
+    paginationSpeed: 800,
+    navigation: false,
+    pagination:false,
+    autoPlay:7500,
+    afterAction : syncPosition,
+    responsiveRefreshRate : 200,
+    });
+
+    sync2.owlCarousel({
+    items : 4,
+    itemsDesktop : [1199,4],
+    itemsDesktopSmall : [979,4],
+    itemsTablet : [768,4],
+    itemsMobile : [479,2],
+    pagination:false,
+    responsiveRefreshRate : 100,
+    afterInit : function(el){
+    el.find(".owl-item").eq(0).addClass("synced");
+    }
+    });
+
+    function syncPosition(el){
+    var current = this.currentItem;
+    $("#mainslider-nav")
+    .find(".owl-item")
+    .removeClass("synced")
+    .eq(current)
+    .addClass("synced")
+    if($("#mainslider-nav").data("owlCarousel") !== undefined){
+    center(current)
+    }
+    }
+
+    $("#mainslider-nav").on("click", ".owl-item", function(e){
+    e.preventDefault();
+    var number = $(this).data("owlItem");
+    sync1.trigger("owl.goTo",number);
+    });
+
+    function center(number){
+    var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
+    var num = number;
+    var found = false;
+    for(var i in sync2visible){
+    if(num === sync2visible[i]){
+    var found = true;
+    }
+    }
+
+    if(found===false){
+    if(num>sync2visible[sync2visible.length-1]){
+    sync2.trigger("owl.goTo", num - sync2visible.length+2)
+    }else{
+    if(num - 1 === -1){
+    num = 0;
+    }
+    sync2.trigger("owl.goTo", num);
+    }
+    } else if(num === sync2visible[sync2visible.length-1]){
+    sync2.trigger("owl.goTo", sync2visible[1])
+    } else if(num === sync2visible[0]){
+    sync2.trigger("owl.goTo", num-1)
+    }
+    }
+
+    });
+
+/* Τestimonials
+   ========================================================================== */
+ jQuery(document).ready(function($) {
+        $("#testimonials-carousel").owlCarousel({
+            items: 1,
+            autoPlay: 5000,
+            itemsDesktop: [1199, 1],
+            itemsDesktopSmall: [979, 1],
+            itemsTablet: [768, 1]
+        });
+    });
+
+    // ______________ STATS
+jQuery(document).ready(function($) {
+$('.statistics').waypoint(function() {
+
+ $('#myStat1').circliful();
+ $('#myStat2').circliful();
+ $('#myStat3').circliful();
+ $('#myStat4').circliful();
+
+}, { offset: 800, triggerOnce: true });
+});</script> <div id="floatTools" class="myservices-cs"><div class="floatL"> <a style="display: block" id="aFloatTools_Show" class="btnOpen" title="查看在线客服" href="javascript:void(0);"> 展开</a> <a style="display: none" id="aFloatTools_Hide" class="btnCtn" title="关闭在线客服" href="javascript:void(0);"> 收缩</a></div><div id="divFloatToolsView" class="floatR" style="display: none"><div class="cn"><h3 class="titZx">售前咨询</h3><ul><li><span>闲云</span> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=329673018&site=qq&menu=yes"><img border="0" src="/statics/2015/images/button_qq.gif" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></li><li><span>小鱼</span> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=25396199&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:25396199:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></li><li><span>乐乐</span> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2278235266&site=qq&menu=yes"><img border="0" src="/statics/2015/images/button_qq.gif" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></li></li></ul><h3>技术支持</h3><ul><li><span>小野</span> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=329673018&site=qq&menu=yes"><img border="0" src="/statics/2015/images/button_qq.gif" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></li><li><span>小乐</span> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2278235266&site=qq&menu=yes"><img border="0" src="/statics/2015/images/button_qq.gif" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></li></ul></div></div></div> <script src="/statics/2015/js/qq.service.js"></script> </body></html>
+<!-- Dynamic page generated in 0.139 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2015-06-22 07:01:25 -->
+
+<!-- super cache -->

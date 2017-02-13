@@ -1,0 +1,4 @@
+select ClassType into #class from t_Class   --把除标识列以外的字段数据存到临时表里
+truncate   table   t_Class                  --清空源表,重置标识列
+insert into t_Class select * from #class    --将数据倒回到源表
+drop table #class                           --删除临时表

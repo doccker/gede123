@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">html,body{height:100%;}body{margin:0;padding:0;overflow:auto;text-align:center;background-color:#ffffff;}object:focus{outline:none;}#flashContent{display:none;}input,select,button{font-family:inherit;font-size:inherit;}</style>
+<title>Chatroulette</title>
+<meta name="description" content="Chatroulette is a place where you can interact with new people over text-chat, webcam and mic."/>
+<link rel="shortcut icon" href="/assets/images/favicon.ico"/>
+<script type="text/javascript" src="/assets/scripts/swfobject.js"></script>
+<script type="text/javascript" src="/assets/scripts/bridge.js?v=5"></script>
+<script type="text/javascript" src="/assets/scripts/breakout.js?v=1"></script>
+<script type="text/javascript">
+            var swfVersionStr = "10.3";
+            var xiSwfUrlStr = "/expressInstall.swf";
+            var flashvars = {};
+            var params = {};
+            params.quality = "high";
+            params.bgcolor = "#ffffff";
+            params.allowscriptaccess = "always";
+            params.allowfullscreen = "true";
+            var attributes = {};
+            attributes.id = "ChatrouletteFront";
+            attributes.name = "ChatrouletteFront";
+            attributes.align = "middle";
+            swfobject.embedSWF(
+            "\/assets\/applications\/cr\/cr.swf?version=3758", "flashContent", 
+            "100%", "100%", 
+            swfVersionStr, xiSwfUrlStr, 
+            flashvars, params, attributes);
+            swfobject.createCSS("#flashContent", "display:block;text-align:left;");
+        </script>
+<script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-4555296-5']);
+            _gaq.push(['_setDomainName', 'chatroulette.com']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+</head>
+<body>
+<div id="flashContent">
+<div style="padding: 15px;">
+<b>Chatroulette</b> is a place where you can interact with new people over text-chat, webcam and mic.<br/>
+<br/>
+In order to use it, you need to have latest Flash Player installed.<br/>
+<br/>
+<button type='submit' onclick='javascript:location.href = "http://get.adobe.com/flashplayer"'>
+Download and install Adobe Flash Player
+</button>
+<br/><br/>
+In case of problems with the Flash Player installation, please <a href="http://forums.adobe.com/community/flashplayer/installing_flashplayer?view=discussions">post about it on Adobe's forum</a>.
+<br/><br/>
+Preview:<br/>
+<br/>
+<a href="http://www.adobe.com/go/getflashplayer">
+<img style="border-color: #C0C0C0;" border="1px" alt="Chatroulette screenshot" src="/assets/images/cr_screenshot.png"/></a><br/>
+<br/>
+Example features:
+<ul>
+<li>Ability to quickly find a conversational partner from all around the world.
+</li>
+<li>You can use microphone, webcam or text-chat to communicate with people.
+</li>
+<li>You can use drawing pad as an ice-breaker or to entertain your partner.
+</li>
+</ul>
+</div>
+</div><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%" id="ChatrouletteFront">
+<param name="movie" value="/assets/applications/cr/cr.swf?version=3758"/>
+<param name="quality" value="high"/>
+<param name="bgcolor" value="#ffffff"/>
+<param name="allowScriptAccess" value="always"/>
+<param name="allowFullScreen" value="true"/>
+<!--[if !IE]>-->
+<object type="application/x-shockwave-flash" data="/assets/applications/cr/cr.swf?version=3758" width="100%" height="100%">
+<param name="quality" value="high"/>
+<param name="bgcolor" value="#ffffff"/>
+<param name="allowScriptAccess" value="always"/>
+<param name="allowFullScreen" value="true"/>
+<!--<![endif]-->
+<p style="padding-left: 15px;">
+<b>Chatroulette</b> is a place where you can interact with new people over text-chat, webcam and mic.<br/>
+<br/>
+In order to use Chatroulette, you need to have latest Flash Player installed.<br/>
+<br/>
+<a href='http://get.adobe.com/flashplayer'>Click here to download and install Flash Player.</a>
+<br/>
+<br/>
+If you are having any problems with Flash Player installation, please <a href="http://forums.adobe.com/community/flashplayer/installing_flashplayer?view=discussions">post about it on Adobe Flash Player forum.</a>
+</p><!--[if !IE]>-->
+</object> <!--<![endif]-->
+</object></noscript>
+</body>
+</html>

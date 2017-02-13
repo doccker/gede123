@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>插件安装 - 歌德书签 - only do bookmark - www.gede123.com</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta content="书签,在线书签,网址,网址收藏,在线网址收藏,gede123,www.gede123.com,only do bookmark" name="keywords">
+    <meta content="www.gede123.com,only do bookmark" name="Description">
+
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/pcbgcpmmjglcfekgidafinddcopghhfn">
+    <link rel="shortcut icon" href="res/imgs/favicon.ico" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- fontaware 字体库 -->
+    <link href="lib/awesome/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- jquery confirm -->
+    <link href="lib/jquery-confirm/jquery-confirm.min.css" rel="stylesheet">
+
+    <!-- 动画CSS -->
+    <link href="res/css/gede123.animate.css" rel="stylesheet">
+
+    <link href="res/css/gede123-common.css" rel="stylesheet">
+    <link href="res/css/gede123-download.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="header">
+    <a href="/">
+        <img class="logo img-animate-expand" src="res/imgs/logo-normal.png" />
+    </a>
+</div>
+
+<div class="download">
+    <div class="container text-center">
+        <div class="row">
+            <!--<div class="col-md-4">
+                <div>
+                    <img src="res/imgs/download-chrome-gae.png" />
+                </div>
+                <div class="gd-margin-top-30">
+                    <a class="btn btn-white" href="https://www.chromegae.net/" target="_blank">
+                        <i class="glyphicon glyphicon-download-alt"></i>
+                        安装ChromeGAE浏览器
+                    </a>
+                    <div class="version">
+                        <span class="fa fa-exclamation-circle version-desc" title="版本说明" data-content="V7.9.9 为了防止和谐，加密部分程序。"></span>
+                        当前版本：7.9.9
+                        <p class="text-beizhu">更新于：2016/10/19</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="desc">
+                    <p>
+                        基于 Google Chrome 制作的免费浏览器，集成多个实用的扩展，免费翻墙上Google，过滤广告等。
+                    </p>
+                    <p>
+                        下载后，将主页设置为：www.gede123.com<br/>
+                        然后，<a action="btnAddChromePlugin" style="color: #fff;text-decoration: underline;cursor: pointer;"> 安装 </a> 歌德书签Chrome插件，并在扩展程序页面右下角->键盘快捷键->歌德书签，设置为：Ctrl+D
+                    </p>
+                    <p>
+                        以后上网则无忧无虑，想收藏书签时，只需要按【Ctrl+D】，然后Enter即可。
+                    </p>
+                </div>
+            </div>-->
+
+            <div class="col-md-6">
+                <div>
+                    <img src="res/imgs/download-chrome.png" />
+                </div>
+                <div class="gd-margin-top-30">
+                    <a action="btnAddChromePlugin" class="btn btn-white" href="javascript:;">
+                        <i class="glyphicon glyphicon-export"></i>
+                        安装Chrome插件
+                    </a>
+                    <div class="version">
+                        <span class="fa fa-exclamation-circle version-desc" title="版本说明" data-content="V3.3 取消插件登录的功能，直接使用网站登录的状态。"></span>
+                        当前版本：3.3
+                        <p class="text-beizhu">更新于：2016/10/14</p>
+                        <p>无法安装？手动 <a class='down-chrome-plugin' href="plugin/gede123-chrome-plugin.crx">下载安装</a></p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="desc">
+                    <p>
+                        用Chrome浏览网页时，可以通过该插件将该网址快速收藏到歌德书签。同时，可以将您Chrome中收藏的书签一键导入到歌德书签。
+                    </p>
+                    <p>
+                        手动下载后，进入Chrome浏览器 -> 设置 -> 扩展程序 -> 打开扩展程序界面，<br/>
+                        然后拖动“gede123-chrome-plugin.crx”文件到扩展程序界面即可安装。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <img src="res/imgs/download-local.png" />
+                </div>
+                <div class="gd-margin-top-30">
+                    <a class="btn btn-white" href="plugin/gede123-local-explorer-plugin.exe">
+                        <i class="glyphicon glyphicon-download-alt"></i>
+                        安装Local插件
+                    </a>
+                    <div class="version">
+                        <span class="fa fa-exclamation-circle version-desc" title="版本说明" data-content="V2.0 更新，完善了稳定性，增加了浏览器兼容性。"></span>
+                        当前版本：2.0
+                        <p class="text-beizhu">更新于：2016/01/28</p>
+		                <p>&nbsp;</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="desc">
+                    <p>
+                        您可以将本地目录、文件或者应用程序的路径收藏到歌德书签。
+                    </p>
+                    <p>
+                        安装该插件，点击连接，会直接打开对应的目录、文件或者应用程序。
+                    </p>
+                    <p>
+                        <b>注意：</b>目录、文件或者应用程序不能包含中文。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="divider"></div>
+<div id="footer">
+    <span>
+        GEDE123.COM 2013-2017, ONLY DO BOOKMARK!
+    </span>
+    <div class="scroll_tips">
+        <span class="scroll_tips_inner"></span>
+    </div>
+</div>
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+
+<!-- BootStrap relative js -->
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- jquery confirm -->
+<script src="lib/jquery-confirm/jquery-confirm.min.js"></script>
+    
+<script>
+    $(function(){
+        //hover提示
+        $(".version-desc").popover({
+            container: 'body',
+            trigger : 'hover',
+            placement : 'bottom'
+        });
+        
+        $("a[action='btnAddChromePlugin']").click(function(){
+            chrome.webstore.install("https://chrome.google.com/webstore/detail/pcbgcpmmjglcfekgidafinddcopghhfn",
+            function(){
+                $.alert({
+                    icon : 'gede-small-title',
+                    title: '歌德书签',
+                    animation: 'zoom',
+                    content: '恭喜你，插件安装成功。',
+                    confirmButton: '知道了',
+                    autoClose : 'confirm|4000',
+                    closeIcon: true
+                });
+            },
+            function(err){
+                if(err === 'User cancelled install'){
+                   return;
+                };
+                
+                $.alert({
+                    icon : 'gede-small-title',
+                    title: '歌德书签',
+                    animation: 'zoom',
+                    content: '非常抱歉，插件安装失败，请选择手动下载安装。',
+                    confirmButton: '知道了',
+                    closeIcon: false
+                });
+            });
+        });
+    });
+
+</script>
+
+</body>
+</html>

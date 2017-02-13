@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>藏姬阁导航 - 官方福利导航</title>
+<meta name="description" content="藏姬阁导航是藏姬阁旗下的福利导航，一个专注于收集精品网站的福利导航，类似的网站有福利所导航，色博士导航，五姑娘导航，蓝色导航等等"/>
+<meta name="keywords" content="藏姬阁,藏姬阁导航,福利导航,坏123导航,坏123,福利大全,第一福利,福利所"/>
+<script src="jquery.min.js"></script>
+<script Language="JavaScript" src="base.js"></script>
+<link href="/style.css" rel="stylesheet" type="text/css" id="links"/>
+<link href="https://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+<base target="_blank"/>
+<script Language="JavaScript" src="addfavor.js"></script>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+<style>
+#mobile_top { display: none; }
+.for_mob{ display:none;}
+@media only screen and (min-width:320px) and (max-width:580px) {
+.nav ul li a { padding: 0px 10px; }
+#leftnav { display: none; }
+#mobile_top { display: block; }
+}
+@media only screen and (min-width:0px) and (max-width:1120px) {
+#header, .nav, #content, #footer { width: 92%; }
+.yous, .standbydomain, .slogan, #pc_mobile_web, .nav {display: none;}
+#mobile_top { display: block; }
+#domain_standby, #leftnav { display: none; }
+#pc_mobile_web, #domain_standby, #tools, .slogan{ display:none;}
+
+#links_con h2, #mobile_top h2{ text-align:center; width:100%; padding:0;}
+.for_mob{background:#6E6E6E;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-family: microsoft yahei;
+    font-size: 14px; display:block;}
+#links_con li a, .mobile_web li a{ font-size:16px;}
+}
+</style>
+</head>
+<body>
+<div id="mstyle">
+<div class="header_background">
+<div id="header">
+<h1 id="logo"><a href="/" title="" target="_self"><img src="./logo.svg" style="width: 215px;" onerror="this.onerror=null; this.src='/logo.png'"></a></h1>
+<div id="domain_standby">主域名：<span style="color:#B50003;">cjgdh.org</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;备用域名：cjgdh.xyz, cjgdh.top</div>
+<div class="favor"><a onclick="addfavor('http://huai123.me','导航')">收藏本站</a>&nbsp;|&nbsp;<a href="/submit.html" target="_blank">免费收录</a></div>
+</div>
+</div>
+<div class="for_mob">本站不收录任何病毒/钓鱼站，请放心使用！</div>
+<div id="leftnav">
+<ul>
+<li><a class="slow" href="#header" target="_self"><i class="fa fa-chevron-circle-up pad5" aria-hidden="true"></i>顶部</a></li>
+<li><a class="slow" href="#rezhan" target="_self"><i class="fa fa-star pad5" aria-hidden="true"></i>名站</a></li>
+<li><a class="slow" href="#video_web" target="_self"><i class="fa fa-video-camera pad5" aria-hidden="true"></i>视频</a></li>
+<li><a class="slow" href="#flblog" target="_self"><i class="fa fa-wordpress pad5" aria-hidden="true"></i>博客</a></li>
+<li><a class="slow" href="#sns_bbs" target="_self"><i class="fa fa-users pad5" aria-hidden="true"></i>论坛</a></li>
+<li><a class="slow" href="#mov_downlode" target="_self"><i class="fa fa-film pad5" aria-hidden="true"></i>电影</a></li>
+<li><a class="slow" href="#foto_pic" target="_self"><i class="fa fa-picture-o pad5" aria-hidden="true"></i>美图</a></li>
+<li><a class="slow" href="#gay_web" target="_self"><i class="fa fa-slideshare pad5" aria-hidden="true"></i>同性</a></li>
+<li><a class="slow" href="#film_company" target="_self"><i class="fa fa-h-square pad5" aria-hidden="true"></i>片商</a></li>
+<li><a class="slow" href="#seed_link" target="_self"><i class="fa fa-cloud-download pad5" aria-hidden="true"></i>种子</a></li>
+<li><a class="slow" href="#tool_web" target="_self"><i class="fa fa-wrench pad5" aria-hidden="true"></i>工具</a></li>
+<li><a class="slow" href="#gogo" target="_self"><i class="fa fa-google pad5" aria-hidden="true"></i>谷歌</a></li>
+<li><a class="slow" href="#kexue" target="_self"><i class="fa fa-paper-plane-o pad5" aria-hidden="true"></i>代理</a></li>
+<li><a class="slow" href="#tools" target="_self"><i class="fa fa-windows pad5 " aria-hidden="true"></i>软件</a></li>
+<li><a class="slow" href="#header" target="_self"><i class="fa fa-angle-up " style="font-size:37px;"></i></a></li>
+</ul>
+</div>
+<div class="nav">
+<ul>
+<li><a href="/" target="_self">首页</a></li>
+<li><a href="/submit.html">免费收录</a></li>
+<li><a href="/message.html">留言</a></li>
+<li class="slogan">各位站长请及时添加我方链接，否则取消收录</li>
+</ul>
+</div>
+<div id="content" class="center w990">
+<div id="mobile_top" class="mobile_web">
+<h2><i class="fa fa-tablet pad5" aria-hidden="true"></i>手机福利</h2>
+<ul>
+<li><a href="http://cangjige.xyz" rel="nofollow">藏姬阁在线<img class="hot_link" src="hot.gif"/></a></li>
+<li><a href="http://meirifuli.me" rel="nofollow">每日福利<img class="hot_link" src="hot.gif"/></a></li>
+<li><a href="http://diyifuli.top/" rel="nofollow">第一福利导航<img class="hot_link" src="hot.gif"/></a></li>
+<li><a href="http://www.hqseek.com/" rel="nofollow">成人图片②</a></li>
+</ul>
+</div>
+<div id="links_con">
+<div class="list_unit">
+<h2 id="cjg"><i class="fa fa-star pad5" aria-hidden="true"></i>藏姬阁线路</h2>
+<ul>
+<li><a href="http://cangjige.xyz" rel="nofollow">藏姬阁线路①</a></li>
+<li><a href="http://cangjige.win" rel="nofollow">藏姬阁线路②</a></li>
+<li><a href="http://cangjige.pw" rel="nofollow">藏姬阁线路③</a></li>
+<li><a href="http://cangjige.net" rel="nofollow">藏姬阁线路④</a></li>
+<li><a href="http://www.emoneyspace.com/cangjige" rel="nofollow">藏姬阁发布页<img class="hot_link" src="hot.gif"/></a></li>
+</ul>
+<div class="clr"></div>
+</div>
+<div class="list_unit">
+<h2 id="rezhan"><i class="fa fa-star pad5" aria-hidden="true"></i>热站导航</h2>
+<ul>
+<li><a href="http://cangjige.xyz" rel="nofollow">藏姬阁在线<img class="hot_link" src="hot.gif"/></a></li>
+<li><a href="http://diyifuli.top/?cjgdh" rel="nofollow">第一福利导航<img class="hot_link" src="hot.gif"/></a></li>
+<li><a href="https://avdoc.org" rel="nofollow">精品自拍视频<img class="hot_link" src="hot.gif"/></a></li>
+<li><a href="http://www.c5p.work/v.php" rel="nofollow">91Porn在线视频</a></li>
+<li><a href="http://vtraheporn.com/" rel="nofollow">在线欧美视频</a></li>
+<li><a href="http://www.allhentaigals.com" rel="nofollow">在线色情动漫</a></li>
+<li><a href="https://thepiratebay.vg" rel="nofollow">海盗湾</a></li>
+<li><a href="http://www.korenan2.com/" rel="nofollow">求出处</a></li>
+<li><a href="http://www.privatecams.com" rel="nofollow">免费在线直播</a></li>
+<li><a href="http://5guniang.com" rel="nofollow">五姑娘导航</a></li>
+</ul>
+<div class="clr"></div>
+</div>
+<div class="list_unit">
+<h2 id="video_web"><i class="fa fa-video-camera pad5" aria-hidden="true"></i>在线视频</h2>
+<ul>
+<li><a href="http://cangjige.xyz" rel="nofollow">藏姬阁在线</a></li>
+<li><a href="http://www.c5p.work/v.php" rel="nofollow">91Porn</a></li>
+<li><a href="http://vtraheporn.com" rel="nofollow">vtraheporn</a></li>
+<li><a href="http://www.porno666.com" rel="nofollow">Porno 666</a></li>
+<li><a href="http://www.poimel.info" rel="nofollow">Poimel</a></li>
+<li><a href="http://www.pinkrod.com" rel="nofollow">Pinkod</a></li>
+<li><a href="http://www.cliti.com" rel="nofollow">Cliti Porn Tubes</a></li>
+<li><a href="http://passion-hd.com" rel="nofollow">Passion HD</a></li>
+<li><a href="http://www.pinkrod.com/" rel="nofollow">pinkrod</a></li>
+<li><a href="http://www.amoraltube.com" rel="nofollow">Amorl Tube</a></li>
+<li><a href="http://www.asianpornmovies.com" rel="nofollow">AsianPornMovies</a></li>
+<li><a href="http://www.jambotube.com" rel="nofollow">JamboTube</a></li>
+<li><a href="http://www.tub99.com" rel="nofollow">Tub99</a></li>
+<li><a href="http://www.seemyporn.com" rel="nofollow">SeeMyPorn</a></li>
+<li><a href="http://www.cuckold69.com" rel="nofollow">Cuckold 69</a></li>
+<li><a href="http://www.24video.net" rel="nofollow">24 Video</a></li>
+<li><a href="http://ru.paradisehill.cc/porn/" rel="nofollow">paradisehill</a></li>
+<li><a href="http://www.azzzian.com" rel="nofollow">azzzian</a></li>
+<li><a href="http://www.privatecams.com" rel="nofollow">免费在线直播</a></li>
+<li><a href="http://www.caoliuporn.net" rel="nofollow">caoliu视频</a></li>
+</ul>
+<div class="clr"></div>
+</div>
+<div class="list_unit">
+<h2 id="flblog"><i class="fa fa-wordpress pad5" aria-hidden="true"></i>福利博客</h2>
+<ul>
+<li><a href="http://avdoc.top" rel="nofollow">精品自拍视频</a></li>
+<li><a href="http://meirifuli.me" rel="nofollow">每日福利(推荐)</a></li>
+<li><a href="http://www.aishipin.net/" rel="nofollow">爱视频</a></li>
+<li><a href="https://www.kali.tv/" rel="nofollow">咔哩影视</a></li>
+<li><a href="http://txflsp.com" rel="nofollow">桃心福利视频</a></li>
+<li><a href="https://www.fuliyao.com" rel="nofollow">淘福利啦</a></li>
+<li><a href="http://fuliba.net/" rel="nofollow">福利吧</a></li>
+<li><a href="http://www.92miaopai.com/" rel="nofollow">92秒拍</a></li>
+<li><a href="http://www.yepu.tv" rel="nofollow">夜蒲直播</a></li>
+<li><a href="http://www.xieebuluo.net" rel="nofollow">邪恶部落</a></li>
+<li><a href="http://www.0xxx.cn" rel="nofollow">五十笑百</a></li>
+</ul>
+<div class="clr"></div>
+</div>
+<div class="list_unit">
+<h2 id="sns_bbs"><i class="fa fa-users pad5" aria-hidden="true"></i>综合论坛</h2>
+<ul>
+<li><a href="https://avdoc.org" rel="nofollow">精品自拍社区</a></li>
+<li><a href="http://dd.caolu.me/index.php" rel="nofollow">草榴社區</a></li>
+<li><a href="http://www.sex88.tv" rel="nofollow">性吧春暖花开</a></li>
+<li><a href="http://ac88.info/bt/index.php" rel="nofollow">爱城</a></li>
+<li><a href="http://104.236.51.108/forum.php" rel="nofollow">捷克論壇</a></li>
+<li><a href="http://yh2.info/index.php" rel="nofollow">御花王朝</a></li>
+<li><a href="http://192.186.31.68" rel="nofollow">WC俱乐部</a></li>
+<li><a href="http://198.40.52.149" rel="nofollow">偷窥客</a></li>
+<li><a href="http://www.52yuanwei.biz" rel="nofollow">我爱原味网</a></li>
+<li><a href="http://www.ztx8.cc" rel="nofollow">知天下资源吧</a></li>
+<li><a href="http://www.jpkong.net/?fromuid=106440" rel="nofollow">街拍控论坛</a></li>
+<li><a href="http://svipfuli.com/forum.php" rel="nofollow">svip福利基地</a></li>
+<li><a href="http://www.avfun10.com/?fromuid=57970" rel="nofollow">AvFun福利网</a></li>
+<li><a href="http://www.mm5020.com" rel="nofollow">天天福利</a></li>
+<li><a href="http://www.weipaifuliw.com" rel="nofollow">微拍福利网</a></li>
+<li><a href="http://www.caoniu8.net" rel="nofollow">草妞吧论坛</a></li>
+<li><a href="http://www.hacg.cc" rel="nofollow">梦A骑士团</a></li>
+</ul>
+<div class="clr"></div>
+</div>
+<div class="list_unit">
+<h2 id="mov_downlode"><i class="fa fa-film pad5" aria-hidden="true"></i>电影下载</h2>
+<ul>
+<li><a href="http://www.dytt8.net/" rel="nofollow">电影天堂</a></li>
+<li><a href="http://www.bttiantang.com/movie.php" rel="nofollow">BT天堂</a></li>
+<li><a href="http://www.piaohua.com/" rel="nofollow">飘花电影网</a></li>
+<li><a href="http://www.zimuzu.tv/" rel="nofollow">新人人影视</a></li>
+<li><a href="http://www.btbbt.cc/" rel="nofollow">BT之家</a></li>
+<li><a href="http://www.xunyingwang.com/movie/" rel="nofollow">最新电影下载</a></li>
+<li><a href="http://www.mp4ba.com/" rel="nofollow">MP4吧</a></li>
+</ul>
+<div class="clr"></div>
+</div>
+<div class="list_unit">
+<h2 id="foto_pic"><i class="fa fa-picture-o pad5" aria-hidden="true"></i>美图套图</h2>
+<ul>
+<li><a href="http://tg-ryodan.com" rel="nofollow">東京画像</a></li>
+<li><a href="http://jigadori.fkoji.com" rel="nofollow">Twitter美女</a></li>
+<li><a href="http://www.nudevideoswallpapers.com" rel="nofollow">裸体写真壁纸</a></li>
+<li><a href="http://www.jpkoo.com/forum.php?x=366647" rel="nofollow">街拍客</a></li>
+<li><a href="http://www.pornpicc.com" rel="nofollow">成人图片</a></li>
+<li><a href="http://imagezog.com" rel="nofollow">ImageZOG</a></li>
+<li><a href="http://www.metarthunter.com" rel="nofollow">人体艺术模特</a></li>
+<li><a href="http://www.pichunter.com" rel="nofollow">PicHunter</a></li>
+<li><a href="http://thefappening.so/" rel="nofollow">TheFappening</a></li>
+<li><a href="http://www.porndao.net/" rel="nofollow">Porndao</a></li>
+<li><a href="http://www.erotica7.com/" rel="nofollow">erotica7</a></li>
+<li><a href="http://girl-atlas.com/" rel="nofollow">美女图集</a></li>
+<li><a href="http://www.sexinart.net" rel="nofollow">情色艺术图库</a></li>
+<li><a href="http://www.taotu8.net/" rel="nofollow">套图吧</a></li>
+<li><a href="http://www.japanesestreets.com" rel="nofollow">日本街拍</a></li>
+<li><a href="http://www.renti7.com" rel="nofollow">人体艺术库</a></li>
+<li><a href="http://www.hqseek.com" rel="nofollow">HQseek</a></li>
+<li><a href="http://www.dbmeinv.com" rel="nofollow">豆瓣美女</a></li>
+<li><a href="http://ftop.ru" rel="nofollow">Ftop.ru</a></li>
+<li><a href="http://www.sousi8.com" rel="nofollow">搜丝吧</a></li>
+<li><a href="http://www.eroti-cart.com" rel="nofollow">色情艺术</a></li>
+<li><a href="http://jigadori.fkoji.com" rel="nofollow">Twitter美女</a></li>
+<li><a href="http://www.meizico.com" rel="nofollow">妹子控</a></li>
+<li><a href="http://lieqizhijia.com/forum-168-1.html" rel="nofollow">蕾丝兔宝宝</a></li>
+<li><a href="http://www.umei.cc/" rel="nofollow">优美高清美女</a></li>
+<li><a href="http://97mitao.net/" rel="nofollow">蜜桃网</a></li>
+<li><a href="http://www.mmpicture168.com" rel="nofollow">火女网</a></li>
+<li><a href="http://diyifuli.xyz/picture1000.html" rel="nofollow">美图1000张</a></li>
+</ul>
+<div class="clr"></div>
+</div>
+<div class="list_unit">
+<h2 id="gay_web"><i class="fa fa-slideshare pad5" aria-hidden="true"></i>同性人妖</h2>
+<ul>
+<li><a href="http://www.ladyboy.tv/" rel="nofollow">LadyBoy</a></li>
+<li><a href="http://www.gaypornium.com/" rel="nofollow">Gay Porn</a></li>
+<li><a href="http://www.blacklesbianfuck.com/" rel="nofollow">Black Lesbian</a></li>
+<li><a href="http://www.oklesbians.com/" rel="nofollow">oklesbians</a></li>
+<li><a href="http://www.ladyboytube.com/" rel="nofollow">LadyBoy Tube</a></li>
+<li><a href="http://www.thelesbianporn.com/" rel="nofollow">Lesbian Porn</a></li>
+<li><a href="http://xxxmassagerooms.com/" rel="nofollow">massageroom</a></li>
+<li><a href="http://amateurlesbianstube.com/" rel="nofollow">amateur ls</a></li>
+<li><a href="http://nurumassage.pornpub.net/" rel="nofollow">nurumassage</a></li>
+<li><a href="http://www.meatyhunks.com/" rel="nofollow">meatyhunks</a></li>
+<li><a href="http://www.gotgayporn.com/" rel="nofollow">gotgayporn(谐)</a></li>
+<li><a href="http://www.ladyboyweb.com/" rel="nofollow">ladyboyweb</a></li>
+<li><a href="http://allgirlmassage.pornpub.net/" rel="nofollow">all girl massage</a></li>
+<li><a href="http://www.yummylesbians.com/" rel="nofollow">yummylesbians</a></li>
+<li><a href="http://sextubeporn.net/" rel="nofollow">sextubeporn</a></li>
+</ul>
+<div class="clr"></div>
+</div>
+<div class="list_unit">
+<h2 id="film_company"><i class="fa fa-h-square pad5" aria-hidden="true"></i>片商官网</h2>
+<ul>
+<li><a href="http://www.x-art.com/" rel="nofollow">x-art</a></li>
+<li><a href="http://www.s-cute.com/" rel="nofollow">S-Cute</a></li>
+<li><a href="http://www.g-area.org/" rel="nofollow">G-AREA</a></li>
+<li><a href="http://www.prestige-av.com/" rel="nofollow">Prestige</a></li>
+<li><a href="http://www.mgstage.com/" rel="nofollow">MGStage</a></li>
+<li><a href="http://www.maxing.jp/" rel="nofollow">Maxing</a></li>
+<li><a href="http://www.ideapocket.com/" rel="nofollow">ideaPocket</a></li>
+<li><a href="http://www.s1s1s1.com/" rel="nofollow">S1</a></li>
+<li><a href="http://www.max-a.co.jp/" rel="nofollow">MAX-A</a></li>
+<li><a href="http://www.moodyz.com/" rel="nofollow">Moodyz</a></li>
+<li><a href="http://www.sod.co.jp/" rel="nofollow">SOD</a></li>
+<li><a href="http://www.alicejapan.co.jp/" rel="nofollow">Alice Japan</a></li>
+<li><a href="http://www.premium-beauty.com/" rel="nofollow">PREMIUM</a></li>
+<li><a href="http://www.hmp.jp/" rel="nofollow">h.m.p</a></li>
+<li><a href="http://www.kawaiikawaii.jp/" rel="nofollow">Kawaii*</a></li>
+<li><a href="http://www.kirakira-av.com/" rel="nofollow">kira☆kira</a></li>
+<li><a href="http://www.av-e-body.com/" rel="nofollow">E-BODY</a></li>
+<li><a href="http://www.dasdas.jp/" rel="nofollow">DAS</a></li>
+<li><a href="http://www.rookie-av.jp/" rel="nofollow">Rookie</a></li>
+<li><a href="http://www.indies-av.co.jp/" rel="nofollow">桃太郎映像</a></li>
+<li><a href="http://www.uchu.co.jp/" rel="nofollow">宇宙企劃</a></li>
+<li><a href="http://www.1pondo.tv/" rel="nofollow">一本道</a></li>
+<li><a href="http://www.tokyo-hot.com/" rel="nofollow">东京热</a></li>
+<li><a href="http://www2.xxxlicks.info/" rel="nofollow">加勒比</a></li>
+<li><a href="http://www2.g-queen.com/" rel="nofollow">無毛宣言</a></li>
+<li><a href="http://www.dream-room.net/" rel="nofollow">dream-room</a></li>
+</ul>
+<div class="clr"></div>
+</div>
+<div class="list_unit">
+<h2 id="same_web"><i class="fa fa-file pad5" aria-hidden="true"></i>导航网站</h2>
+<ul>
+<li><a href="http://diyifuli.top" rel="nofollow">第一福利导航</a></li>
+<li><a href="http://www.yikudh.net" rel="nofollow">一库导航</a></li>
+<li><a href="http://www.caoluotuo.com/" rel="nofollow">草骆驼导航</a></li>
+<li><a href="http://www.e059x.com" rel="nofollow">么么导航</a></li>
+<li><a href="http://www.51vob.com" rel="nofollow">51vob导航</a></li>
+<li><a href="http://www.crdh8.com" rel="nofollow">成年人导航</a></li>
+<li><a href="https://xiaocao.eu.org" rel="nofollow">小草福利导航</a></li>
+<li><a href="http://www.wysf8.com" rel="nofollow">午夜时分8</a></li>
+<li><a href="http://www.cao91she.com" rel="nofollow">操就要射导航</a></li>
+<li><a href="http://www.diunin.com" rel="nofollow">妮妮性导航</a></li>
+<li><a href="http://www.banniao.cc" rel="nofollow">伴鸟娱乐导航</a></li>
+<li><a href="http://www.5251.cc" rel="nofollow">妖妖娱乐导航</a></li>
+<li><a href="http://www.jiongyo.com" rel="nofollow">哟哟福利导航</a></li>
+<li><a href="http://bigfuli.com" rel="nofollow">逼格福利导航</a></li>
+<li><a href="http://www.mifuli.com" rel="nofollow">米福利导航</a></li>
+</ul>
+<div class="clr"></div>
+</div>
+<div class="list_unit">
+<h2 id="seed_link"><i class="fa fa-cloud-download pad5" aria-hidden="true"></i>种子磁链</h2>
+<ul>
+<li><a href="http://bt.gg/" rel="nofollow">短磁链</a></li>
+<li><a href="https://thepiratebay.vg" rel="nofollow">海盗湾</a></li>
+<li><a href="http://www.ed2kers.com" rel="nofollow">ED2K电驴资源</a></li>
+<li><a href="http://torrentba.com" rel="nofollow">Torrentba</a></li>
+<li><a href="http://btkitty.so" rel="nofollow">BT Kitty</a></li>
+<li><a href="http://www.bt2mag.com/search" rel="nofollow">BTSOW种子搜索</a></li>
+<li><a href="http://avgoogle.net" rel="nofollow">AV Google</a></li>
+<li><a href="http://www.ed2000.com" rel="nofollow">资源下载站</a></li>
+<li><a href="http://top.torrentbasket.com" rel="nofollow">TorrentBasket</a></li>
+<li><a href="http://torrentcrazy.to" rel="nofollow">Torrent Crazy</a></li>
+<li><a href="https://btdigg.org" rel="nofollow">BT Digg</a></li>
+<li><a href="https://rarbg.to/torrents.php" rel="nofollow">电影种子</a></li>
+<li><a href="http://www.141jav.com" rel="nofollow">JAV Torrent</a></li>
+<li><a href="http://www.sumotorrent.sx" rel="nofollow">SUMOTorrent</a></li>
+<li><a href="http://www.gamestorrents.com" rel="nofollow">游戏种子下载</a></li>
+<li><a href="http://www.trovaporno.com" rel="nofollow">TrovaPorno</a></li>
+<li><a href="https://kat.cr" rel="nofollow">KickassTorrents</a></li>
+<li><a href="http://www.btmon.com" rel="nofollow">BT Mon</a></li>
+<li><a href="http://www.tokyotosho.info" rel="nofollow">Tokyo Toshokan</a></li>
+<li><a href="https://www.nyaa.eu" rel="nofollow">NYAA种子库</a></li>
+<li><a href="http://torentilo.com" rel="nofollow">Torentilo</a></li>
+<li><a href="http://www.btbook.net" rel="nofollow">BT Book</a></li>
+<li><a href="http://www.torrentfunk.com" rel="nofollow">TorrentFunk</a></li>
+</ul>
+<div class="clr"></div>
+</div>
+<div class="list_unit">
+<h2 id="tool_web"><i class="fa fa-wrench pad5" aria-hidden="true"></i>在线工具</h2>
+<ul>
+<li><a href="http://www.betterso.com" rel="nofollow">善用资源搜索</a></li>
+<li><a href="http://www.torrent.org.cn" rel="nofollow">种子磁链互转</a></li>
+<li><a href="http://dwz.cn" rel="nofollow">百度短网址</a></li>
+<li><a href="http://www.waqiang.com/index.php/url/shorten" rel="nofollow">微博短网址</a></li>
+<li><a href="http://360app.ft12.com/" rel="nofollow">短网址生成</a></li>
+<li><a href="http://360xixi.com" rel="nofollow">种子在线编辑器</a></li>
+<li><a href="http://freeget.co/" rel="nofollow">91视频下载</a></li>
+<li><a href="http://www.pctowap.com" rel="nofollow">WAP模拟器</a></li>
+<li><a href="http://www.flvcd.com" rel="nofollow">视频地址解析</a></li>
+<li><a href="http://www.rmdown.com" rel="nofollow">种子上传分享</a></li>
+<li><a href="http://www.clipconverter.cc/" rel="nofollow">Youtube下载</a></li>
+<li><a href="http://www.xunyingwang.com/tools/sharevip" rel="nofollow">迅雷VIP账号</a></li>
+<li><a href="http://www.jandown.com/" rel="nofollow">种子上传分享</a></li>
+<li><a href="https://www.jiumodiary.com/" rel="nofollow">电子书搜索</a></li>
+<li><a href="http://www.weibovideo.com/" rel="nofollow">微博视频解析</a></li>
+<li><a href="http://translate.google.cn/" rel="nofollow">谷歌翻译</a></li>
+<li><a href="http://www.reg007.com/" rel="nofollow">注册007</a></li>
+<li><a href="https://boodigo.com/" rel="nofollow">成人搜索引擎</a></li>
+<li><a href="http://bangshouwang.com" rel="nofollow">百度文库下载</a></li>
+<li><a href="http://news.ifeng.com:8080/mainland/special/ptxyy/" rel="nofollow">莆田系医院查询</a></li>
+</ul>
+<div class="clr"></div>
+</div>
+<div class="list_unit">
+<h2 id="gogo"><i class="fa fa-google pad5" aria-hidden="true"></i>谷歌镜像</h2>
+<ul>
+<li><a href="https://g2.wen.lu/" rel="nofollow">镜像站点2</a></li>
+<li><a href="https://www.ggss.cf/" rel="nofollow">镜像站点3</a></li>
+<li><a href="http://jwss.cdjltz.com/" rel="nofollow">镜像站点4</a></li>
+<li><a href="http://www.googto.com/" rel="nofollow">镜像站点5</a></li>
+<li><a href="http://gc.ihuan.me/" rel="nofollow">镜像站点6</a></li>
+<li><a href="http://soguge.com/" rel="nofollow">镜像站点7</a></li>
+<li><a href="http://www.itechzero.com/google-mirror-sites-collect.html" rel="nofollow">镜像站点发布</a></li>
+</ul>
+<div class="clr"></div>
+</div>
+<div class="list_unit">
+<h2 id="clever_onl"><i class="fa fa-paper-plane-o pad5" aria-hidden="true"></i>科学上网</h2>
+<ul>
+<li><a href="https://github.com/getlantern/lantern-binaries/blob/50a596fb21468f75bb771c7601bf09b5162d9852/lantern-installer.exe?raw=true" rel="nofollow">LanternPC</a></li>
+<li><a href="https://github.com/getlantern/lantern-binaries/blob/master/lantern-installer.apk?raw=true" rel="nofollow">Lantern安卓</a></li>
+<li><a href="https://github.com/getlantern/lantern-binaries/blob/master/lantern-installer.dmg?raw=true" rel="nofollow">LanternMAC</a></li>
+<li><a href="https://github.com/getlantern/lantern-binaries/blob/master/lantern-installer-manoto-64-bit.deb" rel="nofollow">Lantern.deb</a></li>
+<li><a href="http://www.ccav1.me/chromegae.html" rel="nofollow">ChromeGAE</a></li>
+<li><a href="https://pac.itzmx.com/" rel="nofollow">好用的PAC</a></li>
+<li><a href="http://www.ishadowsocks.net/" rel="nofollow">免费SS一</a></li>
+<li><a href="http://www.shadowsockscn.com/" rel="nofollow">免费SS二</a></li>
+<li><a href="http://www.shadowsocks.asia/mianfei/10.html" rel="nofollow">免费SS三</a></li>
+<li><a href="http://www.hishadowsocks.com/" rel="nofollow">免费SS四</a></li>
+<li><a href="https://www.namaho.com/prpr.html" rel="nofollow">免费SS五</a></li>
+<li><a href="https://www.ezlink.hk/free.php" rel="nofollow">免费SS六</a></li>
+</ul>
+<div class="clr"></div>
+</div>
+</div>
+<div id="tools" class="list_unit2">
+<h2><i class="fa fa-suitcase pad5" aria-hidden="true"></i>实用软件</h2>
+<ul>
+<li><a href="http://down.3xiazai.com/Soft/T/Thunder_Qiuquan_1.0.33.358_3xiazai.7z">迅雷极速版(破解速度)</a></li>
+<li><a href="http://pan.baidu.com/s/1nvxm4T7">百度云管家[单文件/VIP下载无限试用]</a></li>
+<li><a href="http://pan.baidu.com/s/1sjQLs1R">网页视频下载器[提取码5jko]</a></li>
+<li><a href="http://pan.baidu.com/s/1qWILfqs">城通网盘下载器[无广告/支持迅雷]</a></li>
+</ul><div class="clr"></div>
+</div>
+</div>
+<div id="footer"><span class="copyright">Copyright &copy; 2012-2016 <a href="http://www.www.cjgdh.org">藏姬阁导航</a>. All Rights Reserved. 邮箱:thecangnv@gmail.com</span></div>
+</div>
+<div style="display:none"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260012594'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260012594' type='text/javascript'%3E%3C/script%3E"));</script></div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+var _analytics_scr = document.createElement('script');
+_analytics_scr.type = 'text/javascript'; _analytics_scr.async = true; _analytics_scr.src = '/_Incapsula_Resource?SWJIYLWA=2977d8d74f63d7f8fedbea018b7a1d05&ns=3';
+var _analytics_elem = document.getElementsByTagName('script')[0]; _analytics_elem.parentNode.insertBefore(_analytics_scr, _analytics_elem);
+})();
+// ]]>
+</script></body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<meta http-equiv="content-language" content="en" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta name="description" xml:lang="en" lang="en" content="Innovative free website offering both Japanese-language study and cultural understanding!. Supports multiple languages (Japanese English Spanish Portuguese Chinese Korean French). Please select your language." />
+<meta name="keywords" xml:lang="ja" lang="ja" content="エリン,えりん,erin,erin ga choosen,nihongo dekimasu,にほんご,日本語,英語,スペイン語,ポルトガル語,中国語,韓国語,フランス語,インドネシア語,学習,練習,勉強,無料,動画,教材,NHK,マンガ,manga,漫画,クイズ,ゲーム,日本文化,国際交流基金,日本語国際センター" />
+<meta name="keywords" xml:lang="en" lang="en" content="Learn Japanese in English,erin,erin's challenge,Japan,Study,game,manga,quiz" />
+<meta name="keywords" xml:lang="es" lang="es" content="Aprender Japonés en Español,Japones" />
+<meta name="keywords" xml:lang="pt" lang="pt" content="Aprender Japonês em Português,Japones" />
+<meta name="keywords" xml:lang="zh-Hans" lang="zh-Hans" content="学习日语,日语,中文,简体字" />
+<meta name="keywords" xml:lang="ko" lang="ko" content="일본어를 배울,한국어" />
+<meta name="keywords" xml:lang="fr" lang="fr" content="Apprendre le Japonais en Français" />
+<meta name="keywords" xml:lang="id" lang="id" content="Belajar bahasa Jepang,bahasa Indonesia" />
+
+<!-- fecebook -->
+<meta property="og:site_name" content="WEB版 エリンが挑戦！にほんごできます。" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.erin.ne.jp/" />
+<meta property="og:title" content="WEB版 エリンが挑戦！にほんごできます。" />
+<meta property="og:image" content="http://www.erin.ne.jp/top/img/logo_fecebook.png" />
+<meta property="og:description" content="国際交流基金日本語国際センターが制作した無料日本語学習サイトです。ドラマ風スキット、マンガ、文法練習問題、クイズ、ゲームなど、たくさんのコンテンツで日本語と日本文化について学習することができます。" />
+<meta property="og:locale" content="ja_JP" />
+
+<title xml:lang="ja" lang="ja">WEB版 エリンが挑戦！にほんごできます。｜Global Home</title>
+<link rel="stylesheet" href="top/home.css" type="text/css" />
+<script type="text/javascript" src="top/jquery.js"></script>
+<script type="text/javascript" src="top/common.js"></script>
+<script type="text/javascript" src="top/home.js"></script>
+<!--[if lte IE 6]> 
+<script src="top/DD_belatedPNG.js"></script>  
+<script>DD_belatedPNG.fix('.transparent');</script>
+<![endif]--> 
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/ja_JP/all.js#xfbml=1";fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));</script>
+<div id="container">
+<div id="content">
+<h1 xml:lang="en" lang="en"><img src="top/img/title.gif" alt="Global Home" title="Please select your language."/></h1>
+<ul class="globalMenu clearfix">
+<li class="item1"><a rel="start" xml:lang="ja" lang="ja" hreflang="ja" href="jp/" title="日本語"><span><img src="top/img/im_comment_jp.png" alt="" class="transparent" /></span><img src="top/img/bt_jp_normal.gif" alt="日本語" /></a></li>
+<li class="item2"><a rel="start" xml:lang="en" lang="en" hreflang="en" href="en/" title="English"><span><img src="top/img/im_comment_en.png" alt="" class="transparent" /></span><img src="top/img/bt_en_normal.gif" alt="English" /></a></li>
+<li class="item3"><a rel="start" xml:lang="es" lang="es" hreflang="es" href="es/" title="Español"><span><img src="top/img/im_comment_es.png" alt="" class="transparent" /></span><img src="top/img/bt_es_normal.gif" alt="Español" /></a></li>
+<li class="item4"><a rel="start" xml:lang="pt" lang="pt" hreflang="pt" href="pt/" title="Português"><span><img src="top/img/im_comment_po.png" alt="" class="transparent" /></span><img src="top/img/bt_po_normal.gif" alt="Português" /></a></li>
+<li class="item5"><a rel="start" xml:lang="zh-Hans" lang="zh-Hans" hreflang="zh-Hans" href="zh/" title="中文"><span><img src="top/img/im_comment_ch.png" alt="" class="transparent" /></span><img src="top/img/bt_ch_normal.gif" alt="中文（简体字）" /></a></li>
+<li class="item6"><a rel="start" xml:lang="ko" lang="ko" hreflang="ko" href="ko/" title="한국어"><span><img src="top/img/im_comment_ko.png" alt="" class="transparent" /></span><img src="top/img/bt_ko_normal.gif" alt="한국어" /></a></li>
+<li class="item7"><a rel="start" xml:lang="fr" lang="fr" hreflang="fr" href="fr/" title="Français"><span><img src="top/img/im_comment_fr.png" alt="" class="transparent" /></span><img src="top/img/bt_fr_normal.gif" alt="Français" /></a></li>
+<li class="item8"><a rel="start" xml:lang="id" lang="id" hreflang="id" href="id/" title="Bahasa Indonesia"><span><img src="top/img/im_comment_bi.png" alt="" class="transparent" /></span><img src="top/img/bt_bi_normal.gif" alt="Bahasa Indonesia" /></a></li>
+</ul>
+<div class="sns"><p class="tw"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p><p class="fb"><div class="fb-like" data-href="http://www.erin.ne.jp/" data-send="true" data-layout="button_count" data-width="100" data-show-faces="false"></div></p></div>
+</div>
+</div>
+<div id="footer"><p class="footertext" xml:lang="ja" lang="ja"><img src="top/img/footer.gif" width="844" height="27" alt="このサイトに含まれるすべてのコンテンツ・データの無断利用・転載を禁じます。© The Japan Foundation Japanese-Language Institute, Urawa" /></p></div>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-15415519-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async/=true;ga.src=('https:'==document.location.protocol ? 'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>
+</body>
+</html>
