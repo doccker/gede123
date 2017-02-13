@@ -1,0 +1,92 @@
+/*
+* night 2015年5月28日08:38:50
+*/
+@charset "utf-8";
+
+.logo{
+    background: url("../imgs/logo-white.png") center center no-repeat;
+    background-size: contain;
+}
+
+body{
+    background: url("imgs/bg-gray.gif") repeat #333;
+    color:#333;
+}
+
+a{
+    color: #333;
+}
+
+a:hover,a:focus {
+    color: #000;
+}
+
+/********* - top menu */
+
+.navbar-default {
+    background-color: rgba(247, 247, 247, 0.33);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #E6E6E6;
+}
+
+.navbar .dropdown-menu{
+    border: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+/********* - top menu */
+
+.menu{
+    background-color: #fff;
+}
+
+.query{
+    border: 1px solid #8C8C8C;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.list-group{
+    border: 1px solid #8C8C8C;
+    border-top: none;
+    margin-top: 0;
+}
+
+.query button{
+    background-color: #eee;
+}
+
+.setting,.url,.channel,.cate{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.dropdown-menu-search {
+    min-width: 103px;
+    border: none;
+}
+
+.channel li.focus,.cate li.focus,.dropdown-menu-search li:hover{
+    background-color: #dbdbdb;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default, .dropdown.open .dropdown-toggle {
+    background-color: #e0e0e0;
+}
+
+.setting a:hover,.url li:hover,.cate li:hover,.channel li:hover{
+    background-color: #e0e0e0;
+}
+
+.big-font{
+    background-color: rgba(239, 237, 237, 0.95);
+    color: #666;
+}
+
+.footer {
+    color: #cdcdcd;
+}

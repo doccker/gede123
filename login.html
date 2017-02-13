@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>登录 - 歌德书签 - only do bookmark - www.gede123.com</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, target-densitydpi=medium-dpi, initial-scale=1, user-scalable=no"/>
+
+        <meta content="书签,在线书签,网址,网址收藏,在线网址收藏,gede123,www.gede123.com,only do bookmark" name="keywords">
+        <meta content="www.gede123.com,only do bookmark" name="Description">
+
+        <link rel="shortcut icon" href="res/imgs/favicon.ico" />
+
+        <!-- 动画CSS -->
+        <link href="res/css/gede123.animate.css" rel="stylesheet">
+
+        <!-- Bootstrap Core CSS -->
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="lib/bootvalid/css/bootstrapValidator.min.css" rel="stylesheet">
+
+        <!-- jquery confirm -->
+        <link href="lib/jquery-confirm/jquery-confirm.min.css" rel="stylesheet">
+
+        <!-- fontaware 字体库 -->
+        <link href="lib/awesome/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- 本地CSS文件 -->
+        <link href="res/css/gede123-common.min.css?t=20170203231757" rel="stylesheet">
+        <link href="res/css/gede123-login.min.css?=20170203231806" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+        <script src="lib/bootstrap/js/html5shiv.js"></script>
+        <script src="lib/bootstrap/js/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+        <div class="container-login">
+            <div>
+                <a href="/">
+                    <img class="logo img-animate-expand" src="res/imgs/logo-normal.png" />
+                </a>
+            </div>
+
+            <ul id="login-tab" class="nav nav-tabs nav-justified gd-margin-top-20">
+                <li role="presentation" class="active">
+                    <a href="#tab-login" aria-controls="tab-login" role="tab" data-toggle="tab" style="border-top-right-radius: 0;">
+                        登 录
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#tab-register" aria-controls="tab-register" role="tab" data-toggle="tab" style="border-top-left-radius: 0;">
+                        注 册
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab-login">
+                    <div class="login">
+                        <form id="form-login">
+                            <div class="form-group text-left">
+                                <div class="input-group">
+                                    <span class="input-group-addon text-muted">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                    <input type="text" class="form-control" id="login-username" name="username" placeholder="用户名">
+                                </div>
+                            </div>
+
+                            <div class="form-group text-left gd-margin-top-20">
+                                <div class="input-group">
+                                    <span class="input-group-addon text-muted">
+                                        <i class="fa fa-key"></i>
+                                    </span>
+                                    <span id="btn-forget" class="fa fa-question text-muted form-control-feedback" data-content="忘记密码？点击找回"></span>
+                                    <input type="password" class="form-control" id="login-passwd" name="passwd" placeholder="密码">
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="gd-margin-top-20">
+                            <a id="gd_rukou_tab_login_submit" href="#" class="btn btn-green-light btn-block">
+                                登 录
+                            </a>
+                        </div>
+
+                        <div class="gd-margin-top-20 text-left login-third">
+                            社交账号登录：
+                            <a href="https://graph.qq.com/oauth2.0/authorize?client_id=101234075&response_type=token&scope=all&redirect_uri=https%3A%2F%2Fwww.gede123.com%2Fcallback.html?t=qq" class="qq" title="QQ登录">
+                                <i class="fa fa-qq"></i>
+                            </a>
+                            <a href="https://api.weibo.com/2/oauth2/authorize?client_id=1024992325&response_type=token&redirect_uri=https%3A%2F%2Fwww.gede123.com%2Fcallback.html?t=weibo" class="weibo" title="新浪微博登录">
+                                <i class="fa fa-weibo"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="tab-register">
+                    <div class="register">
+                        <form id="form-register">
+                            <div class="form-group text-left">
+                                <div class="input-group">
+                                    <span class="input-group-addon text-muted">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                    <span class="fa fa-question-circle text-muted form-control-feedback" data-content="3-30个数字、字母、下划线、中划线和点，组成的字符"></span>
+                                    <input type="text" class="form-control" id="reg-username" name="username" placeholder="用户名">
+                                </div>
+                            </div>
+
+                            <div class="form-group text-left gd-margin-top-20">
+                                <div class="input-group">
+                                    <span class="input-group-addon text-muted">
+                                        <i class="fa fa-key"></i>
+                                    </span>
+                                    <span class="fa fa-question-circle text-muted form-control-feedback" data-content="3-30个字符"></span>
+                                    <input type="password" class="form-control" id="reg-passwd" name="passwd" placeholder="密码">
+                                </div>
+                            </div>
+
+                            <div class="form-group text-left gd-margin-top-20">
+                                <div class="input-group">
+                                    <span class="input-group-addon text-muted">
+                                        <i class="fa fa-key"></i>
+                                    </span>
+                                    <input type="password" class="form-control" id="reg-repasswd" name="repasswd" placeholder="确认密码">
+                                </div>
+                            </div>
+
+                            <div class="register-more">
+                                <div class="form-group text-left gd-margin-top-20">
+                                    <div class="input-group">
+                                        <span class="input-group-addon text-muted">
+                                            <i class="fa fa-font"></i>
+                                        </span>
+                                        <span class="fa fa-question-circle text-muted form-control-feedback" data-content="最多30个字符"></span>
+                                        <input type="text" class="form-control" id="reg-name" name="name" placeholder="(选填) 昵称">
+                                    </div>
+                                </div>
+
+                                <div class="form-group text-left gd-margin-top-20">
+                                    <div class="input-group">
+                                        <span class="input-group-addon text-muted">
+                                            <i class="fa fa-envelope"></i>
+                                        </span>
+                                        <span class="fa fa-question-circle text-muted form-control-feedback" data-content="最多30个字符，方便您以后找回密码和显示头像使用"></span>
+                                        <input type="text" class="form-control" id="reg-email" name="email" placeholder="(选填) 联系邮箱">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gd-margin-top-20">
+                                <a id="gd_rukou_tab_register_submit" href="#" class="btn btn-orange-light btn-block">
+                                    注 册
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <span>
+                    GEDE123.COM 2013-2017, ONLY DO BOOKMARK!
+                </span>
+            </div>
+        </div>
+    </body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="model-forget" tabindex="-1"  role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-left">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="modal-title">
+                        <i class="gede-small-title"></i>
+                        重置密码
+                    </div>
+                </div>
+                <div class="modal-body text-left">
+                    <form id="form-reset">
+                        <div class="form-group text-left">
+                            <div class="input-group">
+                                <span class="input-group-addon text-muted">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                                <input type="text" class="form-control" id="forget-passwd-name" name="username" placeholder="用户名">
+                            </div>
+                        </div>
+
+                        <div class="form-group text-left gd-margin-top-20">
+                            <div class="input-group">
+                                <span class="input-group-addon text-muted">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                                <input type="text" class="form-control" id="forget-passwd-email" name="email" placeholder="联系邮箱">
+                            </div>
+                        </div>
+
+                        <div class="form-group text-left gd-margin-top-20">
+                            <div class="input-group">
+                                <span class="input-group-addon text-muted">
+                                    <i class="fa fa-key"></i>
+                                </span>
+                                <span class="fa fa-question-circle text-muted form-control-modal-tip" data-content="3-30位长度"></span>
+                                <input type="password" class="form-control" id="forget-passwd-passwd" name="passwd" placeholder="新密码">
+                            </div>
+                        </div>
+
+                        <div class="form-group text-left gd-margin-top-20">
+                            <div class="input-group">
+                                <span class="input-group-addon text-muted">
+                                    <i class="fa fa-key"></i>
+                                </span>
+                                <input type="password" class="form-control" id="forget-passwd-repasswd" name="repasswd" placeholder="确认密码">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white-light" data-dismiss="modal">取消</button>
+                    <button id="gd_rukou_tab_reset_submit" type="button" class="btn btn-blue-light">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- base js -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery.cookie.js"></script>
+
+    <!-- BootStrap relative js -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- jquery confirm -->
+    <script src="lib/jquery-confirm/jquery-confirm.min.js"></script>
+
+    <script src="lib/bootvalid/js/bootstrapValidator.min.js"></script>
+
+    <!-- local js -->
+    <script src="res/js/gede123-main.min.js?t=20150902100748"></script>
+    <script src="res/js/gede123-login.min.js?t=2017010694407"></script>
+
+</html>

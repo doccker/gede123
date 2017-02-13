@@ -1,0 +1,93 @@
+<html>
+<head>
+<script src="../lib/jquery/jquery.min.js"></script>
+<style>
+    html,body{
+        margin:0;
+        padding:0;
+    }
+    #data{
+        border-collapse:collapse;
+    }
+    
+    #data td{
+        border:1px solid green;
+        white-space: normal;
+        word-break: break-all;
+        max-width: 500px;
+        min-width: 80px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        line-height: 1.8;
+    }
+
+    .click{
+        text-align: center;
+    }
+
+    .click span{
+        color: #0066cc;
+        cursor: pointer;
+    }
+</style>
+<script>
+    /////ajax跨域操作
+    var ajax = function(url,data,callback){
+        $.ajax({
+            async : false,
+            url : url,
+            data : data,
+            dataType : "jsonp",
+            success : callback,
+            error:function(){
+                alert('系统错误，请稍后重试！');
+            }
+        });
+    };
+
+    $(function(){
+        ajax("http://www.gede123.com/geticon/query.php",{},function(result){
+            $.each(result,function(i,d){
+                if(d.url != '' && d.url != null && d.url != 'null'){
+                    $("#data").append("<tr "+(d.icon !=null ? "style='background-color:orange'" : "")+">" +
+                            "<td>"+ d.id+"</td><td>" + d.url + "</td>" +
+                            "<td class='click'>" +
+                            (d.icon !=null ? d.icon : "<span linkId="+ d.id +" class='a' href='#'>Click</span>") +
+                            "</td>" +
+                            "</tr>");
+                }
+            });
+            
+            $(".a").click(function(){
+                var t = this;
+                var url = $(this).parent().prev().text();
+                if(url == null || url == ""){
+                    return false;
+                };
+                var id = $(t).attr("linkId");
+
+                $.get("do.php?action=local",{
+                    id : id,
+                    url: url
+                },function(data){
+                    ajax("http://www.gede123.com/geticon/do.php",{
+                        action : 'prod',
+                        id : id,
+                        url: data
+                    },function(data){
+                        $(t).html(data.result);
+                        $(t).parent().parent().css('background-color','orange');
+                    });
+                });
+            });
+        });
+    });
+</script>
+</head>
+<body>
+    <table id="data" style="border:1px solid green;">
+
+    </table>
+</body>
+</html>
