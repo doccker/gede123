@@ -380,7 +380,7 @@ if($type == 'rukou'){//注册/登录功能
         $name = $_GET['name'];
         $email = $_GET['email'];
 
-        mysql_query("UPDATE gd_user set name='$name',email='$email',update_time=now() where id='$id'");
+        mysql_query("UPDATE gd_user set name = '$name',email='$email',update_time=now() where id='$id'");
 
         if(mysql_affected_rows()>0){
             $result -> success = TRUE;
@@ -394,7 +394,7 @@ if($type == 'rukou'){//注册/登录功能
     }else if($action == 'findUserById'){
         $id = $_GET['id'];
 
-        $query = mysql_query("SELECT username,name,email FROM gd_user WHERE id='".$id."'");
+        $query = mysql_query("SELECT * FROM gd_user WHERE id='".$id."'");
         $obj = mysql_fetch_object($query);
 
         echo json_encode($obj);

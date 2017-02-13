@@ -31,7 +31,7 @@
     };
 
     function updateIcon($id,$iconUrl){
-        if($iconUrl == '' || strlen($iconUrl) > 120){
+        if($iconUrl == ''){
             $iconUrl = 'icons/default.ico';
         };
         mysql_query("UPDATE gd_link set is_catch='1',icon='$iconUrl',catch_time=now() where id='$id'");

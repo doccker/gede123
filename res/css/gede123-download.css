@@ -28,9 +28,8 @@ body{
 }
 
 #header .logo{
-    width: 200px;
-    height: 55px;
-    margin-top: 12px;
+    height: 40px;
+    margin-top: 20px;
 }
 
 #footer img{

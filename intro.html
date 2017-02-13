@@ -10,7 +10,7 @@
     <meta content="书签,在线书签,网址,网址收藏,在线网址收藏,gede123,www.gede123.com,only do bookmark" name="keywords">
     <meta content="www.gede123.com,only do bookmark" name="Description">
 
-    <link rel="shortcut icon" href="res/imgs/favicon.ico" />
+    <link rel="shortcut icon" href="res/imgs/favicon.png" />
 
     <!-- 动画CSS -->
     <link href="res/css/gede123.animate.css" rel="stylesheet">
@@ -21,7 +21,7 @@
     <link href="res/css/gede123-common.css" rel="stylesheet">
     <link rel="stylesheet" href="lib/fullpage/css/jquery.fullPage.css">
 
-    <link href="res/css/gede123-intro.css" rel="stylesheet">
+    <link href="res/css/gede123-intro.css?t=2017020492859" rel="stylesheet">
 
 </head>
 
@@ -29,7 +29,7 @@
 
 <div id="header">
     <a href="/">
-        <img class="logo img-animate-expand" src="res/imgs/logo-normal.png" />
+        <img class="logo img-animate-expand" src="res/imgs/logo-white.png" />
     </a>
 </div>
 
@@ -182,6 +182,8 @@
 <script src="lib/fullpage/js/jquery.fullPage.min.js"></script>
 <script>
     $(function(){
+        $("body").fadeIn();
+
         var $gdNav = $('#header');
         var $gdFooter = $('#footer');
         var $gdIntro = $('.intro');

@@ -1,7 +1,0 @@
-<html>
-<body>
-	<script>
-        window.location = "v3/views/login.html";
-    </script>
-</body>
-</html>

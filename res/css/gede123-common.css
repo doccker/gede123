@@ -15,6 +15,7 @@ body {
     font-size: 14px;
     font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Segoe UI","Microsoft Yahei",Tahoma,Arial,STHeiti,sans-serif;
     letter-spacing: 0.5px;
+    display: none;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
@@ -156,14 +157,16 @@ button.close:hover,.button.close:active{
 }
 
 .gede-small-title,.gede-small-content{
-    background: url("imgs/bg-gede-small.png") no-repeat left center;
-    background-size: 20px 12px;
+    background: url("../imgs/favicon.png") no-repeat left center;
+    background-size: contain;
     display: inline-block;
 }
 
 .gede-small-title{
-    width: 24px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 2px;
 }
 
 .gede-small-content{
@@ -283,7 +286,6 @@ form{
     margin-right:0;
 }
 
-.mCustomScrollBox+.mCSB_scrollTools+.mCSB_scrollTools.mCSB_scrollTools_horizontal,
-.mCustomScrollBox+.mCSB_scrollTools.mCSB_scrollTools_horizontal{
-    bottom: -15px;
+.mCustomScrollBox+.mCSB_scrollTools+.mCSB_scrollTools.mCSB_scrollTools_horizontal, .mCustomScrollBox+.mCSB_scrollTools.mCSB_scrollTools_horizontal{
+    bottom: -16px;
 }

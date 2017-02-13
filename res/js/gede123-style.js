@@ -50,8 +50,4 @@ var gdStyleList = [{
     img : 'res/theme/style/style-image-nba.png',
     name : 'NBA',
     value : 'image-nba'
-},{
-    img : 'res/theme/style/style-image-paper.png',
-    name : '纸皮',
-    value : 'image-paper'
 }];

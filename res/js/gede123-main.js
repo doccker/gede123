@@ -595,7 +595,7 @@ var rukou = {
                             };
 
                             content += " href='"+data[3]+"'>" +
-                                "        <img src='icons/default.ico' /><span class='margin-left-5'>"+data[1]+"</span>" +
+                                "        <img src='icons/default.png' /><span class='margin-left-5'>"+data[1]+"</span>" +
                                 "    </a>" +
                                 "    <input type='checkbox' class='editor editor-url-checkbox' /><span class='editor editor-url-edit' action='setting-menu-default-url'><i class='fa fa-pencil'></i> </span>" +
                                 " </li>";
@@ -762,7 +762,8 @@ var searchWords = {
 
         var en = gdkey.get("gd_engine");
         if(en == "baidu"){
-            var sugBaiduUrl = "http://suggestion.baidu.com/su";
+            //var sugBaiduUrl = "http://suggestion.baidu.com/su";
+            var sugBaiduUrl = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su";
             $.ajax({
                 url: sugBaiduUrl,
                 type: 'GET',
@@ -921,7 +922,7 @@ var engine = {
                 $.each(sugResult,function(i,d){
                     engine.suggest.getEngineSug().append("" +
                         "<a href='"+d.url+"' target='_blank' class='list-group-item'>"
-                        + "<img src='"+(d.icon == null ? "icons/default.ico" : d.icon)+"' />"
+                        + "<img src='"+(d.icon == null ? "icons/default.png" : d.icon)+"' />"
                         + d.name
                         + "</a>");
                 });
@@ -1134,6 +1135,8 @@ var action = {
     },
     callback : {
         envCallBack : function(result){
+            $("body").fadeIn();
+
             //转换数据
             result = util.json(result);
 
@@ -1317,7 +1320,7 @@ var action = {
                     content += " target='_blank' ";
                 };
                 content += "href='"+result[i].url+"'>" +
-                    "<img src='"+(result[i].icon == null || result[i].icon == '' ? 'icons/default.ico' : result[i].icon)+"'/>" +
+                    "<img src='"+(result[i].icon == null || result[i].icon == '' || result[i].icon == 'icons/default.ico' ? 'icons/default.png' : result[i].icon)+"'/>" +
                     "<span class='margin-left-5'>" + result[i].name + "</span>" +
                     "    </a>" +
                     "    <input type='checkbox' class='editor editor-url-checkbox'/><span class='editor editor-url-edit' action='setting-menu-default-url'><i class='fa fa-pencil'></i> </span>" +
@@ -1643,7 +1646,7 @@ var gdStyle = {
             //修改样式
             var style = document.createElement("link");
             style.setAttribute("id", "gd-style-"+this.value);
-            style.setAttribute("href", "res/theme/gede123-"+this.value+".css");
+            style.setAttribute("href", "res/theme/gede123-"+this.value+".css?t=" + new Date());
             style.setAttribute("rel", "stylesheet");
 
             document.head.appendChild(style);
@@ -1676,7 +1679,7 @@ var gdStyle = {
             //修改样式
             var style = document.createElement("link");
             style.setAttribute("id", "gd-style-"+$radio.val());
-            style.setAttribute("href", "res/theme/gede123-"+$radio.val()+".css");
+            style.setAttribute("href", "res/theme/gede123-"+$radio.val()+".css?t=" + new Date());
             style.setAttribute("rel", "stylesheet");
 
             document.head.appendChild(style);
@@ -1705,7 +1708,7 @@ var gdStyle = {
         //修改样式
         var style = document.createElement("link");
         style.setAttribute("id", "gd-style-"+code);
-        style.setAttribute("href", "res/theme/gede123-"+code+".css");
+        style.setAttribute("href", "res/theme/gede123-"+code+".css?t=" + new Date());
         style.setAttribute("rel", "stylesheet");
 
         document.head.appendChild(style);
@@ -2012,7 +2015,7 @@ var auth = {
         var user = gdkey.get('gd_user');
         if (!user) {
             util.confirm('您还未登录歌德书签，现在登录？', function () {
-                window.location.href = "login.html";
+                window.location.href = "../../login.html";
             });
             return false;
         };
@@ -2212,9 +2215,9 @@ $(window).resize(function(){
 });
 
 function autoHeight(){
-    var h = $(window).height()-$(".navbar").height()-$("header").height()-45*2-($(window).height() < 768 ? 120 : 160);
-    if( h<50 ){
-        h = 50;
+    var h = $(window).height()-$(".navbar").height()-$("header").height()-50*2-($(window).height() < 768 ? 140 : 176);
+    if( h<60 ){
+        h = 60;
     };
     $(".url,.cate").height(h);
 };

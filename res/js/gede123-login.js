@@ -1,4 +1,6 @@
 $(function () {
+    $("body").fadeIn();
+
     //tab 切换
     $("#login-tab").tab();
 

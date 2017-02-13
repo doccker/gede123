@@ -30,8 +30,7 @@ body {
 }
 
 .container-login .logo{
-    width: 200px;
-    height: 55px;
+    height: 40px;
 }
 
 .login,.register{

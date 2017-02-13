@@ -5,7 +5,7 @@
 
 .logo{
     background: url("../imgs/logo-white.png") center center no-repeat;
-    background-size: 200px 55px;
+    background-size: contain;
 }
 
 body{

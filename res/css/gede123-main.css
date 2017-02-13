@@ -6,9 +6,9 @@
 
 .logo{
     display: block;
-    height: 55px;
-    width: 200px;
-    margin: 10px auto 7px;
+    /*height: 60px;*/
+    width: 180px;
+    margin: 0 auto 15px;
 }
 
 .footer{
@@ -16,14 +16,13 @@
     height: 24px;
     line-height: 24px;
     position: fixed;
-    bottom: 27px;
+    bottom: 20px;
     width: 100%;
     text-align: center;
 }
 
 header{
-    margin-top: 20px;
-    margin-bottom: 35px;
+    margin:25px 0 45px;
 }
 
 #gd-menu-user{
@@ -77,8 +76,8 @@ header{
 .cate a,.url a,.setting a,.channel a{
     display: inline-block;
     padding: 0 20px 0 24px;
-    height: 45px;
-    line-height: 45px;
+    height: 60px;
+    line-height: 60px;
 }
 
 .channel a{
@@ -87,16 +86,18 @@ header{
 
 .cate a{
     width: 180px;
-    padding: 4px 10px 0 30px;
 }
 
 .url a{
     width: 203.5px;
-    padding: 3px 26px 0 26px;
 }
 
-.setting a:hover,.url li:hover,.cate li:hover,.channel li:hover{
+.setting a:hover,
+.url li:hover,
+.cate li:hover,
+.channel li:hover{
     background-color: #ddd;
+    color: #fa671f;
 }
 
 .setting{
@@ -129,8 +130,8 @@ header{
 }
 
 .url img{
-    max-width: 18px;
-    max-height: 18px;
+    width: 24px;
+    height: 24px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -139,7 +140,6 @@ header{
 .channel{
     border-radius: 0 0 4px 4px;
     text-align: center;
-    height:47px;
 }
 
 .channel li.focus a,.cate li.focus a{
@@ -450,33 +450,33 @@ a.list-group-item:hover,a.item-chosen{
 }
 
 .editor-channel-checkbox{
-    top: 12px;
+    top: 20px;
     left: 5px;
 }
 
 .editor-channel-edit{
-    top: 12px;
+    top: 20px;
     right: 5px;
 }
 
 .editor-cate-checkbox{
-    top: 16px;
-    left: 9px;
+    top: 20px;
+    left: 6px;
 }
 
 .editor-cate-edit{
+    top: 20px;
     right: 15px;
-    top: 16px;
 }
 
 .editor-url-checkbox{
-    top: 16px;
+    top: 21px;
     left: 6px;
 }
 
 .editor-url-edit{
+    top: 21px;
     right: 10px;
-    top: 13px;
 }
 
 /*多选以下内容*/
@@ -492,8 +492,7 @@ a.list-group-item:hover,a.item-chosen{
 /*较小分辨率*/
 @media (max-height: 768px){
     header{
-        margin-top:10px;
-        margin-bottom:25px;
+        margin:15px 0 30px;
     }
 }
 
@@ -593,19 +592,20 @@ a.list-group-item:hover,a.item-chosen{
 /*控制url是平铺还是列表显示*/
 
 .display-url-toggle{
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 18px;
+    margin-right: 20px;
 }
 
 .display-url-toggle .btn{
     color: #555;
-    border-color: #dddddd;
-    min-width: 50px;
+    border: none;
+    background: none;
+    min-width: 20px;
 }
 
-.display-url-toggle .btn-default:hover, .display-url-toggle .btn-default:focus, .display-url-toggle .btn-default.active{
-    border-color: #dddddd;
-    background-color: #ECECEC;
+.display-url-toggle .btn:hover,
+.display-url-toggle .btn:focus,
+.display-url-toggle .btn.active{
     color: #EE7804;
 }
 
