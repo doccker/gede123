@@ -1,0 +1,101 @@
+/*
+* night 2015年5月28日08:38:50
+*/
+@charset "utf-8";
+
+.logo{
+    background: url("../imgs/logo-normal.png") center center no-repeat;
+    background-size: contain;
+}
+
+body{
+    background: url("imgs/bg-image-fresh.jpg") #f9f9f9;
+    background-size: cover, 100%;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    color:#333;
+}
+
+a{
+    color: #333;
+}
+
+a:hover,a:focus {
+    color: #000;
+}
+
+/********* - top menu */
+
+.navbar-default {
+    background-color: rgba(247, 247, 247, 0.66);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #797979;
+}
+
+.navbar .dropdown-menu{
+    border: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+/********* - top menu */
+
+.menu{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.query{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.query button{
+    background-color: rgb(247, 247, 247);
+}
+
+.main{
+    border-radius: 4px;
+}
+
+.list-group{
+    border-top: none;
+}
+
+.setting,.url,.channel,.cate{
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.dropdown-menu-search {
+    min-width: 103px;
+    border: none;
+}
+
+.dropdown-menu-set {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.channel li.focus,.cate li.focus,.dropdown-menu-search li:hover{
+    background-color: #ededed;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default, .dropdown.open .dropdown-toggle {
+    background-color: #f1f1f1;
+}
+
+.setting a:hover,.url li:hover,.cate li:hover,.channel li:hover{
+    background-color: #f1f1f1;
+}
+
+.footer {
+    color: #A7A7A7;
+}
+
+.menu,.query,.main{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}

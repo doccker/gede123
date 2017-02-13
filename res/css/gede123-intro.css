@@ -1,0 +1,182 @@
+/*
+* night 2015年7月24日08:57:50
+*/
+.intro{
+    color: #fff;
+}
+
+.intro h1{
+    font-weight: normal;
+    font-size: 48px;
+    letter-spacing: 20px;
+    padding-bottom: 20px;
+}
+
+.intro p{
+    font-size: 32px;
+    letter-spacing: 20px;
+    line-height: 2;
+    padding-bottom: 20px;
+}
+
+.intro .img-box img{
+    box-shadow: 0px 1px 8px 1.5px rgba(0, 0, 0, .35), 0px 20px 30px 8px rgba(0, 0, 0, 0.25);
+}
+
+.btn-white{
+    min-width: 330px;
+    min-height: 50px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    line-height: 3;
+}
+
+.btn-white:focus,.btn-white:hover{
+    background: #fff;
+    color: #333;
+    outline: none;
+    border: 1px solid #fff;
+}
+
+.animate{
+    transition: all 1s;
+    opacity: 0;
+}
+
+.active .animate{
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.section{
+    text-align:center;
+}
+
+.about-img img{
+    max-height: 650px;
+}
+
+.intro{
+    padding-top: 80px;
+}
+
+.intro h1.overview-desc{
+    text-shadow: 2px 2px #213F3F;
+}
+.intro p.overview-desc{
+    margin-top: 30px;
+    text-shadow: 2px 2px #213F3F;
+}
+
+.about-thanks-url a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.about-thanks-url a:hover,.about-thanks-url a:active{
+    text-shadow: 5px 5px #303030;
+ }
+
+.about-link{
+    color: #fff;
+    margin-top: 30px;
+}
+
+.about-thanks-url a:hover,.about-thanks-url a:active{
+    color: #fff;
+}
+
+.gd-margin-top-40{
+    margin-top: 60px;
+}
+
+.about-circle{
+    width: 80px;
+    height: 80px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 2px #272727;
+    background-color: #fff;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    font-size: 48px;
+    line-height: 80px;
+
+    display: inline-block;
+}
+
+.text-shadow-black{
+    text-shadow: 2px 2px #303030;
+}
+
+/* Fixed header and footer.
+* --------------------------------------- */
+#header, #footer{
+    position:fixed;
+    height: 80px;
+    display:block;
+    width: 100%;
+    z-index:9;
+    text-align:center;
+}
+
+#header{
+    background: rgba(255, 255, 255, 0.1);
+    top:0px;
+}
+
+#footer{
+    height: 60px;
+    line-height: 60px;
+    color: #f5f5f5;
+    background: rgba(255, 255, 255, 0.3);
+    bottom: -60px;
+}
+
+#header .logo{
+    height: 40px;
+    margin-top: 20px;
+}
+
+#footer img{
+    margin-top: 20px;
+}
+
+/* Cover css.
+* --------------------------------------- */
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background: #fff;
+}
+
+#fp-nav ul li .fp-tooltip{
+    font-family: Arial,'Microsoft Yahei',STHeiti,sans-serif;
+}
+
+/* down
+* --------------------------------------- */
+.scroll_tips {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 70px;
+    height: 24px;
+    display: block;
+    background: url(imgs/bg-scroll-down.png) 0 0 no-repeat;
+}
+
+.scroll_tips_inner {
+    -webkit-animation: tipsBlur 3s linear 0s infinite;
+    -moz-animation: tipsBlur 3s linear 0s infinite;
+    -ms-animation: tipsBlur 3s linear 0s infinite;
+    -o-animation: tipsBlur 3s linear 0s infinite;
+    animation: tipsBlur 3s linear 0s infinite;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(imgs/bg-scroll-down-inner.png) 0 0 no-repeat;
+}
+
