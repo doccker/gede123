@@ -1,10 +1,10 @@
 # gede123
 
-Only do bookmark!
+Just do bookmark
 
 ## target
 
-Support you an online fully free bookmark.
+Support you an online free bookmark fully.
 
 ## url
 
