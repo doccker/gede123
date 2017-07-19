@@ -635,7 +635,7 @@ var rukou = {
     init:function(){
         gdshow.init();
         this.logout.init();
-        log.console();
+        //log.console();
     },
     change:{
         logout : function(){
