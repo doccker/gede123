@@ -9,7 +9,7 @@ var config = {
     maxUrlCount : 100,
     maxNameLen : 100,
     maxDescLen : 100,
-    maxUrlLen : 300,
+    maxUrlLen : 500,
     isSet : false,
     isGoogleWarn : false
 };
@@ -1780,7 +1780,7 @@ var checkbox = {
         var result = new Array();
         var checkedObj = $("#gd_env input[type='checkbox']:checked");
         $.each(checkedObj, function (i,d) {
-            result.push($(d).prev('a').attr("channelId"));
+            result.push($(d).parent().find('a').attr("channelId"));
         });
         return result;
     },
@@ -1788,7 +1788,7 @@ var checkbox = {
         var result = new Array();
         var checkedObj = $("#"+gdkey.getCurEnv()+"_tabs input[type='checkbox']:checked");
         $.each(checkedObj, function (i,d) {
-            result.push($(d).prev('a').attr("cateId"));
+            result.push($(d).parent().find('a').attr("cateId"));
         });
         return result;
     },
@@ -1796,7 +1796,7 @@ var checkbox = {
         var result = new Array();
         var checkedObj = $("div[data-tab='"+gdkey.get("gd_tab_"+gdkey.getCurEnv())+"'] input[type='checkbox']:checked");
         $.each(checkedObj, function (i,d) {
-            result.push($(d).prev('a').attr("urlId"));
+            result.push($(d).parent().find('a').attr("urlId"));
         });
         return result;
     }
