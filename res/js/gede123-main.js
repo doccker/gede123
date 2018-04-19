@@ -635,7 +635,6 @@ var rukou = {
     init:function(){
         gdshow.init();
         this.logout.init();
-        log.console();
     },
     change:{
         logout : function(){
@@ -1988,24 +1987,6 @@ var gdkey = {
             }
             return user.split(",")[index]
         }
-    }
-};
-
-//alert窗口
-var log = {
-    console : function(){
-        var me = "我叫孙茂斌，英文名Night，1987年，男 ，感谢您对我的关注； \n"
-            + "我2010年毕业于湖北宜昌三峡大学数学系信息与计算科学专业，本科； \n"
-            + "在这么多年的职业生涯中，从事过电力行业、政府行业和现在的互联网行业；\n"
-            + "我对前端、后台（Java方向）和项目管理都有一定的个人理解和感悟；\n"
-            + "目前我在深圳人荐人爱 (http://www.5igdd.com) 任职全栈工程师。";
-        console.log('%c', '');
-        console.log('%c[ 关于我 ]', 'color:#AF3C17; font-size:14px;font-family:微软雅黑;');
-        console.log('%c'+me,'font-family:微软雅黑;');
-        console.log('%c', '');
-        console.log('%c[ 联系我 ]', 'color:blue; font-size:14px;font-family:微软雅黑;');
-        console.log('%c'+'扣扣：375208445 \n微信：gdidea-night','font-family:微软雅黑;');
-        console.log('%c', '');
     }
 };
 
