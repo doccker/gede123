@@ -655,6 +655,22 @@ var rukou = {
 var busy = false;//是否正在执行查询
 var searchWords = {
     init:function(){
+        $("#gd-frm").submit(function(e){
+            var en = gdkey.get("gd_engine"),
+                action = $("#gd-frm").attr("action");
+            if(en === 'local'){
+                if(!action){
+                    e.preventDefault();
+                    return false;
+                };
+
+                //使用完后清空action，防治缓存
+                setTimeout(function () {
+                    $("#gd-frm").attr("action",'');
+                },100);
+            };
+        });
+
         $('#query-engine-list').on('show.bs.dropdown', function () {
             $(".query").addClass("list-group-query-list");
         });
@@ -745,6 +761,7 @@ var searchWords = {
                 a.addClass("item-chosen").siblings().removeClass("item-chosen");
 
                 var engine = gdkey.get('gd_engine');
+
                 if(engine == 'local'){
                     $("#gd-frm").attr("action", a.attr("href"));
                 }else{
@@ -1319,7 +1336,7 @@ var action = {
                     content += " target='_blank' ";
                 };
                 content += "href='"+result[i].url+"'>" +
-                    "<img src='"+(result[i].icon == null || result[i].icon == '' || result[i].icon == 'icons/default.ico' ? 'icons/default.png' : result[i].icon)+"'/>" +
+                    "<img src='icons/default.png' data-src='"+(result[i].icon == null || result[i].icon == '' || result[i].icon == 'icons/default.ico' ? 'icons/default.png' : result[i].icon)+"'/>" +
                     "<span class='margin-left-5'>" + result[i].name + "</span>" +
                     "    </a>" +
                     "    <input type='checkbox' class='editor editor-url-checkbox'/><span class='editor editor-url-edit' action='setting-menu-default-url'><i class='fa fa-pencil'></i> </span>" +
@@ -1348,6 +1365,31 @@ var action = {
 
             //初始化url tab
             gdtab.init(gdenv.curEnv);
+
+            //异步加载ICO
+            $.each($("div[data-tab='gd_tab_"+action.param.pid+"'] a img"),function () {
+                var aImg = $(this),
+                    aImgSrc = aImg.data('src');
+
+                if(aImgSrc != 'icons/default.png'){
+                    var asyncImg = new Image();
+                    asyncImg.src = aImgSrc;
+
+                    //图片在缓存中
+                    if(asyncImg.complete){
+                        console.log('cache ico',aImgSrc);
+                        aImg.attr('src',aImgSrc);
+                        return;
+                    };
+
+                    asyncImg.onload = function () {
+                        aImg.attr('src',aImgSrc);
+                    };
+                    asyncImg.onerror = function () {
+                        console.log('error ico',aImgSrc);
+                    };
+                };
+            });
 
             //滚动条
             $("div[data-tab='gd_tab_"+action.param.pid+"']").mCustomScrollbar({

@@ -323,10 +323,16 @@ if($type == 'rukou'){//注册/登录功能
         $sql = "select * from(SELECT link.id,link.name,link.comment,link.icon,link.url,link.sort FROM gd_link link WHERE link.status='0' AND uid=(SELECT id FROM gd_user WHERE stype='1' AND scode='".$scode."')) t where name like '%".$q."%' or comment like '%".$q."%' or url like '%".$q."%' limit 0,10";
     }
     $query = mysql_query($sql);
+
+    if(!$query) {
+        echo json_encode([]);
+        return;
+    }
+
     $array = array();
     while($row = mysql_fetch_array($query,MYSQL_ASSOC)){
         $array[] =  $row;
-    }
+    };
 
     echo json_encode($array);
 }else if($type == 'user'){//站内搜索
